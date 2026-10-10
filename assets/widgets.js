@@ -76,7 +76,7 @@
     if (!a || !a.url || typeof qrcode === "undefined") return;
     if (!qrModal) {
       qrModal = document.createElement("div"); qrModal.className = "qr-modal"; qrModal.setAttribute("role", "dialog"); qrModal.setAttribute("aria-modal", "true"); qrModal.setAttribute("aria-label", "Scan to read more"); qrModal.hidden = true;
-      qrModal.innerHTML = '<div class="qr-card"><button class="qr-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button><h2>Scan to read more</h2><p class="qr-sub">Use your phone\u2019s camera to read the full story from the original publisher.</p><div class="qr-ring"><div class="qr-box"></div></div><p class="qr-title"></p></div>';
+      qrModal.innerHTML = '<div class="qr-card"><div class="qr-top"><b></b><span></span></div><button class="qr-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button><h2>Scan to read more</h2><p class="qr-sub">Use your phone\u2019s camera to read the full story from the original publisher.</p><div class="qr-ring"><div class="qr-box"></div></div><p class="qr-title"></p></div>';
       document.body.appendChild(qrModal);
       var close = function () { qrModal.hidden = true; document.documentElement.classList.remove("qr-open"); };
       qrModal.addEventListener("click", function (e) { if (e.target === qrModal || e.target.closest(".qr-close")) close(); });
@@ -85,6 +85,9 @@
     var q = qrcode(0, "L"); q.addData(a.url); q.make();
     qrModal.querySelector(".qr-box").innerHTML = q.createSvgTag({ cellSize: 8, margin: 0, scalable: true });
     qrModal.querySelector(".qr-title").textContent = a.title || "";
+    var top = qrModal.querySelector(".qr-top"), gc = a.goal ? S.colors[a.goal - 1] : "";
+    qrModal.querySelector(".qr-card").style.setProperty("--qc", gc || "#0a2c61");
+    top.querySelector("b").textContent = a.goal || ""; top.querySelector("span").textContent = a.goal ? S.names[a.goal - 1] : "SDG News"; top.classList.toggle("nogoal", !a.goal);
     qrModal.hidden = false; document.documentElement.classList.add("qr-open");
     qrModal.querySelector(".qr-close").focus();
   }

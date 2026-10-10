@@ -406,3 +406,22 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .qr-box svg{display:block;width:100%;height:100%}
 .qr-title{margin:20px auto 0;max-width:380px;font:600 14px/1.35 var(--font-body);color:#888;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 @media(max-width:520px){.qr-card{padding:56px 22px 28px;border-radius:26px}}
+
+/* QR popup, restyled to the site theme: square tiles, goal colour band, navy frame, uppercase headings */
+.qr-modal{background:rgba(10,44,97,.82)}
+.qr-card{--qc:#0a2c61;width:min(100%,500px);border-radius:0;padding:0 0 36px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.5);overflow:hidden}
+.qr-top{display:flex;align-items:center;gap:14px;height:72px;padding:0 84px 0 24px;background:var(--qc);color:#fff;text-align:left}
+.qr-top b{font:800 40px/1 var(--font-head);letter-spacing:-.04em}
+.qr-top b:empty{display:none}
+.qr-top span{font:700 12px/1.2 var(--font-body);letter-spacing:.05em;text-transform:uppercase}
+.qr-close{top:0;right:0;width:72px;height:72px;border-radius:0;background:#0a2c61;color:#fff}
+.qr-close:hover{background:#009edb}
+.qr-card h2{margin:36px 28px 12px;font:800 clamp(28px,3.4vw,40px)/1.05 var(--font-head);letter-spacing:-.03em;text-transform:uppercase;color:#080a07}
+.qr-sub{margin:0 auto 28px;max-width:360px;padding:0 20px;font:500 16px/1.45 var(--font-body);color:#555}
+.qr-ring{padding:0;border-radius:0;background:transparent;position:relative}
+.qr-ring::before,.qr-ring::after{content:"";position:absolute;width:44px;height:44px;border:6px solid var(--qc)}
+.qr-ring::before{left:-14px;top:-14px;border-right:0;border-bottom:0}
+.qr-ring::after{right:-14px;bottom:-14px;border-left:0;border-top:0}
+.qr-box{width:min(58vw,264px);padding:16px;border-radius:0;border:0;background:#fff;box-shadow:0 0 0 2px #e6e9ee}
+.qr-title{margin:28px auto 0;max-width:380px;padding:0 24px;font:700 13px/1.35 var(--font-body);letter-spacing:.02em;text-transform:uppercase;color:#0a2c61}
+@media(max-width:520px){.qr-card{padding:0 0 28px;border-radius:0}.qr-top{height:60px}.qr-close{width:60px;height:60px}}
