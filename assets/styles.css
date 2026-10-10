@@ -554,3 +554,11 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .cx-stat b{font-size:clamp(44px,4.6vw,68px)}
 .cx-stat span{margin-top:8px;font-size:12px}
 @media(max-width:1000px){.cx-main{grid-template-columns:1fr}.cx-map{max-width:340px}}
+/* country section on white */
+.cx-section{background:#fff;color:#080a07}
+.cx-section .h2,.cx-h3,.cx-legend,.cx-legend span{color:#080a07}
+.cx-az button.on{background:var(--navy)!important;color:#fff!important}
+.cx-az button:disabled{background:#eef0f3!important;color:#c3c9d0!important}
+.cx-left{background:#f3f5f7}
+.cx-g .tr{background:#f3f5f7}
+.cx-drop{box-shadow:0 18px 40px rgba(10,44,97,.22),0 0 0 1px #e6e9ee}
