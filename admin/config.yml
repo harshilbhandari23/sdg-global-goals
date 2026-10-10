@@ -3,6 +3,7 @@ backend:
   name: github
   repo: harshilbhandari23/sdg-global-goals
   branch: main
+  auth_methods: [token]   # sign in with a personal access token only (no OAuth server needed)
 
 media_folder: "assets/media"      # uploaded images go here
 public_folder: "assets/media"     # stored in the JSON relative to the site root
