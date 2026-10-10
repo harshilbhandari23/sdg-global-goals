@@ -188,6 +188,18 @@
   var ws = document.querySelector(".ws");
   if (ws) { var wfit = function () { ws.style.setProperty("--s", ws.clientWidth / 1734); }; wfit(); window.addEventListener("resize", wfit); }
 
+
+  /* ---- targets: one line, slowly drifting left to right (seamless loop) ---- */
+  var tg = document.querySelector(".t-grid");
+  if (tg && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var wrap = document.createElement("div"); wrap.className = "t-wrap"; tg.parentNode.insertBefore(wrap, tg); wrap.appendChild(tg);
+    var orig = Array.prototype.slice.call(tg.children);
+    orig.forEach(function (c) { var d = c.cloneNode(true); d.setAttribute("aria-hidden", "true"); Array.prototype.forEach.call(d.querySelectorAll("img"), function (i) { i.alt = ""; }); tg.appendChild(d); });
+    tg.classList.add("run");
+    var setDur = function () { var half = tg.scrollWidth / 2; tg.style.setProperty("--dur", Math.max(30, half / 35) + "s"); };   // ~35px per second
+    setDur(); window.addEventListener("load", setDur); window.addEventListener("resize", setDur);
+  }
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
