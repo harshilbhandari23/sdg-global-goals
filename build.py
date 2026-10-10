@@ -121,8 +121,23 @@ WS_TILES = [(386,1,96,96,17),(1253,97,96,97,14),(867,1,97,96,15),(1,97,96,97,16)
 
 
 def wheel_tiles():
-    out = ['<i class="ws-t" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx;background:%s" aria-hidden="true"></i>' % q for q in WS_SQUARES]
-    out += ['<a class="ws-t ws-g" href="global_goals/goal-%d/" aria-label="Goal %d" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx"><img src="assets/hero/goal-%02d.png" alt="" draggable="false"></a>' % (g, g, x, y, w, h, g) for (x, y, w, h, g) in WS_TILES]
+    # snap every tile to one 18-column square grid so the edges line up exactly
+    U = 1734 / 18
+    cell = lambda x, y: (int(round(x / U)), int(round(y / U)))
+    box = lambda c, r: (int(round(c * U)), int(round(r * U)), int(round((c + 1) * U)) - int(round(c * U)), int(round((r + 1) * U)) - int(round(r * U)))
+    used, out = set(), []
+    for (x, y, w, h, g) in WS_TILES:
+        c, r = cell(x, y)
+        if (c, r) in used:
+            continue
+        used.add((c, r)); l, t, ww, hh = box(c, r)
+        out.append('<a class="ws-t ws-g" href="global_goals/goal-%d/" aria-label="Goal %d" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx"><img src="assets/hero/goal-%02d.png" alt="" draggable="false"></a>' % (g, g, l, t, ww, hh, g))
+    for (x, y, w, h, col) in WS_SQUARES:
+        c, r = cell(x, y)
+        if (c, r) in used:
+            continue
+        used.add((c, r)); l, t, ww, hh = box(c, r)
+        out.append('<i class="ws-t" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx;background:%s" aria-hidden="true"></i>' % (l, t, ww, hh, col))
     return "".join(out)
 
 # ---------------------------------------------------------------- home hero (Figma: "Sustainable Development Goals- 1.0", 1440 x 820)

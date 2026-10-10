@@ -282,8 +282,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 
 /* ---- home section laid out like the Framer canvas (1734 x 1787); stacks on small screens ---- */
 .wheel-section{padding:0}
-.ws{position:relative;width:100%;height:calc(1787px * var(--s,.6));overflow:hidden}
-.ws-c{position:absolute;left:0;top:0;width:1734px;height:1787px;transform:scale(var(--s,.6));transform-origin:0 0}
+.ws{position:relative;width:100%;height:calc(1830px * var(--s,.6));overflow:hidden}
+.ws-c{position:absolute;left:0;top:0;width:1734px;height:1830px;transform:scale(var(--s,.6));transform-origin:0 0}
 .ws-t{position:absolute;display:block;border:0;object-fit:cover}
 .ws .wheel-wrap{position:absolute;left:517px;top:991px;width:700px!important;margin:0}
 .ws .scroll-text{position:absolute;left:387px;top:429px;width:954px;max-width:none;padding:0;transform:translateY(-50%);font-size:30px}
