@@ -466,3 +466,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 /* map a little smaller */
 .kiosk .mapwrap{width:88%;justify-self:center}
 @media(max-width:900px){.kiosk .mapwrap{width:100%}}
+.kiosk .mapwrap{width:74%}
+@media(max-width:900px){.kiosk .mapwrap{width:100%}}
