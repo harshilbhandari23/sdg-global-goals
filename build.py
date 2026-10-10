@@ -197,7 +197,7 @@ def build_home():
 <h2 class="h2">progress over the years</h2><div class="yw" data-start="2020" role="group" aria-label="SDG progress by year. Drag the wheel or use the arrow keys."></div>
 <p class="hint">Drag the wheel to change the year ›</p></section>
 
-<section class="map-section" id="map">{mosaic(11, "top")}{mosaic(12, "bottom")}<h2 class="h2">See where your country stands</h2>
+<section class="map-section" id="map">{mosaic(11, "top")}{mosaic(12, "bottom")}<h2 class="h2">Progress Across Nations</h2>
 <div class="kiosk" data-idle="60"><div class="mapwrap"><svg viewBox="0 0 914.55 603" preserveAspectRatio="xMidYMid meet" aria-label="World map"></svg>
 <div class="mapmsg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#666">Loading map…</div><div class="info" hidden></div></div>
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
