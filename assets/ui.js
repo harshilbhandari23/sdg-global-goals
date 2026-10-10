@@ -205,7 +205,7 @@
     var w = document.getElementById("wipe"); if (!w) return;
     if (document.documentElement.classList.contains("wipe-in")) {
       requestAnimationFrame(function () { requestAnimationFrame(function () { w.classList.add("out"); }); });
-      setTimeout(function () { document.documentElement.classList.remove("wipe-in"); w.classList.remove("out"); }, 900);
+      setTimeout(function () { document.documentElement.classList.remove("wipe-in"); w.classList.remove("out"); }, 1500);
     }
     window.addEventListener("pageshow", function (e) { if (e.persisted) { w.classList.remove("go"); document.documentElement.classList.remove("wipe-in"); } });
     document.addEventListener("click", function (e) {
@@ -224,7 +224,7 @@
       w.style.setProperty("--wipe", col);
       try { sessionStorage.setItem("sdgWipe", col); } catch (x) {}
       w.classList.add("go");
-      setTimeout(function () { location.href = u.href; }, 560);
+      setTimeout(function () { location.href = u.href; }, 950);
     });
   })();
 })();
