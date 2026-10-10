@@ -247,8 +247,7 @@ def build_goals_list():
     p += f"""<header class="page-hero" style="background-image:url('../assets/media/GzwS540sdntbYYofPRQrkBW9BpI.png')"><div class="container">
 <span class="pill" style="align-self:center"><b class="pill-14" style="font-size:16px">GOALS</b></span><div class="plus" aria-hidden="true">+ + + + + + +</div>
 <h1 class="h2" style="font-size:clamp(40px,7vw,96px);text-align:center">THE 17 GOALS</h1><hr><p class="body-24" style="color:#fff">Explore every goal, its targets and how you can help.</p></div></header>
-<main class="section" style="padding:96px 0"><div class="goal-grid" style="max-width:1400px;margin:0 auto">{cards}</div></main>
-<section class="section"><div class="container" style="max-width:var(--max)"><h2 class="h2" style="margin-bottom:40px">faq</h2>{faq}</div></section>"""
+<main class="section" style="padding:96px 0"><div class="goal-grid" style="max-width:1400px;margin:0 auto">{cards}</div></main>"""
     p += footer(1) + fab() + scripts(1)
     write("global_goals/index.html", p)
 
