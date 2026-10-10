@@ -114,6 +114,17 @@ def write(path, content):
 
 
 
+
+# Framer "Main Prototype Section" canvas (1734 x 1787): decorative coloured squares and goal tiles around the text and wheel
+WS_SQUARES = [(1061,0,98,96,"#FCC30B"),(290,194,96,96,"#E5243B"),(1,290,96,96,"#DDA83A"),(97,194,97,96,"#FD6925"),(194,97,96,97,"#4C9F38"),(97,0,97,96,"#BF8B2E"),(767,0,96,96,"#FD9D24"),(964,95,97,98,"#FD6925"),(97,482,97,97,"#56C02B"),(1159,0,97,96,"#E5243B"),(1256,0,97,96,"#3F7E44"),(1449,0,96,96,"#A21942"),(1541,1,97,96,"#26BDE2"),(1,386,96,96,"#FF3A21"),(1541,608,97,97,"#00689D"),(1349,705,96,96,"#4C9F38"),(1638,705,96,96,"#E5243B"),(1443,897,97,96,"#FD6925"),(1347,801,96,96,"#E5243B"),(1636,897,96,96,"#DD1367"),(1155,801,96,96,"#19486A"),(962,801,97,96,"#FD9D24"),(1636,993,96,97,"#56C02B"),(0,1691,97,96,"#FCC30B"),(193,1691,96,96,"#56C02B"),(289,1691,96,96,"#26BDE2"),(1540,1595,96,96,"#DDA83A"),(478,0,97,96,"#DD1367")]
+WS_TILES = [(386,1,96,96,17),(1253,97,96,97,14),(867,1,97,96,15),(1,97,96,97,16),(97,290,97,96,8),(1156,705,97,96,10),(1445,705,96,96,11),(97,1596,96,96,9),(1636,1691,96,96,8),(1059,801,96,96,5),(1251,801,96,96,6),(1251,897,96,96,13),(1540,801,96,96,7),(382,0,96,96,17)]
+
+
+def wheel_tiles():
+    out = ['<i class="ws-t" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx;background:%s" aria-hidden="true"></i>' % q for q in WS_SQUARES]
+    out += ['<img class="ws-t" src="assets/hero/goal-%02d.png" alt="" draggable="false" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx">' % (g, x, y, w, h) for (x, y, w, h, g) in WS_TILES]
+    return "".join(out)
+
 # ---------------------------------------------------------------- home hero (Figma: "Sustainable Development Goals- 1.0", 1440 x 820)
 HERO_W, HERO_H = 1440, 820
 HERO_IMAGE_TILES = {  # goal -> (left, top) of the icon tiles
@@ -152,8 +163,8 @@ def build_home():
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
     p += nav(0, "home")
     p += hero_html() + "\n\n"
-    p += f"""<section class="wheel-section" id="explore"><div class="wheel-wrap"><div class="wheel-links"></div></div>
-<p class="scroll-text" data-start="rgba(9,9,9,.56)" data-end="#080a07">The United Nations brings countries together to work on shared global challenges through cooperation, research and collective action. It supports peace, fairness and long-term development, while helping define how progress is measured across the world. At its core, it creates a common direction for nations to move forward together and stay accountable to shared priorities</p></section>
+    p += f"""<section class="wheel-section" id="explore"><div class="ws"><div class="ws-c">{wheel_tiles()}<div class="wheel-wrap"><div class="wheel-links"></div></div>
+<p class="scroll-text" data-start="rgba(9,9,9,.56)" data-end="#080a07">The United Nations brings countries together to work on shared global challenges through cooperation, research and collective action. It supports peace, fairness and long-term development, while helping define how progress is measured across the world. At its core, it creates a common direction for nations to move forward together and stay accountable to shared priorities</p></div></div></section>
 
 <section class="years-section" id="years" style="background-image:url('assets/media/fhz7HQj75koriiRE2riVt1GtXQ8.png')">
 <h2 class="h2">progress over the years</h2><div class="yw" data-start="2020" role="group" aria-label="SDG progress by year. Drag the wheel or use the arrow keys."></div>

@@ -183,6 +183,11 @@
     counters.forEach(function (c) { io.observe(c); });
   }
 
+
+  /* ---- home section: scale the 1734 x 1787 Framer canvas to the page width ---- */
+  var ws = document.querySelector(".ws");
+  if (ws) { var wfit = function () { ws.style.setProperty("--s", ws.clientWidth / 1734); }; wfit(); window.addEventListener("resize", wfit); }
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
