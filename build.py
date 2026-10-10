@@ -87,7 +87,7 @@ def footer(depth):
             f'<p class="copy">© Global Goals. Content for educational use.</p></footer>')
 
 
-def scripts(depth, extra="", wheel=False):
+def scripts(depth, extra="", wheel=True):
     r = "../" * depth
     wheel = f'<script src="{r}assets/wheel-data.js?v={BUILD}"></script>' if wheel else ""
     return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')

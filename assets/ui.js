@@ -47,7 +47,7 @@
     el.innerHTML = html;
   }
   /* ---- big home wheel (Framer "SDG Wheel" style): number, pictogram and name inside every petal ---- */
-  function buildBigWheel(el) {
+  function buildBigWheel(el, auto) {
     var W = window.SDG_WHEEL, SIZE = 769, C = SIZE / 2, R_OUT = C, R_IN = 150;
     var ang = {}, ord = [];
     for (var g = 1; g <= 17; g++) { ang[g] = (((90 + W.rot[g]) % 360) + 360) % 360; ord.push(g); }
@@ -82,11 +82,11 @@
     out += "</g>";
     out += '<circle cx="' + C + '" cy="' + C + '" r="' + (R_IN - 2) + '" fill="#fff" pointer-events="none"/><image href="' + S.logo + '" x="' + (C - 100) + '" y="' + (C - 94) + '" width="200" height="188" pointer-events="none"/></svg>';
     el.innerHTML = out;
-    spin(el, C);
+    spin(el, C, auto !== false);
   }
 
   /* slow clockwise auto-rotation + drag to rotate (with a little momentum) */
-  function spin(el, C) {
+  function spin(el, C, auto) {
     var svg = el.querySelector("svg"), g = svg.querySelector(".spin");
     var SPEED = 5;                       // degrees per second, clockwise
     var angle = 0, vel = 0, dragging = false, moved = false, hover = false, last = 0, lastT = 0;
@@ -115,15 +115,17 @@
       var dt = prev ? Math.min(0.1, (t - prev) / 1000) : 0; prev = t;
       if (!dragging) {
         if (Math.abs(vel) > SPEED) { angle += vel * dt; vel *= Math.pow(0.04, dt); }   // momentum after a flick
-        else { vel = 0; if (!still && !hover) angle += SPEED * dt; }
+        else { vel = 0; if (auto && !still && !hover) angle += SPEED * dt; }
         draw();
       }
       requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
   }
-  document.querySelectorAll(".wheel-wrap .wheel-links").forEach(function (el) { if (window.SDG_WHEEL) { buildBigWheel(el); el.classList.add("big"); } else buildWheel(el); });
-  document.querySelectorAll(".wheel-links:not(.big)").forEach(buildWheel);
+  document.querySelectorAll(".wheel-links").forEach(function (el) {
+    if (window.SDG_WHEEL) { buildBigWheel(el, !!el.closest(".wheel-wrap")); el.classList.add("big"); }  // popup wheel: same style, no auto-spin
+    else buildWheel(el);
+  });
 
   var fab = document.querySelector(".sdg-fab");
   if (fab) {

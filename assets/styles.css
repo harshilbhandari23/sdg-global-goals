@@ -266,3 +266,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .wheel-links.big svg.grab a{pointer-events:none}
 
 .yw .yr.off{cursor:default;pointer-events:none}
+
+/* goals popup (round button): same wheel style, larger so petal text is readable */
+.sdg-pop{width:min(92vw,480px,calc(100vh - 150px));padding:12px}
+.sdg-pop .wheel-links.big svg{cursor:grab}
