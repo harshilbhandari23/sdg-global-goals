@@ -683,4 +683,4 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .goal-grid .goal-card .t i::before{content:"\2192"}
 
 .ws .ws-title{font-family:var(--font-head);font-weight:800;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;color:var(--navy);text-align:center}
-@media(min-width:701px){.ws .ws-title{position:absolute;left:517px;top:1098px;width:700px;margin:0;font-size:52px}}
+@media(min-width:701px){.ws .ws-title{position:absolute;left:267px;top:1098px;width:1200px;white-space:nowrap;margin:0;font-size:calc(clamp(30px,4.4vw,53px) / var(--s,.6));line-height:1.1}}
