@@ -283,7 +283,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .ws{position:relative;width:100%;height:calc(1787px * var(--s,.6));overflow:hidden}
 .ws-c{position:absolute;left:0;top:0;width:1734px;height:1787px;transform:scale(var(--s,.6));transform-origin:0 0}
 .ws-t{position:absolute;display:block;border:0;object-fit:cover}
-.ws .wheel-wrap{position:absolute;left:437px;top:911px;width:860px!important;margin:0}
+.ws .wheel-wrap{position:absolute;left:517px;top:991px;width:700px!important;margin:0}
 .ws .scroll-text{position:absolute;left:387px;top:429px;width:954px;max-width:none;padding:0;transform:translateY(-50%);font-size:30px}
 @media (max-width:700px){
   .wheel-section{padding:64px 0 40px}
