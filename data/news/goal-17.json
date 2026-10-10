@@ -1,75 +1,59 @@
 {
- "updated": "2026-10-10T08:27:21+00:00",
+ "updated": "2026-10-10T08:40:49+00:00",
  "goal": 17,
  "articles": [
   {
-   "title": "Bharat 6G Alliance Expands Global Partnerships",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdHlSWXJ2amZNN0dUeW1OcllBYTBDclphdDI5SlMwcWp2WFYtVV9aRnBlcWkzSzhXakY2SG1OZ2hreFZaUHhFcHB0VW1aQVpyblhUUFVmYTVGQklna3hUVXFHR2NJbWNHbzYySG1qRldFVjJiTllJX2habnBpR0duVGxLc3M?oc=5",
-   "publishedAt": "2026-10-10T03:39:10+00:00",
-   "source": "StratNews Global",
-   "goal": 17
-  },
-  {
-   "title": "Student loan borrowers in public service are facing roadblocks to debt relief, reports show",
-   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM0JSdzZ2VzlkR3BGRVJlZFpBSDZCMVNWU3BtREhrcTRZM1lkOEZEX2pqVk9NRkFKUVNhZmhwS0JFSkk2WEhqZl9pcllNQkFMMC1rNUJfcUhoRlg2aXpma0Z6SzFIM0VPNVpjMDFFeWY1SC11V090NTVrTzFzRm55aEpXRC1zcmI5QzBMYWtoVlNvOV9sWTNId0VVMWh2azNrSnpuRWdzS2lTUlVjRTNJdWZjUWVvOVlITktFSGNTLXlldE1qeTFscHVxSW52SW84RkNJN0kteVdIT0FHaXM3aS1ydzlFeGpCSURWS2NCQ2NYdmFPZTNqOFo3dXFBOEU?oc=5",
-   "publishedAt": "2026-10-09T20:17:06+00:00",
-   "source": "Yahoo Finance",
+   "title": "Education dept explores global partnerships",
+   "url": "https://nagalandpost.com/education-dept-explores-global-partnerships/",
+   "description": "Department of School Education, Nagaland is exploring long term partnerships with international organisations and corporate stakeholders to strengthen the state’s school education system, with ...",
+   "image": "https://www.bing.com/th?id=ONUT.cd7bk1-WJD3Zy00oDBbeHA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T17:00:00+00:00",
+   "source": "Nagaland Post",
    "goal": 17
   },
   {
    "title": "Student debt relief is stuck in purgatory for thousands of public workers",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOFY3NDN1QWF4djZHSFR4ZVNSd1VVSTlQUlFuSTc0eGVGZGRoc3hxZVhlcExmeVRjQlFSRFNnNnpuU0drNHpPMXlLbFBKVHFraFRmX2JDYTd5SHRWaWxmOWpNNzE4a1BOalV2Yl93UnZ3ZDdTLUgzWTIyaXl5Si1mYWFhd2VneHE5SUlsYUQ3cXFFRnYyTUVzRTFydVNoWjNCeDhVTXZVYkVlbkhrVkpv?oc=5",
-   "publishedAt": "2026-10-09T18:38:10+00:00",
-   "source": "The Week",
+   "url": "https://www.yahoo.com/news/politics/articles/student-debt-relief-stuck-purgatory-183810673.html",
+   "description": "A national program called Public Service Loan Forgiveness (PSLF) is meant to help federal workers forgive their student debt after a decade of government service. Staffing shortages and other ...",
+   "image": "https://www.bing.com/th?id=ONUT.Q3aYydv8nnzFSFsRNbcRNQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T11:38:00+00:00",
+   "source": "Yahoo",
+   "goal": 17
+  },
+  {
+   "title": "NIT Rourkela Seeks Global Partnerships To Boost Research, Skills And Startups In Odisha",
+   "url": "https://ommcomnews.com/odisha-news/nit-rourkela-seeks-global-partnerships-to-boost-research-skills-and-startups-in-odisha/",
+   "description": "Rourkela is exploring international academic and research partnerships to strengthen research capabilities, skill development, employability and the startup ecosystem in Odisha, following a two-day ...",
+   "image": "https://www.bing.com/th?id=ONUT.ws-vUi5aL2xgaiBOQvMdBw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T05:30:00+00:00",
+   "source": "Ommcom News",
+   "goal": 17
+  },
+  {
+   "title": "Austin church's $75,000 donation erases $14 million in medical debt for 10,865 people",
+   "url": "https://www.statesman.com/news/healthcare/article/austin-church-medical-debt-relief-22465982.php",
+   "description": "More than 10,000 Travis County residents are receiving letters saying their qualifying medical debt has been erased. Were you one of them?",
+   "image": "https://www.bing.com/th?id=ONUT.kJ023QOI_zEe15XAJWXKrA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T02:59:00+00:00",
+   "source": "Austin American-Statesman",
    "goal": 17
   },
   {
    "title": "Medical debt relief is delivering tangible results for Wayne County residents",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSlZJY1hkbHltdW4yS3RGb1dYRjQ3ZlloQ1gtYm1TYzF3Mm9KTkU2U1NBcngwU3RzeUhCQXdMVjgxeFM1RGZaTVBkZHJuUGhKc1dtOERleHN2amVwSWFodENpaXVHTnhKWFRyZDhxd2M3alBOMmxiS1dzMDFfYWlVVEY1VGQ4RXVWS2l2cHRkZlNpUEpSS2hhUW1URUR2Tm5BelRoNVJTVk9HNnBPN1pma2h0dTI0Z1RxU3c?oc=5",
-   "publishedAt": "2026-10-09T11:12:33+00:00",
-   "source": "ArabAmericanNews",
+   "url": "https://arabamericannews.com/2026/10/09/medical-debt-relief-is-delivering-tangible-results-for-wayne-county-residents/",
+   "description": "Wayne County’s partnership with Undue Medical Debt has erased more than $95 million in debt relief for over 102,000 residents.",
+   "image": "https://www.bing.com/th?id=ONUT.OwDGaOY024YMQCWMVBMp1g&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T00:10:00+00:00",
+   "source": "The Arab American News",
    "goal": 17
   },
   {
-   "title": "Student-loan borrowers in public service are facing setbacks with debt relief",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYVl2VHFreExfX2xDUWVQaWY3ZExwUEg0QTFCenl0N0pDYnYwVGFzMFZXdnlUb1RCQ1dXdDRjeWxkWUdUczBBSHpZNldwaTE4OTZJeTRUcGg3TGZ5Z0E0am1ncmVSTzI2WXQ1V0xrTmtTYXV6VmpZYVVHYlU1QnplbjMxX1NIZmNqNmktRU4waXRRbWkyWVZyUzBpOU9MZ2hrdW5fRHFWcUc0NUs5ZzhLRU4tTThiTFVUdmFyNG52Y2M5OWxnQVhobA?oc=5",
-   "publishedAt": "2026-10-09T09:12:16+00:00",
-   "source": "MSN",
-   "goal": 17
-  },
-  {
-   "title": "Who Builds the Pipeline? Rethinking How Development Finance Mobilizes Local Capital",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRkRUZHk4enI5R2xsT3gtN0RPYUk3V3NCQXktMEd1THp0SFQ2VVZqRWxpMW43UF9uSVlvNkwxLW5xcTYtSUQ0dzVlU08xMl9kRHFfdGtPZlR6cUZ3ajdweGR1UEp2VUpVWVhmMGZxZ3BqcWduTGphQ293Tk9xOTI2d3pWZTNGV3JXaWlHU2FfSTZNNm56RmdEQ2FzdnI5RVhLcERRdEJPVTY?oc=5",
-   "publishedAt": "2026-10-08T20:34:33+00:00",
-   "source": "Center for Global Development",
-   "goal": 17
-  },
-  {
-   "title": "Analysis: Flávio and Lula favor debt relief over lasting solutions",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVmpJNHZBZzBzNGZiWjB2eFFtX2pmRG90QThieUpPbTMxd25PZk9BdVpXbThldS1UOGpOclZvVDRLM2pRal9XMDdWSmNGWVF6ZzFnZkwtUndoQ1g4MUtrcHllaXJiZzBKYy1LWW5kZC1iZjBPck54dF82UzJzRXIxVDRSSlBCVFpsRS1nOTFjRHQ4Yk9mSjRMZGFMLXFQdkwxeDRVWTAtOUk0VnNLWTJINmtZTmJjb3hFLWZLQ0lQcFR1bURiUGowR1V1QVDSAdsBQVVfeXFMTnN5Q19PaFNLTWt1d1ZLU21hS08wNFU1c3Y2Z094amlaY1EzQ0QydzFkNzZaT2NqUXdaNTFKaVBtZHJyRDdsclgzWWZ5TW1HX1M5ZWRlSDc2QU82NGNaYmRFcWJFVlVCT2ZDTHdHbVIzNGNPbFBZSWhKNVNIdmd4M21Id0szaGs3ckNuNTd5MHNJRmFfcF9xeHpxbTNBSUhRTm9jTmJIWEF5VWw0a2o0UzdEQkxwLS1lYjhVUkVzY3gzczJzWTE5Q1RKN1R4SkJCc044c25TT0pScjhF?oc=5",
-   "publishedAt": "2026-10-08T16:13:41+00:00",
-   "source": "Valor International",
-   "goal": 17
-  },
-  {
-   "title": "Sustainable Development Goals Still Threatened by Rising Debt Costs in Many States, Second Committee Warns in Macroeconomic Policy Debate",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4MldMeHpOYWdlb3o3VG5LMldtQjZndVFOeHBwdzZqVGNLUGU1ZUF6Qm9DWVREWkFCRWJLMkZDV2JXUkZncFhkNlNCc2dvRnJNaWhsRk1fb1k?oc=5",
-   "publishedAt": "2026-10-08T04:00:00+00:00",
-   "source": "UN Meetings Coverage and Press Releases",
-   "goal": 17
-  },
-  {
-   "title": "Kentuckians have received letters saying medical debt has been canceled",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVHdsdlJkYUMxcnlkRzBDc29uWm0yS2JObTRCd0hUMDhvS2ZidHRwV0NNTlVRZlVha2NTSVVzd0lZQzg1NjNoNVJ6ZVE1V1pjdlo0eklrSmhVa1NXbjRjdG1NcTBkNUppbE1TaXNweWZZVnRNb1hEUWx5TmNSYjBULTZrV2tsbnhtTkRwdGs4c19fRjBrMWRlTVQxUHh2N2dadVE4MkFfWWRzUnJiNDhB?oc=5",
-   "publishedAt": "2026-10-08T02:39:05+00:00",
-   "source": "WBKO",
-   "goal": 17
-  },
-  {
-   "title": "Chicago Mayor Johnson highlights debt relief as budget deadline nears",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8zb1hRZGRVVlZBR3hrRHZDZ2xMOFJ5ZTVORzRtQXl4cmxFdlhvRzBhc3BmX1dxZDdnUF9JSzNTNnJlYlZWeG5sVEJGU2Rzck5ueVYtVlpDMlFHWnZzdDd0c2hVN1NVQdIBa0FVX3lxTE5PaUtNVktlNTdDNl8waWRMbloyeElHbFk3Nml5WFpqRDlZZC1SY2s2anJMb0t4MjhzLXdtYlRRcmRKd0hlODhqLXFNOWt4b3V5dUJpbS1kOUNnODZxWkJmOWlJQWJFUjhkOGZJ?oc=5",
-   "publishedAt": "2026-10-08T00:59:32+00:00",
-   "source": "FOX 32 Chicago",
+   "title": "Microfinance in India: 5 loan options for women entrepreneurs",
+   "url": "https://www.newsbytesapp.com/news/lifestyle/microfinance-in-india-5-popular-loan-options/story",
+   "description": "Microfinance has emerged as a powerful tool to empower women in India, providing them with the financial resources to start their own businesses ...",
+   "image": "https://www.bing.com/th?id=ONUT.6Zi9F6UusixWJ7KeaqJ3-Q&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T07:45:00+00:00",
+   "source": "NewsBytes",
    "goal": 17
   }
  ]

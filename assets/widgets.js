@@ -100,6 +100,11 @@
           (a.goal ? '<div class="gt" style="background:' + c1 + '"><b>' + a.goal + "</b><span>" + esc(S.names[a.goal - 1]) + "</span></div>" : "") +
           '<div class="b"><p class="m">' + esc((a.source || "News") + " · " + when(a.publishedAt)) + "</p><h3>" + esc(a.title || "Untitled story") + "</h3>" + (a.description ? "<p>" + esc(a.description) + "</p>" : "") + "</div></a>";
       }).join(""); size(); show(); box.querySelector(".news-arrows").hidden = false;
+      /* a photo that fails to load (blocked or removed) falls back to the official goal tile */
+      Array.prototype.forEach.call(track.querySelectorAll("a.news-card:not(.has-tile) img"), function (im, k) {
+        var a = items[Array.prototype.indexOf.call(track.children, im.closest("a"))];
+        im.addEventListener("error", function () { if (!a || !a.goal) { im.style.visibility = "hidden"; return; } im.closest("a").classList.add("has-tile"); im.className = "tile"; im.src = (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg"; }, { once: true });
+      });
     }
     /* stories come from data/news*.json, refreshed every few hours by tools/fetch_news.py (Google News search per goal) */
     function load() {

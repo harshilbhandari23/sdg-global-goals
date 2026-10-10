@@ -1,75 +1,95 @@
 {
- "updated": "2026-10-10T08:27:06+00:00",
+ "updated": "2026-10-10T08:38:21+00:00",
  "goal": 5,
  "articles": [
   {
-   "title": "We Should Be Screaming: The Threat of Violence Against Women",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTV9pejhBcjdjcy01UkdrcmwtV001T3p1YU1oTlh6X0h1V0l4WkdTX2MtR0JOcTJNb0duVjE4SFRFSVZzMjBjTzZaTVVvcFFNVHhRZlFocTl3WnNMU083RkE4VDR2QjNEWldpMTRyblRuc1BRbnNCdTNaQjN3dmxFVE53aXJrWHZOeFNTclZvS184c1hVWXp3TzNfdno3bWRKUGdv?oc=5",
-   "publishedAt": "2026-10-09T21:07:24+00:00",
-   "source": "The Oberlin Review",
+   "title": "Inverclyde women at risk of serious harm or death almost triples",
+   "url": "https://www.greenocktelegraph.co.uk/news/26623073.inverclyde-women-risk-serious-harm-death-almost-triples/",
+   "description": "Inverclyde domestic abuse risk figures rise as high-risk women nearly triple to 128, while Colette Law’s mum calls for tougher action to protect victims.",
+   "image": "https://www.greenocktelegraph.co.uk/resources/images/21560077.jpg?type=og-image",
+   "publishedAt": "2026-10-09T23:01:00+00:00",
+   "source": "Greenock Telegraph",
+   "goal": 5
+  },
+  {
+   "title": "Supreme Court decision balances Gladue factors against concern for Indigenous women",
+   "url": "https://www.aptnnews.ca/featured/supreme-court-decision-balances-gladue-against-concern-for-women/",
+   "description": "The Supreme Court of Canada upheld a reduced sentence in a case involving a Mi'kmaw victim and offender expected to have significant effect.",
+   "image": "https://www.bing.com/th?id=ONUT.rMCExZ5MKZXoFQX5xv0OfA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T14:01:00+00:00",
+   "source": "APTN News",
    "goal": 5
   },
   {
    "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TVzRaQXdvUlo5MkVLd00zb1E2WWpDUERYczFHOXV5YlZNWEVSbFlJRnY0Q0xXS2tWb2lYSV90YW42VXNZYm9CZVM3eUxhaFdCbjBNUFhNNA?oc=5",
-   "publishedAt": "2026-10-09T19:45:57+00:00",
+   "url": "https://news.un.org/en/story/2026/10/1168567",
+   "description": "A suspected drone strike has left at least 40 dead in Sudan’s Blue Nile State – near the Ethiopian border - according to initial reports from the ground, according to UN Spokesperson Stéphane Dujarric ...",
+   "image": "https://www.bing.com/th?id=ONUT.NzZUyI2o8an1Ho5wKcQXkw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T12:45:00+00:00",
    "source": "UN News",
    "goal": 5
   },
   {
-   "title": "How three teenagers from North Macedonia are using AI to protect women and girls online",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR0l6bER6U3N1NDFvVlVSa2MzRzFPdnBLNmVCcG5WYlh6NE4yWVQ0YThuZl9PQ0gtbV9nRDJtTjB3LXM5NU9SQlFOaEMwOXRnWUZyUFN4RnpySnVQT2lPSFpZVlZ2MVduMlFZMTZ6Z0JRbFQtNTdBUEQxSDdtbExCMWdJRWs0OTFPRmhmTXM4Q2RpazhfTHFmT3p3eUFocmxQeks0cUJrQWRSQ1dOWDBlWWk0V193OFc0b1dOZk5qbWRVRGFxRDZTcHNIWXI2MmQz?oc=5",
-   "publishedAt": "2026-10-09T12:00:00+00:00",
-   "source": "UN Women Europe and Central Asia",
+   "title": "UNESCO awards 2026 Prize for Girls’ and Women’s Education to transformative projects in Morocco and Peru",
+   "url": "https://www.unesco.org/en/articles/unesco-awards-2026-prize-girls-and-womens-education-transformative-projects-morocco-and-peru",
+   "description": "The 2026 UNESCO Prize for Girls’ and Women’s Education has been awarded to two remarkable initiatives: ‘Project Soar in a Bag’ in Morocco and the ‘Girls with Opportunities (GWO)’ project of CARE Peru.",
+   "image": "https://www.bing.com/th?id=ONUT.bAqGtkBIl7trYa434DXIYQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T10:29:00+00:00",
+   "source": "UNESCO",
    "goal": 5
   },
   {
-   "title": "Nearly 50,000 Women and Girls Killed or Severely Injured in Gaza in Three Years of War – One in 21 Gazan Women and Girls",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaE1KYXpuNFA1VEp0UE1TU1JxQVhteFFCMHFUNXJGU19UT1lqczcwRTZFTjM1T1F5cUVFVXFBYlItY0VZdHJEbmpTcHc0TXV3RVlzZ1kwNm9aU2pUM2VSMVpZdXpzVVY2WktVWHlwX28yWHlaV3ZibXd5bkh5alBwQVZxdGpCRDh2dWZyMUtLd19OX3NFaHhHSnNNWkEySmNvaG5iUEEyOFZ1MldwZHYxcXIxMmdIbzVLblF6dXdheTFMLW5pTkhkMV9DVXN1MWl1X0Z4aDZmTmlSSk1FQlVCek5Fa1Y?oc=5",
-   "publishedAt": "2026-10-09T08:53:45+00:00",
-   "source": "Inter Press Service",
+   "title": "Malkajgiri She Teams nab 198, including 31 minors, for harassing women in September",
+   "url": "https://telanganatoday.com/malkajgiri-she-teams-nab-198-including-31-minors-for-harassing-women-in-september",
+   "description": "Malkajgiri She Teams apprehended 198 people, including 31 minors, for allegedly harassing women and girls in September. Police received 215 complaints, registered 16 cases and counselled 133 people.",
+   "image": "https://www.bing.com/th?id=ONUT.hq5buQ2Vxq_AKyd34x-JcQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T09:32:00+00:00",
+   "source": "Telangana Today",
    "goal": 5
   },
   {
-   "title": "How Carol Hamilton Is Leading the Charge for Gender Equality",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM2cwbm9rZzVvY3pJV1UtdmZFbC15bnlUWnA5R0pKUmZseFlIRmpYcE1MYmMwTUZMdUVjYXpseVBBQlEtNmVoUXhLZS1MUmlpUUxOY0tQRWZxNmhWdlVxTHhMX3RXaUNHT0JMZVhjbGNjdl9mdHh2aDZUT1YtZjhDQUFzNVJHRmdtVVc0cjBCUGdjSVpsUlRYbHpDQTlGNGhWdTQ3MTZSRGJJUQ?oc=5",
-   "publishedAt": "2026-10-09T04:03:47+00:00",
-   "source": "WWD",
+   "title": "How girl-led advocacy is reshaping Tanzania’s gender equality roadmap",
+   "url": "https://www.thecitizen.co.tz/tanzania/news/national/how-girl-led-advocacy-is-reshaping-tanzania-s-gender-equality-roadmap-5626448",
+   "description": "Tanzanian youth advocates, civil society leaders, and senior government officials have reached a resounding consensus on the urgent need to reform the nation's marriage laws, ...",
+   "image": "https://www.bing.com/th?id=ONUT.neFoPLOx2NCjPvQ36RPr-A&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T09:32:00+00:00",
+   "source": "The Citizen",
    "goal": 5
   },
   {
-   "title": "Strengthening responses to domestic violence perpetrators in Azerbaijan",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQa3BSM0lzNVN3UXNkcVhDcFdKU2V6U0Y2d1gxMWEwSjNuUFZRVFF4SHE0M3FZWEhzRzZTOG9Dclh2ZkRmbE9ObUdmU3JsNXpTMWtvQWJnSjJJaDlWN2tleHFJYW5XOHQ0N3NmQllwNEp4eVdzVF9odG9ELV9JMTBPb0N0WldrbjZGNGl0T29kTEtJbGswWU5sMUhKb25NNFhmdnRKSHVuVTdiYWRyV0QyRmNUMllJQQ?oc=5",
-   "publishedAt": "2026-10-08T15:48:16+00:00",
-   "source": "www.coe.int",
+   "title": "Democratic Candidates Appear to Flip-Flop on Transgender Athletes Ahead of Midterm Elections",
+   "url": "https://www.yahoo.com/news/politics/articles/democratic-candidates-appear-flip-flop-161544576.html",
+   "description": "Democrats around the country are redefining their views on transgender athletes ahead of the midterm elections. “I’ve been clear on that issue: I don’t support biological men playing in women’s ...",
+   "image": "https://www.bing.com/th?id=ONUT.Fr5W6DrqWffxROIekLNPLA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T09:15:00+00:00",
+   "source": "Yahoo",
    "goal": 5
   },
   {
-   "title": "Giving to women’s and girls’ organizations in 2024 surpassed $12 billion for first time",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa3M3U3pKMjF6bG5WTWVuOGZQVGg0N01WZFduX2pmQUFQamFja3kzU0ZGUkYwc1g3Ql9lRnFHX1o0U0xtampqdkdLb3d6cm5qandvcHg0Z2NoclpORzNfelNSdHFCNkh0aTV4ZG9Xc29pUmZnNTF2RlpzTzZfaHpRbjViNzlEUXh2T1pmdy1PNndTczdabTN6elRiTHI4QQ?oc=5",
-   "publishedAt": "2026-10-08T14:17:03+00:00",
-   "source": "News at IU",
+   "title": "ARK Foundation boss warns against stigmatisation of abuse victims",
+   "url": "https://www.myjoyonline.com/ark-foundation-boss-warns-against-stigmatisation-of-abuse-victims/",
+   "description": "The Executive Director of the ARK Foundation, Dr Angela Dwamena-Aboagye, has warned that stigma and gender stereotypes are undermining efforts to address domestic abuse, with male victims often ...",
+   "image": "https://www.bing.com/th?id=ONUT.eCQk3OWrvIxK5qWJx77rjw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T07:47:00+00:00",
+   "source": "MyJoyOnline",
    "goal": 5
   },
   {
-   "title": "Domestic violence under the Taliban’s rule: Afghanistan failed Hasina and millions of women and girls",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQNmFvN3Y1TWhPaHlUa203UVpJSnBrcWt2Z1I0YjhzQWlIbnpWNmluSWNvVmlCVzF3aDJLU0RXNjdFM3ZwQ1VuRmp6QnZMNV9WMXhRMWVJMnFEcmtteEJaM2g0dmJLcHd6ejRjUWVnVndhMUFQNXktaTlxQmI5T2gzdWVuejBjN29ncTB3alhOQkozemVDcEZ3MWVtQWRVWEM3VnM4bW8zY0IzNlVqM2dOdHk3ZmN1U2lnWmRnLUYtX2xLU1B2ZjhfSWE0dl9RQVZRcWtPOFNsbVhiTWRpdmFrWA?oc=5",
-   "publishedAt": "2026-10-08T13:02:47+00:00",
-   "source": "Equality Now",
+   "title": "Art and Culture with Devdutt | Did women compose vedic hymns?",
+   "url": "https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/art-and-culture-with-devdutt-did-women-compose-vedic-hymns-10914463/",
+   "description": "The Rig Veda preserves many female voices, but female voice and female authorship are two different things. How does the traditional index attached to the Vedic tradition, and its treatment of ...",
+   "image": "https://www.bing.com/th?id=ONUT.zg3j8GbOl4h2HbdOSfHMtQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T07:46:00+00:00",
+   "source": "The Indian Express",
    "goal": 5
   },
   {
-   "title": "Authorities seize sites selling hacked, stolen intimate images of 17,000 women and girls",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVXEyRGd5RWtUZk1uN29mZFMxWUQ1QnkteTl6Y1JsaXdaSWJLYm91Z1h3SVJNQXBfbjJUOUh3NUlPVXpJb2tEQkFsWGxub01TR2JPWHcxR05tazhENXRUQlFiUDBPcmpNLUJUajFINlc2UEZVT3puWWRiTjlWR01lZ1BB?oc=5",
-   "publishedAt": "2026-10-08T12:51:42+00:00",
-   "source": "Help Net Security",
-   "goal": 5
-  },
-  {
-   "title": "Surviving the pipeline? A critical analysis of the WBG’s policy approach to gender equality and macroeconomic reform through the lending process",
-   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQOUZFbDRYWjJDTklZcFNhTUFsemFLVkd0ZW1aanQxT3F1RTI5dWI1MlJMWEdtU0p0VURCaG5IWHljNFNYLUJzQVRDLWxseFlLVm9FN3RhTE5aejJzMm5idjUyMzhwcmg4S3VySzBqYWFMeXY3U0RrbVYxUFVyTVljWjNPMVhPQnFqUEpOMWFhcERQV0thNzVCUFBGN2gyOW9qS0ZyeTRqaUVjREQyTE1IYWpSQ2JIbTlfSWIwYVlNaHAzWWRFWjV5Y2hUdTBSdVR1QVNRS3JvdWR1aUZGck5WQzI5RkhCbWtkREVEbmd3Mng5QlNDVGlRVW92Wjh6Y0JxRmxnQjBIaUJTSV9ZakhwTGd6ZU9UQQ?oc=5",
-   "publishedAt": "2026-10-08T09:03:00+00:00",
-   "source": "Bretton Woods Project",
+   "title": "One in 21 women and girls in Gaza killed or severely wounded amid Israel's genocidal war on Gaza: UN",
+   "url": "https://www.trtworld.com/article/1692eea7658e",
+   "description": "UN Women says more than 38,000 women and girls have been killed and 11,700 left with lifelong disabilities since October 2023.",
+   "image": "https://www.bing.com/th?id=ONUT.HzrK4vu9zNlSH8CgzHJ74g&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T07:27:00+00:00",
+   "source": "TRT World",
    "goal": 5
   }
  ]
