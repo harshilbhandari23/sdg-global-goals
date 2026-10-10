@@ -1,0 +1,127 @@
+{
+ "slug": "goal-15",
+ "number": 15,
+ "color": "rgb(63, 175, 73)",
+ "brandImage": "assets/media/wfRvOszVSL2ofVPVufGR880eDSk.png",
+ "heroImage": "assets/media/1T3JpKpAKXKZ7XKZjGSeSh4.webp",
+ "picture": "assets/media/fJttvda8qt4oyWpZWbW6HpPMU9A.jpg",
+ "title": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+ "intro": "A flourishing life on land is the foundation for our life on this planet.We are all part of the planet’s ecosystem and we have caused severe damage to it through deforestation, loss of natural habitats and land degradation. Promoting a sustainable use of our ecosystems and preserving biodiversity is not a cause. It is the key to our own survival.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "15.1",
+   "title": "CONSERVE AND RESTORE TERRESTRIAL AND FRESHWATER ECOSYSTEMS",
+   "detail": "By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements.",
+   "image": "assets/media/py0g1SkD2QP2KAxspJdBy42PAY.svg"
+  },
+  {
+   "n": "15.2",
+   "title": "END DEFORESTATION AND RESTORE DEGRADED FORESTS",
+   "detail": "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally.",
+   "image": "assets/media/Yv825CHSzVQQa4goy4aOuWJR18E.svg"
+  },
+  {
+   "n": "15.3",
+   "title": "END DESERTIFICATION AND RESTORE DEGRADED LAND",
+   "detail": "By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world.",
+   "image": "assets/media/mHOD0h1zmieYHEjPk8ztV47yQfY.svg"
+  },
+  {
+   "n": "15.4",
+   "title": "ENSURE CONSERVATION OF MOUNTAIN ECOSYSTEMS",
+   "detail": "By 2030, ensure the conservation of mountain ecosystems, including their biodiversity, in order to enhance their capacity to provide benefits that are essential for sustainable development.",
+   "image": "assets/media/H10VDTpOiUkKt9s2mkiYPQi4Yk.svg"
+  },
+  {
+   "n": "15.5",
+   "title": "PROTECT BIODIVERSITY AND NATURAL HABITATS",
+   "detail": "Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and, by 2020, protect and prevent the extinction of threatened species.",
+   "image": "assets/media/9dN54R0lnN3PmS2Mm2QK1QEqc.svg"
+  },
+  {
+   "n": "15.6",
+   "title": "PROMOTE ACCESS TO GENETIC RESOURCES AND FAIR SHARING OF THE BENEFITS",
+   "detail": "Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources, as internationally agreed.",
+   "image": "assets/media/JlAuj2Otvw91SYDyfqj7TkpFiio.svg"
+  },
+  {
+   "n": "15.7",
+   "title": "ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES",
+   "detail": "Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products.",
+   "image": "assets/media/ZZzsMz5QDLJvMNL2vaUuAGIehvM.svg"
+  },
+  {
+   "n": "15.8",
+   "title": "PREVENT INVASIVE ALIEN SPECIES ON LAND AND IN WATER ECOSYSTEMS",
+   "detail": "By 2020, introduce measures to prevent the introduction and significantly reduce the impact of invasive alien species on land and water ecosystems and control or eradicate the priority species.",
+   "image": "assets/media/3kWVgW8IHuOFm4j4f8Tz4iCgm5I.svg"
+  },
+  {
+   "n": "15.9",
+   "title": "INTEGRATE ECOSYSTEM AND BIODIVERSITY IN GOVERNMENTAL PLANNING",
+   "detail": "By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, poverty reduction strategies and accounts.",
+   "image": "assets/media/fmVfAizggWUBSkk1yIiged8xReE.svg"
+  },
+  {
+   "n": "15.a",
+   "title": "INCREASE FINANCIAL RESOURCES TO CONSERVE AND SUSTAINABLY USE ECOSYSTEM AND BIODIVERSITY",
+   "detail": "Mobilize and significantly increase financial resources from all sources to conserve and sustainably use biodiversity and ecosystems.",
+   "image": "assets/media/5DZ0GhmpWe8JEl0yiZAmLxIBQY.svg"
+  },
+  {
+   "n": "15.b",
+   "title": "FINANCE AND INCENTIVIZE SUSTAINABLE FOREST MANAGEMENT",
+   "detail": "Mobilize significant resources from all sources and at all levels to finance sustainable forest management and provide adequate incentives to developing countries to advance such management, including for conservation and reforestation.",
+   "image": "assets/media/aCGjRM1hehi9Md3ZJQhWqiQxCc.svg"
+  },
+  {
+   "n": "15.c",
+   "title": "COMBAT GLOBAL POACHING AND TRAFFICKING",
+   "detail": "Enhance global support for efforts to combat poaching and trafficking of protected species, including by increasing the capacity of local communities to pursue sustainable livelihood opportunities.",
+   "image": "assets/media/N0FuZyUa7F8O02ixknsEiTeA1Qo.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 15 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Reduce your use of paper. Avoid printing and substitute it with electronic devices or carriers.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Don’t shop for pets! Visit your local animal shelter and adopt an animal there.</p>",
+   "image": "assets/media/o9NzkGTHCq9ivlIThPjBJKqClDM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Don’t buy products tested on animals: Check the labels on the products you buy.</p>",
+   "image": "assets/media/o9NzkGTHCq9ivlIThPjBJKqClDM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Recycle paper, glass, plastic, metal and old electronics.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Compost. Composting food scraps can reduce climate impact while also recycling nutrients.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Clean your local parks and forests. Organise your own or join an existing clean-up event to sustain the ecosystem of your local green space.</p>",
+   "image": "assets/media/i8tp9FP61uhfFLjusweLGezI9U0.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Don’t use pesticides. To protect and sustain the quality of soil, don’t use chemicals while growing plants.</p>",
+   "image": "assets/media/fn0pI4hP7cigTtYeBUb6xcZsK18.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Volunteer with street animal organizations or shelters: Help to sustain diversity and save lives of animal species by volunteering in organizations helping these pets as well as endangered species.</p>",
+   "image": "assets/media/o9NzkGTHCq9ivlIThPjBJKqClDM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  }
+ ]
+}

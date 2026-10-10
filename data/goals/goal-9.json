@@ -1,0 +1,103 @@
+{
+ "slug": "goal-9",
+ "number": 9,
+ "color": "rgb(244, 109, 36)",
+ "brandImage": "assets/media/YFNI32ECcGngzh55SxPdjI96Gs.png",
+ "heroImage": "assets/media/z63C2IoGZwtqpb76gMgY39Vjw.webp",
+ "picture": "assets/media/qNw6J1EFsSRbLOLUvuZEiQjjK6g.jpg",
+ "title": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+ "intro": "A functioning and resilient infrastructure is the foundation of every successful community. To meet future challenges, our industries and infrastructure must be upgraded. For this, we need to promote innovative sustainable technologies and ensure equal and universal access to information and financial markets. This will bring prosperity, create jobs and make sure that we build stable and prosperous societies across the globe.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "9.1",
+   "title": "DEVELOP SUSTAINABLE, RESILIENT AND INCLUSIVE INFRASTRUCTURES",
+   "detail": "Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all.",
+   "image": "assets/media/jCLCDMdgBtGT7ziefWLpq1HEbc.svg"
+  },
+  {
+   "n": "9.2",
+   "title": "PROMOTE INCLUSIVE AND SUSTAINABLE INDUSTRIALIZATION",
+   "detail": "Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries.",
+   "image": "assets/media/PdcvU3sGMG7mhvUIpI2UsJJEirE.svg"
+  },
+  {
+   "n": "9.3",
+   "title": "INCREASE ACCESS TO FINANCIAL SERVICES AND MARKETS",
+   "detail": "Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets.",
+   "image": "assets/media/xf63GS02HnRpBd5OIA54h0Uo.svg"
+  },
+  {
+   "n": "9.4",
+   "title": "UPGRADE ALL INDUSTRIES AND INFRASTRUCTURES FOR SUSTAINABILITY",
+   "detail": "By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities.",
+   "image": "assets/media/2F0HiXHgpXJq06aKx9NHc8TLLpA.svg"
+  },
+  {
+   "n": "9.5",
+   "title": "ENHANCE RESEARCH AND UPGRADE INDUSTRIAL TECHNOLOGIES",
+   "detail": "Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending.",
+   "image": "assets/media/KVppIio1MO8EKyw35c7jc4U.svg"
+  },
+  {
+   "n": "9.a",
+   "title": "FACILITATE SUSTAINABLE INFRASTRUCTURE DEVELOPMENT FOR DEVELOPING COUNTRIES",
+   "detail": "Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States.",
+   "image": "assets/media/sDscjykqDuTQZslNyfH27SeUEgk.svg"
+  },
+  {
+   "n": "9.b",
+   "title": "SUPPORT DOMESTIC TECHNOLOGY DEVELOPMENT AND INDUSTRIAL DIVERSIFICATION",
+   "detail": "Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities.",
+   "image": "assets/media/KE8QXK9kl8MW1QMKYCT79W013U.svg"
+  },
+  {
+   "n": "9.c",
+   "title": "UNIVERSAL ACCESS TO INFORMATION AND COMMUNICATIONS TECHNOLOGY",
+   "detail": "Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020.",
+   "image": "assets/media/eJlacykHAf7kmrkS7GhUQJtFAc.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 9 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Does your company invest in clean and resilient infrastructure? It’s the only way to keep workers safe and protect the environment.</p>",
+   "image": "assets/media/VtMEdyDVjVljqynWIekfnQKAw.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Create a hotspot map. There are a lot of public spaces with free WiFi access. By mapping them out in your neighborhood and spreading awareness through social media, flyers or announcements you can help more people access the internet.</p>",
+   "image": "assets/media/k4Kigp4sZQWoZucuGgY6mJvE8Eo.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Organize or participate in a Think Tank contest. You can foster your and your colleagues’ entrepreneurial spirit by organizing a local idea contest and inviting companies or startups to mentor the winners.</p>",
+   "image": "assets/media/2LOaJLaaTXaxtVluHcgtOprJ6A.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

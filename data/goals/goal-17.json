@@ -1,0 +1,169 @@
+{
+ "slug": "goal-17",
+ "number": 17,
+ "color": "rgb(25, 54, 103)",
+ "brandImage": "assets/media/HW95zIpqiiLoTXWnr6q4CMkMLA.jpg",
+ "heroImage": "assets/media/kvh9EzDCchdBj0sehBc3KCmdr8s.webp",
+ "picture": "assets/media/Zo2yEKQtDfDEhku72m3CDbNIidY.jpg",
+ "title": "Strengthen the means of implementation and revitalize the global partnership for sustainable development",
+ "intro": "The Global Goals can only be met if we work together.International investments and support is needed to ensure innovative technological development, fair trade and market access, especially for developing countries. To build a better world, we need to be supportive, empathetic, inventive, passionate, and above all, cooperative.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "17.1",
+   "title": "MOBILIZE RESOURCES TO IMPROVE DOMESTIC REVENUE COLLECTION",
+   "detail": "Strengthen domestic resource mobilization, including through international support to developing countries, to improve domestic capacity for tax and other revenue collection.",
+   "image": "assets/media/eOjNHr4XFEsvPjzyaLDRnfB814.svg"
+  },
+  {
+   "n": "17.2",
+   "title": "IMPLEMENT ALL DEVELOPMENT ASSISTANCE COMMITMENTS",
+   "detail": "Developed countries to implement fully their official development assistance commitments, including the commitment by many developed countries to achieve the target of 0.7 per cent of gross national income for official development assistance (ODA/GNI) to developing countries and 0.15 to 0.20 per cent of ODA/GNI to least developed countries; ODA providers are encouraged to consider setting a target to provide at least 0.20 per cent of ODA/GNI to least developed countries.",
+   "image": "assets/media/TSvlmr2YCeaTfdofXESxI8iyI.svg"
+  },
+  {
+   "n": "17.3",
+   "title": "MOBILIZE FINANCIAL RESOURCES FOR DEVELOPING COUNTRIES",
+   "detail": "Mobilize additional financial resources for developing countries from multiple sources.",
+   "image": "assets/media/l6GNKTbis08p54ahdktxDQYZ7TU.svg"
+  },
+  {
+   "n": "17.4",
+   "title": "ASSIST DEVELOPING COUNTRIES IN ATTAINING DEBT SUSTAINABILITY",
+   "detail": "Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress.",
+   "image": "assets/media/LfZdYMuhm8RaUxCTfg6V8xtwk.svg"
+  },
+  {
+   "n": "17.5",
+   "title": "INVEST IN LEAST DEVELOPED COUNTRIES",
+   "detail": "Adopt and implement investment promotion regimes for least developed countries.",
+   "image": "assets/media/i8dfLTBgYjz9xaCi9DHmW8j5Mc.svg"
+  },
+  {
+   "n": "17.6",
+   "title": "KNOWLEDGE SHARING AND COOPERATION FOR ACCESS TO SCIENCE, TECHNOLOGY AND INNOVATION",
+   "detail": "Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism.",
+   "image": "assets/media/AoOlqFaJBJ5uS1b2vxe2QJ7qDZA.svg"
+  },
+  {
+   "n": "17.7",
+   "title": "PROMOTE SUSTAINABLE TECHNOLOGIES TO DEVELOPING COUNTRIES",
+   "detail": "Promote the development, transfer, dissemination and diffusion of environmentally sound technologies to developing countries on favourable terms, including on concessional and preferential terms, as mutually agreed.",
+   "image": "assets/media/2BoDBJVIrW7sHfV0vRvablsn2Tg.svg"
+  },
+  {
+   "n": "17.8",
+   "title": "STRENGTHEN THE SCIENCE, TECHNOLOGY AND INNOVATION CAPACITY FOR LEAST DEVELOPED COUNTRIES",
+   "detail": "Fully operationalize the technology bank and science, technology and innovation capacity-building mechanism for least developed countries by 2017 and enhance the use of enabling technology, in particular information and communications technology.",
+   "image": "assets/media/6EgWdp7WipOZER0WMmQhJT9yApY.svg"
+  },
+  {
+   "n": "17.9",
+   "title": "ENHANCE SDG CAPACITY IN DEVELOPING COUNTRIES",
+   "detail": "Enhance international support for implementing effective and targeted capacity-building in developing countries to support national plans to implement all the Sustainable Development Goals, including through North-South, South-South and triangular cooperation.",
+   "image": "assets/media/UgpyHAy4SUIGVjQxKmHmoR2YKc.svg"
+  },
+  {
+   "n": "17.10",
+   "title": "PROMOTE A UNIVERSAL TRADING SYSTEM UNDER THE WTO",
+   "detail": "Promote a universal, rules-based, open, non-discriminatory and equitable multilateral trading system under the World Trade Organization, including through the conclusion of negotiations under its Doha Development Agenda.",
+   "image": "assets/media/2v56olLyR7VEU9QEC8CaRZvVyKU.svg"
+  },
+  {
+   "n": "17.11",
+   "title": "INCREASE THE EXPORTS OF DEVELOPING COUNTRIES",
+   "detail": "Significantly increase the exports of developing countries, in particular with a view to doubling the least developed countries’ share of global exports by 2020.",
+   "image": "assets/media/H81ZF6cbAw1fEZAACqZb2ob5k.svg"
+  },
+  {
+   "n": "17.12",
+   "title": "REMOVE TRADE BARRIERS FOR LEAST DEVELOPED COUNTRIES",
+   "detail": "Realize timely implementation of duty-free and quota-free market access on a lasting basis for all least developed countries, consistent with World Trade Organization decisions, including by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent and simple, and contribute to facilitating market access.",
+   "image": "assets/media/MsQ0y5QCJjXmsI4KZe3StRzJ98.svg"
+  },
+  {
+   "n": "17.13",
+   "title": "ENHANCE GLOBAL MACROECONOMIC STABILITY",
+   "detail": "Enhance global macroeconomic stability, including through policy coordination and policy coherence.",
+   "image": "assets/media/1rI4G1Fl1Aoq5VVY4Rb4mPB7w.svg"
+  },
+  {
+   "n": "17.14",
+   "title": "ENHANCE POLICY COHERENCE FOR SUSTAINABLE DEVELOPMENT",
+   "detail": "Enhance policy coherence for sustainable development.",
+   "image": "assets/media/kPlr2M8IlCRiqhTLf9zWVeot7LA.svg"
+  },
+  {
+   "n": "17.15",
+   "title": "RESPECT NATIONAL LEADERSHIP TO IMPLEMENT POLICIES FOR THE SUSTAINABLE DEVELOPMENT GOALS",
+   "detail": "Respect each country’s policy space and leadership to establish and implement policies for poverty eradication and sustainable development.",
+   "image": "assets/media/xaxQ1HkYCKzN7i7KuAO0gpLY.svg"
+  },
+  {
+   "n": "17.16",
+   "title": "ENHANCE THE GLOBAL PARTNERSHIP FOR SUSTAINABLE DEVELOPMENT",
+   "detail": "Enhance the Global Partnership for Sustainable Development, complemented by multi-stakeholder partnerships that mobilize and share knowledge, expertise, technology and financial resources, to support the achievement of the Sustainable Development Goals in all countries, in particular developing countries.",
+   "image": "assets/media/TdKk6vg1YY2SgHGrmAHrM7lVY.svg"
+  },
+  {
+   "n": "17.17",
+   "title": "ENCOURAGE EFFECTIVE PARTNERSHIPS",
+   "detail": "Encourage and promote effective public, public-private and civil society partnerships, building on the experience and resourcing strategies of partnerships.",
+   "image": "assets/media/GWFiKJqHcLKVoO2aXdSs7czDQN0.svg"
+  },
+  {
+   "n": "17.18",
+   "title": "ENHANCE AVAILABILITY OF RELIABLE DATA",
+   "detail": "By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts.",
+   "image": "assets/media/t69YjeiLIBdsXrPKEKe3L6nXBg.svg"
+  },
+  {
+   "n": "17.19",
+   "title": "FURTHER DEVELOP MEASUREMENTS OF PROGRESS",
+   "detail": "By 2030, build on existing initiatives to develop measurements of progress on sustainable development that complement gross domestic product, and support statistical capacity-building in developing countries.",
+   "image": "assets/media/RPfBpYxUiH0m81i1XTdLsecWOD4.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 17 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Work or volunteer in NGOs that are working towards the Global Goals. You can contribute through various projects to achieving the Goals by 2030.</p>",
+   "image": "assets/media/sSMUx96nVBw1xJMzGVrzDU2yhG0.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Support export by buying products from developing countries. Pay attention to the Fair Trade label on products which helps to indicate products from local producers in developing countries.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

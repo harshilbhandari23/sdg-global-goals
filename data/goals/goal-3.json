@@ -1,0 +1,133 @@
+{
+ "slug": "goal-3",
+ "number": 3,
+ "color": "rgb(45, 155, 73)",
+ "brandImage": "assets/media/zStAwxLzomBtGoDBiIVuHdVQAk.png",
+ "heroImage": "assets/media/cHSdH6o60IQUONIGcmbe6OK6UE.jpg",
+ "picture": "assets/media/ySt9ZahOXUdZ1PUE6s0VGLm94.jpg",
+ "title": "Ensure healthy lives and promote well-being for all at all ages\n\n",
+ "intro": "Over the last 15 years, the number of childhood deaths has been cut in half. This proves that it is possible to win the fight against almost every disease. Still, we are spending an astonishing amount of money and resources on treating illnesses that are surprisingly easy to prevent. The new goal for worldwide Good Health promotes healthy lifestyles, preventive measures and modern, efficient healthcare for everyone.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "3.1",
+   "title": "REDUCE MATERNAL MORTALITY",
+   "detail": "By 2030, reduce the global maternal mortality ratio to less than 70 per 100,000 live births.",
+   "image": "assets/media/kuL1zKLaCn27IdKeOMWY5Jh2aA.svg"
+  },
+  {
+   "n": "3.2",
+   "title": "END ALL PREVENTABLE DEATHS UNDER 5 YEARS OF AGE",
+   "detail": "By 2030, end preventable deaths of newborns and children under 5 years of age, with all countries aiming to reduce neonatal mortality to at least as low as 12 per 1,000 live births and under‑5 mortality to at least as low as 25 per 1,000 live births.",
+   "image": "assets/media/JQtG3BuqjF3ruP7zx1Vx1lEC6fg.svg"
+  },
+  {
+   "n": "3.3",
+   "title": "FIGHT COMMUNICABLE DISEASES",
+   "detail": "By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases.",
+   "image": "assets/media/eodkV4EeuclxR73oVip2WXjzio.svg"
+  },
+  {
+   "n": "3.4",
+   "title": "REDUCE MORTALITY FROM NON-COMMUNICABLE DISEASES AND PROMOTE MENTAL HEALTH",
+   "detail": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being.",
+   "image": "assets/media/kdN3iGvFf9nLcgF8RfMeiD7lFBc.svg"
+  },
+  {
+   "n": "3.5",
+   "title": "PREVENT AND TREAT SUBSTANCE ABUSE",
+   "detail": "Strengthen the prevention and treatment of substance abuse, including narcotic drug abuse and harmful use of alcohol.",
+   "image": "assets/media/EoQrRHtIrRa2GH8FexoFFI3Q.svg"
+  },
+  {
+   "n": "3.6",
+   "title": "REDUCE ROAD INJURIES AND DEATHS",
+   "detail": "By 2020, halve the number of global deaths and injuries from road traffic accidents.",
+   "image": "assets/media/9oEFmJLfvjY7UZZYXeXPuFplYp0.svg"
+  },
+  {
+   "n": "3.7",
+   "title": "UNIVERSAL ACCESS TO SEXUAL AND REPRODUCTIVE CARE, FAMILY PLANNING AND EDUCATION",
+   "detail": "By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes.",
+   "image": "assets/media/VR4gIoxpzyQyjuBxEdxkusbPx4.svg"
+  },
+  {
+   "n": "3.8",
+   "title": "ACHIEVE UNIVERSAL HEALTH COVERAGE",
+   "detail": "Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all.",
+   "image": "assets/media/Z9Df3o1eLyi07JLedQDmgJMDdo.svg"
+  },
+  {
+   "n": "3.9",
+   "title": "REDUCE ILLNESSES AND DEATH FROM HAZARDOUS CHEMICALS AND POLLUTION",
+   "detail": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination.",
+   "image": "assets/media/6naGXF4JTbXf8CotWQ1YW4L0Q.svg"
+  },
+  {
+   "n": "3.a",
+   "title": "IMPLEMENT THE WHO FRAMEWORK CONVENTION ON TOBACCO CONTROL",
+   "detail": "Strengthen the implementation of the World Health Organization Framework Convention on Tobacco Control in all countries, as appropriate.",
+   "image": "assets/media/0SDkV135JzXBHmbwv0J8yHiMxg.svg"
+  },
+  {
+   "n": "3.b",
+   "title": "SUPPORT RESEARCH, DEVELOPMENT AND UNIVERSAL ACCESS TO AFFORDABLE VACCINES AND MEDICINES",
+   "detail": "Support the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all.",
+   "image": "assets/media/GQUFJAIdMm55FooP75Odak3FaC4.svg"
+  },
+  {
+   "n": "3.c",
+   "title": "INCREASE HEALTH FINANCING AND SUPPORT HEALTH WORKFORCE IN DEVELOPING COUNTRIES",
+   "detail": "Substantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States.",
+   "image": "assets/media/BXAKzpswMS6Go35oNKWML7c5Nv4.svg"
+  },
+  {
+   "n": "3.d",
+   "title": "IMPROVE EARLY WARNING SYSTEMS FOR GLOBAL HEALTH RISKS",
+   "detail": "Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks.",
+   "image": "assets/media/K64v0xnh6vDy2ICSCAzFqRTXPs.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 3 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Vaccinate yourself and your kids. Protecting your family from disease also aids public health.</p>",
+   "image": "assets/media/CiEzon7ZVEbZaBpecs1bboHvbwY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Place yourself on the organ and tissue donors’ registry in your country.</p>",
+   "image": "assets/media/SMxCG3seiNK0gqvz8yNRGMnxqBE.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Donate your blood. Safe blood saves lives!</p>",
+   "image": "assets/media/V1Zx77gAQcFFJFCV1YixZD858.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

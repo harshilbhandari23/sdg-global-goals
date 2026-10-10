@@ -1,0 +1,81 @@
+# Content editor configuration (Sveltia CMS / Decap format). Saves to this GitHub repository.
+backend:
+  name: github
+  repo: harshilbhandari23/sdg-global-goals
+  branch: main
+
+media_folder: "assets/media"      # uploaded images go here
+public_folder: "assets/media"     # stored in the JSON relative to the site root
+
+collections:
+  - name: goals
+    label: "Goals"
+    label_singular: "Goal"
+    folder: "data/goals"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "goal-{{number}}"
+    identifier_field: title
+    summary: "Goal {{number}} — {{title}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "hidden" }
+      - { label: "Goal number", name: "number", widget: "number", value_type: "int", min: 1, max: 17 }
+      - { label: "Title", name: "title", widget: "string", hint: "Shown in the banner and the page title" }
+      - { label: "Intro (about the goal)", name: "intro", widget: "text" }
+      - { label: "Brand colour", name: "color", widget: "string", hint: "e.g. rgb(229, 35, 58)" }
+      - { label: "Brand image (cards)", name: "brandImage", widget: "image", required: false }
+      - { label: "Hero image", name: "heroImage", widget: "image", required: false }
+      - { label: "Picture", name: "picture", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - label: "Targets"
+        name: "targets"
+        widget: "list"
+        summary: "{{fields.n}} — {{fields.title}}"
+        fields:
+          - { label: "Number (e.g. 1.1 or 1.a)", name: "n", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Detail", name: "detail", widget: "text" }
+          - { label: "Icon", name: "image", widget: "image", required: false }
+      - label: "How can you contribute (cards)"
+        name: "todo"
+        widget: "list"
+        summary: "{{fields.html}}"
+        fields:
+          - { label: "Text (HTML allowed)", name: "html", widget: "text" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+
+  - name: yearwise
+    label: "Yearly progress scores"
+    label_singular: "Year"
+    folder: "data/yearwise"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{year}}"
+    identifier_field: year
+    summary: "{{year}}"
+    fields:
+      - { label: "Year", name: "year", widget: "string" }
+      - label: "Scores for goals 1–17 (in order)"
+        name: "values"
+        widget: "list"
+        field: { label: "Score", name: "score", widget: "number", value_type: "float" }
+        min: 17
+        max: 17
+
+  - name: legal
+    label: "Legal pages"
+    label_singular: "Legal page"
+    folder: "data/legal"
+    extension: "json"
+    format: "json"
+    create: false
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Slug", name: "slug", widget: "hidden" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Last updated", name: "date", widget: "datetime" }
+      - { label: "Content (HTML)", name: "content", widget: "text" }

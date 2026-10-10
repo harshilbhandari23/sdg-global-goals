@@ -1,0 +1,115 @@
+{
+ "slug": "goal-10",
+ "number": 10,
+ "color": "rgb(224, 21, 131)",
+ "brandImage": "assets/media/yF6eK26xmDxHqe1TaCXKiga71Yo.png",
+ "heroImage": "assets/media/PjdhYyRZ24NYqtikAqVfnIfDc.webp",
+ "picture": "assets/media/AvzuGOzXjHZd8slIRzPg7o3eRRw.jpg",
+ "title": "Reduce inequality within and among countries",
+ "intro": "Too much of the world’s wealth is held by a very small group of people.This often leads to financial and social discrimination. In order for nations to flourish, equality and prosperity must be available to everyone – regardless of gender, race, religious beliefs or economic status. When every individual is self sufficient, the entire world prospers.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "10.1",
+   "title": "REDUCE INCOME INEQUALITIES",
+   "detail": "By 2030, progressively achieve and sustain income growth of the bottom 40 per cent of the population at a rate higher than the national average.",
+   "image": "assets/media/3AXzvjcPN1ARC2UfBy4MUtlQ.svg"
+  },
+  {
+   "n": "10.2",
+   "title": "PROMOTE UNIVERSAL SOCIAL, ECONOMIC AND POLITICAL INCLUSION",
+   "detail": "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status.",
+   "image": "assets/media/CPrdmAuoNQNnR7z2OutQbD7sI40.svg"
+  },
+  {
+   "n": "10.3",
+   "title": "ENSURE EQUAL OPPORTUNITIES AND END DISCRIMINATION",
+   "detail": "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action in this regard.",
+   "image": "assets/media/ucoNsRXogLykrRc51cztM1FuME.svg"
+  },
+  {
+   "n": "10.4",
+   "title": "ADOPT FISCAL AND SOCIAL POLICIES THAT PROMOTE EQUALITY",
+   "detail": "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve greater equality.",
+   "image": "assets/media/ObwEzQNRwBkXSyU499SSmDPt6s.svg"
+  },
+  {
+   "n": "10.5",
+   "title": "IMPROVED REGULATION OF GLOBAL FINANCIAL MARKETS AND INSTITUTIONS",
+   "detail": "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations.",
+   "image": "assets/media/WY5I5qJa9X0NajRrdhKVpBoehI.svg"
+  },
+  {
+   "n": "10.6",
+   "title": "ENHANCED REPRESENTATION FOR DEVELOPING COUNTRIES IN FINANCIAL INSTITUTIONS",
+   "detail": "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions.",
+   "image": "assets/media/Odk4T3yyO4kpkcWmfaUAnqq46k.svg"
+  },
+  {
+   "n": "10.7",
+   "title": "RESPONSIBLE AND WELL-MANAGED MIGRATION POLICIES",
+   "detail": "Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies.",
+   "image": "assets/media/adLE4hmg4nwp88gFIRnhkuY7g.svg"
+  },
+  {
+   "n": "10.a",
+   "title": "SPECIAL AND DIFFERENTIAL TREATMENT FOR DEVELOPING COUNTRIES",
+   "detail": "Implement the principle of special and differential treatment for developing countries, in particular least developed countries, in accordance with World Trade Organization agreements.",
+   "image": "assets/media/7GeybyeyeBegpjvm8QGqVdZtfk.svg"
+  },
+  {
+   "n": "10.b",
+   "title": "ENCOURAGE DEVELOPMENT ASSISTANCE AND INVESTMENT IN LEAST DEVELOPED COUNTRIES",
+   "detail": "Encourage official development assistance and financial flows, including foreign direct investment, to States where the need is greatest, in particular least developed countries, African countries, small island developing States and landlocked developing countries, in accordance with their national plans and programmes.",
+   "image": "assets/media/gAmk4XJdOl88rYX12t568JGPU.svg"
+  },
+  {
+   "n": "10.c",
+   "title": "REDUCE TRANSACTION COSTS FOR MIGRANT REMITTANCES",
+   "detail": "By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent.",
+   "image": "assets/media/xLCiW9KWY6GTr0YyU9nACd5j2s.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 10 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Does everyone at your place of work have access to healthcare? Find out what your rights are to work. Fight against inequality.</p>",
+   "image": "assets/media/ejAbHpKiMXvnxXoXtkv5wEv4.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Raise your voice against any type of discrimination. Everyone is equal regardless of their gender, race, sexual orientation, social background and physical abilities.</p>",
+   "image": "assets/media/x13ZcUqMiBd6XMEYrjAQO2PMgwA.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Run a voting registration campaign. One of the issues contributing to rising inequalities is caused by the lack of representation of minorities and underprivileged groups in government. You can run a voting registration education in these groups to raise their engagement and representation in institutions of power.</p>",
+   "image": "assets/media/iX40rTzQUk93BlEapxlMkekfsM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Visit local shelters, orphanages or minority community centers and organize a conversation space to discuss the importance of these rights or volunteer there regularly.</p>",
+   "image": "assets/media/AbhezHiqQ8avmwKo4QWKDCjaKM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Support migrants and refugees in your communities. Volunteer in a local refugee camp. Gather or donate the appliances, food, clothes needed.</p>",
+   "image": "assets/media/AbhezHiqQ8avmwKo4QWKDCjaKM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Favor companies that are inclusive. Check the lists of the companies that are inclusive for different minorities through employment there or their products.</p>",
+   "image": "assets/media/sSMUx96nVBw1xJMzGVrzDU2yhG0.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

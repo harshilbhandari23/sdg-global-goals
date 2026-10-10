@@ -1,0 +1,85 @@
+{
+ "slug": "goal-13",
+ "number": 13,
+ "color": "rgb(72, 119, 62)",
+ "brandImage": "assets/media/cjUkxYoiU7C8l6TMZQ15DE05E.png",
+ "heroImage": "assets/media/XCVAgI4iPpfBUfegKsAIJXCf6ss.webp",
+ "picture": "assets/media/U9INkii4eivp0adNlkL4UaoJOA.jpg",
+ "title": "Take urgent action to combat climate change and its impacts",
+ "intro": "Climate change is a real and undeniable threat to our entire civilization.The effects are already visible and will be catastrophic unless we act now. Through education, innovation and adherence to our climate commitments, we can make the necessary changes to protect the planet. These changes also provide huge opportunities to modernize our infrastructure which will create new jobs and promote greater prosperity across the globe.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "13.1",
+   "title": "STRENGTHEN RESILIENCE AND ADAPTIVE CAPACITY TO CLIMATE RELATED DISASTERS",
+   "detail": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries.",
+   "image": "assets/media/NqYtbJObB5bK28juBh3LBDx84I.svg"
+  },
+  {
+   "n": "13.2",
+   "title": "INTEGRATE CLIMATE CHANGE MEASURES INTO POLICIES AND PLANNING",
+   "detail": "Integrate climate change measures into national policies, strategies and planning.",
+   "image": "assets/media/ea4kGVY3Xj06lHPS2cbW00j7z4.svg"
+  },
+  {
+   "n": "13.3",
+   "title": "BUILD KNOWLEDGE AND CAPACITY TO MEET CLIMATE CHANGE",
+   "detail": "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning.",
+   "image": "assets/media/jw3avq8dJO5NfO8yoiQeCcRu2kY.svg"
+  },
+  {
+   "n": "13.a",
+   "title": "IMPLEMENT THE UN FRAMEWORK CONVENTION ON CLIMATE CHANGE",
+   "detail": "Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible.",
+   "image": "assets/media/rDBV1B12yZolSOMFkSYmecS0ts.svg"
+  },
+  {
+   "n": "13.b",
+   "title": "PROMOTE MECHANISMS TO RAISE CAPACITY FOR PLANNING AND MANAGEMENT",
+   "detail": "Promote mechanisms for raising capacity for effective climate change-related planning and management in least developed countries and small island developing States, including focusing on women, youth and local and marginalized communities.",
+   "image": "assets/media/GWNlYnJzdVnM5pT7p8Hamsrs2AE.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 13 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Recycle paper, glass, plastic, metal and old electronics.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Compost. Composting food scraps can reduce climate impact while also recycling nutrients.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Choose reusable products. Use an eco-bag for shopping and a reusable water bottle or a cup to reduce your plastic waste.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Buy eco-friendly products. Read the packaging to see if products are produced in an eco-friendly way.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Bike, walk or take public transport. Save the car trips for when you’ve got a big group.</p>",
+   "image": "assets/media/GLaaRZ1j18DuThEyA4KiojI1FNI.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Consume less meat and become vegetarian for one day a week. The meat production industry has a huge impact on the environment.</p>",
+   "image": "assets/media/vSTp1JAGITn7njOrN753k7nww.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Reduce your use of paper. Avoid printing and substitute it with electronic devices or carriers. Don’t shop for pets! Visit your local animal shelter and adopt an animal there.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Offset your carbon emissions. You can calculate your carbon footprint and purchase climate credits from <a href=\"http://climateneutralnow.org/Pages/Home.aspx\">Climate Neutral Now</a>.</p>",
+   "image": "assets/media/8MQygFZy5brDiHf9shkQHvp7j8.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "slug": "goal-16",
+ "number": 16,
+ "color": "rgb(2, 85, 137)",
+ "brandImage": "assets/media/3vvN71N6YS3sx0NW1UD5H7Yq7g.png",
+ "heroImage": "assets/media/CIPCKXzvfDoSdM69m9L2WnKsQg.webp",
+ "picture": "assets/media/VNQebLRwhStimAzCniXJ3CD8LIs.jpg",
+ "title": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+ "intro": "Compassion and a strong moral compass is essential to every democratic society.Yet, persecution, injustice and abuse still runs rampant and is tearing at the very fabric of civilization. We must ensure that we have strong institutions, global standards of justice, and a commitment to peace everywhere.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "16.1",
+   "title": "REDUCE VIOLENCE EVERYWHERE",
+   "detail": "Significantly reduce all forms of violence and related death rates everywhere.",
+   "image": "assets/media/I03rBYUXDKZpjSLs3Q3txJU2M6I.svg"
+  },
+  {
+   "n": "16.2",
+   "title": "PROTECT CHILDREN FROM ABUSE, EXPLOITATION, TRAFFICKING AND VIOLENCE",
+   "detail": "End abuse, exploitation, trafficking and all forms of violence against and torture of children.",
+   "image": "assets/media/UwqEdHCM3AhdBsB4Nd7FWFFQq30.svg"
+  },
+  {
+   "n": "16.3",
+   "title": "PROMOTE THE RULE OF LAW AND ENSURE EQUAL ACCESS TO JUSTICE",
+   "detail": "Promote the rule of law at the national and international levels and ensure equal access to justice for all.",
+   "image": "assets/media/JVl882YaOYQiT7LxfKDvjfrbnfY.svg"
+  },
+  {
+   "n": "16.4",
+   "title": "COMBAT ORGANIZED CRIME AND ILLICIT FINANCIAL AND ARMS FLOWS",
+   "detail": "By 2030, significantly reduce illicit financial and arms flows, strengthen the recovery and return of stolen assets and combat all forms of organized crime.",
+   "image": "assets/media/uzgTx0tv0jL3xtgKFYiPY92BGzY.svg"
+  },
+  {
+   "n": "16.5",
+   "title": "SUBSTANTIALLY REDUCE CORRUPTION AND BRIBERY",
+   "detail": "Substantially reduce corruption and bribery in all their forms.",
+   "image": "assets/media/4RUIXfJ1TasZrHm05EXQw7G4.svg"
+  },
+  {
+   "n": "16.6",
+   "title": "DEVELOP EFFECTIVE, ACCOUNTABLE AND TRANSPARENT INSTITUTIONS",
+   "detail": "Develop effective, accountable and transparent institutions at all levels.",
+   "image": "assets/media/Uf7VqwGCkvOAq7gBuqbBdyQ3Wak.svg"
+  },
+  {
+   "n": "16.7",
+   "title": "ENSURE RESPONSIVE, INCLUSIVE AND REPRESENTATIVE DECISION-MAKING",
+   "detail": "Ensure responsive, inclusive, participatory and representative decision-making at all levels.",
+   "image": "assets/media/yCyUOEa9qZCMnvfVsF4PNCKgjA.svg"
+  },
+  {
+   "n": "16.8",
+   "title": "STRENGTHEN THE PARTICIPATION IN GLOBAL GOVERNANCE",
+   "detail": "Broaden and strengthen the participation of developing countries in the institutions of global governance.",
+   "image": "assets/media/PY4YZOtOr9CGWrpUbTsFX6D6Wxo.svg"
+  },
+  {
+   "n": "16.9",
+   "title": "PROVIDE UNIVERSAL LEGAL IDENTITY",
+   "detail": "By 2030, provide legal identity for all, including birth registration.",
+   "image": "assets/media/ImAqvRDforJTStneK3P5SbQMw.svg"
+  },
+  {
+   "n": "16.10",
+   "title": "ENSURE PUBLIC ACCESS TO INFORMATION AND PROTECT FUNDAMENTAL FREEDOMS",
+   "detail": "Ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements.",
+   "image": "assets/media/LNsGkt8nMELmnxB8HexlJJaytKQ.svg"
+  },
+  {
+   "n": "16.a",
+   "title": "STRENGTHEN NATIONAL INSTITUTIONS TO PREVENT VIOLENCE AND COMBAT TERRORISM AND CRIME",
+   "detail": "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime.",
+   "image": "assets/media/q1ZeYjMMbGfAE3Wb33lqpz7pbYc.svg"
+  },
+  {
+   "n": "16.b",
+   "title": "PROMOTE AND ENFORCE NON-DISCRIMINATORY LAWS AND POLICIES",
+   "detail": "Promote and enforce non-discriminatory laws and policies for sustainable development.",
+   "image": "assets/media/ypXpEueNNHVXX6oqJtSHYqpeN5A.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 16 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Speak up! Ask your local and national authorities to engage in initiatives that don’t harm people or the planet.</p>",
+   "image": "assets/media/TIOINdU33MNLcrbAiNd51BpGegw.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Know your rights at work. In order to access justice, knowing what you are entitled to will go a long way.</p>",
+   "image": "assets/media/x13ZcUqMiBd6XMEYrjAQO2PMgwA.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Vote! Take advantage of your right to elect the leaders in your country and local community.</p>",
+   "image": "assets/media/iX40rTzQUk93BlEapxlMkekfsM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Run for a public post.</p>",
+   "image": "assets/media/iX40rTzQUk93BlEapxlMkekfsM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

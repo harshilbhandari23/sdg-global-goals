@@ -1,0 +1,103 @@
+{
+ "slug": "goal-2",
+ "number": 2,
+ "color": "rgb(211, 160, 43)",
+ "brandImage": "assets/media/55DVL2VVa90F4V9eOQv0S7mzE.png",
+ "heroImage": "assets/media/yqvohLMkASiyVaje0ww6ThIgtEs.jpg",
+ "picture": "assets/media/xenIsHtt9OuzsJzfb8gCOvAzljU.jpg",
+ "title": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+ "intro": "Hunger is the leading cause of death in the world. Our planet has provided us with tremendous resources, but unequal access and inefficient handling leaves millions of people malnourished. If we promote sustainable agriculture with modern technologies and fair distribution systems, we can sustain the whole world’s population and make sure that nobody will ever suffer from hunger again.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "2.1",
+   "title": "UNIVERSAL ACCESS TO SAFE AND NUTRITIOUS FOOD",
+   "detail": "By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round.",
+   "image": "assets/media/oluu6HKfFooSUhFcse3BYRYHd0.svg"
+  },
+  {
+   "n": "2.2",
+   "title": "END ALL FORMS OF MALNUTRITION",
+   "detail": "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons.",
+   "image": "assets/media/zanI9f8uvVHR1SSzGTC7sE3brTU.svg"
+  },
+  {
+   "n": "2.3",
+   "title": "DOUBLE THE PRODUCTIVITY AND INCOMES OF SMALL-SCALE FOOD PRODUCERS",
+   "detail": "By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment.",
+   "image": "assets/media/eatakh3nRaF8A0CPRo5bc2IM4.svg"
+  },
+  {
+   "n": "2.4",
+   "title": "SUSTAINABLE FOOD PRODUCTION AND RESILIENT AGRICULTURAL PRACTICES",
+   "detail": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality.",
+   "image": "assets/media/KzumCXThl7iEBUeKhrx4Beu3rE.svg"
+  },
+  {
+   "n": "2.5",
+   "title": "MAINTAIN THE GENETIC DIVERSITY IN FOOD PRODUCTION",
+   "detail": "By 2020, maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed and diversified seed and plant banks at the national, regional and international levels, and promote access to and fair and equitable sharing of benefits arising from the utilization of genetic resources and associated traditional knowledge, as internationally agreed.",
+   "image": "assets/media/mQzPuMOa8qxcFzrb7E0o6uzCwq8.svg"
+  },
+  {
+   "n": "2.a",
+   "title": "INVEST IN RURAL INFRASTRUCTURE, AGRICULTURAL RESEARCH, TECHNOLOGY AND GENE BANKS",
+   "detail": "Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries.",
+   "image": "assets/media/zP57RzgeSguWduHwNMm7JpPYNA.svg"
+  },
+  {
+   "n": "2.b",
+   "title": "PREVENT AGRICULTURAL TRADE RESTRICTIONS, MARKET DISTORTIONS AND EXPORT SUBSIDIES",
+   "detail": "Correct and prevent trade restrictions and distortions in world agricultural markets, including through the parallel elimination of all forms of agricultural export subsidies and all export measures with equivalent effect, in accordance with the mandate of the Doha Development Round.",
+   "image": "assets/media/hsbzkVuImrAGw79gZCJf33bo.svg"
+  },
+  {
+   "n": "2.c",
+   "title": "ENSURE STABLE FOOD COMMODITY MARKETS AND TIMELY ACCESS TO INFORMATION",
+   "detail": "Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility.",
+   "image": "assets/media/0HD8ReUjyPxLcBMP5GhnJPdrQ.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 2 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Buy local and in-season food. Try to grow some of your own food.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Don’t waste food. Freeze fresh produce and leftovers if you don’t have the chance to eat them before they go bad.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Buy Funny Fruit—many fruits and vegetables are thrown out because their size, shape, or color are not “right”. Buying these perfectly good funny fruit, utilizes food that might otherwise go to waste.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Consume less meat and become vegetarian for one day a week. The meat production industry has a huge impact on the environment.</p>",
+   "image": "assets/media/vSTp1JAGITn7njOrN753k7nww.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Take action with the <a href=\"http://worldslargestlesson.globalgoals.org/healthy-not-hungry-food-projects-for-the-goals/\">World’s Largest Lesson on Goal 2</a>.</p>",
+   "image": "assets/media/gfR5cr8R6bpm9F4i6rdVSoq1U.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

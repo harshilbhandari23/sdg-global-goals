@@ -1,0 +1,85 @@
+{
+ "slug": "goal-7",
+ "number": 7,
+ "color": "rgb(253, 183, 21)",
+ "brandImage": "assets/media/gv1SO6jkRnQnlJezEITnGIvDLQ.png",
+ "heroImage": "assets/media/6w6E198vlMIU1wt6HZcg9BiEMIA.webp",
+ "picture": "assets/media/U3EWh683DyUa5ipZORo1yPyTbs.jpg",
+ "title": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+ "intro": "Renewable energy solutions are becoming cheaper, more reliable and more efficient every day.Our current reliance on fossil fuels is unsustainable and harmful to the planet, which is why we have to change the way we produce and consume energy. Implementing these new energy solutions as fast as possible is essential to counter climate change, one of the biggest threats to our own survival.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "7.1",
+   "title": "UNIVERSAL ACCESS TO MODERN ENERGY",
+   "detail": "By 2030, ensure universal access to affordable, reliable and modern energy services.",
+   "image": "assets/media/4RWwLcc3RrUyL6UiMa28fdfNDKU.svg"
+  },
+  {
+   "n": "7.2",
+   "title": "INCREASE GLOBAL PERCENTAGE OF RENEWABLE ENERGY",
+   "detail": "By 2030, increase substantially the share of renewable energy in the global energy mix.",
+   "image": "assets/media/akVfOqsnUCNbFff6CvpSPQv0.svg"
+  },
+  {
+   "n": "7.3",
+   "title": "DOUBLE THE IMPROVEMENT IN ENERGY EFFICIENCY",
+   "detail": "By 2030, double the global rate of improvement in energy efficiency.",
+   "image": "assets/media/RnNrko1BLoM3Jpzu7St7NWYlA4.svg"
+  },
+  {
+   "n": "7.a",
+   "title": "PROMOTE ACCESS TO RESEARCH, TECHNOLOGY AND INVESTMENTS IN CLEAN ENERGY",
+   "detail": "By 2030, enhance international cooperation to facilitate access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology, and promote investment in energy infrastructure and clean energy technology.",
+   "image": "assets/media/hzxBfw8UdpJPnYFom2geeOZfCgk.svg"
+  },
+  {
+   "n": "7.b",
+   "title": "EXPAND AND UPGRADE ENERGY SERVICES FOR DEVELOPING COUNTRIES",
+   "detail": "By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support.",
+   "image": "assets/media/7Vu8L0r8idsgPV4MAymRraDZgwM.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 7 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Switch off your appliances at the socket. Turn off the lights when you’re not using them.</p>",
+   "image": "assets/media/TyodkTe6t8pIxTiQF71Y9XRmM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Turn off your air conditioning, especially for sleeping – open a window or use a fan.</p>",
+   "image": "assets/media/TyodkTe6t8pIxTiQF71Y9XRmM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Buy rechargeable electronics. Don’t buy or use one-use batteries.</p>",
+   "image": "assets/media/TyodkTe6t8pIxTiQF71Y9XRmM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Don’t use multiple devices at the same time. Be mindful about this and only several devices when absolutely necessary.</p>",
+   "image": "assets/media/TyodkTe6t8pIxTiQF71Y9XRmM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Use solar energy sources. Install solar panels in your home for your heating and electricity. Use solar technology – radio, charger, lights etc…</p>",
+   "image": "assets/media/TyodkTe6t8pIxTiQF71Y9XRmM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

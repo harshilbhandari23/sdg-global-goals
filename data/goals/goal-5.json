@@ -1,0 +1,109 @@
+{
+ "slug": "goal-5",
+ "number": 5,
+ "color": "rgb(239, 64, 42)",
+ "brandImage": "assets/media/XTg54MhWkGtQGj2XJwEgnSNtO2A.jpg",
+ "heroImage": "assets/media/s4rT4mnFgwSDNrnK1vGnNkYGumc.webp",
+ "picture": "assets/media/2oO87X7ojmddQ9gNkSZHmIVrF1U.jpg",
+ "title": "Achieve gender equality and empower all women and girls",
+ "intro": "Gender bias is undermining our social fabric and devalues all of us. It is not just a human rights issue; it is a tremendous waste of the world’s human potential. By denying women equal rights, we deny half the population a chance to live life at its fullest. Political, economic and social equality for women will benefit all the world’s citizens. Together we can eradicate prejudice and work for equal rights and respect for all.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "5.1",
+   "title": "END DISCRIMINATION AGAINST WOMEN AND GIRLS",
+   "detail": "End all forms of discrimination against all women and girls everywhere.",
+   "image": "assets/media/Bj41bB5dR7Ffu9yLp1Bbu2VM8.svg"
+  },
+  {
+   "n": "5.2",
+   "title": "END ALL VIOLENCE AGAINST AND EXPLOITATION OF WOMEN AND GIRLS",
+   "detail": "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation.",
+   "image": "assets/media/HeqwpVleozcivo16U5wEu3wV7jQ.svg"
+  },
+  {
+   "n": "5.3",
+   "title": "ELIMINATE FORCED MARRIAGES AND GENITAL MUTILATION",
+   "detail": "Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation.",
+   "image": "assets/media/mEu0iUmdn2kb9HFryRcIcUr0iBo.svg"
+  },
+  {
+   "n": "5.4",
+   "title": "VALUE UNPAID CARE AND PROMOTE SHARED DOMESTIC RESPONSIBILITIES",
+   "detail": "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate.",
+   "image": "assets/media/USXPv6b90NRCdNsA9P7XrNLD4YM.svg"
+  },
+  {
+   "n": "5.5",
+   "title": "ENSURE FULL PARTICIPATION IN LEADERSHIP AND DECISION-MAKING",
+   "detail": "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life.",
+   "image": "assets/media/SWEIVLPtvClbj7iVP3V8IHAT9B8.svg"
+  },
+  {
+   "n": "5.6",
+   "title": "UNIVERSAL ACCESS TO REPRODUCTIVE HEALTH AND RIGHTS",
+   "detail": "Ensure universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences.",
+   "image": "assets/media/wyzqKKOZFDSx6YDtmKlofQqfNA.svg"
+  },
+  {
+   "n": "5.a",
+   "title": "EQUAL RIGHTS TO ECONOMIC RESOURCES, PROPERTY OWNERSHIP AND FINANCIAL SERVICES",
+   "detail": "Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws.",
+   "image": "assets/media/CdZY25xrfpjGVSclvzPSG4.svg"
+  },
+  {
+   "n": "5.b",
+   "title": "PROMOTE EMPOWERMENT OF WOMEN THROUGH TECHNOLOGY",
+   "detail": "Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women.",
+   "image": "assets/media/B5d3VxutcjP2Qtc7n0aCk7aTGnE.svg"
+  },
+  {
+   "n": "5.c",
+   "title": "ADOPT AND STRENGTHEN POLICIES AND ENFORCEABLE LEGISLATION FOR GENDER EQUALITY",
+   "detail": "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels.",
+   "image": "assets/media/AzU8Sg2e78v4yrrYyKuHYHNHeqo.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Women earn 10 to 30 per cent less than men for the same work. Pay inequality persists everywhere. Voice your support for equal pay for equal work.</p>",
+   "image": "assets/media/x13ZcUqMiBd6XMEYrjAQO2PMgwA.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Find a Goal 5 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Be aware of gender stereotypes. Recognize them, avoid them and educate others about them.</p>",
+   "image": "assets/media/x13ZcUqMiBd6XMEYrjAQO2PMgwA.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stand up against harassment. Whenever you see or become aware of harassment, whether in the workplace, streets, home or the online space, raise your voice against it.</p>",
+   "image": "assets/media/6XET6LPwd0J8dnGk6qQy2NutQ.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Find female mentors/leaders. Ensure that some of your role models or mentors are women. There’s a lot you can learn from women in positions of authority.</p>",
+   "image": "assets/media/AbhezHiqQ8avmwKo4QWKDCjaKM.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Share the workload at home. Sharing domestic responsibilities ensures the work burden doesn’t fall only on one person and instills the value of gender equality and essential life skills in children.</p>",
+   "image": "assets/media/x13ZcUqMiBd6XMEYrjAQO2PMgwA.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

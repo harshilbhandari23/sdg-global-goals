@@ -1,0 +1,121 @@
+{
+ "slug": "goal-12",
+ "number": 12,
+ "color": "rgb(207, 141, 43)",
+ "brandImage": "assets/media/7tYNkWdWZp24Gg48hvuBSJe3FM.png",
+ "heroImage": "assets/media/oHOpZzlIL9D1XnPJr7L8Dd6XCXw.webp",
+ "picture": "assets/media/jUxNVOBeKXuuYpxc1fd6D3CCVY.jpg",
+ "title": "Ensure sustainable consumption and production patterns",
+ "intro": "Our planet has provided us with an abundance of natural resources.But we have not utilized them responsibly and currently consume far beyond what our planet can provide. We must learn how to use and produce in sustainable ways that will reverse the harm that we have inflicted on the planet.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "12.1",
+   "title": "IMPLEMENT THE 10-YEAR SUSTAINABLE CONSUMPTION AND PRODUCTION FRAMEWORK",
+   "detail": "Implement the 10‑Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries.",
+   "image": "assets/media/a092w4yBckvK70rtE6Yj488VxZk.svg"
+  },
+  {
+   "n": "12.2",
+   "title": "SUSTAINABLE MANAGEMENT AND USE OF NATURAL RESOURCES",
+   "detail": "By 2030, achieve the sustainable management and efficient use of natural resources.",
+   "image": "assets/media/TBF9YBHx7CfHrysQ0QmjIFKT0.svg"
+  },
+  {
+   "n": "12.3",
+   "title": "HALVE GLOBAL PER CAPITA FOOD WASTE",
+   "detail": "By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses.",
+   "image": "assets/media/sTLxEg7i512Z32bdgz0DfYRUxw8.svg"
+  },
+  {
+   "n": "12.4",
+   "title": "RESPONSIBLE MANAGEMENT OF CHEMICALS AND WASTE",
+   "detail": "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment.",
+   "image": "assets/media/WrBEQOTVifFRLsGHlvUs1irFmSM.svg"
+  },
+  {
+   "n": "12.5",
+   "title": "SUBSTANTIALLY REDUCE WASTE GENERATION",
+   "detail": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse.",
+   "image": "assets/media/Kz8KESkfrjNnvc7uSuds8wzPmg.svg"
+  },
+  {
+   "n": "12.6",
+   "title": "ENCOURAGE COMPANIES TO ADOPT SUSTAINABLE PRACTICES AND SUSTAINABILITY REPORTING",
+   "detail": "Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle.",
+   "image": "assets/media/hZVibCqMp2AwxRTonXkltAUJ6X0.svg"
+  },
+  {
+   "n": "12.7",
+   "title": "PROMOTE SUSTAINABLE PUBLIC PROCUREMENT PRACTICES",
+   "detail": "Promote public procurement practices that are sustainable, in accordance with national policies and priorities.",
+   "image": "assets/media/sNdN1effMyrZUwYauOKLQDACvg.svg"
+  },
+  {
+   "n": "12.8",
+   "title": "PROMOTE UNIVERSAL UNDERSTANDING OF SUSTAINABLE LIFESTYLES",
+   "detail": "By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature.",
+   "image": "assets/media/nkip9sxz1JFYH5iHT67wbIyoE.svg"
+  },
+  {
+   "n": "12.a",
+   "title": "SUPPORT DEVELOPING COUNTRIES’ SCIENTIFIC AND TECHNOLOGICAL CAPACITY FOR SUSTAINABLE CONSUMPTION AND PRODUCTION",
+   "detail": "Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production.",
+   "image": "assets/media/W08EOo1NBEi0RIVySqVJirePujI.svg"
+  },
+  {
+   "n": "12.b",
+   "title": "DEVELOP AND IMPLEMENT TOOLS TO MONITOR SUSTAINABLE TOURISM",
+   "detail": "Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products.",
+   "image": "assets/media/2nSuIbu3JGJfVu6rtGB1oN9zC78.svg"
+  },
+  {
+   "n": "12.c",
+   "title": "REMOVE MARKET DISTORTIONS THAT ENCOURAGE WASTEFUL CONSUMPTION",
+   "detail": "Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities.",
+   "image": "assets/media/bojqatwVkSNvgYJWsw9uJfKJ6U.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 12 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Shop, eat and drink locally. Supporting neighbourhood businesses keeps people employed and circulates money back into your community.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Be conscious of packaging – the less the better!</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Buy second-hand whenever you can.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Do some research and buy from companies you know have sustainable practices and don’t harm the environment.</p>",
+   "image": "assets/media/OXp29olyo1eNOnjzsHZdlfbHY.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Download and use food sharing applications. You can download apps to donate your leftover food and decrease the amount of food waste you produce.</p>",
+   "image": "assets/media/vSTp1JAGITn7njOrN753k7nww.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Choose reusable products. Use an eco-bag for shopping, a reusable water bottle or a cup to reduce your plastic waste.</p>",
+   "image": "assets/media/W4SdO2bMkoQ4NhA8CTDxLfj1sdU.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Advocate for corporate responsibility. Join petitions and campaigns calling out businesses with unsustainable practices.</p>",
+   "image": "assets/media/TIOINdU33MNLcrbAiNd51BpGegw.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "slug": "goal-1",
+ "number": 1,
+ "color": "rgb(229, 35, 58)",
+ "brandImage": "assets/media/Qe7ZrfLI9scjOuUm9owG0kRmUA.jpg",
+ "heroImage": "assets/media/NFAtIuTowkbBuBI7JCGtFPa64tQ.webp",
+ "picture": "assets/media/5iOnYCEyxlSLcjk2JJHTVhyPs.jpg",
+ "title": "End poverty in all its forms everywhere",
+ "intro": "Eradicating poverty is not a task of charity, it’s an act of justice and the key to unlocking an enormous human potential. Still, nearly half of the world’s population lives in poverty, and lack of food and clean water is killing thousands every single day of the year. Together, we can feed the hungry, wipe out disease and give everyone in the world a chance to prosper and live a productive and rich life.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "1.1",
+   "title": "ERADICATE EXTREME POVERTY",
+   "detail": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day.",
+   "image": "assets/media/SUVVhAMXEisTpdTWhFGWWr9ADhs.svg"
+  },
+  {
+   "n": "1.2",
+   "title": "REDUCE POVERTY BY AT LEAST 50%",
+   "detail": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions.",
+   "image": "assets/media/xJ5OplMfO86YQhzuaK8s3NxWY.svg"
+  },
+  {
+   "n": "1.3",
+   "title": "IMPLEMENT SOCIAL PROTECTION SYSTEMS",
+   "detail": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable.",
+   "image": "assets/media/9Vpary2v2Z8mncqsOdAuaKy7sg.svg"
+  },
+  {
+   "n": "1.4",
+   "title": "EQUAL RIGHTS TO OWNERSHIP, BASIC SERVICES, TECHNOLOGY AND ECONOMIC RESOURCES",
+   "detail": "By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance.",
+   "image": "assets/media/fDRQmSu5MNaaRxL1P3BIFVocsTc.svg"
+  },
+  {
+   "n": "1.5",
+   "title": "BUILD RESILIENCE TO ENVIRONMENTAL, ECONOMIC AND SOCIAL DISASTERS",
+   "detail": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters.",
+   "image": "assets/media/67gwwNhDLvxHkh0SlFlPPVPyjhY.svg"
+  },
+  {
+   "n": "1.a",
+   "title": "MOBILIZE RESOURCES TO IMPLEMENT POLICIES TO END POVERTY",
+   "detail": "Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions.",
+   "image": "assets/media/BTbwlo9Yw5qlfszVaXE18SZVug.svg"
+  },
+  {
+   "n": "1.b",
+   "title": "CREATE PRO-POOR AND GENDER-SENSITIVE POLICY FRAMEWORKS",
+   "detail": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions.",
+   "image": "assets/media/kWmdvUASWGdvmcpsWhfTjOBwpyI.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 1 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Donate what you don’t use. Local charities will give your gently used clothes, books and furniture a new life.</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Support campaigns collecting items for victims of emergencies. Donate your clothes, food supplies etc. to support those in need.</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Poverty still persists in every country. Over 8% of the world population lives in extreme poverty. Lend your voice to the fight against extreme poverty.</p>",
+   "image": "assets/media/TIOINdU33MNLcrbAiNd51BpGegw.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}

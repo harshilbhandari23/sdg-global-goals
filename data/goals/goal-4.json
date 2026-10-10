@@ -1,0 +1,115 @@
+{
+ "slug": "goal-4",
+ "number": 4,
+ "color": "rgb(193, 32, 51)",
+ "brandImage": "assets/media/RcgpQyOWkU3N4LwTiwAbOaA5DlE.jpg",
+ "heroImage": "assets/media/uVULAEErMDowdhCzHm9GqtgDY.webp",
+ "picture": "assets/media/4rvqxExHAbvmjTZFxT7OdPeUa8.jpg",
+ "title": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+ "intro": "Education liberates the intellect, unlocks the imagination and is fundamental for self-respect. It is the key to prosperity and opens a world of opportunities, making it possible for each of us to contribute to a progressive, healthy society. Learning benefits every human being and should be available to all.",
+ "featured": true,
+ "targets": [
+  {
+   "n": "4.1",
+   "title": "FREE PRIMARY AND SECONDARY EDUCATION",
+   "detail": "By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes.",
+   "image": "assets/media/AKlYeaWNMtIay2iHXkyzYJIlG0o.svg"
+  },
+  {
+   "n": "4.2",
+   "title": "EQUAL ACCESS TO QUALITY PRE-PRIMARY EDUCATION",
+   "detail": "By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre-primary education so that they are ready for primary education.",
+   "image": "assets/media/Eeu61cFJNrQ339cILW0QW6UE2s.svg"
+  },
+  {
+   "n": "4.3",
+   "title": "EQUAL ACCESS TO AFFORDABLE TECHNICAL, VOCATIONAL AND HIGHER EDUCATION",
+   "detail": "By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university.",
+   "image": "assets/media/IBX0icAayJHVO9NMrt9IZXX0uc.svg"
+  },
+  {
+   "n": "4.4",
+   "title": "INCREASE THE NUMBER OF PEOPLE WITH RELEVANT SKILLS FOR FINANCIAL SUCCESS",
+   "detail": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship.",
+   "image": "assets/media/3uda558n1fnEng3sHWorJooMo.svg"
+  },
+  {
+   "n": "4.5",
+   "title": "ELIMINATE ALL DISCRIMINATION IN EDUCATION",
+   "detail": "By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations.",
+   "image": "assets/media/1tPye2XdQlLlNfoMJ4rBf9JcWnM.svg"
+  },
+  {
+   "n": "4.6",
+   "title": "UNIVERSAL LITERACY AND NUMERACY",
+   "detail": "By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy.",
+   "image": "assets/media/tLZWS7ZB603C5Sokx4gBHiUEA.svg"
+  },
+  {
+   "n": "4.7",
+   "title": "EDUCATION FOR SUSTAINABLE DEVELOPMENT AND GLOBAL CITIZENSHIP",
+   "detail": "By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development",
+   "image": "assets/media/JFOj2xHAgZbnrtqivmGk3qp5MUE.svg"
+  },
+  {
+   "n": "4.a",
+   "title": "BUILD AND UPGRADE INCLUSIVE AND SAFE SCHOOLS",
+   "detail": "Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all.",
+   "image": "assets/media/4Oe7AQ0dgskv3sLoyyLnTaxy8BY.svg"
+  },
+  {
+   "n": "4.b",
+   "title": "EXPAND HIGHER EDUCATION SCHOLARSHIPS FOR DEVELOPING COUNTRIES",
+   "detail": "By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries.",
+   "image": "assets/media/uQb3ioXuDVkplZqBSOEQ6aZN9lM.svg"
+  },
+  {
+   "n": "4.c",
+   "title": "INCREASE THE SUPPLY OF QUALIFIED TEACHERS IN DEVELOPING COUNTRIES",
+   "detail": "By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States.",
+   "image": "assets/media/xpbY5lkMD88tCvnQOeVMCK1Onc.svg"
+  }
+ ],
+ "todo": [
+  {
+   "html": "<p dir=\"auto\">Find a Goal 4 charity you want to support. Any donation, big or small, can make a difference!</p>",
+   "image": "assets/media/bxtzwrSUHLZNX6VW4RpImmpzec.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Donate your used books. The easiest way to give access to knowledge is to donate your used books to someone.</p>",
+   "image": "assets/media/M0YOqexThAhIHk61wNxImXaSag.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Promote and take free online courses. In a digital world, there are more opportunities to get access to education than just go to university.</p>",
+   "image": "assets/media/gfR5cr8R6bpm9F4i6rdVSoq1U.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Visit your local school and ask what school supplies they need. Start a school supply drive in your community.</p>",
+   "image": "assets/media/gfR5cr8R6bpm9F4i6rdVSoq1U.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Mentor young people. You can provide tutoring and homework assistance, teach a language or deliver a lesson on the Global Goals.</p>",
+   "image": "assets/media/gfR5cr8R6bpm9F4i6rdVSoq1U.svg"
+  },
+  {
+   "html": "<p dir=\"auto\">Stay informed. Follow your local news and stay in touch with the Global Goals online or on social media at <a href=\"https://twitter.com/TheGlobalGoals\">@TheGlobalGoals</a>.</p>",
+   "image": "assets/media/cYRhnVLKiJtlyAwwUlqOkTVaU04.svg"
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  },
+  {
+   "html": "<p dir=\"auto\"><br class=\"trailing-break\"></p>",
+   "image": null
+  }
+ ]
+}
