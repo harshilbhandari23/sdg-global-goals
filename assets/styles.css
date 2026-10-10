@@ -468,3 +468,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:900px){.kiosk .mapwrap{width:100%}}
 .kiosk .mapwrap{width:74%}
 @media(max-width:900px){.kiosk .mapwrap{width:100%}}
+.kiosk .mapwrap{margin-top:-56px}
+@media(max-width:900px){.kiosk .mapwrap{margin-top:0}}
