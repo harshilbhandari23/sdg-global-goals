@@ -684,3 +684,19 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 
 .ws .ws-title{font-family:var(--font-head);font-weight:800;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;color:var(--navy);text-align:center}
 @media(min-width:701px){.ws .ws-title{position:absolute;left:267px;top:1098px;width:1200px;white-space:nowrap;margin:0;font-size:calc(clamp(30px,4.4vw,53px) / var(--s,.6));line-height:1.1}}
+
+/* quiz: flat white and navy, square, goal-colour choices */
+.quiz{border-radius:0;box-shadow:none;background:#fff;border:0;font-family:var(--font-head)}
+.quiz .qhead{background:var(--navy);border-bottom:0;padding:18px 32px;color:#fff}
+.quiz .qhead h4{font:800 18px var(--font-head);text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.quiz .qhead .qcount{background:var(--blue);color:#fff;padding:6px 14px;font:800 14px var(--font-head)!important;text-transform:uppercase;letter-spacing:.04em}
+.quiz .stage{padding:0}
+.quiz .card{width:100%;max-width:none;min-height:480px;border-radius:0;box-shadow:none;background:transparent;padding:48px 32px 40px}
+.quiz .card h2{font:800 clamp(24px,3.4vw,40px)/1.12 var(--font-head);text-transform:uppercase;letter-spacing:-.02em;color:var(--navy)}
+.quiz .choices{max-width:900px;height:220px;gap:0}
+.quiz .choice{border-radius:0;box-shadow:none;font:800 clamp(18px,2.2vw,26px) var(--font-head);text-transform:uppercase;letter-spacing:.01em;transition:filter .2s ease}
+.quiz .choice:hover{filter:brightness(1.08)}
+.quiz .sep{border-radius:0;width:56px;height:56px;left:calc(50% - 28px);background:#fff;color:var(--navy);border:0;box-shadow:none}
+.quiz .help{font:800 13px var(--font-head);color:var(--blue);letter-spacing:.14em}
+.quiz .rt{border-radius:0;box-shadow:none}
+.quiz .retake{border-radius:0;background:var(--navy);text-transform:uppercase;letter-spacing:.04em;font-family:var(--font-head)}
