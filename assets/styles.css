@@ -282,10 +282,10 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 
 /* ---- home section laid out like the Framer canvas (1734 x 1787); stacks on small screens ---- */
 .wheel-section{padding:0}
-.ws{position:relative;width:100%;height:calc(2023px * var(--s,.6));overflow:hidden}
-.ws-c{position:absolute;left:0;top:0;width:1734px;height:2023px;transform:scale(var(--s,.6));transform-origin:0 0}
+.ws{position:relative;width:100%;height:calc(2073px * var(--s,.6));overflow:hidden}
+.ws-c{position:absolute;left:0;top:0;width:1734px;height:2073px;transform:scale(var(--s,.6));transform-origin:0 0}
 .ws-t{position:absolute;display:block;border:0;object-fit:cover}
-.ws .wheel-wrap{position:absolute;left:517px;top:1184px;width:700px!important;margin:0}
+.ws .wheel-wrap{position:absolute;left:517px;top:1234px;width:700px!important;margin:0}
 .ws .scroll-text{position:absolute;left:387px;top:429px;width:954px;max-width:none;padding:0;transform:translateY(-50%);font-size:30px}
 @media (max-width:700px){
   .wheel-section{padding:64px 0 40px}
@@ -293,7 +293,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
   .ws-c{position:static;width:auto;height:auto;transform:none}
   .ws-t{display:none}
   .ws .wheel-wrap{position:static;width:min(92vw,560px)!important;margin:0 auto 48px}
-  .ws .ws-title{position:static;width:auto;font-size:clamp(26px,7vw,36px);margin:0 auto 24px;padding:0 20px}
+  .ws .ws-title{position:static;width:auto;font-size:clamp(26px,7vw,36px);margin:0 auto 44px;padding:0 20px}
   .ws .scroll-text{position:static;width:auto;max-width:954px;padding:0 24px;transform:none;font-size:clamp(23px,6vw,32px)}
 }
 
