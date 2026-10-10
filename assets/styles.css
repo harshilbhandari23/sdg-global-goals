@@ -655,3 +655,17 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .ws-g{display:block;overflow:visible}
 .ws-g img{display:block;width:100%;height:100%;object-fit:cover}
 .ws-g:hover,.ws-g:focus-visible{filter:brightness(1.08);transform:scale(1.04);z-index:3}
+
+/* related goals: flat square cards, goal-colour label bar */
+.related .h3{color:var(--navy);text-transform:uppercase;font-weight:800;letter-spacing:-.02em}
+.related .divider{height:6px;width:96px;background:var(--blue)}
+.related .grid{gap:0}
+.related .goal-card{border-radius:0;box-shadow:none;background:var(--c);transition:transform .25s ease,filter .25s ease}
+.related .goal-card:hover{transform:none;box-shadow:none;filter:brightness(1.08)}
+.related .goal-card .img{transition:transform .5s ease}
+.related .goal-card{position:relative}
+.related .goal-card .img{overflow:hidden}
+.related .goal-card:hover .img{transform:scale(1.04)}
+.related .goal-card .t{background:var(--c);color:#fff;padding:14px 18px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:18px;position:relative;z-index:1}
+.related .goal-card .t i{width:auto;height:auto;border-radius:0;background:none;font-style:normal;font-size:22px;line-height:1}
+.related .goal-card .t i::before{content:"\2192"}
