@@ -384,3 +384,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:440px){.t-grid{grid-template-columns:1fr}}
 /* goal banner: title and "Goal N" centred */
 .banner .titles h1,.banner .titles .gn{text-align:center}
+/* goal banner: title and "Goal N" stack with a fixed gap, so long titles never overlap the label */
+.banner{height:auto;min-height:640px}
+.banner .titles{position:relative;inset:auto;display:flex;flex-direction:column;align-items:center;gap:40px;padding:95px 6% 300px;box-sizing:border-box}
+.banner .titles h1,.banner .titles .gn{position:static;transform:none;left:auto;bottom:auto;width:min(1034px,100%);text-align:center;margin:0}
+@media(max-width:760px){.banner{min-height:520px}.banner .titles{padding:80px 6% 220px;gap:28px}.banner .titles .gn{bottom:auto}}
