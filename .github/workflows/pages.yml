@@ -6,6 +6,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 */3 * * *"   # refresh the live news every 3 hours
 
 permissions:
   contents: read
@@ -27,6 +29,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Fetch the latest SDG news
+        run: python3 tools/fetch_news.py
+        continue-on-error: true
+        timeout-minutes: 15
       - name: Build pages from data/
         run: python3 build.py
       - name: Remove files that should not be published
