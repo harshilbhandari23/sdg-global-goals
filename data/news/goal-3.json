@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T08:38:00+00:00",
+ "updated": "2026-10-10T08:44:51+00:00",
  "goal": 3,
  "articles": [
   {
@@ -90,6 +90,33 @@
    "image": "https://dailytimes.com.pk/assets/uploads/2025/07/app-icon-192x192-1-192x180-1.png",
    "publishedAt": "2026-10-09T16:32:00+00:00",
    "source": "Daily Times",
+   "goal": 3
+  },
+  {
+   "title": "UNMC hosts maternal health training for rural nurses in North Platte",
+   "url": "https://www.knopnews2.com/2026/10/09/unmc-hosts-maternal-health-training-rural-nurses-north-platte/",
+   "description": "UNMC's EMBRACE program hosted hands-on maternal health training for rural nurses and sonographers in North Platte, building skills for obstetric emergencies.",
+   "image": "https://www.bing.com/th?id=ONUT.B6bhgXiQKntaK8Gwa94YFw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T16:26:00+00:00",
+   "source": "KNOP",
+   "goal": 3
+  },
+  {
+   "title": "Health Ministry outlines funding push for primary care, workers and medicines in 2027/28 budget",
+   "url": "https://kenya-today.com/report-health-ministry-outlines-funding-push-for-primary-care-workers-and-medicines-in-202728-budget-9279/",
+   "description": "The Ministry of Health presented a budget proposal that prioritises primary healthcare, staff salaries and essential medicines, seeking extra financing to close a medium‑term funding gap.",
+   "image": "https://www.bing.com/th?id=ONUT.tY2iiX-gKQuW2DoryBWGIA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T14:18:00+00:00",
+   "source": "Kenya Today",
+   "goal": 3
+  },
+  {
+   "title": "Is Nigeria’s Health System Ready to Care for People Who Live with Long-term Illness? – Global Health Otherwise",
+   "url": "https://oncodaily.com/voices/nigeria-604408",
+   "description": "Is Nigeria's Health System Ready to Care for People Who Live with Long-term Illness? - Global Health Otherwise / cancer, Global Health Otherwise, Nigeria, ...",
+   "image": "https://www.bing.com/th?id=ONUT.pKLKQagt7_JLmLITfb62VA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T07:28:00+00:00",
+   "source": "oncodaily",
    "goal": 3
   }
  ]

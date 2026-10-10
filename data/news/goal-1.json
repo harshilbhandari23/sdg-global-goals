@@ -1,7 +1,25 @@
 {
- "updated": "2026-10-10T08:37:40+00:00",
+ "updated": "2026-10-10T08:44:31+00:00",
  "goal": 1,
  "articles": [
+  {
+   "title": "From shelter to livelihood, extending love in the border area of Tay Ninh",
+   "url": "https://news.laodong.vn/mat-tran/tu-mai-am-den-sinh-ke-noi-dai-yeu-thuong-noi-bien-gioi-tay-ninh-1780581.ldo",
+   "description": "Tay Ninh - Launching the \"Accompanying Border Women\" program for the period 2026-2030, supporting women and children in difficult circumstances to rise up.",
+   "image": "https://www.bing.com/th?id=ONUT.XTC--CibjmRZ5icqw5sRSA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:16:00+00:00",
+   "source": "news.laodong",
+   "goal": 1
+  },
+  {
+   "title": "Khadi and Village Industries: Weaving the Fabric of an Inclusive and Sustainable India",
+   "url": "https://orissadiary.com/khadi-and-village-industries-weaving-the-fabric-of-an-inclusive-and-sustainable-india/",
+   "description": "Khadi and Village Industries (KVI) have continued to play a significant role in promoting rural livelihoods, generating employment and strengthening the vision of an Atmanirbhar Bharat. Rooted in ...",
+   "image": "https://s0.wp.com/i/blank.jpg",
+   "publishedAt": "2026-10-10T00:50:00+00:00",
+   "source": "Odisha Diary",
+   "goal": 1
+  },
   {
    "title": "Going to villages to mobilize ethnic minorities to learn a trade to escape poverty",
    "url": "https://news.laodong.vn/viec-lam/ve-tan-ban-lang-van-dong-nguoi-dong-bao-thieu-so-di-hoc-nghe-de-thoat-ngheo-1780698.ldo",
@@ -9,6 +27,15 @@
    "image": "https://www.bing.com/th?id=ONUT.alABU_5pjEarlRvRgcGVEw&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T18:01:00+00:00",
    "source": "news.laodong",
+   "goal": 1
+  },
+  {
+   "title": "Pakistan plans national framework to cut poverty by 75%",
+   "url": "https://minutemirror.com.pk/pakistan-plans-national-framework-to-cut-poverty-by-75-642250/",
+   "description": "The Pakistan Poverty Alleviation Fund (PPAF) is also working with development partners across 157 districts. Its chief executive officer, Nader Gul Barech, said the organisation had established ...",
+   "image": "https://minutemirror.com.pk/wp-content/uploads/og-cache/f3b8db83f6eb50455040cece7716fa11.jpg",
+   "publishedAt": "2026-10-09T17:00:00+00:00",
+   "source": "Minute Mirror",
    "goal": 1
   },
   {

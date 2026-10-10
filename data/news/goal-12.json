@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T08:39:50+00:00",
+ "updated": "2026-10-10T08:46:51+00:00",
  "goal": 12,
  "articles": [
   {
@@ -7,7 +7,7 @@
    "url": "https://www.deccanherald.com/india/karnataka/karnataka-begins-setting-plastic-recycling-targets-4177215",
    "description": "Karnataka sets strict targets for producers, importers, and brand owners under extended producer responsibility rules, penalising violations and non-compliance across state industries.",
    "image": "https://www.bing.com/th?id=ONUT.BYBLruq94J3zHmuzxNOhdA&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T01:36:00+00:00",
+   "publishedAt": "2026-10-10T01:39:00+00:00",
    "source": "Deccan Herald",
    "goal": 12
   },
@@ -21,21 +21,12 @@
    "goal": 12
   },
   {
-   "title": "PlasCred: Can Plastic Waste Become a Resource Again?",
-   "url": "https://www.theglobeandmail.com/investing/markets/indices/STNC/pressreleases/5452587/plascred-can-plastic-waste-become-a-resource-again/",
-   "description": "Real-time index price for TSX American Preferred Stock Index (STNC), along with buy or sell indicators, analysis, charts, historical performance, news and more ...",
-   "image": "https://www.theglobeandmail.com/pf/resources/assets/meta/twitter-summary-240x240.png?d=977",
-   "publishedAt": "2026-10-09T23:51:00+00:00",
-   "source": "The Globe and Mail",
-   "goal": 12
-  },
-  {
-   "title": "Top chefs confess their love for one of America's most divisive fast-food chains",
-   "url": "https://www.msn.com/en-nz/news/other/top-chefs-confess-their-love-for-one-of-americas-most-divisive-fast-food-chains/ar-AA2dWnbR",
-   "description": "Michelin-star chefs have confessed their shocking love for the Taco Bell menu, one of America's most polarizing fast-food chains.",
-   "image": "https://www.bing.com/th?id=ONUT.4NAEePXXG_cMtm47LhNmoA&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T20:09:05+00:00",
-   "source": "Daily Mail on MSN",
+   "title": "Khadi and Village Industries: Weaving the Fabric of an Inclusive and Sustainable India",
+   "url": "https://orissadiary.com/khadi-and-village-industries-weaving-the-fabric-of-an-inclusive-and-sustainable-india/",
+   "description": "Khadi and Village Industries (KVI) have continued to play a significant role in promoting rural livelihoods, generating employment and strengthening the vision of an Atmanirbhar Bharat. Rooted in ...",
+   "image": "https://s0.wp.com/i/blank.jpg",
+   "publishedAt": "2026-10-10T00:50:00+00:00",
+   "source": "Odisha Diary",
    "goal": 12
   },
   {
@@ -90,6 +81,33 @@
    "image": "https://www.bing.com/th?id=ONUT.c-__VA0Qi4spnO9LCq5DFw&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T09:03:00+00:00",
    "source": "3News",
+   "goal": 12
+  },
+  {
+   "title": "Role Of Circular Economy In Achieving Net Zero",
+   "url": "https://www.miragenews.com/role-of-circular-economy-in-achieving-net-zero-1757515/",
+   "description": "Live Speech - Asia Pacific Circular Economy Hotspot 2026 The Hon. Matt KeanChair - Climate Change AuthorityCheck against delivery.May I acknowledge ...",
+   "image": "https://www.bing.com/th?id=ONUT.kBOBXlwBGLVicEsyD8l0Ww&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T04:46:00+00:00",
+   "source": "Mirage News",
+   "goal": 12
+  },
+  {
+   "title": "National rules are reshaping Asia’s plastic footprint",
+   "url": "https://eastasiaforum.org/2026/10/09/national-rules-are-reshaping-asias-plastic-footprint/",
+   "description": "National rules and standards, not consensus-based global governance, are what is reshaping plastic supply chains in Asia.",
+   "image": "https://www.bing.com/th?id=ONUT.6UUcB77AbFFUBZXj6nCGGg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T04:00:00+00:00",
+   "source": "East Asia Forum",
+   "goal": 12
+  },
+  {
+   "title": "Circular economy builds economic resilience in turbulent times",
+   "url": "https://www.fortuneindia.com/opinion/circular-economy-builds-economic-resilience-in-turbulent-times/163781",
+   "description": "In an increasingly unpredictable world, resilience has become as important as growth. Geopolitical tensions, resource constraints, supply chain disruptions, and climate change are reshaping the way ...",
+   "image": "https://www.bing.com/th?id=ONUT.oIMlAfvqmDQjxxkeUTDiYQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T02:39:00+00:00",
+   "source": "Fortune India",
    "goal": 12
   }
  ]

@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
-PER_GOAL, HOME = 10, 10
+PER_GOAL, HOME = 20, 20
 WINDOW = "when:60d"
 
 # search terms that keep each feed on its own goal (quoted phrases; "SDG n" always included)
@@ -183,14 +183,14 @@ def main():
                 continue
             seen.add(key(a)); a["_on"] = relevant(a, words); arts.append(a)
         # every card must be complete (photo + headline + summary): keep only stories that have all three.
-        # Headline-on-topic stories come first; weaker matches only top the list up to 6.
+        # Headline-on-topic stories come first; weaker matches only top the list up to 12.
         arts.sort(key=lambda a: a["publishedAt"], reverse=True)
         add_images([a for a in arts if a["_on"] or not a.get("image")], cache)
         done = lambda a: bool(a.get("image")) and len(a.get("description") or "") >= 40  # noqa: E731
         on, rest = [a for a in arts if a["_on"] and done(a)], [a for a in arts if not a["_on"] and done(a)]
         arts = on[:PER_GOAL]
-        if len(arts) < 6:
-            arts += rest[: 6 - len(arts)]
+        if len(arts) < 12:
+            arts += rest[: 12 - len(arts)]
         arts.sort(key=lambda a: a["publishedAt"], reverse=True)
         for a in arts:
             a.pop("_on", None)

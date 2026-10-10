@@ -1,14 +1,23 @@
 {
- "updated": "2026-10-10T08:40:38+00:00",
+ "updated": "2026-10-10T08:47:43+00:00",
  "goal": 16,
  "articles": [
   {
-   "title": "'No one ever heard of her': Trump goes off on petty rant after Nobel Peace Prize snub",
-   "url": "https://www.msn.com/en-za/news/other/no-one-ever-heard-of-her-trump-goes-off-on-petty-rant-after-nobel-peace-prize-snub/ar-AA2dWQmP",
+   "title": "No one ever heard of her: Trump goes off on petty rant after Nobel Peace Prize snub",
+   "url": "https://www.msn.com/en-my/news/other/no-one-ever-heard-of-her-trump-goes-off-on-petty-rant-after-nobel-peace-prize-snub/ar-AA2dWEr7",
    "description": "Trump claimed he \"should have won 8 Nobel Peace Prizes\" for having \"settled 8 wars\" as he dismissed Pillay's career in an irate Truth Social post. View on euronews ...",
-   "image": "https://www.bing.com/th?id=ONUT.of2c9sYjD5FaOSWZkHhdYw&pid=News&w=560&h=340&c=14",
+   "image": "https://www.bing.com/th?id=ONUT.RkdeNZx-kjObeHTm4ZuuCg&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-10T01:24:01+00:00",
    "source": "Euronews on MSN",
+   "goal": 16
+  },
+  {
+   "title": "Who is Navi Pillay? From apartheid-era lawyer to Nobel Peace Prize winner",
+   "url": "https://www.msn.com/en-za/news/other/who-is-navi-pillay-from-apartheid-era-lawyer-to-nobel-peace-prize-winner/ar-AA2dUDjG",
+   "description": "South African jurist Navi Pillay, a former UN human rights chief and International Criminal Court judge, has won the Nobel Peace Prize after a career spanning apartheid-era legal activism, ...",
+   "image": "https://www.bing.com/th?id=ONUT.fWyr0UJ9dI77fRJgAX7y1Q&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:23:15+00:00",
+   "source": "IOL on MSN",
    "goal": 16
   },
   {
@@ -57,15 +66,6 @@
    "goal": 16
   },
   {
-   "title": "Nobel Peace Prize: Navi Pillay, ex-ICC judge and UN rights head wins",
-   "url": "https://www.msn.com/en-ph/news/other/nobel-peace-prize-navi-pillay-ex-icc-judge-and-un-rights-head-wins/ar-AA2dWLil",
-   "description": "OSLO, Norway — The South African-born jurist and former UN human rights chief Navi Pillay, who is currently an ad hoc judge at the International Court of Justice, won the Nobel Peace Prize on Friday ...",
-   "image": "https://www.bing.com/th?id=ONUT.0ILsmsf40tcEZe9BYtMqeQ&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T18:52:00+00:00",
-   "source": "Cebu Daily News on MSN",
-   "goal": 16
-  },
-  {
    "title": "Topeka Center for Peace and Justice hosts 41st annual Peace Gala",
    "url": "https://www.wibw.com/2026/10/10/topeka-center-peace-justice-hosts-41st-annual-peace-gala/",
    "description": "The Topeka Center for Peace and Justice hosted its 41st annual Peace Gala, honoring people and organizations who’ve worked to promote safer communities and peaceful conflict resolution.",
@@ -75,21 +75,48 @@
    "goal": 16
   },
   {
-   "title": "Navi Pillay, former UN human rights chief, wins Nobel Peace Prize",
-   "url": "https://brudirect.com/post/Navi-Pillay%2C-former-UN-human-rights-chief%2C-wins-Nobel-Peace-Prize",
-   "description": "Former UN human rights chief and International Court of Justice judge Navi Pillay has been awarded the 2026 Nobel Peace Prize. The South African judge was recognised \"for her effo ...",
-   "image": "https://www.bing.com/th?id=ONUT.R8TtGNTeeIZzOvQHeCsC1Q&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T17:00:00+00:00",
-   "source": "BruDirect",
-   "goal": 16
-  },
-  {
    "title": "NSPNC meets SNUC for national unity and peacebuilding",
    "url": "https://www.gnlm.com.mm/nspnc-meets-snuc-for-national-unity-and-peacebuilding/",
    "description": "A meeting between the National Solidarity and Peacemaking Negotiation Committee (NSPNC) and the Shanni (Tai Leng, Tai Lai) National Unity Council (SNUC) was ...",
    "image": "https://www.bing.com/th?id=ONUT.a7pfXhqnH4rkpEwnFRXU9Q&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T17:00:00+00:00",
    "source": "Global New Light Of Myanmar",
+   "goal": 16
+  },
+  {
+   "title": "Protecting education and culture, promoting dialogue key to peace",
+   "url": "https://www.gulf-times.com/article/735389/qatar/protecting-education-and-culture-promoting-dialogue-key-to-peace",
+   "description": "Protecting education, Dr al-Hinzab said, is fundamentally about protecting peace, while safeguarding culture and heritage preserves peoples’ identities, collective memory and right to the future.",
+   "image": "https://www.bing.com/th?id=ONUT.sbjjDl1mfHbaeiB5FiohUg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T17:00:00+00:00",
+   "source": "Gulf Times",
+   "goal": 16
+  },
+  {
+   "title": "'Inspirational' Durham honorary graduate Navi Pillay awarded Nobel Peace Prize",
+   "url": "https://www.chroniclelive.co.uk/news/north-east-news/inspirational-durham-honorary-graduate-navi-34744930",
+   "description": "The Nobel Peace Prize has been awarded to a leading international lawyer with strong ties to Durham University. South African Navi Pillay was named the new Nobel laureate on Friday. Ms Pillay, 85, won ...",
+   "image": "https://www.bing.com/th?id=ONUT.qKhyI3M9F8zfshyBJKtYog&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T15:08:00+00:00",
+   "source": "Chronicle Live",
+   "goal": 16
+  },
+  {
+   "title": "Peacebuilding: \"We have approached societies affected by conflict as if they were a machine we can fix\"",
+   "url": "https://partner.sciencenorway.no/foreign-affairs-nupi-society-and-culture/peacebuilding-we-have-approached-societies-affected-by-conflict-as-if-they-were-a-machine-we-can-fix/2717997",
+   "description": "Traditional approaches to creating peace have a mixed record of success and failure. Researchers have found a new way that may be more effective.",
+   "image": "https://www.bing.com/th?id=ONUT.HxaBxawAysP-Q751sjw6aw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T15:01:00+00:00",
+   "source": "SNP-partner - Sciencenorway",
+   "goal": 16
+  },
+  {
+   "title": "International jurist Navi Pillay wins Nobel Peace Prize as global rule of law comes under siege",
+   "url": "https://www.straitstimes.com/world/europe/south-africas-navanethem-navi-pillay-wins-2026-nobel-peace-prize",
+   "description": "Navanethem Pillay wins 2026 Nobel Peace Prize for efforts to promote peace and international law, the Norwegian Nobel Committee says. Read more at straitstimes.com.",
+   "image": "https://www.bing.com/th?id=ONUT.Szrb8m_yhl2f3UiddbMHHQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T14:17:00+00:00",
+   "source": "The Straits Times",
    "goal": 16
   }
  ]

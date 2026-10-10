@@ -176,7 +176,7 @@ def build_home():
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
 <div class="legend"><span><i style="background:#5cb85c"></i>On track / achieved</span><span><i style="background:#f0ab00"></i>Challenges remain</span><span><i style="background:#ef7d00"></i>Significant challenges</span><span><i style="background:#c0392b"></i>Major challenges</span><span><i style="background:#c8c8c8"></i>Information unavailable</span></div></div></section>
 
-<section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 10, "Live SDG News", "livenews")}</div></section>
+<section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 20, "Live SDG News", "livenews")}</div></section>
 
 <section class="section" id="quiz" style="background:#fff"><div class="container"><h2 class="h2" style="text-align:center;margin-bottom:32px">Create your world's to-do list</h2>
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
@@ -242,7 +242,7 @@ def build_goal(g):
 <section class="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-wrap">{todos}</div></section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
-<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 10, "Live SDG News", "news")}</div></section>"""
+<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "Live SDG News", "news")}</div></section>"""
     p += footer(2) + fab() + scripts(2, '<script src="../../assets/vendor/react.min.js"></script><script src="../../assets/vendor/react-dom.min.js"></script><script type="module" src="../../assets/hero-mount.js"></script>')
     write(f"global_goals/goal-{n}/index.html", p)
 

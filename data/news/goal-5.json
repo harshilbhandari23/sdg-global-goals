@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T08:38:21+00:00",
+ "updated": "2026-10-10T08:45:20+00:00",
  "goal": 5,
  "articles": [
   {
@@ -9,6 +9,15 @@
    "image": "https://www.greenocktelegraph.co.uk/resources/images/21560077.jpg?type=og-image",
    "publishedAt": "2026-10-09T23:01:00+00:00",
    "source": "Greenock Telegraph",
+   "goal": 5
+  },
+  {
+   "title": "Kerala Will Oppose Communal, Anti-Women Remarks Regardless Of Religion: CM Satheesan",
+   "url": "https://www.outlookindia.com/national/keralam-will-oppose-communal-anti-women-remarks-regardless-of-religion-cm-satheesan",
+   "description": "Keralam CM V.D. Satheesan strongly rejected regressive and anti-women remarks, asserting that the state will oppose communal rhetoric regardless of religion to safeguard gender equality and progressiv ...",
+   "image": "https://www.bing.com/th?id=ONUT.ued8dkoPl3eLYsKqymaoIA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T16:56:00+00:00",
+   "source": "Outlook India",
    "goal": 5
   },
   {
@@ -90,6 +99,87 @@
    "image": "https://www.bing.com/th?id=ONUT.HzrK4vu9zNlSH8CgzHJ74g&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T07:27:00+00:00",
    "source": "TRT World",
+   "goal": 5
+  },
+  {
+   "title": "Regional Consultation Workshop Focuses on Men and Boys in Gender Equality",
+   "url": "https://www.postcourier.com.pg/regional-consultation-workshop-focuses-on-men-and-boys-in-gender-equality/",
+   "description": "Provincial representatives from the Momase, Southern and Highlands regions have convened in Port Moresby for a three-day regional consultation workshop on the development of the National Men and Boys ...",
+   "image": "https://www.postcourier.com.pg/wp-content/uploads/2026/10/fhdfh.jpg",
+   "publishedAt": "2026-10-09T06:57:00+00:00",
+   "source": "Post Courier",
+   "goal": 5
+  },
+  {
+   "title": "198 caught for harassing women in Malkajgiri in September; 215 complaints received",
+   "url": "https://www.thehindu.com/news/national/telangana/198-caught-for-harassing-women-in-malkajgiri-in-september-215-complaints-received/article71563644.ece",
+   "description": "As many as 198 persons, including 31 minors, were apprehended by the Malkajgiri SHE Teams for harassing women and girls during September, with complaints ranging from stalking and physical harassment ...",
+   "image": "https://www.thehindu.com/theme/images/og-image.png",
+   "publishedAt": "2026-10-09T06:29:00+00:00",
+   "source": "The Hindu",
+   "goal": 5
+  },
+  {
+   "title": "UNESCO Supports Family Awareness Raising on Protecting Girls in the Digital Environment in Cameroon",
+   "url": "https://www.unesco.org/en/articles/unesco-supports-family-awareness-raising-protecting-girls-digital-environment-cameroon",
+   "description": "During the ceremony organized by the Ministry of Women’s Empowerment and the Family, Mr Serge Banyimbe, Head of the Communication and Information Sector at the UNESCO Regional Office in Yaoundé, ...",
+   "image": "https://www.bing.com/th?id=ONUT.RwP9XZ62zevWsNfiTjsYjA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T04:42:00+00:00",
+   "source": "UNESCO",
+   "goal": 5
+  },
+  {
+   "title": "'Women seen as trophies of war’: Navi Pillay’s fight for justice gets Nobel recognition",
+   "url": "https://www.firstpost.com/world/women-seen-as-trophies-of-war-navi-pillays-fight-for-justice-gets-nobel-recognition-14051697.html",
+   "description": "Two years before winning the 2026 Nobel Peace Prize, Navi Pillay spoke to Firstpost about sexual violence as a weapon of war, allegations of abuse on both sides of the Israel-Hamas conflict, and the n ...",
+   "image": "https://www.bing.com/th?id=ONUT.apzixN18yoL2K5rFCfLSjg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T04:30:00+00:00",
+   "source": "Firstpost",
+   "goal": 5
+  },
+  {
+   "title": "Who is responsible for the debate surrounding the UN's 'definition of woman' in Japan? The Cabinet Office's Gender Equality Bureau and CEDAW",
+   "url": "https://note.com/yoshiko3/n/nb5d159c65d00?hl=en",
+   "description": "UNIn 2026, the UN Committee on the Elimination of Discrimination against Women (CEDAW Commit ...",
+   "image": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/35ef3588a31ca36d36ef0815ab44ae7aff53e73e.png",
+   "publishedAt": "2026-10-09T01:46:00+00:00",
+   "source": "note",
+   "goal": 5
+  },
+  {
+   "title": "Huntsville march calls for action against sexual violence",
+   "url": "https://www.waff.com/2026/10/09/huntsville-march-calls-action-against-sexual-violence/",
+   "description": "About 50 people marched around the courthouse Thursday night as part of a national day of action sparked by a lawsuit involving Cornell University.",
+   "image": "https://www.bing.com/th?id=ONUT.GN917Km9gJCUfkzlJWqpoQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T21:08:00+00:00",
+   "source": "WAFF 48",
+   "goal": 5
+  },
+  {
+   "title": "Centre trains 12,000 men to counter patriarchy, support women’s leadership",
+   "url": "https://guardian.ng/news/centre-trains-12000-men-to-counter-patriarchy-support-womens-leadership/",
+   "description": "A feminist group, the African Centre for Leadership, Strategy and Development (Centre LSD), has charged men to take more active ...",
+   "image": "https://www.bing.com/th?id=ONUT.fliDiX-xZ3EHAxRNihoIOA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T21:03:00+00:00",
+   "source": "The Guardian Nigeria",
+   "goal": 5
+  },
+  {
+   "title": "Big Brother's Rochelle slammed by viewers for \"embarrassing\" women's rights comments",
+   "url": "https://www.digitalspy.com/tv/reality-tv/a74084258/big-brothers-rochelle-womens-rights-comments/",
+   "description": "Big Brother housemate Rochelle has sparked backlash among viewers after sharing her views about women's rights and healthcare. This year's season of the ITV reality show has been consistently ...",
+   "image": "https://www.bing.com/th?id=ONUT.rjLRiigjhtWIKPca-LiiJA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T15:30:00+00:00",
+   "source": "Digital Spy",
+   "goal": 5
+  },
+  {
+   "title": "Mind Reading: Sophia Bush Backs New Project Empowering Women To Rewrite Societal Rules That Drain Their Mental Health",
+   "url": "https://www.forbes.com/sites/cathyolson/2026/10/08/mind-reading-sophia-bush-backs-new-project-empowering-women-to-rewrite-contradictory-societal-rules/",
+   "description": "The dichotomous trap of women needing to achieve absolute, contradictory perfectionism rang loud and clear in America Ferrera’s now iconic speech in the 2023 Barbie movie and it certainly continues to ...",
+   "image": "https://www.bing.com/th?id=ONUT.bQxaEqJ51o3SxEZqHlL0DQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T15:09:00+00:00",
+   "source": "Forbes",
    "goal": 5
   }
  ]

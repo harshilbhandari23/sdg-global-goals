@@ -1,7 +1,16 @@
 {
- "updated": "2026-10-10T08:38:29+00:00",
+ "updated": "2026-10-10T08:45:27+00:00",
  "goal": 6,
  "articles": [
+  {
+   "title": "More than a meal: Culinary leader brings readiness, morale and a taste of home",
+   "url": "https://www.army.mil/article/296061/more_than_a_meal_culinary_leader_brings_readiness_morale_and_a_taste_of_home",
+   "description": "In a deployed environment, a good meal can mean more than simply having something to eat.For Soldiers coming off a long shift, walking into the ...",
+   "image": "https://www.bing.com/th?id=ONUT.cXb_J0DgZKvEsNXDF9oMlQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:19:00+00:00",
+   "source": "United States Army",
+   "goal": 6
+  },
   {
    "title": "INVESTIGATION: How Water Scarcity, Insecurity And Poor Hygiene Hampers Service Delivery In Cross River PHCs",
    "url": "https://crossriverwatch.com/2026/10/investigation-how-water-scarcity-insecurity-and-poor-hygiene-hampers-service-delivery-in-cross-river-phcs/",
@@ -90,6 +99,15 @@
    "image": "https://urbanacres.in/wp-content/uploads/2026/10/urban-acres-tender-228769.png",
    "publishedAt": "2026-10-09T17:00:00+00:00",
    "source": "Urban Acres",
+   "goal": 6
+  },
+  {
+   "title": "Feds say First Nations Clean Water Act must pass quickly, others say it remains flawed",
+   "url": "https://www.aptnnews.ca/videos/feds-say-first-nations-clean-water-act-must-pass-quickly-others-say-it-remains-flawed/",
+   "description": "The proposed First Nations Clean Water Act was up for debate in the House of Commons on Friday. The feds say the bill needs to be passed quickly to upgrade aging water infrastructure, while opposition ...",
+   "image": "https://www.bing.com/th?id=ONUT.UP61vkxVfDVaJR_fDmvpsw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T15:39:00+00:00",
+   "source": "APTN News",
    "goal": 6
   }
  ]

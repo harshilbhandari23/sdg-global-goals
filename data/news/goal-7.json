@@ -1,7 +1,16 @@
 {
- "updated": "2026-10-10T08:38:39+00:00",
+ "updated": "2026-10-10T08:45:37+00:00",
  "goal": 7,
  "articles": [
+  {
+   "title": "ANCA announces new executive director",
+   "url": "https://www.dailygazette.com/ade/anca-announces-new-executive-director/article_fddd6760-2d44-4513-a36b-58afea76e0c7.html",
+   "description": "The Adirondack North Country Association Board of Directors has named Emily Nobel Maxwell as the regional economic development nonprofit’s next executive director. A resident of Jay, Nobel ...",
+   "image": "https://www.bing.com/th?id=ONUT.ls-x49cNGfPAN7pXcigGrA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:29:00+00:00",
+   "source": "The Daily Gazette",
+   "goal": 7
+  },
   {
    "title": "Durham writer challenges Darren Grimes over UK energy costs",
    "url": "https://www.thenorthernecho.co.uk/news/26624459.durham-writer-challenges-darren-grimes-uk-energy-costs/",
@@ -90,6 +99,15 @@
    "image": "https://www.bing.com/th?id=ONUT.SwOGYNMyw1Hc86fBkLijOg&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T17:00:00+00:00",
    "source": "The Manila Times",
+   "goal": 7
+  },
+  {
+   "title": "J&K CGD Policy 2026 to expand clean fuel access, boost industrial growth: CM",
+   "url": "https://kashmirreader.com/2026/10/09/jk-cgd-policy-2026-to-expand-clean-fuel-access-boost-industrial-growth-cm/",
+   "description": "Policy provides time-bound single-window clearances, coverage across all 20 districts, priority gas connectivity’ Srinagar, Oct 08: Chief Minister Omar Abdullah on Thursday termed the notification of ...",
+   "image": "https://www.bing.com/th?id=ONUT.yczGLvL_u8T2HP_sWrIeXA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T00:12:00+00:00",
+   "source": "Kashmir Reader",
    "goal": 7
   }
  ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T08:40:00+00:00",
+ "updated": "2026-10-10T08:47:01+00:00",
  "goal": 13,
  "articles": [
   {
@@ -7,8 +7,26 @@
    "url": "https://note.com/soichi_noguchi/n/nafc11b1027de?hl=en",
    "description": "Executive Summary The Turkish Minister of Climate Change, designated as COP31 President, has urged wealthy nations to spend \"far more\" on climate action than on defense. Meanwhile, they have reserved ...",
    "image": "https://www.bing.com/th?id=ONUT.lCpqQ8FRS6FPNYE4mow5-g&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T01:36:00+00:00",
+   "publishedAt": "2026-10-10T01:39:00+00:00",
    "source": "note",
+   "goal": 13
+  },
+  {
+   "title": "Trump picks Katie Zacharia as next White House press secretary, replacing Karoline Leavitt",
+   "url": "https://www.news9live.com/world/trump-picks-katie-zacharia-as-next-white-house-press-secretary-replacing-karoline-leavitt-3014756",
+   "description": "US President Donald Trump has selected conservative commentator Katie Zacharia for the White House press secretary's post, which remained vacant after Karoline Leavitt stepped down in August. Zacharia ...",
+   "image": "https://www.bing.com/th?id=ONUT.7yIABXeMRdGFojwELaQhPw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:38:00+00:00",
+   "source": "News9Live",
+   "goal": 13
+  },
+  {
+   "title": "Farmers seen as key beneficiaries of ASEAN Food Security and Agribusiness Summit 2026 initiatives",
+   "url": "https://www.msn.com/en-ph/money/general/farmers-seen-as-key-beneficiaries-of-asean-food-security-and-agribusiness-summit-2026-initiatives/ar-AA2dWSR5",
+   "description": "As the Philippines braces for the potential impacts of a super El Niño, Filipino farmers remain among the most vulnerable to changing weather conditions threatening agricultural productivity, ...",
+   "image": "https://www.bing.com/th?id=ONUT.1AJ5iQm-yWrQ14C7cuqfEQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:24:29+00:00",
+   "source": "ABS-CBN on MSN",
    "goal": 13
   },
   {
@@ -18,6 +36,15 @@
    "image": "https://www.bing.com/th?id=ONUT.aWvnvM0iUsLr3vJtGTc3Gw&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-10T01:19:00+00:00",
    "source": "Daily News",
+   "goal": 13
+  },
+  {
+   "title": "How can Chimborazo be higher than Everest?",
+   "url": "https://www.msn.com/en-gb/weather/climate-change/how-can-chimborazo-be-higher-than-everest/vi-AA2dWVls",
+   "description": "Chimborazo Volcano in Ecuador is a spectacular snow-covered mountain rising above the rugged landscapes of the Andes. Standing approximately 6,263 meters above sea level, it is Ecuador's highest ...",
+   "image": "https://www.bing.com/th?id=ONUT.WZTIOqpKTmnTidkThfvtMA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T01:00:56+00:00",
+   "source": "4k Films by Adnan on MSN",
    "goal": 13
   },
   {

@@ -1,16 +1,7 @@
 {
- "updated": "2026-10-10T08:38:10+00:00",
+ "updated": "2026-10-10T08:45:09+00:00",
  "goal": 4,
  "articles": [
-  {
-   "title": "Five grants bring new funding to Old Rochester schools",
-   "url": "https://www.yahoo.com/news/articles/five-grants-bring-funding-old-080043561.html",
-   "description": "Old Rochester Regional School District secured five grants to support students through literacy, civics and career-focused programs.",
-   "image": "https://www.bing.com/th?id=ONUT.OAEcGuBt9QExUBh9JjnMiQ&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T01:00:00+00:00",
-   "source": "Yahoo",
-   "goal": 4
-  },
   {
    "title": "Wu wants partners for Boston schools. This donor says he tried.",
    "url": "https://www.bostonglobe.com/2026/10/10/opinion/boston-public-schools-ad-campaign-partners/",
@@ -90,6 +81,42 @@
    "image": "https://www.bing.com/th?id=ONUT.-Yi7MlowU5okJALMOHSNyw&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T04:39:00+00:00",
    "source": "UNESCO",
+   "goal": 4
+  },
+  {
+   "title": "Only 59 girls for every 100 boys complete their Class 11,12 schooling in rural India—UNESCO report",
+   "url": "https://theprint.in/india/education/only-59-girls-for-every-100-boys-complete-their-class-1112-schooling-in-rural-india-unesco-report/3066613/",
+   "description": "UNESCO also points out that poverty widens gender gap in education. It calls for addressing barriers that prevent them from enrolling, attending school & completing their education.",
+   "image": "https://www.bing.com/th?id=ONUT.Wqp1_DZeeTRMA-xpuD_03g&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T03:29:00+00:00",
+   "source": "The Print",
+   "goal": 4
+  },
+  {
+   "title": "For 20 years, this man has taught underprivileged children under Yamuna Bank bridge",
+   "url": "https://www.indiatoday.in/education-today/news/story/yamuna-bank-bridge-school-rajesh-sharma-teaches-underprivileged-children-20-years-3013152-2026-10-09",
+   "description": "Rajesh Sharma has spent 20 years teaching underprivileged children under a bridge near Yamuna Bank. What began with two pupils now helps children stay in education despite financial hardship.",
+   "image": "https://www.bing.com/th?id=ONUT.88kyIhrSpQJaR539-0TpGw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T01:45:00+00:00",
+   "source": "India Today",
+   "goal": 4
+  },
+  {
+   "title": "CM Majhi reviews health, nutrition, education; seeks better outcomes",
+   "url": "https://www.newindianexpress.com/states/odisha/2026/Oct/09/cm-majhi-reviews-health-nutrition-education-seeks-better-outcomes",
+   "description": "BHUBANESWAR: Chief Minister Mohan Charan Majhi on Thursday directed officials to step up efforts to improve maternal and child health, tackle malnutrition and s ...",
+   "image": "https://www.bing.com/th?id=ONUT.gahsRU6QEjjS-M4R81wjHg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-08T20:58:00+00:00",
+   "source": "The New Indian Express",
+   "goal": 4
+  },
+  {
+   "title": "Enriched Uranium, Impoverished Children: Human Costs Of Nuclear Ambitions",
+   "url": "https://thefridaytimes.com/09-Oct-2026/enriched-uranium-impoverished-children-human-costs-nuclear-ambitions",
+   "description": "Developing a nuclear arsenal required decades of planning, secure infrastructure, and sustained political commitment—the exact long-term strategic elements ...",
+   "image": "https://www.thefridaytimes.com/digital_images/large/2026-10-09/enriched-uranium-impoverished-children-human-costs-nuclear-ambitions-1791496787-1974.jpg",
+   "publishedAt": "2026-10-08T17:00:00+00:00",
+   "source": "The Friday Times",
    "goal": 4
   }
  ]
