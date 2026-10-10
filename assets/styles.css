@@ -622,3 +622,6 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .kiosk .goalrow{width:100%;gap:.35cqw}
 @media(max-width:900px){.kiosk .mapwrap{width:100%}}
 .kiosk .goalrow{gap:0}
+/* country dashboard tiles: no gaps */
+.cx-goals{gap:0}
+@media(max-width:1000px){.cx-goals{gap:0}}
