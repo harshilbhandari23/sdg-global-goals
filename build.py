@@ -123,7 +123,7 @@ WS_TILES = [(386,1,96,96,17),(1253,97,96,97,14),(867,1,97,96,15),(1,97,96,97,16)
 def wheel_tiles():
     # snap every tile to one 18-column square grid so the edges line up exactly
     U = 1734 / 18
-    cell = lambda x, y: (int(round(x / U)), int(round(y / U)))
+    cell = lambda x, y: (int(round(x / U)), int(round(y / U)) + (2 if int(round(y / U)) >= 11 else 0))  # bottom rows move down 2 with the wheel
     box = lambda c, r: (int(round(c * U)), int(round(r * U)), int(round((c + 1) * U)) - int(round(c * U)), int(round((r + 1) * U)) - int(round(r * U)))
     used, out = set(), []
     for (x, y, w, h, g) in WS_TILES:
