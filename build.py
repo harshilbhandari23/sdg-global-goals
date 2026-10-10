@@ -90,7 +90,7 @@ def footer(depth):
 def scripts(depth, extra="", wheel=True):
     r = "../" * depth
     wheel = f'<script src="{r}assets/wheel-data.js?v={BUILD}"></script>' if wheel else ""
-    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
+    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/vendor/qrcode.min.js"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
 def news_block(feed, limit=10, title="Live SDG News", ident="news"):

@@ -389,3 +389,20 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .banner .titles{position:relative;inset:auto;display:flex;flex-direction:column;align-items:center;gap:40px;padding:95px 6% 300px;box-sizing:border-box}
 .banner .titles h1,.banner .titles .gn{position:static;transform:none;left:auto;bottom:auto;width:min(1034px,100%);text-align:center;margin:0}
 @media(max-width:760px){.banner{min-height:520px}.banner .titles{padding:80px 6% 220px;gap:28px}.banner .titles .gn{bottom:auto}}
+
+/* ---- "Scan to read more" QR popup ---- */
+.qr-modal{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(8,10,16,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.qr-modal[hidden]{display:none}
+.qr-open{overflow:hidden}
+.qr-card{position:relative;width:min(100%,520px);background:#fff;border-radius:32px;padding:48px 40px 40px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.45);animation:qr-in .25s ease}
+@keyframes qr-in{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.qr-close{position:absolute;top:20px;right:20px;width:48px;height:48px;border-radius:50%;border:0;background:#ececec;color:#1a1a1a;display:grid;place-items:center;cursor:pointer}
+.qr-close svg{width:22px;height:22px}
+.qr-close:hover{background:#dcdcdc}
+.qr-card h2{margin:0 0 12px;font:800 clamp(26px,3vw,34px)/1.1 var(--font-body);letter-spacing:-.02em;color:#161616}
+.qr-sub{margin:0 auto 28px;max-width:380px;font:400 clamp(16px,1.6vw,19px)/1.45 var(--font-body);color:#666}
+.qr-ring{display:inline-block;padding:14px;border-radius:44px;background:#f4f4f4}
+.qr-box{width:min(62vw,280px);aspect-ratio:1;padding:20px;border-radius:30px;background:#fff;border:2px solid #e3e3e3;box-sizing:content-box}
+.qr-box svg{display:block;width:100%;height:100%}
+.qr-title{margin:20px auto 0;max-width:380px;font:600 14px/1.35 var(--font-body);color:#888;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:520px){.qr-card{padding:56px 22px 28px;border-radius:26px}}

@@ -70,6 +70,25 @@
     window.addEventListener("resize", fit); fit(); render();
   });
 
+  /* ===== "Scan to read more" popup with a QR code for the story ===== */
+  var qrModal;
+  function openQr(a) {
+    if (!a || !a.url || typeof qrcode === "undefined") return;
+    if (!qrModal) {
+      qrModal = document.createElement("div"); qrModal.className = "qr-modal"; qrModal.setAttribute("role", "dialog"); qrModal.setAttribute("aria-modal", "true"); qrModal.setAttribute("aria-label", "Scan to read more"); qrModal.hidden = true;
+      qrModal.innerHTML = '<div class="qr-card"><button class="qr-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button><h2>Scan to read more</h2><p class="qr-sub">Use your phone\u2019s camera to read the full story from the original publisher.</p><div class="qr-ring"><div class="qr-box"></div></div><p class="qr-title"></p></div>';
+      document.body.appendChild(qrModal);
+      var close = function () { qrModal.hidden = true; document.documentElement.classList.remove("qr-open"); };
+      qrModal.addEventListener("click", function (e) { if (e.target === qrModal || e.target.closest(".qr-close")) close(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !qrModal.hidden) close(); });
+    }
+    var q = qrcode(0, "L"); q.addData(a.url); q.make();
+    qrModal.querySelector(".qr-box").innerHTML = q.createSvgTag({ cellSize: 8, margin: 0, scalable: true });
+    qrModal.querySelector(".qr-title").textContent = a.title || "";
+    qrModal.hidden = false; document.documentElement.classList.add("qr-open");
+    qrModal.querySelector(".qr-close").focus();
+  }
+
   /* ===== live news carousel ===== */
   document.querySelectorAll(".news").forEach(function (box) {
     var limit = +(box.dataset.limit || 5), idx = 0, vis = 4, items = [];
@@ -106,6 +125,11 @@
         im.addEventListener("error", function () { if (!a || !a.goal) { im.style.visibility = "hidden"; return; } im.closest("a").classList.add("has-tile"); im.className = "tile"; im.src = (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg"; }, { once: true });
       });
     }
+    /* tapping a card opens a QR code for that story (nothing navigates away from the kiosk) */
+    track.addEventListener("click", function (e) {
+      var card = e.target.closest && e.target.closest("a.news-card"); if (!card) return;
+      e.preventDefault(); openQr(items[Array.prototype.indexOf.call(track.children, card)]);
+    });
     /* stories come from data/news*.json, refreshed every few hours by tools/fetch_news.py (Google News search per goal) */
     function load() {
       return fetch((window.SITE_ROOT || "") + box.dataset.feed + "?ts=" + Date.now()).then(function (r) { if (!r.ok) throw new Error("Unable to load stories (" + r.status + ")"); return r.json(); })
