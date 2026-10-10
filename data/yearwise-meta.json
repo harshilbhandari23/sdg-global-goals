@@ -1,0 +1,13 @@
+{
+ "signature": [
+  "2026",
+  "\"d4b6593ac23b9cf77036473f3b45a60c-ssl\"",
+  null,
+  "9445858"
+ ],
+ "edition": "2026",
+ "latest_year": "2025",
+ "source": "https://dashboards.sdgindex.org/static/downloads/database_2026.xlsx",
+ "method": "Average of SDSN indicator scores (0-100) per goal, then average across countries",
+ "updated": "2026-10-10"
+}

@@ -714,3 +714,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .sdg-fab.open .sdg-pop{transform:scale(1) rotate(0)}
 .sdg-fab .toggle{transition:transform .2s,opacity .3s ease}
 @media(prefers-reduced-motion:reduce){.sdg-pop{transition:opacity .2s;transform:none}.sdg-fab.open .sdg-pop{transform:none}}
+
+.yw-note{margin:18px auto 0;max-width:640px;padding:0 20px;text-align:center;font:500 13px/1.5 var(--font-body);color:rgba(255,255,255,.72)}

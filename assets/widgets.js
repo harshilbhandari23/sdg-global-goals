@@ -18,7 +18,8 @@
   /* ===== year wheel: drag the ring like a dial, snaps to the nearest year ===== */
   var yw = document.querySelector(".yw");
   if (yw) fetch((window.SITE_ROOT || "") + "data/yearwise.json").then(function (r) { return r.json(); }).then(function (data) {
-    var UPCOMING = ["2026", "2027", "2028", "2029", "2030"];  // shown greyed out: no data yet, not selectable
+    var UPCOMING = [];  // years up to 2030 that have no data yet: greyed out, not selectable (a new SDSN edition fills them in by itself)
+    for (var uy = +data[data.length - 1].year + 1; uy <= 2030; uy++) UPCOMING.push(String(uy));
     var STEP = 360 / (data.length + UPCOMING.length), BASE = 1080, R = 370, cx = BASE * 0.54, cy = BASE * 0.5;
     var pos = Math.max(0, data.findIndex(function (d) { return d.year === (yw.dataset.start || "2020"); }));
     var stage = document.createElement("div"); stage.className = "yw-stage";

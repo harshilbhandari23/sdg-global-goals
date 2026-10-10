@@ -161,6 +161,14 @@ UN_PATHS = [("un-path929", 16, 48.43, 81.5, 48.95), ("un-path931", 13.83, 48.43,
             ("un-path933", 13.92, 49.37, 83.98, 49.41), ("un-path935", 13.66, 48.92, 82.31, 48.78)]  # top,right,bottom,left (%)
 
 
+def yw_note():
+    try:
+        m = json.load(open(D("data", "yearwise-meta.json"), encoding="utf8"))
+    except Exception:
+        return ""
+    return f'<p class="yw-note">Average score across countries per goal (0-100), from the SDSN Sustainable Development Report {m["edition"]} data. Updates automatically when new data is published.</p>'
+
+
 def hero_html():
     pos = lambda x, y: f"left:{x / HERO_W * 100:.4f}%;top:{y / HERO_H * 100:.4f}%"
     tiles = "".join(f'<i class="t" style="{pos(x, y)};background:{c}" aria-hidden="true"></i>' for c, x, y in HERO_COLOR_TILES)
@@ -210,7 +218,7 @@ def build_home():
 <p class="scroll-text" data-start="rgba(9,9,9,.56)" data-end="#080a07">The United Nations brings countries together to work on shared global challenges through cooperation, research and collective action. It supports peace, fairness and long-term development, while helping define how progress is measured across the world. At its core, it creates a common direction for nations to move forward together and stay accountable to shared priorities</p></div></div></section>
 
 <section class="years-section" id="years" style="background-image:url('assets/media/fhz7HQj75koriiRE2riVt1GtXQ8.png')">
-<h2 class="h2">progress over the years</h2><div class="yw" data-start="2020" role="group" aria-label="SDG progress by year. Drag the wheel or use the arrow keys."></div>
+<h2 class="h2">progress over the years</h2><div class="yw" data-start="2020" role="group" aria-label="SDG progress by year. Drag the wheel or use the arrow keys."></div>{yw_note()}
 <p class="hint">Drag the wheel to change the year ›</p></section>
 
 <section class="map-section" id="map">{mosaic(11, "top")}{mosaic(12, "bottom")}<h2 class="h2">Progress Across Nations</h2>
