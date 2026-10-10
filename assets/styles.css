@@ -569,3 +569,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .cx-legend{max-width:880px;margin-left:auto;margin-right:auto}
 @media(max-width:1000px){.cx-goals{max-width:560px;grid-template-columns:repeat(6,1fr)}}
 @media(max-width:640px){.cx-goals{grid-template-columns:repeat(4,1fr)}}
+/* all 17 goal tiles on one line */
+.cx-goals{max-width:1280px;grid-template-columns:repeat(17,minmax(0,1fr));gap:0 8px}
+.cx-g .tr{height:26px;font-size:16px}
+.cx-legend{max-width:1280px}
+@media(max-width:1000px){.cx-goals{max-width:none;overflow-x:auto;grid-template-columns:repeat(17,64px);padding-bottom:8px;-webkit-overflow-scrolling:touch}}
