@@ -132,6 +132,7 @@
     var tog = fab.querySelector(".toggle");
     tog.addEventListener("click", function (e) { e.stopPropagation(); fab.classList.toggle("open"); tog.setAttribute("aria-expanded", fab.classList.contains("open")); });
     document.addEventListener("click", function (e) { if (!fab.contains(e.target)) fab.classList.remove("open"); });
+    var px = fab.querySelector(".pop-x"); if (px) px.addEventListener("click", function (e) { e.stopPropagation(); fab.classList.remove("open"); tog.setAttribute("aria-expanded", "false"); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") fab.classList.remove("open"); });
   }
 

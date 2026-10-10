@@ -76,7 +76,7 @@ def nav(depth, current=""):
 
 
 def fab():
-    return ('<div class="sdg-fab"><div class="sdg-pop" role="dialog" aria-label="Choose a goal"><div class="wheel-links"></div></div>'
+    return ('<div class="sdg-fab"><div class="sdg-pop" role="dialog" aria-label="Choose a goal"><div class="wheel-links"></div><button class="pop-x" type="button" aria-label="Close">&times;</button></div>'
             '<button class="toggle" type="button" aria-label="Open the goals wheel" aria-expanded="false"></button></div>')
 
 

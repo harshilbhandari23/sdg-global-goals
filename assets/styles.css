@@ -700,3 +700,11 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .quiz .help{font:800 13px var(--font-head);color:var(--blue);letter-spacing:.14em}
 .quiz .rt{border-radius:0;box-shadow:none}
 .quiz .retake{border-radius:0;background:var(--navy);text-transform:uppercase;letter-spacing:.04em;font-family:var(--font-head)}
+
+/* goals popup grows out of the floating button, from the same corner */
+.sdg-pop{right:0;bottom:0;transform-origin:100% 100%;transform:scale(.17);transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .25s ease}
+.sdg-fab.open .sdg-pop{transform:scale(1)}
+.sdg-fab .toggle{transition:transform .2s,opacity .2s}
+.sdg-fab.open .toggle{opacity:0;pointer-events:none}
+.sdg-pop .pop-x{position:absolute;top:6px;right:6px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font:400 24px/1 var(--font-head);cursor:pointer;z-index:2}
+.sdg-pop .pop-x:hover{background:rgba(255,255,255,.32)}
