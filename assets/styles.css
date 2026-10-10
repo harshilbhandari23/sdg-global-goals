@@ -708,3 +708,9 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .sdg-fab.open .toggle{opacity:0;pointer-events:none}
 .sdg-pop .pop-x{position:absolute;top:6px;right:6px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font:400 24px/1 var(--font-head);cursor:pointer;z-index:2}
 .sdg-pop .pop-x:hover{background:rgba(255,255,255,.32)}
+
+/* smooth grow-out from the button centre */
+.sdg-pop{transform:scale(.17) rotate(-40deg);transition:transform .55s cubic-bezier(.22,1,.36,1),opacity .35s ease}
+.sdg-fab.open .sdg-pop{transform:scale(1) rotate(0)}
+.sdg-fab .toggle{transition:transform .2s,opacity .3s ease}
+@media(prefers-reduced-motion:reduce){.sdg-pop{transition:opacity .2s;transform:none}.sdg-fab.open .sdg-pop{transform:none}}

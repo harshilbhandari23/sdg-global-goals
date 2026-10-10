@@ -134,8 +134,9 @@
     /* keep the popup on screen wherever the button has been dragged to */
     var place = function () {
       var b = tog.getBoundingClientRect(), P = pop.offsetWidth, m = 8, fr = fab.getBoundingClientRect();
-      var l = Math.min(Math.max(b.right - P, m), window.innerWidth - P - m);
-      var t = Math.min(Math.max(b.bottom - P, m), window.innerHeight - P - m);
+      var cx = b.left + b.width / 2, cy = b.top + b.height / 2;   // wheel opens centred on the button
+      var l = Math.min(Math.max(cx - P / 2, m), window.innerWidth - P - m);
+      var t = Math.min(Math.max(cy - P / 2, m), window.innerHeight - P - m);
       pop.style.right = "auto"; pop.style.bottom = "auto"; pop.style.left = (l - fr.left) + "px"; pop.style.top = (t - fr.top) + "px";
       pop.style.transformOrigin = (b.left + b.width / 2 - l) + "px " + (b.top + b.height / 2 - t) + "px";
     };
