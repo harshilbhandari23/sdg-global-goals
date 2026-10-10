@@ -3,10 +3,10 @@
   var root = document.querySelector(".cx");
   if (!root || !window.d3 || !window.topojson) return;
   var API = "https://sdg-middleware.vercel.app/api/score-change?country=";
-  var TOPO = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+  var TOPO = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
   var COUNTRIES = ["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua & Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Côte d'Ivoire","Croatia","Cuba","Cyprus","Czech Republic","DR Congo","Denmark","Djibouti","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Samoa","San Marino","São Tomé & Príncipe","Saudi Arabia","Senegal","Serbia","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"];
   /* names in the world atlas that differ from the list above */
-  var ATLAS = { "Antigua & Barbuda": "Antigua and Barb.", "Bosnia & Herzegovina": "Bosnia and Herz.", "Brunei Darussalam": "Brunei", "Central African Republic": "Central African Rep.", "Czech Republic": "Czechia", "DR Congo": "Dem. Rep. Congo", "Dominican Republic": "Dominican Rep.", "Equatorial Guinea": "Eq. Guinea", "Eswatini": "eSwatini", "Solomon Islands": "Solomon Is.", "South Sudan": "S. Sudan", "São Tomé & Príncipe": "São Tomé and Principe", "Trinidad & Tobago": "Trinidad and Tobago", "United States": "United States of America", "Marshall Islands": "Marshall Is.", "Timor-Leste": "Timor-Leste", "North Macedonia": "North Macedonia" };
+  var ATLAS = { "Antigua & Barbuda": "Antigua and Barb.", "Bosnia & Herzegovina": "Bosnia and Herz.", "Brunei Darussalam": "Brunei", "Central African Republic": "Central African Rep.", "Czech Republic": "Czechia", "DR Congo": "Dem. Rep. Congo", "Dominican Republic": "Dominican Rep.", "Equatorial Guinea": "Eq. Guinea", "Eswatini": "eSwatini", "Solomon Islands": "Solomon Is.", "South Sudan": "S. Sudan", "São Tomé & Príncipe": "São Tomé and Principe", "Trinidad & Tobago": "Trinidad and Tobago", "United States": "United States of America", "Marshall Islands": "Marshall Is.", "Timor-Leste": "Timor-Leste", "North Macedonia": "Macedonia" };
   var TREND = { "↑": ["#3aa746", "On Track"], "↓": ["#db1a36", "Decreasing"], "→": ["#e87c1e", "Stagnating"], "➚": ["#ebc011", "Moderately Improving"], "?": ["#939598", "Unknown"] };
   var $ = function (s) { return root.querySelector(s); };
   var nav = $(".cx-az"), drop = $(".cx-drop"), nameEl = $(".cx-name"), regionEl = $(".cx-region"), svg = $(".cx-map svg"), scoreEl = $(".cx-score"), rankEl = $(".cx-rank"), dash = $(".cx-goals");
@@ -40,11 +40,20 @@
     return features.filter(function (f) { return (f.properties.name || "").toLowerCase() === want; })[0] ||
       features.filter(function (f) { var n = (f.properties.name || "").toLowerCase(); return n.indexOf(want) === 0 || want.indexOf(n) === 0; })[0] || null;
   }
+  /* keep the mainland and nearby islands (drops far-away overseas territories so the country fills the frame) */
+  function core(f) {
+    if (f.geometry.type !== "MultiPolygon") return f;
+    var polys = f.geometry.coordinates.map(function (c) { var g = { type: "Polygon", coordinates: c }; return { c: c, g: g, a: d3.geoArea(g), p: d3.geoCentroid(g) }; });
+    var main = polys.reduce(function (a, b) { return b.a > a.a ? b : a; });
+    var keep = polys.filter(function (p) { return p === main || d3.geoDistance(p.p, main.p) < 0.45; });
+    return { type: "Feature", properties: f.properties, geometry: { type: "MultiPolygon", coordinates: keep.map(function (p) { return p.c; }) } };
+  }
   function drawMap() {
-    var f = find(current);
     if (!features) { svg.innerHTML = '<text x="350" y="250" text-anchor="middle" fill="#9aa">Loading map…</text>'; return; }
-    if (!f) { svg.innerHTML = '<text x="350" y="250" text-anchor="middle" fill="#8a96a3" font-size="18">Too small to show on this map</text>'; return; }
-    var proj = d3.geoNaturalEarth1().fitExtent([[24, 24], [676, 476]], f);
+    var f = find(current);
+    if (!f) { svg.innerHTML = '<text x="350" y="250" text-anchor="middle" fill="#8a96a3" font-size="18">Map not available for this country</text>'; return; }
+    f = core(f);
+    var cen = d3.geoCentroid(f), proj = d3.geoNaturalEarth1().rotate([-cen[0], 0]).fitExtent([[24, 24], [676, 476]], f);   // rotate so countries crossing the date line stay in one piece
     svg.innerHTML = '<path d="' + d3.geoPath(proj)(f) + '" fill="#009edb"/>';
   }
 
