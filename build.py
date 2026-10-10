@@ -158,6 +158,14 @@ def hero_html():
 <h1 class="fh-title"><span>SUSTAINABLE </span><span>DEVELOPMENT </span><span>GOALS</span></h1>
 <p class="fh-sub1">Your lens into</p><p class="fh-sub2">Global progression</p></div></header>"""
 
+
+CX_DECOR = [("t", "r", 0, 0, "#FCC30B"), ("t", "r", 1, 0, "#E5243B"), ("t", "r", 0, 1, "#26BDE2"), ("t", "r", 2, 0, "#3F7E44"), ("t", "r", 1, 1, "#DD1367"), ("t", "r", 3, 0, "#FD6925"),
+            ("b", "l", 0, 0, "#4C9F38"), ("b", "l", 1, 0, "#A21942"), ("b", "l", 0, 1, "#FD9D24"), ("b", "l", 2, 0, "#0A97D9"), ("b", "l", 1, 1, "#BF8B2E")]
+
+
+def cx_decor():
+    return "".join('<i class="cx-d" aria-hidden="true" style="%s:calc(%d * var(--sq));%s:calc(%d * var(--sq));background:%s"></i>' % ("top" if v == "t" else "bottom", row, "right" if h == "r" else "left", col, color) for (v, h, col, row, color) in CX_DECOR)
+
 # ---------------------------------------------------------------- home
 def build_home():
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
@@ -176,7 +184,7 @@ def build_home():
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
 <div class="legend"><span><i style="background:#5cb85c"></i>On track / achieved</span><span><i style="background:#f0ab00"></i>Challenges remain</span><span><i style="background:#ef7d00"></i>Significant challenges</span><span><i style="background:#c0392b"></i>Major challenges</span><span><i style="background:#c8c8c8"></i>Information unavailable</span></div></div></section>
 
-<section class="cx-section" id="country"><h2 class="h2">See where your country stands</h2>
+<section class="cx-section" id="country">{cx_decor()}<h2 class="h2">See where your country stands</h2>
 <div class="cx" data-country="Afghanistan"><div class="cx-pick"><div class="cx-az" role="group" aria-label="Pick a country by first letter"></div><div class="cx-drop" role="listbox" hidden></div></div>
 <div class="cx-main"><div class="cx-left"><h3 class="cx-name">Afghanistan</h3><p class="cx-region">Loading…</p><div class="cx-map"><svg viewBox="0 0 700 500" preserveAspectRatio="xMidYMid meet" aria-label="Country outline"></svg></div></div>
 <div class="cx-stats"><div class="cx-stat navy"><b class="cx-score">—</b><span>Country score</span></div><div class="cx-stat blue"><b><i class="cx-rank">—</i><em>/ 167</em></b><span>Country rank</span></div></div></div>

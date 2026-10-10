@@ -57,7 +57,7 @@
     var byGoal = {}; (d.goalTrends || []).forEach(function (g) { byGoal[g.goal] = g.trend; });
     Array.prototype.forEach.call(dash.children, function (el, i) {
       var t = TREND[byGoal[i + 1]] ? byGoal[i + 1] : "?", span = el.querySelector(".tr");
-      span.textContent = t === "?" ? "•" : t; span.style.color = TREND[t][0]; span.setAttribute("aria-label", TREND[t][1]);
+      span.textContent = t === "?" ? "•" : t; span.style.color = TREND[t][0]; span.setAttribute("aria-label", TREND[t][1]); span.dataset.l = TREND[t][1];
     });
   }
   function show(name) {
