@@ -260,3 +260,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .wheel-links.big a:hover .slice,.wheel-links.big a:focus-visible .slice{filter:brightness(1.1);transform:none}
 .wheel-links.big text.n{fill:#fff;font:700 30px Inter,sans-serif;text-anchor:middle;dominant-baseline:central;pointer-events:none}
 .wheel-links.big text.nm{fill:#fff;font:700 11px Inter,sans-serif;letter-spacing:-.01em;text-anchor:middle;pointer-events:none}
+
+.wheel-links.big svg{touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.wheel-links.big svg.grab{cursor:grabbing}
+.wheel-links.big svg.grab a{pointer-events:none}

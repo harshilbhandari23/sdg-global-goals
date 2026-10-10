@@ -63,6 +63,7 @@
       if (cur) lines.push(cur); return lines;
     }
     var out = '<svg viewBox="0 0 ' + SIZE + " " + SIZE + '" role="navigation" aria-label="Sustainable Development Goals">';
+    out += '<g class="spin">';
     ord.forEach(function (g) {
       var b = bnd(g), a0 = P(R_OUT, b[0]), a1 = P(R_OUT, b[1]), i1 = P(R_IN, b[1]), i0 = P(R_IN, b[0]);
       var d = "M" + a0 + " A" + R_OUT + " " + R_OUT + " 0 0 1 " + a1 + " L" + i1 + " A" + R_IN + " " + R_IN + " 0 0 0 " + i0 + " Z";
@@ -78,8 +79,48 @@
       out += '<a href="' + S.goalPath(g) + '" aria-label="Goal ' + g + ": " + S.names[g - 1] + '"><path class="slice" style="--c:' + S.colors[g - 1] + '" d="' + d + '"/>' +
         '<g class="pt" transform="translate(' + C + " " + C + ") rotate(" + W.rot[g] + ')"><text class="n" x="0" y="234.5">' + g + "</text>" + icon + '<text class="nm">' + name + "</text></g></a>";
     });
+    out += "</g>";
     out += '<circle cx="' + C + '" cy="' + C + '" r="' + (R_IN - 2) + '" fill="#fff" pointer-events="none"/><image href="' + S.logo + '" x="' + (C - 100) + '" y="' + (C - 94) + '" width="200" height="188" pointer-events="none"/></svg>';
     el.innerHTML = out;
+    spin(el, C);
+  }
+
+  /* slow clockwise auto-rotation + drag to rotate (with a little momentum) */
+  function spin(el, C) {
+    var svg = el.querySelector("svg"), g = svg.querySelector(".spin");
+    var SPEED = 5;                       // degrees per second, clockwise
+    var angle = 0, vel = 0, dragging = false, moved = false, hover = false, last = 0, lastT = 0;
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function draw() { g.setAttribute("transform", "rotate(" + angle.toFixed(2) + " " + C + " " + C + ")"); }
+    function ptr(e) {
+      var r = svg.getBoundingClientRect();
+      return Math.atan2(e.clientY - (r.top + r.height / 2), e.clientX - (r.left + r.width / 2)) * 180 / Math.PI;
+    }
+    svg.addEventListener("pointerdown", function (e) { if (e.button > 0) return; dragging = true; moved = false; vel = 0; last = ptr(e); lastT = performance.now(); });
+    svg.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var a = ptr(e), d = a - last; if (d > 180) d -= 360; if (d < -180) d += 360; last = a;
+      if (!moved && Math.abs(d) < 0.4) return;
+      if (!moved) { moved = true; svg.classList.add("grab"); try { svg.setPointerCapture(e.pointerId); } catch (_) {} }
+      var now = performance.now(), dt = Math.max(1, now - lastT) / 1000; lastT = now;
+      angle += d; vel = d / dt; draw();
+    });
+    function end() { if (!dragging) return; dragging = false; svg.classList.remove("grab"); if (moved) setTimeout(function () { moved = false; }, 0); }
+    svg.addEventListener("pointerup", end); svg.addEventListener("pointercancel", end);
+    svg.addEventListener("click", function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
+    svg.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") hover = true; });
+    svg.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") hover = false; });
+    var prev = 0;
+    function tick(t) {
+      var dt = prev ? Math.min(0.1, (t - prev) / 1000) : 0; prev = t;
+      if (!dragging) {
+        if (Math.abs(vel) > SPEED) { angle += vel * dt; vel *= Math.pow(0.04, dt); }   // momentum after a flick
+        else { vel = 0; if (!still && !hover) angle += SPEED * dt; }
+        draw();
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
   }
   document.querySelectorAll(".wheel-wrap .wheel-links").forEach(function (el) { if (window.SDG_WHEEL) { buildBigWheel(el); el.classList.add("big"); } else buildWheel(el); });
   document.querySelectorAll(".wheel-links:not(.big)").forEach(buildWheel);
