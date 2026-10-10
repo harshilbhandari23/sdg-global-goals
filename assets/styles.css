@@ -357,3 +357,19 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 }
 .metrics .metric .ic{width:clamp(48px,6vw,88px);height:clamp(48px,6vw,88px);margin-bottom:auto;opacity:.95}
 .metrics .metric{position:relative}
+
+/* ---- goal page targets: square goal-colour tiles with the target number and icon, text underneath ---- */
+.targets{padding:110px 32px 120px;background:#f3f5f7}
+.targets .h2{margin:0 0 56px}
+.t-grid{grid-template-columns:repeat(3,1fr);gap:24px;max-width:1240px}
+.t-card{position:relative;display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;gap:0;border:0;padding:0;min-height:0;background:#fff;transition:transform .25s ease,box-shadow .25s ease}
+.t-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(8,10,7,.14)}
+.t-card img{order:-1;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;padding:13% 28%;border-radius:0;background:var(--goal,#080a07)}
+.t-card .n{position:absolute;top:16px;left:20px;width:auto;min-width:0;color:#fff;font:800 clamp(28px,2.6vw,38px)/1 var(--font-head);letter-spacing:-.04em;z-index:1}
+.t-card .ti{width:auto;align-self:stretch;padding:22px 22px 0;font:800 18px/1.15 var(--font-head);letter-spacing:-.02em}
+.t-card .de{max-width:none;align-self:stretch;padding:12px 22px 26px;font:500 15px/1.4 var(--font-body);letter-spacing:0;opacity:.8}
+@media(max-width:1100px){.t-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.targets{padding:72px 20px 80px}.t-grid{grid-template-columns:1fr}.t-card .ti,.t-card .de{width:auto;max-width:none}}
+.t-card img{aspect-ratio:1/1;object-fit:cover;padding:0;background:transparent}
+.t-card .n{position:static;order:0;padding:20px 22px 0;color:var(--goal,#080a07);font-size:clamp(30px,2.8vw,40px)}
+.t-card .ti{padding-top:10px}
