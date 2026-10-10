@@ -206,7 +206,7 @@ def build_home():
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
     p += nav(0, "home")
     p += hero_html() + "\n\n"
-    p += f"""<section class="wheel-section" id="explore"><div class="ws"><div class="ws-c">{wheel_tiles()}<div class="wheel-wrap"><div class="wheel-links"></div></div>
+    p += f"""<section class="wheel-section" id="explore"><div class="ws"><div class="ws-c">{wheel_tiles()}<h2 class="ws-title">TAP AND EXPLORE THE GOAL</h2><div class="wheel-wrap"><div class="wheel-links"></div></div>
 <p class="scroll-text" data-start="rgba(9,9,9,.56)" data-end="#080a07">The United Nations brings countries together to work on shared global challenges through cooperation, research and collective action. It supports peace, fairness and long-term development, while helping define how progress is measured across the world. At its core, it creates a common direction for nations to move forward together and stay accountable to shared priorities</p></div></div></section>
 
 <section class="years-section" id="years" style="background-image:url('assets/media/fhz7HQj75koriiRE2riVt1GtXQ8.png')">

@@ -293,6 +293,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
   .ws-c{position:static;width:auto;height:auto;transform:none}
   .ws-t{display:none}
   .ws .wheel-wrap{position:static;width:min(92vw,560px)!important;margin:0 auto 48px}
+  .ws .ws-title{position:static;width:auto;font-size:clamp(26px,7vw,36px);margin:0 auto 24px;padding:0 20px}
   .ws .scroll-text{position:static;width:auto;max-width:954px;padding:0 24px;transform:none;font-size:clamp(23px,6vw,32px)}
 }
 
@@ -680,3 +681,6 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .goal-grid .goal-card .t{background:var(--c);color:#fff;padding:14px 18px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:18px;position:relative;z-index:1}
 .goal-grid .goal-card .t i{width:auto;height:auto;border-radius:0;background:none;font-style:normal;font-size:22px;line-height:1}
 .goal-grid .goal-card .t i::before{content:"\2192"}
+
+.ws .ws-title{font-family:var(--font-head);font-weight:800;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;color:var(--navy);text-align:center}
+@media(min-width:701px){.ws .ws-title{position:absolute;left:517px;top:905px;width:700px;margin:0;font-size:52px}}
