@@ -428,3 +428,31 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 /* QR close button: one shade lighter than the goal colour */
 .qr-close{background:color-mix(in srgb,var(--qc) 80%,#fff)}
 .qr-close:hover{background:color-mix(in srgb,var(--qc) 65%,#fff)}
+
+/* ---- map section in the site theme: heading + goal tiles + legend on the left, framed map on the right ---- */
+.map-section{padding:110px 32px 120px;background:#fff}
+.map-section .h2{max-width:1280px;margin:0 auto 48px;text-align:left}
+.kiosk{max-width:1280px;display:grid;grid-template-columns:minmax(300px,400px) 1fr;grid-template-rows:auto auto 1fr;column-gap:48px;row-gap:0;align-items:start;justify-items:stretch}
+.kiosk .mapwrap{grid-column:2;grid-row:1/4;width:100%;box-sizing:border-box;padding:3%;background:#fff;border:2px solid var(--navy)}
+.kiosk .prompt{grid-column:1;grid-row:1;margin:0 0 20px;text-align:left;font:800 20px/1.2 var(--font-head);letter-spacing:-.02em;text-transform:uppercase;color:var(--navy)}
+.kiosk .goalrow{grid-column:1;grid-row:2;width:100%;grid-template-columns:repeat(4,1fr);gap:0}
+.kiosk .goalrow button{border-radius:0;outline:0}
+.kiosk .goalrow button.active{outline:4px solid var(--navy);outline-offset:-4px;box-shadow:0 10px 26px rgba(0,0,0,.35);transform:scale(1.06);z-index:2}
+.kiosk .legend{grid-column:1;grid-row:3;flex-direction:column;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;gap:10px;margin-top:28px;padding-top:22px;border-top:1px solid #e3e6ea}
+.kiosk .legend span{font:600 15px var(--font-body);color:#222}
+.kiosk .legend i{width:16px;height:16px;border-radius:0}
+.kiosk .info{left:3%;bottom:3%;border-radius:0;background:var(--navy);padding:14px 20px;max-width:70%;box-shadow:0 12px 30px rgba(10,44,97,.4)}
+.kiosk .info .c{font:800 clamp(16px,1.6cqw,26px) var(--font-head);text-transform:uppercase;letter-spacing:-.01em}
+@media(max-width:900px){
+  .map-section{padding:72px 20px 80px}
+  .map-section .h2{margin-bottom:28px}
+  .kiosk{grid-template-columns:1fr}
+  .kiosk .mapwrap{grid-column:1;grid-row:1;padding:2%}
+  .kiosk .prompt{grid-column:1;grid-row:2;margin:24px 0 14px}
+  .kiosk .goalrow{grid-column:1;grid-row:3;grid-template-columns:repeat(6,1fr)}
+  .kiosk .legend{grid-column:1;grid-row:4}
+}
+.kiosk{grid-template-columns:minmax(300px,440px) 1fr}
+.kiosk .mapwrap{align-self:start}
+.kiosk .goalrow{grid-template-columns:repeat(6,1fr)}
+@media(max-width:900px){.kiosk{grid-template-columns:1fr}}
