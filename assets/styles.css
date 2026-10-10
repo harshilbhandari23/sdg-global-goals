@@ -91,7 +91,7 @@ button{font:inherit}
 .yw .tiles{position:absolute;pointer-events:none}
 .yw .tile{position:absolute;width:80px;height:80px;color:#fff;overflow:hidden}
 .yw .tile b{position:absolute;left:0;top:0;width:22px;height:25px;line-height:25px;text-align:center;font:700 14px/25px var(--font-body)}
-.yw .tile i{position:absolute;top:2px;font:700 7px/8px var(--font-body);text-align:right;font-style:normal}
+.yw .tile i{position:absolute;top:2px;font:700 7px/8px var(--font-body);text-align:left;font-style:normal}
 .yw .tile u{position:absolute;left:0;bottom:0;width:80px;height:25px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;font:700 14px var(--font-body);text-decoration:none}
 .years-section .hint{color:#fff}.hint{text-align:center;font:700 20px var(--font-head);letter-spacing:-.04em;margin-top:12px}
 
