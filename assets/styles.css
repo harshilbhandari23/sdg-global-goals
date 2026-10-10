@@ -610,3 +610,9 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .kiosk .info{left:0;bottom:0;border-radius:14px;background:rgba(20,20,20,.92);padding:.9cqw 1.4cqw;max-width:80%;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .kiosk .info .c{font:700 clamp(16px,1.8cqw,32px) var(--font-body);text-transform:none;letter-spacing:0}
 @media(max-width:900px){.map-section{padding:72px 12px 80px}.kiosk{max-width:none}.kiosk .mapwrap{width:100%}.kiosk .goalrow{width:100%}.kiosk .prompt{font-size:15px;margin:14px 0}.kiosk .legend span{font-size:12px}}
+/* goal boxes: flat square tiles, a bit bigger */
+.kiosk .goalrow{width:90%;gap:.3cqw}
+.kiosk .goalrow button{border-radius:0;box-shadow:none}
+.kiosk .goalrow button.active{box-shadow:none;transform:none;outline:3px solid #111;outline-offset:-3px}
+.kiosk .info{border-radius:0;box-shadow:none}
+@media(max-width:900px){.kiosk .goalrow{width:100%}}
