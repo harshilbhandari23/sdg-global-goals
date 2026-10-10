@@ -6,9 +6,10 @@
 All content lives in data/ (goals.json, yearwise.json, legal.json). Edit those files
 (or the Decap CMS in /admin, if you enable it) and run build.py again.
 """
-import html, json, os, re
+import html, json, os, re, time
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+BUILD = str(int(time.time()))  # cache-buster for css/js so edits show up right away
 D = lambda *p: os.path.join(ROOT, *p)
 import glob
 
@@ -62,7 +63,7 @@ def head(title, depth, desc="", extra_css=""):
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700;800&family=Host+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{r}assets/styles.css">{extra_css}
+<link rel="stylesheet" href="{r}assets/styles.css?v={BUILD}">{extra_css}
 <script>window.SITE_ROOT="{r}";</script></head><body>"""
 
 
@@ -88,7 +89,7 @@ def footer(depth):
 
 def scripts(depth, extra=""):
     r = "../" * depth
-    return (f'<script src="{r}assets/sdg-data.js"></script><script src="{r}assets/ui.js"></script><script src="{r}assets/widgets.js"></script>{extra}</body></html>')
+    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script><script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
 def news_block(endpoint, limit=5, title="Live SDG News", ident="news"):
@@ -143,8 +144,7 @@ def hero_html():
     return f"""<header class="fh" id="top"><div class="fh-canvas" aria-hidden="false">{tiles}
 <div class="fh-un" aria-label="United Nations">{un}<span class="fh-un-t">United Nations</span></div>
 <h1 class="fh-title"><span>SUSTAINABLE </span><span>DEVELOPMENT </span><span>GOALS</span></h1>
-<p class="fh-sub1">Your lens into</p><p class="fh-sub2">Global progression</p>
-<a class="fh-chev" href="#explore" aria-label="Scroll to explore"><img src="assets/hero/chevron.svg" alt=""></a></div></header>"""
+<p class="fh-sub1">Your lens into</p><p class="fh-sub2">Global progression</p></div></header>"""
 
 # ---------------------------------------------------------------- home
 def build_home():
@@ -170,7 +170,7 @@ def build_home():
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
 """
     p += footer(0) + fab()
-    p += scripts(0, '<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js"></script>')
+    p += scripts(0, '<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js?v=' + BUILD + '"></script>')
     write("index.html", p)
 
 

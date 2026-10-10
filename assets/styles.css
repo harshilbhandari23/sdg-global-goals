@@ -244,10 +244,11 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .fh-un{position:absolute;inset:0;pointer-events:none}
 .fh-un .un-p{position:absolute;display:block}
 .fh-un-t{position:absolute;left:720px;top:155.46px;transform:translateX(-50%);font:500 10px Inter,sans-serif;letter-spacing:-.3px;color:#009edb;white-space:nowrap}
-.fh-title{position:absolute;left:calc(50% - .5px);top:calc(50% - 169px);transform:translateX(-50%);margin:0;font:700 60.357px/56.333px Inter,sans-serif;letter-spacing:-1.8107px;color:#000;text-align:center;white-space:pre;z-index:2}
+.fh-title{position:absolute;left:calc(50% - .5px);top:calc(50% - 169px);transform:translateX(-50%);margin:0;font:700 60px/56.333px Inter,sans-serif;letter-spacing:-1.8px;color:#000;text-align:center;white-space:pre;z-index:2}
 .fh-title span{display:block}
 .fh-sub1,.fh-sub2{position:absolute;top:calc(50% + 192px);transform:translateX(-50%);margin:0;font:400 15px Inter,sans-serif;letter-spacing:-.45px;color:#009edb;white-space:nowrap;z-index:2}
-.fh-sub1{left:calc(50% - 66.5px)}
-.fh-sub2{left:calc(50% + 47px);font-weight:600}
-.fh-chev{position:absolute;left:714px;top:631px;width:12.1px;height:12.1px;z-index:2;display:block}
-.fh-chev img{position:absolute;left:1.21px;top:1.21px;width:9.68px;height:9.68px;transform:rotate(135deg)}
+.fh-sub1{left:calc(50% - .5px)}
+.fh-sub2{left:calc(50% - 1px);top:calc(50% + 210px);font-weight:600}
+
+.chrome-off{opacity:0!important;pointer-events:none!important;transition:opacity .3s ease}
+.nav,.sdg-fab{transition:opacity .3s ease}

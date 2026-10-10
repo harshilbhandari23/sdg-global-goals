@@ -4,7 +4,12 @@
 
   /* ---- home hero: keep the 1440 x 820 Figma canvas scaled to cover its box ---- */
   var fh = document.querySelector(".fh"), fc = fh && fh.querySelector(".fh-canvas");
-  if (fc) { var fit = function () { fc.style.setProperty("--s", Math.max(fh.clientWidth / 1440, fh.clientHeight / 820)); }; fit(); window.addEventListener("resize", fit); }
+  if (fc) { var fit = function () { fc.style.setProperty("--s", Math.max(fh.clientWidth / 1440, fh.clientHeight / 820)); }; fit(); window.addEventListener("resize", fit);
+    /* the Figma hero has no floating menu or goals button over it: show them once you scroll past the hero */
+    var chrome = document.querySelectorAll(".nav, .sdg-fab");
+    var toggleChrome = function () { var off = window.scrollY < fh.offsetHeight - 120; chrome.forEach(function (c) { c.classList.toggle("chrome-off", off); }); };
+    toggleChrome(); window.addEventListener("scroll", toggleChrome, { passive: true });
+  }
 
   /* ---- floating nav: hides on scroll down, shows on scroll up ---- */
   var nav = document.querySelector(".nav");
