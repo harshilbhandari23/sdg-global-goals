@@ -382,3 +382,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:1000px){.t-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.t-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:440px){.t-grid{grid-template-columns:1fr}}
+/* goal banner: title and "Goal N" centred */
+.banner .titles h1,.banner .titles .gn{text-align:center}
