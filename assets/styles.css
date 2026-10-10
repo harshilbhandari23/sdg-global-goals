@@ -574,3 +574,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .cx-g .tr{height:26px;font-size:16px}
 .cx-legend{max-width:1280px}
 @media(max-width:1000px){.cx-goals{max-width:none;overflow-x:auto;grid-template-columns:repeat(17,64px);padding-bottom:8px;-webkit-overflow-scrolling:touch}}
+/* A-Z picker: simple white buttons */
+.cx-az button,.cx-az button:nth-child(n){background:#fff!important;color:#080a07!important;box-shadow:inset 0 0 0 1px #d6dbe1;filter:none;transform:none}
+.cx-az button:hover:not(:disabled){background:#eaf5fb!important;color:var(--blue)!important;box-shadow:inset 0 0 0 1px var(--blue);transform:none;filter:none}
+.cx-az button.on{background:var(--navy)!important;color:#fff!important;box-shadow:none;transform:none}
+.cx-az button:disabled{background:#fff!important;color:#c9ced4!important;box-shadow:inset 0 0 0 1px #eceff2}
