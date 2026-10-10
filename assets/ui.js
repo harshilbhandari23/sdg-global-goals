@@ -196,8 +196,30 @@
     var orig = Array.prototype.slice.call(tg.children);
     orig.forEach(function (c) { var d = c.cloneNode(true); d.setAttribute("aria-hidden", "true"); Array.prototype.forEach.call(d.querySelectorAll("img"), function (i) { i.alt = ""; }); tg.appendChild(d); });
     tg.classList.add("run");
-    var setDur = function () { var half = tg.scrollWidth / 2; tg.style.setProperty("--dur", Math.max(30, half / 35) + "s"); };   // ~35px per second
-    setDur(); window.addEventListener("load", setDur); window.addEventListener("resize", setDur);
+    /* JS-driven drift (right to left, ~35px/s) so the strip can also be dragged; loops seamlessly */
+    var pos = 0, half = 0, drag = false, moved = 0, sx = 0, sp = 0, hov = false, last = 0;
+    var measure = function () { half = tg.scrollWidth / 2; };
+    measure(); window.addEventListener("load", measure); window.addEventListener("resize", measure);
+    var norm = function () { if (half) { while (pos <= -half) pos += half; while (pos > 0) pos -= half; } };
+    var tick = function (t) {
+      var dt = last ? Math.min(t - last, 100) : 0; last = t;
+      if (!drag && !hov) pos -= 35 * dt / 1000;
+      norm(); tg.style.transform = "translate3d(" + pos + "px,0,0)";
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+    wrap.addEventListener("mouseenter", function () { hov = true; });
+    wrap.addEventListener("mouseleave", function () { hov = false; });
+    wrap.addEventListener("dragstart", function (e) { e.preventDefault(); });
+    wrap.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button) return;
+      drag = true; moved = 0; sx = e.clientX; sp = pos; wrap.classList.add("grab");
+      try { wrap.setPointerCapture(e.pointerId); } catch (x) {}
+    });
+    wrap.addEventListener("pointermove", function (e) { if (!drag) return; var d = e.clientX - sx; moved = Math.max(moved, Math.abs(d)); pos = sp + d; });
+    var up = function () { if (!drag) return; drag = false; wrap.classList.remove("grab"); };
+    wrap.addEventListener("pointerup", up); wrap.addEventListener("pointercancel", up);
+    wrap.addEventListener("click", function (e) { if (moved > 5) { e.preventDefault(); e.stopPropagation(); } }, true);
   }
 
   /* ---- page transition: colour wipe from bottom to top ---- */
