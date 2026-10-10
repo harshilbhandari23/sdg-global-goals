@@ -544,3 +544,13 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:1000px){.cx-main{grid-template-columns:1fr}.cx-stats{grid-template-columns:1fr 1fr;grid-template-rows:none}.cx-goals{grid-template-columns:repeat(6,1fr)}}
 @media(max-width:640px){.cx-section{padding:96px 16px 100px}.cx-goals{grid-template-columns:repeat(3,1fr)}.cx-stats{grid-template-columns:1fr}.cx-az{gap:4px}.cx-az button{width:11.5vw;max-width:46px}.cx-g .tr::after{font-size:8.5px}}
 @media(min-width:1100px){.cx-az{display:grid;grid-template-columns:repeat(26,1fr);gap:5px}.cx-az button{width:100%}}
+/* country panel: more compact */
+.cx-main{grid-template-columns:1fr 280px;margin-top:32px}
+.cx-left{padding:24px 24px 18px}
+.cx-name{font-size:clamp(24px,2.6vw,34px)}
+.cx-region{margin:4px 0 4px;font-size:14px}
+.cx-map{max-width:380px}
+.cx-stat{padding:20px 24px;min-height:0}
+.cx-stat b{font-size:clamp(44px,4.6vw,68px)}
+.cx-stat span{margin-top:8px;font-size:12px}
+@media(max-width:1000px){.cx-main{grid-template-columns:1fr}.cx-map{max-width:340px}}
