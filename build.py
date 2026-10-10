@@ -122,7 +122,7 @@ WS_TILES = [(386,1,96,96,17),(1253,97,96,97,14),(867,1,97,96,15),(1,97,96,97,16)
 
 def wheel_tiles():
     out = ['<i class="ws-t" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx;background:%s" aria-hidden="true"></i>' % q for q in WS_SQUARES]
-    out += ['<img class="ws-t" src="assets/hero/goal-%02d.png" alt="" draggable="false" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx">' % (g, x, y, w, h) for (x, y, w, h, g) in WS_TILES]
+    out += ['<a class="ws-t ws-g" href="global_goals/goal-%d/" aria-label="Goal %d" style="left:%dpx;top:%dpx;width:%dpx;height:%dpx"><img src="assets/hero/goal-%02d.png" alt="" draggable="false"></a>' % (g, g, x, y, w, h, g) for (x, y, w, h, g) in WS_TILES]
     return "".join(out)
 
 # ---------------------------------------------------------------- home hero (Figma: "Sustainable Development Goals- 1.0", 1440 x 820)
@@ -182,8 +182,9 @@ def mosaic(seed, where, rows=2, cols=26):
         elif v < 0.86:
             cells.append('<i style="background:%s"></i>' % r.choice(MO_COLORS))
         else:
-            cells.append('<img src="assets/tiles/goal-%02d.jpg" alt="" draggable="false">' % r.randint(1, 17))
-    return '<div class="mo %s" aria-hidden="true">%s</div>' % (where, "".join(cells))
+            g = r.randint(1, 17)
+            cells.append('<a class="mo-g" href="global_goals/goal-%d/" aria-label="Goal %d"><img src="assets/tiles/goal-%02d.jpg" alt="" draggable="false"></a>' % (g, g, g))
+    return '<div class="mo %s">%s</div>' % (where, "".join(cells))
 
 # ---------------------------------------------------------------- home
 def build_home():

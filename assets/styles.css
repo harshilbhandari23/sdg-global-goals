@@ -643,3 +643,11 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 /* pattern strips run edge to edge: columns stretch to fill the width, tiles stay square, two rows only */
 .mo{height:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--sq),1fr));grid-template-rows:repeat(2,auto);grid-auto-rows:0;justify-content:stretch;overflow:hidden}
 .mo b,.mo i,.mo img{width:100%;height:auto;aspect-ratio:1/1}
+
+/* goal tiles inside the background patterns are links to their goal page */
+.mo-g{display:block;pointer-events:auto;overflow:hidden;transition:transform .2s ease,filter .2s ease}
+.mo-g img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.mo-g:hover,.mo-g:focus-visible{transform:scale(1.06);filter:brightness(1.08);position:relative;z-index:3}
+.ws-g{display:block;overflow:visible}
+.ws-g img{display:block;width:100%;height:100%;object-fit:cover}
+.ws-g:hover,.ws-g:focus-visible{filter:brightness(1.08);transform:scale(1.04);z-index:3}
