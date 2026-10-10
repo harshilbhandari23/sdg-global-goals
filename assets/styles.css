@@ -264,3 +264,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .wheel-links.big svg{touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .wheel-links.big svg.grab{cursor:grabbing}
 .wheel-links.big svg.grab a{pointer-events:none}
+
+.yw .yr.off{cursor:default;pointer-events:none}

@@ -8,13 +8,19 @@
   /* ===== year wheel: drag the ring like a dial, snaps to the nearest year ===== */
   var yw = document.querySelector(".yw");
   if (yw) fetch((window.SITE_ROOT || "") + "data/yearwise.json").then(function (r) { return r.json(); }).then(function (data) {
-    var STEP = 24, BASE = 1080, R = 370, cx = BASE * 0.54, cy = BASE * 0.5;
+    var UPCOMING = ["2026", "2027", "2028", "2029", "2030"];  // shown greyed out: no data yet, not selectable
+    var STEP = 360 / (data.length + UPCOMING.length), BASE = 1080, R = 370, cx = BASE * 0.54, cy = BASE * 0.5;
     var pos = Math.max(0, data.findIndex(function (d) { return d.year === (yw.dataset.start || "2020"); }));
     var stage = document.createElement("div"); stage.className = "yw-stage";
     var ring = '<svg width="640" height="640" viewBox="0 0 638 638" style="position:absolute;left:' + (cx - 320) + "px;top:" + (cy - 320) + 'px"><defs><linearGradient id="rg" x1="638" y1="285" x2="0" y2="352" gradientUnits="userSpaceOnUse"><stop offset=".95" stop-color="#E8E8E8"/><stop offset="1" stop-color="#009EDB"/></linearGradient></defs><circle cx="319" cy="319" r="318" fill="none" stroke="url(#rg)" stroke-width="2"/></svg>' +
       '<svg width="206" height="54" viewBox="0 0 206 54" style="position:absolute;left:' + (cx - R - 94) + "px;top:" + (cy - 27) + 'px"><defs><linearGradient id="pg" x1="0" y1="27" x2="206" y2="27" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#009EDB"/></linearGradient></defs><rect x="1" y="1" width="204" height="52" rx="26" fill="none" stroke="url(#pg)" stroke-width="2"/></svg>';
     stage.innerHTML = ring;
-    var labels = data.map(function (d, i) { var e = document.createElement("div"); e.className = "yr"; e.textContent = d.year; e.addEventListener("click", function () { if (!moved) { pos = i; render(); } }); stage.appendChild(e); return e; });
+    var labels = data.concat(UPCOMING.map(function (y) { return { year: y, off: true }; })).map(function (d, i) {
+      var e = document.createElement("div"); e.className = "yr" + (d.off ? " off" : ""); e.textContent = d.year;
+      if (d.off) { e.setAttribute("aria-disabled", "true"); e.title = "No data yet"; }
+      else e.addEventListener("click", function () { if (!moved) { pos = i; render(); } });
+      stage.appendChild(e); return e;
+    });
     var tiles = document.createElement("div"); tiles.className = "tiles"; tiles.style.cssText = "left:" + (cx - 200) + "px;top:" + (cy - 240) + "px;width:400px;height:480px";
     var tileEls = TILE_POS.map(function (p, i) { var t = document.createElement("div"); t.className = "tile"; t.style.cssText = "left:" + p[0] + "px;top:" + p[1] + "px;background:" + TILE_COLORS[i]; t.innerHTML = "<b>" + (i + 1) + "</b><i>" + SHORT[i] + "</i><u></u>"; tiles.appendChild(t); return t; });
     stage.appendChild(tiles); yw.appendChild(stage);
@@ -29,7 +35,7 @@
         var th = 180 + (i - pos) * STEP, rad = th * Math.PI / 180, near = Math.abs(i - pos);
         e.style.left = (cx + Math.cos(rad) * R) + "px"; e.style.top = (cy + Math.sin(rad) * R) + "px";
         e.style.transform = "translate(-50%,-50%) rotate(" + (th - 180) + "deg)";
-        e.style.opacity = i === sel ? 1 : Math.max(0.25, 0.8 - near * 0.12);
+        e.style.opacity = i >= data.length ? 0.2 : i === sel ? 1 : Math.max(0.25, 0.8 - near * 0.12);
       });
       if (sel !== lastSel) {
         lastSel = sel;
