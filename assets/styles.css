@@ -463,3 +463,6 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .kiosk .mapwrap{border:0;padding:0;background:transparent}
 .kiosk .info{left:0;bottom:4%}
 @media(max-width:900px){.kiosk{grid-template-columns:1fr}.map-section{padding-left:20px;padding-right:20px}}
+/* map a little smaller */
+.kiosk .mapwrap{width:88%;justify-self:center}
+@media(max-width:900px){.kiosk .mapwrap{width:100%}}
