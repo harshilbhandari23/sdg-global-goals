@@ -346,7 +346,7 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .metrics .metric{aspect-ratio:1;flex:none;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(16px,2vw,28px);color:#fff;background:var(--goal,var(--blue))}
 .metrics .metric:nth-child(2){background:var(--navy)}
 .metrics .metric:nth-child(3){background:var(--blue)}
-.metrics .metric:nth-child(4){background:var(--goal,var(--blue));filter:brightness(.82)}
+.metrics .metric:nth-child(4){background:color-mix(in srgb,var(--goal,#009edb) 78%,#000)}
 .metrics .metric .num{font:800 clamp(40px,5.2vw,76px)/1 var(--font-head);letter-spacing:-.04em}
 .metrics .metric .lab{font:700 clamp(12px,1.1vw,15px) var(--font-body);letter-spacing:.06em;text-transform:uppercase;opacity:.9;margin-top:10px}
 @media(max-width:900px){
@@ -355,3 +355,5 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
   .metrics .divider,.metrics .body-32,.metrics .row{grid-column:1}
   .metrics .divider{grid-row:1}.metrics .body-32{grid-row:2}.metrics .row{grid-row:3;margin-top:24px}
 }
+.metrics .metric .ic{width:clamp(30px,3.4vw,48px);height:clamp(30px,3.4vw,48px);margin-bottom:auto;opacity:.95}
+.metrics .metric{position:relative}
