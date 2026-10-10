@@ -111,19 +111,47 @@ def write(path, content):
     open(full, "w", encoding="utf8").write(content)
 
 
+
+# ---------------------------------------------------------------- home hero (Figma: "Sustainable Development Goals- 1.0", 1440 x 820)
+HERO_W, HERO_H = 1440, 820
+HERO_IMAGE_TILES = {  # goal -> (left, top) of the icon tiles
+    1: (0, 740), 2: (160, 740), 3: (400, 740), 4: (560, 740), 5: (880, 740), 6: (1040, 740), 7: (1280, 740),
+    8: (240, 660), 9: (480, 660), 10: (800, 660), 11: (1200, 660), 12: (80, 580), 13: (1040, 580), 14: (160, 420),
+    15: (1280, 340), 16: (1120, 100), 17: (160, 20)}
+HERO_COLOR_TILES = [  # (colour, left, top) plain goal-colour squares
+    ("#26bde2", 80, 740), ("#26bde2", 1120, 420), ("#fcc30b", 0, 660), ("#3f7e44", 80, 660), ("#3f7e44", 1200, 340),
+    ("#e5243b", 320, 660), ("#a21942", 1280, 500), ("#56c02b", 560, 660), ("#56c02b", 0, 500), ("#dda83a", 880, 660),
+    ("#dda83a", 1360, 500), ("#00689d", 160, 660), ("#0a97d9", 400, 660), ("#a21942", 640, 660), ("#a21942", 80, 180),
+    ("#c5192d", 960, 660), ("#fd6925", 720, 660), ("#fd6925", 1200, 580), ("#ff3a21", 1040, 660), ("#ff3a21", 1280, 260),
+    ("#ff3a21", 320, 580), ("#00689d", 1280, 660), ("#4c9f38", 1120, 660), ("#4c9f38", 0, 260), ("#e5243b", 1360, 660),
+    ("#56c02b", 240, 740), ("#dd1367", 480, 740), ("#00689d", 640, 740), ("#00689d", 0, 340), ("#00689d", 1360, 420),
+    ("#fcc30b", 720, 740), ("#fcc30b", 1360, 580), ("#fcc30b", 240, 500), ("#e5243b", 1120, 740), ("#e5243b", 0, 420),
+    ("#26bde2", 800, 740), ("#0a97d9", 960, 580), ("#dd1367", 1360, 740), ("#dd1367", 160, 500), ("#dd1367", 1280, 20),
+    ("#bf8b2e", 1200, 740), ("#bf8b2e", 400, 580), ("#19486a", 960, 740), ("#19486a", 80, 420), ("#fd9d24", 320, 740),
+    ("#fd9d24", 1360, 260)]
+UN_PATHS = [("un-path929", 16, 48.43, 81.5, 48.95), ("un-path931", 13.83, 48.43, 82.01, 48.28),
+            ("un-path933", 13.92, 49.37, 83.98, 49.41), ("un-path935", 13.66, 48.92, 82.31, 48.78)]  # top,right,bottom,left (%)
+
+
+def hero_html():
+    pos = lambda x, y: f"left:{x / HERO_W * 100:.4f}%;top:{y / HERO_H * 100:.4f}%"
+    tiles = "".join(f'<i class="t" style="{pos(x, y)};background:{c}" aria-hidden="true"></i>' for c, x, y in HERO_COLOR_TILES)
+    tiles += "".join(
+        f'<a class="t" href="global_goals/goal-{n}/" style="{pos(x, y)}" aria-label="Goal {n}: {esc(SHORT[n - 1])}"><img src="assets/hero/goal-{n:02d}.png" alt="" draggable="false"></a>'
+        for n, (x, y) in HERO_IMAGE_TILES.items())
+    un = "".join(f'<img class="un-p" src="assets/hero/{f}.svg" alt="" style="left:{l}%;top:{t}%;width:{100 - l - r:.3f}%;height:{100 - t - b:.3f}%">' for f, t, r, b, l in UN_PATHS)
+    return f"""<header class="fh" id="top"><div class="fh-canvas" aria-hidden="false">{tiles}
+<div class="fh-un" aria-label="United Nations">{un}<span class="fh-un-t">United Nations</span></div>
+<h1 class="fh-title"><span>SUSTAINABLE </span><span>DEVELOPMENT </span><span>GOALS</span></h1>
+<p class="fh-sub1">Your lens into</p><p class="fh-sub2">Global progression</p>
+<a class="fh-chev" href="#explore" aria-label="Scroll to explore"><img src="assets/hero/chevron.svg" alt=""></a></div></header>"""
+
 # ---------------------------------------------------------------- home
 def build_home():
-    mosaic = "".join(
-        f'<img src="assets/media/{MOSAIC[n]}.png" alt="" style="left:{x}%;top:{y}%;animation-delay:{(n * 0.7) % 6:.1f}s">'
-        for n, (x, y) in zip(range(1, 18), MOSAIC_POS))
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
     p += nav(0, "home")
-    p += f"""<header class="home-hero"><div class="mosaic" aria-hidden="true">{mosaic}</div>
-<div class="hero-copy"><p class="kicker">Global progression</p><h1 class="h1">Sustainable<br>Development<br>Goals</h1>
-<p class="body-24" style="margin:0 0 28px">Your lens into the 17 goals that shape our shared future.</p>
-<a class="btn" href="#explore">Let's Explore ↓</a><div class="un-mark">United Nations</div></div></header>
-
-<section class="wheel-section" id="explore"><div class="wheel-wrap"><div class="wheel-links"></div></div>
+    p += hero_html() + "\n\n"
+    p += f"""<section class="wheel-section" id="explore"><div class="wheel-wrap"><div class="wheel-links"></div></div>
 <p class="scroll-text" data-start="rgba(9,9,9,.56)" data-end="#080a07">The United Nations brings countries together to work on shared global challenges through cooperation, research and collective action. It supports peace, fairness and long-term development, while helping define how progress is measured across the world. At its core, it creates a common direction for nations to move forward together and stay accountable to shared priorities</p></section>
 
 <section class="years-section" id="years" style="background-image:url('assets/media/fhz7HQj75koriiRE2riVt1GtXQ8.png')">

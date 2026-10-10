@@ -233,3 +233,21 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
   .sdg-fab{right:14px;bottom:84px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---- home hero: Figma "Sustainable Development Goals- 1.0" (1440 x 820 canvas, scaled to fit) ---- */
+.fh{position:relative;height:max(56.944vw,560px);overflow:hidden;background:#fff}
+.fh-canvas{position:absolute;left:50%;top:50%;width:1440px;height:820px;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:50% 50%}
+.fh .t{position:absolute;display:block;width:80px;height:80px}
+.fh a.t{transition:transform .2s ease,box-shadow .2s ease}
+.fh a.t:hover,.fh a.t:focus-visible{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,.28);z-index:3;outline:0}
+.fh a.t img{display:block;width:100%;height:100%;object-fit:cover}
+.fh-un{position:absolute;inset:0;pointer-events:none}
+.fh-un .un-p{position:absolute;display:block}
+.fh-un-t{position:absolute;left:720px;top:155.46px;transform:translateX(-50%);font:500 10px Inter,sans-serif;letter-spacing:-.3px;color:#009edb;white-space:nowrap}
+.fh-title{position:absolute;left:calc(50% - .5px);top:calc(50% - 169px);transform:translateX(-50%);margin:0;font:700 60.357px/56.333px Inter,sans-serif;letter-spacing:-1.8107px;color:#000;text-align:center;white-space:pre;z-index:2}
+.fh-title span{display:block}
+.fh-sub1,.fh-sub2{position:absolute;top:calc(50% + 192px);transform:translateX(-50%);margin:0;font:400 15px Inter,sans-serif;letter-spacing:-.45px;color:#009edb;white-space:nowrap;z-index:2}
+.fh-sub1{left:calc(50% - 66.5px)}
+.fh-sub2{left:calc(50% + 47px);font-weight:600}
+.fh-chev{position:absolute;left:714px;top:631px;width:12.1px;height:12.1px;z-index:2;display:block}
+.fh-chev img{position:absolute;left:1.21px;top:1.21px;width:9.68px;height:9.68px;transform:rotate(135deg)}

@@ -2,6 +2,10 @@
 (function () {
   var S = window.SDG;
 
+  /* ---- home hero: keep the 1440 x 820 Figma canvas scaled to cover its box ---- */
+  var fh = document.querySelector(".fh"), fc = fh && fh.querySelector(".fh-canvas");
+  if (fc) { var fit = function () { fc.style.setProperty("--s", Math.max(fh.clientWidth / 1440, fh.clientHeight / 820)); }; fit(); window.addEventListener("resize", fit); }
+
   /* ---- floating nav: hides on scroll down, shows on scroll up ---- */
   var nav = document.querySelector(".nav");
   if (nav) {
