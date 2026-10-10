@@ -625,3 +625,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 /* country dashboard tiles: no gaps */
 .cx-goals{gap:0}
 @media(max-width:1000px){.cx-goals{gap:0}}
+/* country score and rank: no box, text in the box colour */
+.cx-stat.navy,.cx-stat.blue{background:transparent}
+.cx-stat.navy{color:#009edb}
+.cx-stat.blue{color:#4C9F38}
+.cx-stat span{opacity:1}
