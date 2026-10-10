@@ -176,13 +176,20 @@ def build_home():
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
 <div class="legend"><span><i style="background:#5cb85c"></i>On track / achieved</span><span><i style="background:#f0ab00"></i>Challenges remain</span><span><i style="background:#ef7d00"></i>Significant challenges</span><span><i style="background:#c0392b"></i>Major challenges</span><span><i style="background:#c8c8c8"></i>Information unavailable</span></div></div></section>
 
+<section class="cx-section" id="country"><h2 class="h2">See where your country stands</h2>
+<div class="cx" data-country="Afghanistan"><div class="cx-pick"><div class="cx-az" role="group" aria-label="Pick a country by first letter"></div><div class="cx-drop" role="listbox" hidden></div></div>
+<div class="cx-main"><div class="cx-left"><h3 class="cx-name">Afghanistan</h3><p class="cx-region">Loading…</p><div class="cx-map"><svg viewBox="0 0 700 500" preserveAspectRatio="xMidYMid meet" aria-label="Country outline"></svg></div></div>
+<div class="cx-stats"><div class="cx-stat navy"><b class="cx-score">—</b><span>Country score</span></div><div class="cx-stat blue"><b><i class="cx-rank">—</i><em>/ 167</em></b><span>Country rank</span></div></div></div>
+<h3 class="cx-h3">SDG dashboard and trends</h3><div class="cx-goals"></div>
+<div class="cx-legend"><span><b style="color:#db1a36">↓</b>Decreasing</span><span><b style="color:#e87c1e">→</b>Stagnating</span><span><b style="color:#ebc011">➚</b>Moderately improving</span><span><b style="color:#3aa746">↑</b>On track</span><span><b style="color:#939598">•</b>Unknown</span></div></div></section>
+
 <section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 20, "Live SDG News", "livenews")}</div></section>
 
 <section class="section" id="quiz" style="background:#fff"><div class="container"><h2 class="h2" style="text-align:center;margin-bottom:32px">Create your world's to-do list</h2>
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
 """
     p += footer(0) + fab()
-    p += scripts(0, wheel=True, extra='<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js?v=' + BUILD + '"></script>')
+    p += scripts(0, wheel=True, extra='<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js?v=' + BUILD + '"></script><script src="assets/country.js?v=' + BUILD + '"></script>')
     write("index.html", p)
 
 
