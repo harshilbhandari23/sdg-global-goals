@@ -200,7 +200,8 @@
       if (u.origin !== location.origin) return;
       if (u.pathname === location.pathname && u.search === location.search) return;
       e.preventDefault();
-      var m = u.pathname.match(/goal-(\d+)/), col = m && S && S.colors && S.colors[+m[1] - 1] || "#009edb";
+      var m = u.pathname.match(/goal-(\d+)/), C = (S && S.colors) || ["#009edb"],
+        col = m ? C[+m[1] - 1] : (getComputedStyle(document.documentElement).getPropertyValue("--goal").trim() || C[Math.floor(Math.random() * C.length)]);
       w.style.setProperty("--wipe", col);
       try { sessionStorage.setItem("sdgWipe", col); } catch (x) {}
       w.classList.add("go");
