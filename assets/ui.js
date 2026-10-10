@@ -194,9 +194,11 @@
     document.addEventListener("click", function (e) {
       var a = e.target.closest && e.target.closest("a[href]");
       if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-      if (a.target && a.target !== "_self") return;
+      var tg = a.getAttribute("target"); if (tg && tg !== "_self") return;
       if (a.hasAttribute("download")) return;
-      var u; try { u = new URL(a.href, location.href); } catch (x) { return; }
+      var href = a.getAttribute("href") || a.getAttributeNS("http://www.w3.org/1999/xlink", "href");
+      if (!href || href.charAt(0) === "#" || /^(mailto|tel|javascript):/i.test(href)) return;
+      var u; try { u = new URL(href, location.href); } catch (x) { return; }
       if (u.origin !== location.origin) return;
       if (u.pathname === location.pathname && u.search === location.search) return;
       e.preventDefault();
