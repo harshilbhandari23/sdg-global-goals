@@ -270,3 +270,10 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 /* goals popup (round button): same wheel style, larger so petal text is readable */
 .sdg-pop{width:min(92vw,480px,calc(100vh - 150px));padding:12px}
 .sdg-pop .wheel-links.big svg{cursor:grab}
+
+/* page colour wipe: bottom to top */
+#wipe{position:fixed;inset:0;z-index:99999;background:var(--wipe,#009edb);transform:translateY(100%);pointer-events:none;will-change:transform}
+#wipe.go{transform:translateY(0);transition:transform .55s cubic-bezier(.76,0,.24,1)}
+.wipe-in #wipe{transform:translateY(0)}
+.wipe-in #wipe.out{transform:translateY(-100%);transition:transform .6s cubic-bezier(.76,0,.24,1)}
+@media (prefers-reduced-motion:reduce){#wipe{display:none}}

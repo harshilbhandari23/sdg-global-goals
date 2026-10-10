@@ -182,4 +182,29 @@
     }, { threshold: 0.4 });
     counters.forEach(function (c) { io.observe(c); });
   }
+
+  /* ---- page transition: colour wipe from bottom to top ---- */
+  (function () {
+    var w = document.getElementById("wipe"); if (!w) return;
+    if (document.documentElement.classList.contains("wipe-in")) {
+      requestAnimationFrame(function () { requestAnimationFrame(function () { w.classList.add("out"); }); });
+      setTimeout(function () { document.documentElement.classList.remove("wipe-in"); w.classList.remove("out"); }, 900);
+    }
+    window.addEventListener("pageshow", function (e) { if (e.persisted) { w.classList.remove("go"); document.documentElement.classList.remove("wipe-in"); } });
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      if (a.target && a.target !== "_self") return;
+      if (a.hasAttribute("download")) return;
+      var u; try { u = new URL(a.href, location.href); } catch (x) { return; }
+      if (u.origin !== location.origin) return;
+      if (u.pathname === location.pathname && u.search === location.search) return;
+      e.preventDefault();
+      var m = u.pathname.match(/goal-(\d+)/), col = m && S && S.colors && S.colors[+m[1] - 1] || "#009edb";
+      w.style.setProperty("--wipe", col);
+      try { sessionStorage.setItem("sdgWipe", col); } catch (x) {}
+      w.classList.add("go");
+      setTimeout(function () { location.href = u.href; }, 560);
+    });
+  })();
 })();
