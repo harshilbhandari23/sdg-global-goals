@@ -109,7 +109,7 @@
           .then(function (d) { return d.articles || []; })
           .then(function (l) { return l.length ? l : api(1).then(function (d) { return (d.articles || []); }); }, function () { return api(1).then(function (d) { return (d.articles || []); }); });
       } else {
-        job = api(new URL(endpoint).searchParams.get("goal") || 1).then(function (d) { return d.articles || []; });
+        var gn = +(new URL(endpoint).searchParams.get("goal") || 1); job = api(gn).then(function (d) { return (d.articles || []).map(function (a) { a.goal = gn; return a; }); });
       }
       return job.then(function (list) { if (list.length || !items.length) { items = list.slice(0, limit); draw(); } });
     }
