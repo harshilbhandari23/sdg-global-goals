@@ -616,3 +616,8 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .kiosk .goalrow button.active{box-shadow:none;transform:none;outline:3px solid #111;outline-offset:-3px}
 .kiosk .info{border-radius:0;box-shadow:none}
 @media(max-width:900px){.kiosk .goalrow{width:100%}}
+/* goal row full width; map keeps its size */
+.kiosk{max-width:1280px}
+.kiosk .mapwrap{width:58%}
+.kiosk .goalrow{width:100%;gap:.35cqw}
+@media(max-width:900px){.kiosk .mapwrap{width:100%}}
