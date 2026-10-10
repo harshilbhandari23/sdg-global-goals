@@ -670,3 +670,13 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .related .goal-card .t i{width:auto;height:auto;border-radius:0;background:none;font-style:normal;font-size:22px;line-height:1}
 .related .goal-card .t i::before{content:"\2192"}
 .related .grid{gap:20px}
+
+/* goals index: same flat goal-colour cards as "explore other goals" */
+.goal-grid{gap:20px}
+.goal-grid .goal-card{border-radius:0;box-shadow:none;background:var(--c);position:relative;transition:filter .25s ease}
+.goal-grid .goal-card:hover{transform:none;box-shadow:none;filter:brightness(1.08)}
+.goal-grid .goal-card .img{overflow:hidden;transition:transform .5s ease}
+.goal-grid .goal-card:hover .img{transform:scale(1.04)}
+.goal-grid .goal-card .t{background:var(--c);color:#fff;padding:14px 18px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:18px;position:relative;z-index:1}
+.goal-grid .goal-card .t i{width:auto;height:auto;border-radius:0;background:none;font-style:normal;font-size:22px;line-height:1}
+.goal-grid .goal-card .t i::before{content:"\2192"}
