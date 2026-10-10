@@ -579,3 +579,4 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .cx-az button:hover:not(:disabled){background:#eaf5fb!important;color:var(--blue)!important;box-shadow:inset 0 0 0 1px var(--blue);transform:none;filter:none}
 .cx-az button.on{background:var(--navy)!important;color:#fff!important;box-shadow:none;transform:none}
 .cx-az button:disabled{background:#fff!important;color:#c9ced4!important;box-shadow:inset 0 0 0 1px #eceff2}
+.cx-left{background:#fff}
