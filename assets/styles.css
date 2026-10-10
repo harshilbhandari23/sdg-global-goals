@@ -319,3 +319,10 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:1199px){#livenews .news-card{flex-basis:calc(100%/3)}}
 @media(max-width:899px){#livenews .news-card{flex-basis:calc(100%/2)}}
 @media(max-width:599px){#livenews .news-card{flex-basis:100%}}
+/* home news sits on a navy band */
+#news.section{background:var(--navy)}
+#livenews .news-head h2{color:#fff}
+#livenews .news-arrows button,#livenews .news-arrows button+button{background:var(--blue)}
+#livenews .news-loading{color:#fff}
+#livenews .news-card{box-shadow:none}
+#livenews .news-card:hover{box-shadow:0 14px 30px rgba(0,0,0,.4)}
