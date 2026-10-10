@@ -326,3 +326,10 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 #livenews .news-loading{color:#fff}
 #livenews .news-card{box-shadow:none}
 #livenews .news-card:hover{box-shadow:0 14px 30px rgba(0,0,0,.4)}
+/* gaps between the home news cards */
+#livenews{--g:20px}
+#livenews .news-track{gap:var(--g)}
+#livenews .news-card{flex:0 0 calc((100% - 3*var(--g))/4)}
+@media(max-width:1199px){#livenews .news-card{flex-basis:calc((100% - 2*var(--g))/3)}}
+@media(max-width:899px){#livenews .news-card{flex-basis:calc((100% - var(--g))/2)}}
+@media(max-width:599px){#livenews .news-card{flex-basis:100%}}
