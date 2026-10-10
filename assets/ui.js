@@ -130,7 +130,46 @@
   var fab = document.querySelector(".sdg-fab");
   if (fab) {
     var tog = fab.querySelector(".toggle");
-    tog.addEventListener("click", function (e) { e.stopPropagation(); fab.classList.toggle("open"); tog.setAttribute("aria-expanded", fab.classList.contains("open")); });
+    var pop = fab.querySelector(".sdg-pop"), dragged = false;
+    /* keep the popup on screen wherever the button has been dragged to */
+    var place = function () {
+      var b = tog.getBoundingClientRect(), P = pop.offsetWidth, m = 8, fr = fab.getBoundingClientRect();
+      var l = Math.min(Math.max(b.right - P, m), window.innerWidth - P - m);
+      var t = Math.min(Math.max(b.bottom - P, m), window.innerHeight - P - m);
+      pop.style.right = "auto"; pop.style.bottom = "auto"; pop.style.left = (l - fr.left) + "px"; pop.style.top = (t - fr.top) + "px";
+      pop.style.transformOrigin = (b.left + b.width / 2 - l) + "px " + (b.top + b.height / 2 - t) + "px";
+    };
+    var setPos = function (x, y) {
+      var w = tog.offsetWidth, h = tog.offsetHeight;
+      x = Math.min(Math.max(x, 6), window.innerWidth - w - 6); y = Math.min(Math.max(y, 6), window.innerHeight - h - 6);
+      fab.style.left = x + "px"; fab.style.top = y + "px"; fab.style.right = "auto"; fab.style.bottom = "auto";
+      return [x, y];
+    };
+    try { var sv = JSON.parse(localStorage.getItem("sdgFab")); if (sv) setPos(sv[0] * (window.innerWidth - tog.offsetWidth), sv[1] * (window.innerHeight - tog.offsetHeight)); } catch (x) {}
+    window.addEventListener("resize", function () { if (fab.style.left) { var r = fab.getBoundingClientRect(); setPos(r.left, r.top); } });
+    var dx, dy, sx, sy, down = false;
+    tog.style.touchAction = "none"; tog.style.cursor = "grab";
+    tog.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button) return;
+      var r = fab.getBoundingClientRect(); down = true; dragged = false; sx = e.clientX; sy = e.clientY; dx = e.clientX - r.left; dy = e.clientY - r.top;
+      try { tog.setPointerCapture(e.pointerId); } catch (x) {}
+    });
+    tog.addEventListener("pointermove", function (e) {
+      if (!down) return;
+      if (!dragged && Math.hypot(e.clientX - sx, e.clientY - sy) < 6) return;
+      dragged = true; tog.style.cursor = "grabbing"; fab.classList.remove("open"); setPos(e.clientX - dx, e.clientY - dy);
+    });
+    var end = function () {
+      if (!down) return; down = false; tog.style.cursor = "grab";
+      if (dragged) { var r = fab.getBoundingClientRect(); try { localStorage.setItem("sdgFab", JSON.stringify([r.left / (window.innerWidth - r.width), r.top / (window.innerHeight - r.height)])); } catch (x) {} }
+    };
+    tog.addEventListener("pointerup", end); tog.addEventListener("pointercancel", end);
+    tog.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (dragged) { dragged = false; return; }
+      if (!fab.classList.contains("open")) place();
+      fab.classList.toggle("open"); tog.setAttribute("aria-expanded", fab.classList.contains("open"));
+    });
     document.addEventListener("click", function (e) { if (!fab.contains(e.target)) fab.classList.remove("open"); });
     var px = fab.querySelector(".pop-x"); if (px) px.addEventListener("click", function (e) { e.stopPropagation(); fab.classList.remove("open"); tog.setAttribute("aria-expanded", "false"); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") fab.classList.remove("open"); });
