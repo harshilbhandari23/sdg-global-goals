@@ -107,7 +107,7 @@
         /* the 10 newest stories across all 17 goals, refreshed every few hours by tools/fetch_news.py */
         job = fetch((window.SITE_ROOT || "") + "data/news.json?ts=" + Date.now()).then(function (r) { if (!r.ok) throw new Error("no feed"); return r.json(); })
           .then(function (d) { return d.articles || []; })
-          .then(function (l) { return l.length ? l : api(1).then(function (d) { return (d.articles || []).map(function (a) { a.goal = 1; return a; }); }); }, function () { return api(1).then(function (d) { return (d.articles || []).map(function (a) { a.goal = 1; return a; }); }); });
+          .then(function (l) { return l.length ? l : api(1).then(function (d) { return (d.articles || []); }); }, function () { return api(1).then(function (d) { return (d.articles || []); }); });
       } else {
         job = api(new URL(endpoint).searchParams.get("goal") || 1).then(function (d) { return d.articles || []; });
       }
