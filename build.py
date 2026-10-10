@@ -166,7 +166,7 @@ def yw_note():
         m = json.load(open(D("data", "yearwise-meta.json"), encoding="utf8"))
     except Exception:
         return ""
-    return f'<p class="yw-note">Average score across countries per goal (0-100), from the SDSN Sustainable Development Report {m["edition"]} data. Updates automatically when new data is published.</p>'
+    return f'<p class="yw-note">Average score across countries per goal (0-100), from the SDSN Sustainable Development Report {m["edition"]} data.</p>'
 
 
 def hero_html():
