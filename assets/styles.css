@@ -333,3 +333,6 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 @media(max-width:1199px){.news .news-card{flex-basis:calc((100% - 2*var(--g))/3)}}
 @media(max-width:899px){.news .news-card{flex-basis:calc((100% - var(--g))/2)}}
 @media(max-width:599px){.news .news-card{flex-basis:100%}}
+.news .news-card img.tile{object-fit:cover;background:#fff}
+.news .news-card img.tile{aspect-ratio:1/1;object-fit:cover}
+.news .news-card.has-tile .gt,.news .news-card.has-tile .bar{display:none}

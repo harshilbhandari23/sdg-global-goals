@@ -72,7 +72,7 @@
 
   /* ===== live news carousel ===== */
   document.querySelectorAll(".news").forEach(function (box) {
-    var endpoint = box.dataset.endpoint, limit = +(box.dataset.limit || 5), idx = 0, vis = 4, items = [];
+    var limit = +(box.dataset.limit || 5), idx = 0, vis = 4, items = [];
     var track = box.querySelector(".news-track"), view = box.querySelector(".news-view"), prev = box.querySelector(".prev"), next = box.querySelector(".next"), msg = box.querySelector(".news-msg"), loading = box.querySelector(".news-loading");
     var pal = ["#E5243B", "#DDA63A", "#4C9F38", "#C5192D", "#E5243B"];
     function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -93,25 +93,18 @@
       if (!items.length) { msg.hidden = false; msg.textContent = "No stories available right now. Please try again shortly."; return; }
       msg.hidden = true;
       track.innerHTML = items.map(function (a, i) {
-        var c1 = a.goal ? S.colors[a.goal - 1] : pal[i % 5], c2 = a.goal ? S.colors[a.goal % 17] : pal[(i + 1) % 5];
-        return '<a class="news-card" href="' + esc(a.url || "#") + '" target="_blank" rel="noreferrer noopener"><div class="bar" style="background:linear-gradient(90deg,' + c1 + "," + c2 + ')"></div>' +
-          (a.image ? '<img src="' + esc(a.image) + '" alt="' + esc(a.title || "News story image") + '" loading="lazy">' : '<div class="ph"></div>') +
+        var c1 = a.goal ? S.colors[a.goal - 1] : pal[i % 5];
+        var pic = a.image || (a.goal ? (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg" : "");  // no photo in the feed: show the official goal tile
+        return '<a class="news-card' + (a.image ? "" : " has-tile") + '" href="' + esc(a.url || "#") + '" target="_blank" rel="noreferrer noopener"><div class="bar" style="background:' + c1 + '"></div>' +
+          (pic ? '<img src="' + esc(pic) + '" alt="' + esc(a.image ? a.title : "Goal " + a.goal + ": " + S.names[a.goal - 1]) + '" loading="lazy"' + (a.image ? "" : ' class="tile"') + ">" : '<div class="ph"></div>') +
           (a.goal ? '<div class="gt" style="background:' + c1 + '"><b>' + a.goal + "</b><span>" + esc(S.names[a.goal - 1]) + "</span></div>" : "") +
-          '<div class="b"><p class="m">' + esc((a.source || (a.sourceCountry && a.sourceCountry !== "Global" ? a.sourceCountry : "Global Desk")) + " · " + when(a.publishedAt)) + "</p><h3>" + esc(a.title || "Untitled story") + "</h3><p>" + esc(a.description || "Open to read the full article.") + "</p></div></a>";
+          '<div class="b"><p class="m">' + esc((a.source || "News") + " · " + when(a.publishedAt)) + "</p><h3>" + esc(a.title || "Untitled story") + "</h3>" + (a.description ? "<p>" + esc(a.description) + "</p>" : "") + "</div></a>";
       }).join(""); size(); show(); box.querySelector(".news-arrows").hidden = false;
     }
-    function api(goal) { var u = new URL(endpoint); u.searchParams.set("goal", goal); u.searchParams.set("limit", 10); return fetch(u.toString(), { headers: { Accept: "application/json" } }).then(function (r) { if (!r.ok) throw new Error("Unable to load stories (" + r.status + ")"); return r.json(); }); }
+    /* stories come from data/news*.json, refreshed every few hours by tools/fetch_news.py (Google News search per goal) */
     function load() {
-      var job;
-      if (box.dataset.multi) {
-        /* the 10 newest stories across all 17 goals, refreshed every few hours by tools/fetch_news.py */
-        job = fetch((window.SITE_ROOT || "") + "data/news.json?ts=" + Date.now()).then(function (r) { if (!r.ok) throw new Error("no feed"); return r.json(); })
-          .then(function (d) { return d.articles || []; })
-          .then(function (l) { return l.length ? l : api(1).then(function (d) { return (d.articles || []); }); }, function () { return api(1).then(function (d) { return (d.articles || []); }); });
-      } else {
-        var gn = +(new URL(endpoint).searchParams.get("goal") || 1); job = api(gn).then(function (d) { return (d.articles || []).map(function (a) { a.goal = gn; return a; }); });
-      }
-      return job.then(function (list) { if (list.length || !items.length) { items = list.slice(0, limit); draw(); } });
+      return fetch((window.SITE_ROOT || "") + box.dataset.feed + "?ts=" + Date.now()).then(function (r) { if (!r.ok) throw new Error("Unable to load stories (" + r.status + ")"); return r.json(); })
+        .then(function (d) { var l = d.articles || []; if (l.length || !items.length) { items = l.slice(0, limit); draw(); } });
     }
     load().catch(function (e) { loading.hidden = true; msg.hidden = false; msg.textContent = e.message || "Unable to load stories right now."; });
     setInterval(function () { load().catch(function () {}); }, 10 * 60 * 1000);  // pick up new stories without a reload

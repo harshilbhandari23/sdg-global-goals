@@ -93,8 +93,8 @@ def scripts(depth, extra="", wheel=True):
     return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
-def news_block(endpoint, limit=5, title="Live SDG News", ident="news", multi=False):
-    return f"""<section class="news" id="{ident}" data-endpoint="{esc(endpoint)}" data-limit="{limit}"{' data-multi="1"' if multi else ""} aria-label="{esc(title)}">
+def news_block(feed, limit=10, title="Live SDG News", ident="news"):
+    return f"""<section class="news" id="{ident}" data-feed="{esc(feed)}" data-limit="{limit}" aria-label="{esc(title)}">
 <div class="news-head"><h2>{esc(title)}</h2><div class="news-arrows" hidden><button class="prev" type="button" aria-label="Previous news cards">←</button><button class="next" type="button" aria-label="Next news cards">→</button></div></div>
 <p class="news-loading" style="margin:0;opacity:.8">Loading live feed…</p><p class="news-msg" hidden></p>
 <div class="news-view"><div class="news-track"></div></div></section>"""
@@ -176,7 +176,7 @@ def build_home():
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
 <div class="legend"><span><i style="background:#5cb85c"></i>On track / achieved</span><span><i style="background:#f0ab00"></i>Challenges remain</span><span><i style="background:#ef7d00"></i>Significant challenges</span><span><i style="background:#c0392b"></i>Major challenges</span><span><i style="background:#c8c8c8"></i>Information unavailable</span></div></div></section>
 
-<section class="section news-band" id="news"><div class="container">{news_block("https://sdg-middleware.vercel.app/api/news-goal?goal=1&limit=10", 10, "Live SDG News", "livenews", multi=True)}</div></section>
+<section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 10, "Live SDG News", "livenews")}</div></section>
 
 <section class="section" id="quiz" style="background:#fff"><div class="container"><h2 class="h2" style="text-align:center;margin-bottom:32px">Create your world's to-do list</h2>
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
@@ -242,7 +242,7 @@ def build_goal(g):
 <section class="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-wrap">{todos}</div></section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
-<section class="section news-band"><div class="container">{news_block(f"https://sdg-middleware.vercel.app/api/news-goal?goal={n}&limit=10", 10, "Live SDG News", "news")}</div></section>"""
+<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 10, "Live SDG News", "news")}</div></section>"""
     p += footer(2) + fab() + scripts(2, '<script src="../../assets/vendor/react.min.js"></script><script src="../../assets/vendor/react-dom.min.js"></script><script type="module" src="../../assets/hero-mount.js"></script>')
     write(f"global_goals/goal-{n}/index.html", p)
 
