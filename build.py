@@ -166,6 +166,25 @@ CX_DECOR = [("t", "r", 0, 0, "#FCC30B"), ("t", "r", 1, 0, "#E5243B"), ("t", "r",
 def cx_decor():
     return "".join('<i class="cx-d" aria-hidden="true" style="%s:calc(%d * var(--sq));%s:calc(%d * var(--sq));background:%s"></i>' % ("top" if v == "t" else "bottom", row, "right" if h == "r" else "left", col, color) for (v, h, col, row, color) in CX_DECOR)
 
+
+MO_COLORS = ["#E5243B", "#DDA63A", "#4C9F38", "#C5192D", "#FF3A21", "#26BDE2", "#FCC30B", "#A21942", "#FD6925", "#DD1367", "#FD9D24", "#BF8B2E", "#3F7E44", "#0A97D9", "#56C02B", "#00689D", "#19486A"]
+
+
+def mosaic(seed, where, rows=2, cols=26):
+    """A strip of goal-colour squares and goal tiles (the home page tile pattern) for the top or bottom edge of a section."""
+    import random
+    r = random.Random(seed)
+    cells = []
+    for _ in range(rows * cols):
+        v = r.random()
+        if v < 0.5:
+            cells.append("<b></b>")
+        elif v < 0.86:
+            cells.append('<i style="background:%s"></i>' % r.choice(MO_COLORS))
+        else:
+            cells.append('<img src="assets/tiles/goal-%02d.jpg" alt="" draggable="false">' % r.randint(1, 17))
+    return '<div class="mo %s" aria-hidden="true">%s</div>' % (where, "".join(cells))
+
 # ---------------------------------------------------------------- home
 def build_home():
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
@@ -178,13 +197,13 @@ def build_home():
 <h2 class="h2">progress over the years</h2><div class="yw" data-start="2020" role="group" aria-label="SDG progress by year. Drag the wheel or use the arrow keys."></div>
 <p class="hint">Drag the wheel to change the year ›</p></section>
 
-<section class="map-section" id="map"><h2 class="h2">See where your country stands</h2>
+<section class="map-section" id="map">{mosaic(11, "top")}{mosaic(12, "bottom")}<h2 class="h2">See where your country stands</h2>
 <div class="kiosk" data-idle="60"><div class="mapwrap"><svg viewBox="0 0 914.55 603" preserveAspectRatio="xMidYMid meet" aria-label="World map"></svg>
 <div class="mapmsg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#666">Loading map…</div><div class="info" hidden></div></div>
 <p class="prompt">Tap a goal below to see it on the map.</p><div class="goalrow"></div>
 <div class="legend"><span><i style="background:#5cb85c"></i>On track / achieved</span><span><i style="background:#f0ab00"></i>Challenges remain</span><span><i style="background:#ef7d00"></i>Significant challenges</span><span><i style="background:#c0392b"></i>Major challenges</span><span><i style="background:#c8c8c8"></i>Information unavailable</span></div></div></section>
 
-<section class="cx-section" id="country">{cx_decor()}<h2 class="h2">See where your country stands</h2>
+<section class="cx-section" id="country">{mosaic(21, "top")}{mosaic(22, "bottom")}<h2 class="h2">See where your country stands</h2>
 <div class="cx" data-country="Afghanistan"><div class="cx-pick"><div class="cx-az" role="group" aria-label="Pick a country by first letter"></div><div class="cx-drop" role="listbox" hidden></div></div>
 <div class="cx-main"><div class="cx-left"><h3 class="cx-name">Afghanistan</h3><p class="cx-region">Loading…</p><div class="cx-map"><svg viewBox="0 0 700 500" preserveAspectRatio="xMidYMid meet" aria-label="Country outline"></svg></div></div>
 <div class="cx-stats"><div class="cx-stat navy"><b class="cx-score">—</b><span>Country score</span></div><div class="cx-stat blue"><b><i class="cx-rank">—</i><em>/ 167</em></b><span>Country rank</span></div></div></div>
