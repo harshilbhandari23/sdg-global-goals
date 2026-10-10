@@ -373,3 +373,12 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .t-card img{aspect-ratio:1/1;object-fit:cover;padding:0;background:transparent}
 .t-card .n{position:static;order:0;padding:20px 22px 0;color:var(--goal,#080a07);font-size:clamp(30px,2.8vw,40px)}
 .t-card .ti{padding-top:10px}
+/* targets: five small cards per row on wide screens */
+.t-grid{grid-template-columns:repeat(5,1fr);gap:16px;max-width:1360px}
+.t-card .n{padding:14px 16px 0;font-size:clamp(24px,2vw,30px)}
+.t-card .ti{padding:8px 16px 0;font-size:14px;line-height:1.15}
+.t-card .de{padding:10px 16px 20px;font-size:12.5px;line-height:1.4}
+@media(max-width:1250px){.t-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:1000px){.t-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.t-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:440px){.t-grid{grid-template-columns:1fr}}
