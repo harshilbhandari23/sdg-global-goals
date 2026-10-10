@@ -425,3 +425,6 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
 .qr-box{width:min(58vw,264px);padding:16px;border-radius:0;border:0;background:#fff;box-shadow:0 0 0 2px #e6e9ee}
 .qr-title{margin:28px auto 0;max-width:380px;padding:0 24px;font:700 13px/1.35 var(--font-body);letter-spacing:.02em;text-transform:uppercase;color:#0a2c61}
 @media(max-width:520px){.qr-card{padding:0 0 28px;border-radius:0}.qr-top{height:60px}.qr-close{width:60px;height:60px}}
+/* QR close button: one shade lighter than the goal colour */
+.qr-close{background:color-mix(in srgb,var(--qc) 80%,#fff)}
+.qr-close:hover{background:color-mix(in srgb,var(--qc) 65%,#fff)}
