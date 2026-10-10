@@ -132,6 +132,8 @@
   }
   function touch() { last = Date.now(); }
   root.addEventListener("pointerdown", touch); root.addEventListener("pointermove", touch);
+  /* a tap or click anywhere outside the map section resets it (goal and country selection cleared) */
+  document.addEventListener("click", function (e) { if ((active || selected) && !root.contains(e.target)) setGoal(null); });
   if (IDLE > 0) setInterval(function () { if (Date.now() - last > IDLE && active) { setGoal(null); } }, 1000);
 
   fetchJSON(TOPO).then(function (world) {
