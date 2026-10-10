@@ -87,9 +87,10 @@ def footer(depth):
             f'<p class="copy">© Global Goals. Content for educational use.</p></footer>')
 
 
-def scripts(depth, extra=""):
+def scripts(depth, extra="", wheel=False):
     r = "../" * depth
-    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script><script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
+    wheel = f'<script src="{r}assets/wheel-data.js?v={BUILD}"></script>' if wheel else ""
+    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
 def news_block(endpoint, limit=5, title="Live SDG News", ident="news"):
@@ -170,7 +171,7 @@ def build_home():
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
 """
     p += footer(0) + fab()
-    p += scripts(0, '<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js?v=' + BUILD + '"></script>')
+    p += scripts(0, wheel=True, extra='<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script><script src="assets/map.js?v=' + BUILD + '"></script>')
     write("index.html", p)
 
 

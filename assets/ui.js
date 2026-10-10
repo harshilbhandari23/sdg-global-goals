@@ -46,7 +46,43 @@
       '<image href="' + S.logo + '" x="118" y="118" width="84" height="84" pointer-events="none"/></svg>';
     el.innerHTML = html;
   }
-  document.querySelectorAll(".wheel-links").forEach(buildWheel);
+  /* ---- big home wheel (Framer "SDG Wheel" style): number, pictogram and name inside every petal ---- */
+  function buildBigWheel(el) {
+    var W = window.SDG_WHEEL, SIZE = 769, C = SIZE / 2, R_OUT = C, R_IN = 150;
+    var ang = {}, ord = [];
+    for (var g = 1; g <= 17; g++) { ang[g] = (((90 + W.rot[g]) % 360) + 360) % 360; ord.push(g); }
+    ord.sort(function (a, b) { return ang[a] - ang[b]; });
+    function P(r, d) { var a = d * Math.PI / 180; return [(C + r * Math.cos(a)).toFixed(2), (C + r * Math.sin(a)).toFixed(2)]; }
+    function bnd(g) {
+      var i = ord.indexOf(g), a = ang[g], p = ang[ord[(i + 16) % 17]], n = ang[ord[(i + 1) % 17]];
+      return [a - ((((a - p) % 360) + 360) % 360) / 2, a + ((((n - a) % 360) + 360) % 360) / 2];
+    }
+    function wrap(name) {
+      var words = name.toUpperCase().split(" "), lines = [], cur = "";
+      words.forEach(function (w) { if ((cur + " " + w).trim().length > 16 && cur) { lines.push(cur); cur = w; } else cur = (cur + " " + w).trim(); });
+      if (cur) lines.push(cur); return lines;
+    }
+    var out = '<svg viewBox="0 0 ' + SIZE + " " + SIZE + '" role="navigation" aria-label="Sustainable Development Goals">';
+    ord.forEach(function (g) {
+      var b = bnd(g), a0 = P(R_OUT, b[0]), a1 = P(R_OUT, b[1]), i1 = P(R_IN, b[1]), i0 = P(R_IN, b[0]);
+      var d = "M" + a0 + " A" + R_OUT + " " + R_OUT + " 0 0 1 " + a1 + " L" + i1 + " A" + R_IN + " " + R_IN + " 0 0 0 " + i0 + " Z";
+      var ic = W.icons[g], icon = "";
+      if (ic) {
+        icon = '<svg x="' + (-ic.w / 2) + '" y="' + (286.5 + (ic.cy - 53) * 1.66 - ic.h / 2 - 0) + '" width="' + ic.w + '" height="' + ic.h + '" viewBox="' + ic.vb + '" preserveAspectRatio="xMidYMid meet">' + ic.svg + "</svg>";
+      } else {  // pictogram cropped from the official tile (same colour as the petal, so it blends in)
+        var CROP = { 1: { vb: "125 655 1185 530", w: 70, h: 31 }, 4: { vb: "320 585 870 685", w: 52, h: 41 }, 8: { vb: "365 540 750 800", w: 46, h: 49 } }[g];
+        icon = '<svg x="' + (-CROP.w / 2) + '" y="' + (286.5 - CROP.h / 2) + '" width="' + CROP.w + '" height="' + CROP.h + '" viewBox="' + CROP.vb + '" preserveAspectRatio="xMidYMid meet"><image href="' + (window.SITE_ROOT || "") + "assets/hero/goal-" + String(g).padStart(2, "0") + '.png" width="1500" height="1500"/></svg>';
+      }
+      var lines = wrap(S.names[g - 1]), lh = 13, y0 = 352.5 - lines.length * lh + 10;
+      var name = lines.map(function (l, k) { return '<tspan x="0" y="' + (y0 + k * lh) + '">' + l.replace("&", "&amp;") + "</tspan>"; }).join("");
+      out += '<a href="' + S.goalPath(g) + '" aria-label="Goal ' + g + ": " + S.names[g - 1] + '"><path class="slice" style="--c:' + S.colors[g - 1] + '" d="' + d + '"/>' +
+        '<g class="pt" transform="translate(' + C + " " + C + ") rotate(" + W.rot[g] + ')"><text class="n" x="0" y="234.5">' + g + "</text>" + icon + '<text class="nm">' + name + "</text></g></a>";
+    });
+    out += '<circle cx="' + C + '" cy="' + C + '" r="' + (R_IN - 2) + '" fill="#fff" pointer-events="none"/><image href="' + S.logo + '" x="' + (C - 100) + '" y="' + (C - 94) + '" width="200" height="188" pointer-events="none"/></svg>';
+    el.innerHTML = out;
+  }
+  document.querySelectorAll(".wheel-wrap .wheel-links").forEach(function (el) { if (window.SDG_WHEEL) { buildBigWheel(el); el.classList.add("big"); } else buildWheel(el); });
+  document.querySelectorAll(".wheel-links:not(.big)").forEach(buildWheel);
 
   var fab = document.querySelector(".sdg-fab");
   if (fab) {
