@@ -1045,3 +1045,7 @@ section.news#news .news-left .news-logo{align-self:flex-end}
 .mx-tile.icon{width:auto;max-width:clamp(120px,22vw,300px);height:clamp(90px,12vw,170px);aspect-ratio:auto;object-fit:contain;object-position:left center}
 .mx-head{flex-direction:column;justify-content:flex-start;gap:28px}
 .mx-tile.icon{margin-top:0}
+/* numbers header: icon back on the right of the title (stacked on narrow screens) */
+.mx-head{flex-direction:row;justify-content:space-between;align-items:flex-start;gap:40px}
+.mx-tile.icon{object-position:right center}
+@media(max-width:700px){.mx-head{flex-direction:column;gap:28px}.mx-tile.icon{object-position:left center}}
