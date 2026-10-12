@@ -981,3 +981,7 @@ html.ev-open{overflow:hidden}
 .news .news-card.has-tile .gt{display:inline-flex}
 @media(max-width:899px){.news{grid-template-columns:1fr}.news-left{min-height:0}.news .news-left h2{margin:48px 0 16px}.news-page{height:520px}}
 @media(max-width:599px){.news-band>.container{padding:0 12px}.news-left,.news-right{padding:16px}.news-page{height:460px;gap:8px}}
+/* news: use the full page width with a slim gutter */
+.news-band{padding:12px 0}
+.news-band>.container{padding:0 12px}
+.news{max-width:none;margin:0}
