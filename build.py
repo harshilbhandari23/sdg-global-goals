@@ -295,17 +295,28 @@ def build_goal(g):
         title, rest = (k.group(1), k.group(2) or "") if k else (inner, "")
         return re.sub(r"<[^>]+>", "", title).strip().rstrip("."), rest
 
+    try:
+        cp = json.load(open(D("data", "contribute", f"goal-{n}.json"), encoding="utf8")).get("photos", [])
+    except Exception:
+        cp = []
+    photo_for = {int(x["action"]): x["image"] for x in cp if x.get("image") and x.get("action")}
     todos = ""
     for i, t in enumerate(items, 1):
         title, rest = split_todo(t["html"])
-        todos += (f'<div class="todo" style="--i:{i - 1}"><span class="td-n">Action {i:02d}</span>'
+        ph = photo_for.get(i)
+        todos += (f'<div class="todo{" has-photo" if ph else ""}" style="--i:{i - 1}">'
+                  + (f'<div class="td-bg" style="background-image:url(\'{esc(A(ph, 2))}\')"></div>' if ph else "")
+                  + f'<span class="td-n">Action {i:02d}</span>'
                   + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "")
                   + f'<div class="td-body"><h3 class="td-t">{esc(title)}</h3>' + (f'<div class="cms"><p>{rest}</p></div>' if rest else "")
                   + f'</div><div class="td-bar"><span>&rsaquo; Take action</span><span>{i:02d} / {len(items):02d}</span></div></div>')
     hs_p = ""
     for i, t in enumerate(items, 1):
         title, rest = split_todo(t["html"])
-        hs_p += (f'<div class="hs-p" style="--i:{i - 1}"><span class="hs-ghost">{i:02d}</span>'
+        ph = photo_for.get(i)
+        hs_p += (f'<div class="hs-p{" has-photo" if ph else ""}" style="--i:{i - 1};--rem:{min(3, len(items) - i)}">'
+                 + (f'<div class="hs-bg" style="background-image:url(\'{esc(A(ph, 2))}\')"></div><div class="hs-scrim"></div>' if ph else "")
+                 + f'<span class="hs-edge"></span><span class="hs-ghost">{i:02d}</span>'
                  + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "")
                  + f'<div class="hs-cap"><div class="hs-cnt"><span>{i}</span><i></i><span>{len(items)}</span></div><h3>{esc(title)}</h3>'
                  + (f'<div class="cms"><p>{rest}</p></div>' if rest else "") + '<span class="hs-arr" aria-hidden="true"></span></div></div>')

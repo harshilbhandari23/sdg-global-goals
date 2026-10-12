@@ -47,6 +47,28 @@ collections:
           - { label: "Text (HTML allowed)", name: "html", widget: "text" }
           - { label: "Image", name: "image", widget: "image", required: false }
 
+  - name: contribute_photos
+    label: "Contribute photos (black and white)"
+    label_singular: "Goal photos"
+    folder: "data/contribute"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "goal-{{goal}}"
+    identifier_field: goal
+    summary: "Goal {{goal}} - contribute photos"
+    fields:
+      - { label: "Goal number", name: "goal", widget: "number", value_type: "int", min: 1, max: 17 }
+      - label: "Photos (shown in black and white behind each action)"
+        name: "photos"
+        widget: "list"
+        summary: "Action {{fields.action}}"
+        fields:
+          - { label: "Action number (1 = first card of this goal's 'How can you contribute' list)", name: "action", widget: "number", value_type: "int", min: 1, max: 20 }
+          - { label: "Photo", name: "image", widget: "image", required: false }
+          - { label: "Photo credit", name: "credit", widget: "string", required: false }
+
   - name: yearwise
     label: "Yearly progress scores"
     label_singular: "Year"

@@ -802,3 +802,17 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
   .hs-cap .cms a{color:var(--navy);text-decoration:underline}
   .hs-arr{position:absolute;right:30px;top:50%;width:22px;height:22px;border-top:3px solid var(--navy);border-right:3px solid var(--navy);transform:translateY(-50%) rotate(45deg)}
 }
+
+/* contribute: black-and-white photo behind each action, icon in the top-right corner */
+.hs-bg,.td-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:grayscale(1) contrast(1.08) brightness(.9)}
+.td-bg{z-index:0}
+.todo-stack .todo.has-photo>*:not(.td-bg){position:relative;z-index:1}
+.todo-stack .todo.has-photo::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,.15) 60%,rgba(0,0,0,.35))}
+.todo-stack .todo.has-photo .td-bg{z-index:0}
+.hs-edge{position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--goal);z-index:3}
+@media(min-width:901px){
+  .hs-p .hs-bg{inset:-4%;transform:translate3d(calc(var(--d,0) * -70px),0,0) scale(1.06)}
+  .hs-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,0) 55%),linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,0) 30%)}
+  .hs-p>*:not(.hs-bg):not(.hs-scrim){z-index:2}
+  .hs-p img{left:auto;right:calc(28px + var(--rem,0) * 64px);top:22px;width:clamp(72px,7vw,104px);transform:translate3d(calc(var(--d,0) * -30px),0,0);filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+}
