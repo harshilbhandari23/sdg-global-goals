@@ -97,44 +97,45 @@
 
   /* ===== live news carousel ===== */
   document.querySelectorAll(".news").forEach(function (box) {
-    var limit = +(box.dataset.limit || 5), idx = 0, vis = 4, items = [];
-    var track = box.querySelector(".news-track"), view = box.querySelector(".news-view"), prev = box.querySelector(".prev"), next = box.querySelector(".next"), msg = box.querySelector(".news-msg"), loading = box.querySelector(".news-loading");
-    var pal = ["#E5243B", "#DDA63A", "#4C9F38", "#C5192D", "#E5243B"];
+    var limit = +(box.dataset.limit || 5), idx = 0, pages = 1, items = [];
+    var track = box.querySelector(".news-track"), view = box.querySelector(".news-view"), prev = box.querySelector(".prev"), next = box.querySelector(".next"), msg = box.querySelector(".news-msg"), loading = box.querySelector(".news-loading"), count = box.querySelector(".news-count");
+    var pal = ["#E5243B", "#DDA63A", "#4C9F38", "#C5192D", "#E5243B"], PER = 4;
     function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
     function when(v) { var d = new Date(v); return isNaN(d) ? "Recent" : d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }); }
-    function size() { var w = view.clientWidth; vis = w >= 1100 ? 4 : w >= 800 ? 3 : w >= 540 ? 2 : 1; }
     function show() {
-      var max = Math.max(0, items.length - vis); idx = Math.min(idx, max);
-      var card = track.children[0]; if (card) { var c2 = track.children[1], step = c2 ? c2.offsetLeft - card.offsetLeft : card.getBoundingClientRect().width + 14; track.style.transform = "translateX(" + (-idx * step) + "px)"; }
-      prev.disabled = idx === 0; next.disabled = idx >= max;
+      idx = Math.max(0, Math.min(pages - 1, idx));
+      track.style.transform = "translateX(" + (-idx * 100) + "%)";
+      prev.disabled = idx === 0; next.disabled = idx >= pages - 1;
+      if (count) count.textContent = String(idx + 1).padStart(2, "0") + " / " + String(pages).padStart(2, "0");
     }
-    function go(d) { idx = Math.max(0, Math.min(Math.max(0, items.length - vis), idx + d)); show(); }
+    function go(d) { idx += d; show(); }
     prev.addEventListener("click", function () { go(-1); }); next.addEventListener("click", function () { go(1); });
     var sx = null; view.addEventListener("touchstart", function (e) { sx = e.changedTouches[0].clientX; }, { passive: true });
     view.addEventListener("touchend", function (e) { if (sx == null) return; var dx = sx - e.changedTouches[0].clientX; if (dx > 40) go(1); else if (dx < -40) go(-1); sx = null; });
-    window.addEventListener("resize", function () { size(); show(); });
+    function card(a, i) {
+      var c1 = a.goal ? S.colors[a.goal - 1] : pal[i % 5];
+      var pic = a.image || (a.goal ? (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg" : "");  // no photo in the feed: show the official goal tile
+      return '<a class="news-card' + (a.image ? "" : " has-tile") + '" data-i="' + i + '" href="' + esc(a.url || "#") + '" target="_blank" rel="noreferrer noopener">' +
+        (pic ? '<img src="' + esc(pic) + '" alt="' + esc(a.image ? a.title : "Goal " + a.goal + ": " + S.names[a.goal - 1]) + '" loading="lazy">' : "") +
+        '<div class="cap">' + (a.goal ? '<span class="gt" style="background:' + c1 + '"><b>' + a.goal + "</b>" + esc(S.names[a.goal - 1]) + "</span>" : "") +
+        '<p class="m">' + esc((a.source || "News") + " · " + when(a.publishedAt)) + "</p><h3>" + esc(a.title || "Untitled story") + "</h3></div></a>";
+    }
     function draw() {
       loading.hidden = true;
       if (!items.length) { msg.hidden = false; msg.textContent = "No stories available right now. Please try again shortly."; return; }
-      msg.hidden = true;
-      track.innerHTML = items.map(function (a, i) {
-        var c1 = a.goal ? S.colors[a.goal - 1] : pal[i % 5];
-        var pic = a.image || (a.goal ? (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg" : "");  // no photo in the feed: show the official goal tile
-        return '<a class="news-card' + (a.image ? "" : " has-tile") + '" href="' + esc(a.url || "#") + '" target="_blank" rel="noreferrer noopener"><div class="bar" style="background:' + c1 + '"></div>' +
-          (pic ? '<img src="' + esc(pic) + '" alt="' + esc(a.image ? a.title : "Goal " + a.goal + ": " + S.names[a.goal - 1]) + '" loading="lazy"' + (a.image ? "" : ' class="tile"') + ">" : '<div class="ph"></div>') +
-          (a.goal ? '<div class="gt" style="background:' + c1 + '"><b>' + a.goal + "</b><span>" + esc(S.names[a.goal - 1]) + "</span></div>" : "") +
-          '<div class="b"><p class="m">' + esc((a.source || "News") + " · " + when(a.publishedAt)) + "</p><h3>" + esc(a.title || "Untitled story") + "</h3>" + (a.description ? "<p>" + esc(a.description) + "</p>" : "") + "</div></a>";
-      }).join(""); size(); show(); box.querySelector(".news-arrows").hidden = false;
+      msg.hidden = true; pages = Math.ceil(items.length / PER);
+      var h = ""; for (var p = 0; p < pages; p++) { h += '<div class="news-page">'; for (var k = p * PER; k < Math.min(items.length, (p + 1) * PER); k++) h += card(items[k], k); h += "</div>"; }
+      track.innerHTML = h; show(); box.querySelector(".news-arrows").hidden = false;
       /* a photo that fails to load (blocked or removed) falls back to the official goal tile */
-      Array.prototype.forEach.call(track.querySelectorAll("a.news-card:not(.has-tile) img"), function (im, k) {
-        var a = items[Array.prototype.indexOf.call(track.children, im.closest("a"))];
-        im.addEventListener("error", function () { if (!a || !a.goal) { im.style.visibility = "hidden"; return; } im.closest("a").classList.add("has-tile"); im.className = "tile"; im.src = (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg"; }, { once: true });
+      Array.prototype.forEach.call(track.querySelectorAll("a.news-card img"), function (im) {
+        var a = items[+im.closest("a").dataset.i];
+        im.addEventListener("error", function () { if (!a || !a.goal) { im.style.visibility = "hidden"; return; } im.closest("a").classList.add("has-tile"); im.src = (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg"; }, { once: true });
       });
     }
     /* tapping a card opens a QR code for that story (nothing navigates away from the kiosk) */
     track.addEventListener("click", function (e) {
       var card = e.target.closest && e.target.closest("a.news-card"); if (!card) return;
-      e.preventDefault(); openQr(items[Array.prototype.indexOf.call(track.children, card)]);
+      e.preventDefault(); openQr(items[+card.dataset.i]);
     });
     /* stories come from data/news*.json, refreshed every few hours by tools/fetch_news.py (Google News search per goal) */
     function load() {

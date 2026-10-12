@@ -947,3 +947,37 @@ html.ev-open{overflow:hidden}
 #wipe i:nth-child(2){background:color-mix(in srgb,var(--wipe,#009edb) 68%,#fff);transition-delay:.1s,.1s}
 #wipe i:nth-child(3){background:var(--wipe,#009edb);transition-delay:.2s,.2s}
 .wipe-in #wipe i,#wipe.instant i{transition:none!important}
+
+/* ---- live news: two light panels, text on the left and a masonry of photo tiles on the right ---- */
+.news-band{background:#e9eaec;padding:24px 0}
+.news-band>.container{max-width:none;padding:0 24px}
+.news{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:12px;--g:12px}
+.news-left,.news-right{background:#f5f5f5;padding:24px;color:#080a07;min-width:0}
+.news-left{display:flex;flex-direction:column;min-height:640px}
+.news-top,.news-label{display:flex;justify-content:space-between;font:500 14px/1.4 var(--font-body);text-transform:uppercase;letter-spacing:.02em}
+.news .news-left h2{margin:auto 0 24px;color:#080a07;font:500 clamp(48px,6.4vw,92px)/.95 var(--font-head);letter-spacing:-.04em;text-transform:uppercase}
+.news-sub{margin:0 0 28px;max-width:340px;font:500 15px/1.5 var(--font-body);text-transform:uppercase}
+.news .news-arrows{gap:0}
+.news .news-arrows button,.news .news-arrows button+button{background:var(--navy);color:#fff}
+.news-label{margin-bottom:14px;font:500 32px/1 var(--font-head);text-transform:uppercase;letter-spacing:-.02em}
+.news .news-loading,.news .news-msg{color:#080a07;background:none;padding:0}
+.news .news-view{overflow:hidden}
+.news .news-track{gap:0}
+.news-page{flex:0 0 100%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,1fr);gap:12px;height:560px}
+.news-page .news-card:nth-child(1){grid-column:1;grid-row:1/3}
+.news-page .news-card:nth-child(2){grid-column:1;grid-row:3/7}
+.news-page .news-card:nth-child(3){grid-column:2;grid-row:1/5}
+.news-page .news-card:nth-child(4){grid-column:2;grid-row:5/7}
+.news .news-card{position:relative;flex:none;min-height:0;overflow:hidden;background:#cfd3d8;color:#fff;box-shadow:none}
+.news .news-card:hover{transform:none;box-shadow:none}
+.news .news-card img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;transition:transform .5s ease}
+.news .news-card:hover img{transform:scale(1.04)}
+.news .news-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,10,7,.82),rgba(8,10,7,0) 62%)}
+.news .news-card .cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:16px;display:flex;flex-direction:column;gap:6px}
+.news .news-card .cap .gt{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;height:auto;padding:4px 8px;font:700 10px/1.1 var(--font-body);text-transform:uppercase;letter-spacing:.03em}
+.news .news-card .cap .gt b{font:800 16px/1 var(--font-body)}
+.news .news-card .cap .m{margin:0;opacity:.85;color:#fff;font:600 11px var(--font-body);letter-spacing:.04em;text-transform:uppercase}
+.news .news-card .cap h3{margin:0;color:#fff;font:600 clamp(15px,1.5vw,20px)/1.2 var(--font-head);letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.news .news-card.has-tile .gt{display:inline-flex}
+@media(max-width:899px){.news{grid-template-columns:1fr}.news-left{min-height:0}.news .news-left h2{margin:48px 0 16px}.news-page{height:520px}}
+@media(max-width:599px){.news-band>.container{padding:0 12px}.news-left,.news-right{padding:16px}.news-page{height:460px;gap:8px}}
