@@ -821,3 +821,4 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
 .sdg-pop{background:#fff}
 .sdg-pop .pop-x{background:rgba(10,44,97,.1);color:var(--navy)}
 .sdg-pop .pop-x:hover{background:rgba(10,44,97,.2)}
+.sdg-pop{padding:4px}
