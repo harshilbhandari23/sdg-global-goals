@@ -360,7 +360,7 @@ def build_goal(g):
 {metrics_html}
 <section class="targets" id="targets"><h2 class="h2">The targets</h2><div class="t-grid">{targets}</div></section>
 <section class="contribute" id="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div>{hs}</section>
-<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 40, "SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.", f'<img class="news-logo" src="../../assets/tiles/goal-{n:02d}.jpg" alt="Goal {n}">')}</div></section>
+<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 40, "SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.", f'<img class="news-logo pict" src="../../assets/icons/goal-{n:02d}.png" alt="Goal {n}">')}</div></section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>"""
     p += footer(2) + fab() + scripts(2, '<script src="../../assets/vendor/react.min.js"></script><script src="../../assets/vendor/react-dom.min.js"></script><script type="module" src="../../assets/hero-mount.js"></script>')
