@@ -99,7 +99,7 @@ def news_block(feed, limit=10, title="Live SDG News", ident="news", sub="The lat
 {logo}<h2>{esc(title)}</h2>
 <p class="news-sub">{esc(sub)}</p>
 <div class="news-arrows" hidden><button class="prev" type="button" aria-label="Previous stories">←</button><button class="next" type="button" aria-label="Next stories">→</button></div></div>
-<div class="news-right"><div class="news-label">Stories</div>
+<div class="news-right">
 <p class="news-loading" style="margin:0">Loading live feed…</p><p class="news-msg" hidden></p>
 <div class="news-view"><div class="news-track"></div></div></div></section>"""
 
