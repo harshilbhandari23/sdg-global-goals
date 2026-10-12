@@ -913,3 +913,4 @@ html.ev-open{overflow:hidden}
 .mx-row{container-type:inline-size}
 .mx-big{font-size:min(var(--nh),calc(100cqw / (var(--ch,3) * .6)))}
 .mx-big{font-size:min(var(--nh),calc(100cqw / 3))}
+.mx-row+.mx-row::before{width:2px;height:calc(var(--nh) * .9);top:calc(var(--nh) * .45)}
