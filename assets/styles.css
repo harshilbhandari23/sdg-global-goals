@@ -1018,3 +1018,9 @@ section.news#livenews .news-left{background:#fff}
 .news .news-left .news-logo{margin-top:auto}
 .news .news-left .news-logo+h2{margin-top:16px!important}
 @media(max-width:899px){.news-left{min-height:480px}}
+/* contribute slider: title panel in the goal's brand colour */
+.hs-left{background:var(--goal)}
+.hs-left .h2,.hs-meta{color:#fff}
+.hs-line{background:rgba(255,255,255,.3)}
+.hs-line b{background:#fff}
+.hs-hint{color:rgba(255,255,255,.8)}
