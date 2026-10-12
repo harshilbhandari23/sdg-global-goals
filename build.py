@@ -348,7 +348,7 @@ def build_goal(g):
                  f'<a class="mx-btn" href="{href}"' + (' data-popup="events"' if href == "#events" else ' data-popup="publications"' if href == "#publications" else ' data-qr="UN Partnerships for the SDGs"' if href.startswith("http") else "") + f'>{btn}<i aria-hidden="true"></i></a></div>'
                  f'<div class="mx-big" aria-label="{val} {lab}" style="--ch:{len(f"{val:,}")}' + (f';--ph:url(\'{esc(A(ph, 2))}\')' if ph else "") + '"' + f'><span data-count="{val}">{val:,}</span></div></div>')
     metrics_html = (f'<section class="metrics" id="numbers" data-goal="{n}"><div class="mx-head"><h2 class="mx-title">Goal {n}</h2>'
-                    f'<img class="mx-tile" src="../../assets/tiles/goal-{n:02d}.jpg" alt="Goal {n}: {esc(SHORT[n - 1])}">'
+                    f'<img class="mx-tile icon" src="../../assets/icons/goal-{n:02d}.png" alt="Goal {n}: {esc(SHORT[n - 1])}">'
                     f'</div>'
                     f'<div class="mx-list">{rows}</div></section>')
     p = head(f"Goal {n}: {g['title']}", 2, g["intro"][:150], link_css)

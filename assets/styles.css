@@ -1041,3 +1041,7 @@ section.news#news .news-left .news-logo{align-self:flex-end}
 /* numbers buttons share one baseline: each column fills the row and its button sits at the bottom */
 .mx-txt{flex:1 1 auto}
 .mx-txt .mx-btn{margin-top:auto}
+/* numbers header: the goal's pictogram alone, in the brand colour */
+.mx-tile.icon{width:auto;max-width:clamp(120px,22vw,300px);height:clamp(90px,12vw,170px);aspect-ratio:auto;object-fit:contain;object-position:left center}
+.mx-head{flex-direction:column;justify-content:flex-start;gap:28px}
+.mx-tile.icon{margin-top:0}
