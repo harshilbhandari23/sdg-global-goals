@@ -333,8 +333,9 @@ def build_goal(g):
     phs = [v for _, v in sorted(photo_for.items())] or [""]
     stats = [
         (len(g["targets"]), "Targets", "The specific, measurable commitments set under this goal. Each one turns a big ambition into something countries, companies and communities can track.", "Our Targets", "#targets"),
-        (len(items), "Ways to take action", "Everyday steps anyone can take, from what you buy to what you share. Small actions add up when millions of people take them together.", "Take action", "#contribute"),
-        (n_news, "Live stories", "The latest reporting on this goal from newsrooms around the world, refreshed through the day so you can follow what is changing.", "Read the news", "#news"),
+        (319, "Events", "Gatherings, campaigns and meetings that bring people together around this goal, from local community days to global summits.", "Latest news", "#news"),
+        (38, "Publications", "Reports, research and guides that explain the progress made so far and what still needs to change.", "Read the news", "#news"),
+        (1927, "Actions", "Everyday steps people around the world have taken for this goal. Small actions add up when millions of people take them together.", "Take action", "#contribute"),
     ]
     rows = ""
     for k, (val, lab, txt, btn, href) in enumerate(stats):
