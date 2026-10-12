@@ -822,3 +822,6 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
 .sdg-pop .pop-x{background:rgba(10,44,97,.1);color:var(--navy)}
 .sdg-pop .pop-x:hover{background:rgba(10,44,97,.2)}
 .sdg-pop{padding:4px}
+
+/* photos stay black and white (the blur-in reveal must not override their filter) */
+.todo-stack.rv .todo>.td-bg,.todo-stack.rv .todo.in>.td-bg{filter:grayscale(1) contrast(1.08) brightness(.9);opacity:1;transform:none;transition:none}
