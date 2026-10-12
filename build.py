@@ -93,10 +93,10 @@ def scripts(depth, extra="", wheel=True):
     return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/vendor/qrcode.min.js"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
-def news_block(feed, limit=10, title="Live SDG News", ident="news", sub="The latest stories about the Global Goals from news sources around the world."):
+def news_block(feed, limit=10, title="Live SDG News", ident="news", sub="The latest stories about the Global Goals from news sources around the world.", logo=""):
     return f"""<section class="news" id="{ident}" data-feed="{esc(feed)}" data-limit="{limit}" aria-label="{esc(title)}">
 <div class="news-left"><div class="news-top"><span>Live feed</span><span class="news-count"></span></div>
-<h2>{esc(title)}</h2>
+{logo}<h2>{esc(title)}</h2>
 <p class="news-sub">{esc(sub)}</p>
 <div class="news-arrows" hidden><button class="prev" type="button" aria-label="Previous stories">←</button><button class="next" type="button" aria-label="Next stories">→</button></div></div>
 <div class="news-right"><div class="news-label">Stories</div>
@@ -362,7 +362,7 @@ def build_goal(g):
 <section class="contribute" id="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div>{hs}</section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
-<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "Live SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.")}</div></section>"""
+<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "Live SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.", f'<img class="news-logo" src="../../assets/tiles/goal-{n:02d}.jpg" alt="Goal {n}">')}</div></section>"""
     p += footer(2) + fab() + scripts(2, '<script src="../../assets/vendor/react.min.js"></script><script src="../../assets/vendor/react-dom.min.js"></script><script type="module" src="../../assets/hero-mount.js"></script>')
     write(f"global_goals/goal-{n}/index.html", p)
 
