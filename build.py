@@ -346,7 +346,7 @@ def build_goal(g):
         ph = phs[k % len(phs)]
         rows += (f'<div class="mx-row"><div class="mx-txt"><h3><span class="mx-n">{val}</span> {lab}</h3><p>{txt}</p>'
                  f'<a class="mx-btn" href="{href}"' + (' data-popup="events"' if href == "#events" else ' data-popup="publications"' if href == "#publications" else ' data-qr="UN Partnerships for the SDGs"' if href.startswith("http") else "") + f'>{btn}<i aria-hidden="true"></i></a></div>'
-                 f'<div class="mx-big" aria-label="{val} {lab}" style="--ch:{len(f"{val:,}")}' + (f';--ph:url(\'{esc(A(ph, 2))}\')' if ph else "") + '"' + f'><span data-count="{val}">{val:,}</span></div></div>')
+                 f'<div class="mx-big" aria-label="{val} {lab}" style="--ch:{len(f"{val:,}")}' + (f';--ph:url(\'{esc(A(ph, 1))}\')' if ph else "") + '"' + f'><span data-count="{val}">{val:,}</span></div></div>')
     metrics_html = (f'<section class="metrics" id="numbers" data-goal="{n}"><div class="mx-head"><h2 class="mx-title">Goal {n}</h2>'
                     f'<img class="mx-tile icon" src="../../assets/icons/goal-{n:02d}.png" alt="Goal {n}: {esc(SHORT[n - 1])}">'
                     f'</div>'
