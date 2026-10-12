@@ -912,3 +912,4 @@ html.ev-open{overflow:hidden}
 
 .mx-row{container-type:inline-size}
 .mx-big{font-size:min(var(--nh),calc(100cqw / (var(--ch,3) * .6)))}
+.mx-big{font-size:min(var(--nh),calc(100cqw / 3))}
