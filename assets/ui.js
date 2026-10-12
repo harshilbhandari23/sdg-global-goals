@@ -330,9 +330,9 @@
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
-    if (document.documentElement.classList.contains("wipe-in")) {
-      requestAnimationFrame(function () { requestAnimationFrame(function () { w.classList.add("out"); }); });
-      setTimeout(function () { document.documentElement.classList.remove("wipe-in"); w.classList.remove("out"); }, 1100);
+    if (document.documentElement.classList.contains("wipe-in")) {   // arriving: the colour is simply gone, no second sweep
+      w.classList.add("instant");
+      requestAnimationFrame(function () { document.documentElement.classList.remove("wipe-in"); requestAnimationFrame(function () { w.classList.remove("instant"); }); });
     }
     window.addEventListener("pageshow", function (e) { if (e.persisted) { w.classList.remove("go"); document.documentElement.classList.remove("wipe-in"); } });
     document.addEventListener("click", function (e) {
