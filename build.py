@@ -344,7 +344,7 @@ def build_goal(g):
                  f'<a class="mx-btn" href="{href}"' + (' data-popup="events"' if href == "#events" else ' data-popup="publications"' if href == "#publications" else ' data-qr="UN Partnerships for the SDGs"' if href.startswith("http") else "") + f'>{btn}<i aria-hidden="true"></i></a></div>'
                  f'<div class="mx-big" aria-label="{val} {lab}" style="--ch:{len(f"{val:,}")}' + (f';--ph:url(\'{esc(A(ph, 2))}\')' if ph else "") + '"' + f'><span data-count="{val}">{val:,}</span></div></div>')
     metrics_html = (f'<section class="metrics" id="numbers" data-goal="{n}"><div class="mx-head"><h2 class="mx-title">Goal {n}<br>In Numbers</h2>'
-                    f'<div class="mx-side"><p>A closer look at the targets, actions and stories that define the work toward this goal.</p><a class="mx-link" href="#targets">Explore the targets<i aria-hidden="true"></i></a></div></div>'
+                    f'</div>'
                     f'<div class="mx-list">{rows}</div></section>')
     p = head(f"Goal {n}: {g['title']}", 2, g["intro"][:150], link_css)
     p += nav(2, "goals").replace("<nav", f'<nav style="--goal:{c}"', 1)
