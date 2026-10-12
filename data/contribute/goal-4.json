@@ -1,4 +1,35 @@
 {
  "goal": 4,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g04-a01.jpg",
+   "credit": "Unknown authorUnknown author, CC BY 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g04-a02.jpg",
+   "credit": "Stoneville (N.C.) Public Library, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g04-a03.jpg",
+   "credit": "U.S. Army USArmyEURAF by Pfc. Kaden Pitt, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g04-a04.jpg",
+   "credit": "Spc. Aaron J. Herrera, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g04-a05.jpg",
+   "credit": "Berthold Werner, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g04-a06.jpg",
+   "credit": "Stougard, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }

@@ -1,4 +1,40 @@
 {
  "goal": 11,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g11-a01.jpg",
+   "credit": "George Armstrong, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g11-a02.jpg",
+   "credit": "Ray Devlin, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g11-a03.jpg",
+   "credit": "Michael Rivera, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g11-a04.jpg",
+   "credit": "RkamangBsm, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g11-a05.jpg",
+   "credit": "John Wigham, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g11-a06.jpg",
+   "credit": "William Warren Byrd II (U.S. Army Corps of Engineers Sacramento District), Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g11-a07.jpg",
+   "credit": "Jim Pickerell, Public domain, via Wikimedia Commons"
+  }
+ ]
 }

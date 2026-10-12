@@ -1,4 +1,55 @@
 {
  "goal": 13,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g13-a01.jpg",
+   "credit": "planet a., CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g13-a02.jpg",
+   "credit": "Terence Ong, CC BY 2.5, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g13-a03.jpg",
+   "credit": "Ksd5, CC0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g13-a04.jpg",
+   "credit": "Dennis G. Jarvis, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g13-a05.jpg",
+   "credit": "Eva Rinaldi, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g13-a06.jpg",
+   "credit": "Tdorante10, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g13-a07.jpg",
+   "credit": "Unknown, CC BY-SA 2.5, via Wikimedia Commons"
+  },
+  {
+   "action": 8,
+   "image": "assets/media/contrib-g13-a08.jpg",
+   "credit": "Jmdigne, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 9,
+   "image": "assets/media/contrib-g13-a09.jpg",
+   "credit": "Dietmar Rabich, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 10,
+   "image": "assets/media/contrib-g13-a10.jpg",
+   "credit": "Kuba Bo\u017canowski from Warsaw, Poland, CC BY 2.0, via Wikimedia Commons"
+  }
+ ]
 }

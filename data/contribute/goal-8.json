@@ -1,4 +1,40 @@
 {
  "goal": 8,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g08-a01.jpg",
+   "credit": "Mostafameraji, CC0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g08-a02.jpg",
+   "credit": "Airman 1st Class Emily Kenney, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g08-a03.jpg",
+   "credit": "Leeotong16s, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g08-a04.jpg",
+   "credit": "Waka77, CC0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g08-a05.jpg",
+   "credit": "Unknown authorUnknown author, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g08-a06.jpg",
+   "credit": "Visitor7, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g08-a07.jpg",
+   "credit": "Alexander Johmann from Vienna, Austria, CC BY-SA 2.0, via Wikimedia Commons"
+  }
+ ]
 }

@@ -1,4 +1,40 @@
 {
  "goal": 7,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g07-a01.jpg",
+   "credit": "USAID Pakistan, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g07-a02.jpg",
+   "credit": "Sebastian Wallroth, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g07-a03.jpg",
+   "credit": "Cheanguehuae, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g07-a04.jpg",
+   "credit": "Lukas A, CZE, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g07-a05.jpg",
+   "credit": "Intel Free Press, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g07-a06.jpg",
+   "credit": "Gray Watson User:E090, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g07-a07.jpg",
+   "credit": "Felix  Huth, CC BY 2.0, via Wikimedia Commons"
+  }
+ ]
 }

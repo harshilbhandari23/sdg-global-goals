@@ -300,6 +300,7 @@ def build_goal(g):
     except Exception:
         cp = []
     photo_for = {int(x["action"]): x["image"] for x in cp if x.get("image") and x.get("action")}
+    credit_for = {int(x["action"]): (x.get("credit") or "") for x in cp if x.get("action")}
     todos = ""
     for i, t in enumerate(items, 1):
         title, rest = split_todo(t["html"])
@@ -309,6 +310,7 @@ def build_goal(g):
                   + f'<span class="td-n">Action {i:02d}</span>'
                   + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "")
                   + f'<div class="td-body"><h3 class="td-t">{esc(title)}</h3>' + (f'<div class="cms"><p>{rest}</p></div>' if rest else "")
+                  + (f'<small class="td-credit">Photo: {esc(credit_for.get(i, ""))}</small>' if ph and credit_for.get(i) else "")
                   + f'</div><div class="td-bar"><span>&rsaquo; Take action</span><span>{i:02d} / {len(items):02d}</span></div></div>')
     hs_p = ""
     for i, t in enumerate(items, 1):
@@ -319,7 +321,8 @@ def build_goal(g):
                  + f'<span class="hs-edge"></span><span class="hs-ghost">{i:02d}</span>'
                  + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "")
                  + f'<div class="hs-cap"><div class="hs-cnt"><span>{i}</span><i></i><span>{len(items)}</span></div><h3>{esc(title)}</h3>'
-                 + (f'<div class="cms"><p>{rest}</p></div>' if rest else "") + '<span class="hs-arr" aria-hidden="true"></span></div></div>')
+                 + (f'<div class="cms"><p>{rest}</p></div>' if rest else "") + '<span class="hs-arr" aria-hidden="true"></span></div>'
+                 + (f'<span class="hs-credit">Photo: {esc(credit_for.get(i, ""))}</span>' if ph and credit_for.get(i) else "") + '</div>')
     hs = (f'<div class="hs" style="--n:{len(items)}"><div class="hs-pin"><div class="hs-left"><h2 class="h2">How can you contribute to this goal</h2>'
           f'<div class="hs-meta"><span class="hs-cur">01</span><i class="hs-line"><b></b></i><span>{len(items):02d}</span></div>'
           f'<p class="hs-hint">Keep scrolling to see each action</p></div><div class="hs-right">{hs_p}</div></div></div>')

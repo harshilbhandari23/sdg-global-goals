@@ -1,4 +1,50 @@
 {
  "goal": 12,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g12-a01.jpg",
+   "credit": "Alan Stanton, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g12-a02.jpg",
+   "credit": "Unknown, CC BY 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g12-a03.jpg",
+   "credit": "Unknown, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g12-a04.jpg",
+   "credit": "Onderwijsgek, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g12-a05.jpg",
+   "credit": "A LO MEXA, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g12-a06.jpg",
+   "credit": "Marshall Astor, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g12-a07.jpg",
+   "credit": "Tawbabolve, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 8,
+   "image": "assets/media/contrib-g12-a08.jpg",
+   "credit": "Unknown, CC BY 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 9,
+   "image": "assets/media/contrib-g12-a09.jpg",
+   "credit": "\u0412\u0432\u043b\u0430\u0441\u0435\u043d\u043a\u043e, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }

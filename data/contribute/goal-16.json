@@ -1,4 +1,35 @@
 {
  "goal": 16,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g16-a01.jpg",
+   "credit": "U.S. Embassy Kyiv Ukraine, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g16-a02.jpg",
+   "credit": "John H. White, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g16-a03.jpg",
+   "credit": "Alisdare Hickson from Canterbury, United Kingdom, CC BY-SA 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g16-a04.jpg",
+   "credit": "Douglas W. Jones, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g16-a05.jpg",
+   "credit": "Jaffar Theekkathir, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g16-a06.jpg",
+   "credit": "Felix  Huth, CC BY 2.0, via Wikimedia Commons"
+  }
+ ]
 }

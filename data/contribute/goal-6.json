@@ -1,4 +1,35 @@
 {
  "goal": 6,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g06-a01.jpg",
+   "credit": "Fanny (Appleton) Longfellow (1817-1861), Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g06-a02.jpg",
+   "credit": "DFID - UK Department for International Development, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g06-a03.jpg",
+   "credit": "SuSanA Secretariat, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g06-a04.jpg",
+   "credit": "Donald Trung Quoc Don (Ch\u1eef H\u00e1n: \u5fb5\u570b\u55ae) - Wikimedia Commons - \u00a9 CC BY-SA 4.0 Intern, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g06-a05.jpg",
+   "credit": "USEPA Environmental-Protection-Agency, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g06-a06.jpg",
+   "credit": "Roberto Ferrari from Campogalliano (Modena), Italy, CC BY-SA 2.0, via Wikimedia Commons"
+  }
+ ]
 }

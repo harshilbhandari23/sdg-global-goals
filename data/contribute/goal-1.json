@@ -1,4 +1,30 @@
 {
  "goal": 1,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g01-a01.jpg",
+   "credit": "Pfc. junguk Yi, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g01-a02.jpg",
+   "credit": "Ildar Sagdejev (Specious), CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g01-a03.jpg",
+   "credit": "Jocelyn Augustino, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g01-a04.jpg",
+   "credit": "James Gordon from Los Angeles, California, USA, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g01-a05.jpg",
+   "credit": "Stougard, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }

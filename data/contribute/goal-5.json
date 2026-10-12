@@ -1,4 +1,40 @@
 {
  "goal": 5,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g05-a01.jpg",
+   "credit": "Bransby, David, photographer., Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g05-a02.jpg",
+   "credit": "UNU-WIDER from Helsinki, Finland, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g05-a03.jpg",
+   "credit": "UNU-WIDER from Helsinki, Finland, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g05-a04.jpg",
+   "credit": "Gigi Ibrahim, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g05-a05.jpg",
+   "credit": "DoD photo by Glenn Fawcett.  (Released), Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g05-a06.jpg",
+   "credit": "Line Omey, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g05-a07.jpg",
+   "credit": "No machine-readable author provided. Philipendula assumed (based on copyright cl, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }

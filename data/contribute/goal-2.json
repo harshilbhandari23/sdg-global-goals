@@ -1,4 +1,40 @@
 {
  "goal": 2,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g02-a01.jpg",
+   "credit": "Petty Officer 3rd Class Kyle Carlstrom, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g02-a02.jpg",
+   "credit": "Joe Mabel, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g02-a03.jpg",
+   "credit": "USDAgov, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g02-a04.jpg",
+   "credit": "PattayaPatrol, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g02-a05.jpg",
+   "credit": "Unknown, CC BY-SA 2.5, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g02-a06.jpg",
+   "credit": "Zoltan Kluger, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g02-a07.jpg",
+   "credit": "Roberto Ferrari from Campogalliano (Modena), Italy, CC BY-SA 2.0, via Wikimedia Commons"
+  }
+ ]
 }

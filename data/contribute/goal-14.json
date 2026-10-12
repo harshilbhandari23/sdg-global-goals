@@ -1,4 +1,40 @@
 {
  "goal": 14,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g14-a01.jpg",
+   "credit": "HugoTagholm, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g14-a02.jpg",
+   "credit": "Ananyaalien, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g14-a03.jpg",
+   "credit": "Fquasie, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g14-a04.jpg",
+   "credit": "U+1F360, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g14-a05.jpg",
+   "credit": "Unknown, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g14-a06.jpg",
+   "credit": "Abdellah zou, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g14-a07.jpg",
+   "credit": "Stougard, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }

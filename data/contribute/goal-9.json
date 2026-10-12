@@ -1,4 +1,30 @@
 {
  "goal": 9,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g09-a01.jpg",
+   "credit": "Zoohistorian, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g09-a02.jpg",
+   "credit": "Department of Foreign Affairs and Trade, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g09-a03.jpg",
+   "credit": "Emes, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g09-a04.jpg",
+   "credit": "UNESCO, CC BY-SA 3.0 igo, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g09-a05.jpg",
+   "credit": "Mike Prince from Bangalore, India, CC BY 2.0, via Wikimedia Commons"
+  }
+ ]
 }

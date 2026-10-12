@@ -1,4 +1,25 @@
 {
  "goal": 17,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g17-a01.jpg",
+   "credit": "U.S. Navy photo by Mass Communication Specialist 3rd Class Matthew Jackson, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g17-a02.jpg",
+   "credit": "GiveWell, CC BY 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g17-a03.jpg",
+   "credit": "Stanislav Kom\u00ednek, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g17-a04.jpg",
+   "credit": "Alexander Johmann from Vienna, Austria, CC BY-SA 2.0, via Wikimedia Commons"
+  }
+ ]
 }

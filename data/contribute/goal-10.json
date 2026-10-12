@@ -1,4 +1,45 @@
 {
  "goal": 10,
- "photos": []
+ "photos": [
+  {
+   "action": 1,
+   "image": "assets/media/contrib-g10-a01.jpg",
+   "credit": "U.S. Navy photo by Mass Communication Specialist 3rd Class Matthew Jackson, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 2,
+   "image": "assets/media/contrib-g10-a02.jpg",
+   "credit": "U.S. Navy photo by Mass Communication Specialist 2nd Class Steven King, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 3,
+   "image": "assets/media/contrib-g10-a03.jpg",
+   "credit": "Keoni Cabral, CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "action": 4,
+   "image": "assets/media/contrib-g10-a04.jpg",
+   "credit": "HelenOnline, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "action": 5,
+   "image": "assets/media/contrib-g10-a05.jpg",
+   "credit": "Marvin Nauman, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 6,
+   "image": "assets/media/contrib-g10-a06.jpg",
+   "credit": "Ilgar Jafarov, CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "action": 7,
+   "image": "assets/media/contrib-g10-a07.jpg",
+   "credit": "NASA Headquarters / NASA/Joel Kowsky, Public domain, via Wikimedia Commons"
+  },
+  {
+   "action": 8,
+   "image": "assets/media/contrib-g10-a08.jpg",
+   "credit": "\u0412\u0432\u043b\u0430\u0441\u0435\u043d\u043a\u043e, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ ]
 }
