@@ -95,7 +95,7 @@ def scripts(depth, extra="", wheel=True):
 
 def news_block(feed, limit=10, title="Live SDG News", ident="news", sub="The latest stories about the Global Goals from news sources around the world.", logo=""):
     return f"""<section class="news" id="{ident}" data-feed="{esc(feed)}" data-limit="{limit}" aria-label="{esc(title)}">
-<div class="news-left"><div class="news-top"><span>Live feed</span><span class="news-count"></span></div>
+<div class="news-left"><div class="news-top"><span>News feed</span><span class="news-count"></span></div>
 {logo}<h2>{esc(title)}</h2>
 <p class="news-sub">{esc(sub)}</p>
 <div class="news-arrows" hidden><button class="prev" type="button" aria-label="Previous stories">←</button><button class="next" type="button" aria-label="Next stories">→</button></div></div>
