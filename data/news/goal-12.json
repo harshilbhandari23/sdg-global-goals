@@ -1,113 +1,221 @@
 {
- "updated": "2026-10-10T08:46:51+00:00",
+ "updated": "2026-10-12T10:50:55+00:00",
  "goal": 12,
  "articles": [
+  {
+   "title": "Penang: MBPP selected to implement a historic green initiative",
+   "url": "https://www.thevibes.com/articles/culture/128268/penang-mbpp-selected-to-implement-a-historic-green-initiative",
+   "description": "MBPP president, Datuk Anthony Rajendran, said the undertaking is an important step towards a circular economy, efficient use of resources and resilience to ...",
+   "image": "https://www.bing.com/th?id=ONUT.jGi6QYVWMO8vF2l57n0aWA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T03:32:00+00:00",
+   "source": "The Vibes",
+   "goal": 12
+  },
+  {
+   "title": "Simple kitchen mistake is attracting rats to UK homes",
+   "url": "https://www.leaderlive.co.uk/news/26627324.simple-kitchen-mistake-attracting-rats-uk-homes/",
+   "description": "Food scraps, leftovers and even small spills inside a wheelie bin can produce strong smells that attract rodents from surprisingly long distances. “Once rats identify a relia ...",
+   "image": "https://www.leaderlive.co.uk/resources/images/21566332.jpg?type=og-image",
+   "publishedAt": "2026-10-12T03:28:00+00:00",
+   "source": "The Leader",
+   "goal": 12
+  },
+  {
+   "title": "Budding food scrap pickup services across the US want your coffee grounds and eggshells",
+   "url": "https://www.macombdaily.com/2026/10/12/budding-food-scrap-pickup-services-across-the-us-want-your-coffee-grounds-and-eggshells/",
+   "description": "In Detroit, more than 70 homes and businesses are signed up for Scrap Soils’ weekly pickups. It’s an easier way to compost than making space in one’s backyard or driving to a city drop-off site. Home ...",
+   "image": "https://www.bing.com/th?id=ONUT.AjZhjIsl8HLgh4qJLPvGiQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T03:21:00+00:00",
+   "source": "The Macomb Daily",
+   "goal": 12
+  },
+  {
+   "title": "US$110M Oji Liquid Pak Aseptic Packaging Plant Marks Oji Group's Southeast Asia Expansion",
+   "url": "https://www.manilatimes.net/2026/10/12/tmt-newswire/pr-newswire/us110m-oji-liquid-pak-aseptic-packaging-plant-marks-oji-groups-southeast-asia-expansion/2443574",
+   "description": "Last week, OJI Group held the groundbreaking ceremony for its US$110 million aseptic carton packaging plant in Vietnam. Operated under the Oji Liquid Pak (OLP) name, the 57,000-square-metre plant at ...",
+   "image": "https://manilatimes.net/manilatimes/uploads/images/2026/10/12/1255742.jpg",
+   "publishedAt": "2026-10-12T02:57:00+00:00",
+   "source": "The Manila Times",
+   "goal": 12
+  },
+  {
+   "title": "Community action to protect Cambodia’s seas: Interview with commune leader Sorn Srenh",
+   "url": "https://www.msn.com/en-us/news/other/community-action-to-protect-cambodia-s-seas-interview-with-commune-leader-sorn-srenh/ar-AA2e3zmB",
+   "description": "In Cambodia’s Koh Sdach archipelago, where turquoise waters hide mounting environmental pressures from overfishing and plastic waste to climate change, one local leader has turned grassroots action ...",
+   "image": "https://www.bing.com/th?id=ONUT.eOBKQ02OptYa-RyVH4DiSw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:53:15+00:00",
+   "source": "Mongabay News on MSN",
+   "goal": 12
+  },
+  {
+   "title": "AI Could Change Grocery Prices as Experts Raise Concerns Over Consumer Fairness",
+   "url": "https://the420.in/ai-grocery-pricing-dynamic-prices-consumer-risks/",
+   "description": "AI-driven grocery pricing could lower food costs and reduce waste, but experts warn of personalised pricing risks, privacy concerns and reduced transparency.",
+   "image": "https://www.bing.com/th?id=ONUT.eEojKlJn53wSp8WafQ3KeA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:27:00+00:00",
+   "source": "The420.in",
+   "goal": 12
+  },
+  {
+   "title": "Waste To Wonder! Plastic Partially Replaces Asphalt Across 13 Km Of ₹3,500 Crore Ring Road Project In MP’s Jabalpur",
+   "url": "https://www.freepressjournal.in/bhopal/waste-to-wonder-plastic-partially-replaces-asphalt-across-13-km-of-3500-crore-ring-road-project-in-mps-jabalpur",
+   "description": "Jabalpur's ₹3,500 crore ring road project is using recycled plastic waste to partially replace bitumen in approximately 12 to 13 kilometres of service roads. Implemented under the Government of ...",
+   "image": "https://www.bing.com/th?id=ONUT.vyRewnQ2jwN38M_iR__zPQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:18:00+00:00",
+   "source": "Free Press Journal",
+   "goal": 12
+  },
+  {
+   "title": "PCBL vs Himadri Speciality: Which Chemical Stock Could Benefit More From India’s Carbon Black Boom?",
+   "url": "https://tradebrains.in/indian-markets/pcbl-vs-himadri-speciality-which-chemical-stock-could-benefit-more-from-indias-carbon-black-boom-12668486",
+   "description": "India’s carbon black market is projected to double by 2034, creating opportunities for PCBL Chemical and Himadri Speciality Chemical. While PCBL focuses on scale and exports, Himadri targets specialty ...",
+   "image": "https://www.bing.com/th?id=ONUT.Zd59w7JQdj87iziUrbI36A&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:02:00+00:00",
+   "source": "Trade Brains",
+   "goal": 12
+  },
+  {
+   "title": "I tried eating 30 plants a week. It was surprisingly easy",
+   "url": "https://health.yahoo.com/wellness/nutrition/healthy-eating/articles/tried-eating-30-plants-week-085102478.html",
+   "description": "In the end, I overshot my target and ate a grand total of 51 plants. Over the last two years, a new health goal has been growing in popularity. First there was 10,000 steps, then five a day. Now we're ...",
+   "image": "https://www.bing.com/th?id=ONUT.Ww6w9mOGHlfamUqS06oIJA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T01:51:00+00:00",
+   "source": "health",
+   "goal": 12
+  },
+  {
+   "title": "Nuneaton and Bedworth delayed food waste collection latest as big depot changes loom",
+   "url": "https://www.coventrytelegraph.net/news/local-news/nuneaton-bedworth-delayed-food-waste-34737191",
+   "description": "Council depot changes need to be made to accommodate the now-delayed new food waste collections across Nuneaton and Bedworth. They will include 'moving some staff around' as well as reducing car ...",
+   "image": "https://www.bing.com/th?id=ONUT.sp9JaIj32sNHueAtHyPHKQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T22:00:00+00:00",
+   "source": "Coventry Telegraph",
+   "goal": 12
+  },
+  {
+   "title": "Collaboration is vital for Scotland’s waste management sector",
+   "url": "https://www.scotsman.com/business/collaboration-is-vital-for-scotlands-waste-management-sector-9272273",
+   "description": "Scotland’s resource and waste sector is entering an important new phase. Whilst there is innovation across the sector and a clear ambition to move towards a more circular economy, the many policy, ...",
+   "image": "https://www.bing.com/th?id=ONUT.qDCGPQCrhuYJQaBJQxuw-Q&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T22:00:00+00:00",
+   "source": "The Scotsman",
+   "goal": 12
+  },
+  {
+   "title": "[Thinking from the Netherlands: Circular Economy #22] From a \"place to discard\" to a place that connects value",
+   "url": "https://note.com/eijiyama/n/n52509e25f442?hl=en",
+   "description": "Visiting Rotterdam Milieupark + De HER ―We have been discussing circular society initiatives in Japanese regions. From this installment, we return to the Netherlands. Recently, I participated in a ...",
+   "image": "https://www.bing.com/th?id=ONUT.IZ5vnfOM3g0l8HwLPb0ysw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T19:05:00+00:00",
+   "source": "note",
+   "goal": 12
+  },
+  {
+   "title": "CII GreenCo Launches Circularity Guidelines for Indian Industry",
+   "url": "https://www.constructionworld.in/policy-updates-and-economic-news/cii-greenco-launches-circularity-guidelines-for-indian-industry/98601",
+   "description": "GreenCo Council has launched the CII GreenCo Circularity Guidelines – Pilot Version at the 17th CII GreenCo Waste & Resource Management Summit 2026 in Chennai. The initiative aims to strengthen ...",
+   "image": "https://www.bing.com/th?id=ONUT.9xkbGx761dHU5d71l3STnA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T18:41:00+00:00",
+   "source": "Construction World",
+   "goal": 12
+  },
+  {
+   "title": "Greece Wastes More Than 2 Million Tonnes of Food Every Year",
+   "url": "https://greekcitytimes.com/2026/10/12/greece-wastes-more-than-2-million-tonnes-of-food-every-year/",
+   "description": "Greece wastes more than 2 million tonnes of food annually, ranks third in the EU for food waste per capita and targets a 30% reduction by 2030.",
+   "image": "https://www.bing.com/th?id=ONUT.Uvzybq4sexOpaGjQ22EwHA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T15:10:00+00:00",
+   "source": "Greek City Times",
+   "goal": 12
+  },
+  {
+   "title": "PPCB Hosts International Punjab Plastic Action Summit 2026",
+   "url": "https://www.punjabnewsexpress.com/punjab/news/ppcb-hosts-international-punjab-plastic-action-summit-2026-331958",
+   "description": "PPCB also showcased its ongoing initiatives to reduce plastic consumption and promote responsible alternatives at public gatherings and institutions. These include the Plastic-Free Langar at Fatehgarh ...",
+   "image": "https://www.bing.com/th?id=ONUT.DXtY_7mWjB4GjqYtqXvndA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T12:43:00+00:00",
+   "source": "Punjab News Express",
+   "goal": 12
+  },
+  {
+   "title": "Social fintech a 2-in-1 solution to poverty and plastic pollution",
+   "url": "https://tribune.net.ph/2026/10/11/social-fintech-a-2-in-1-solution-to-poverty-and-plastic-pollution",
+   "description": "Plastic Bank Philippines supports nearly 12,000 waste pickers through cash incentives, livelihood assistance and social benefits while helping companies comply with the Extended Producer ...",
+   "image": "https://www.bing.com/th?id=ONUT.ufupp409jo9lWCe8eSLGsg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T11:46:00+00:00",
+   "source": "Daily Tribune",
+   "goal": 12
+  },
+  {
+   "title": "A Khutba with a difference: Save water, respect food, reject plastic",
+   "url": "https://www.siasat.com/a-khutba-with-a-difference-save-water-respect-food-reject-plastic-3556116/",
+   "description": "At Masjid-e-Teenposh in Red Hills, these pressing social and environmental concerns formed the centerpiece of the \"Juma khutba\".",
+   "image": "https://www.bing.com/th?id=ONUT.tpNSUt2dMUXGNs0Sw3I7iA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T09:11:00+00:00",
+   "source": "The Siasat Daily",
+   "goal": 12
+  },
+  {
+   "title": "A two-tier food system for people living in poverty",
+   "url": "https://www.aol.co.uk/articles/two-tier-food-system-people-155234000.html",
+   "description": "Letters: Jane Middleton says the question we should be asking is not how can we use up surplus food, but how we can ensure that no one has to rely on charity to eat ...",
+   "image": "https://www.bing.com/th?id=ONUT.mRbohreBSNe4oTu5Rr-Z-g&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T08:54:00+00:00",
+   "source": "AOL.co.uk",
+   "goal": 12
+  },
+  {
+   "title": "Punjab News:PPCB Hosts International Punjab Plastic Action Summit 2026, Pushes for Producer Accountability and Tech-Led Plastic Waste Solutions",
+   "url": "https://patialapolitics.com/76875/",
+   "description": "PPCB Hosts International Punjab Plastic Action Summit 2026, Pushes for Producer Accountability and Tech-Led Plastic Waste Solutions ...",
+   "image": "https://www.bing.com/th?id=ONUT.vBCoZ2v3q3bF3HbbdxBCcQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T05:46:00+00:00",
+   "source": "Patiala Politics",
+   "goal": 12
+  },
+  {
+   "title": "Clean-up drive begins on Marudhamalai hill in Coimbatore amid concerns over waste dumping",
+   "url": "https://www.thehindu.com/news/cities/Coimbatore/clean-up-drive-begins-on-marudhamalai-hill-in-coimbatore-amid-concerns-over-waste-dumping/article71571418.ece",
+   "description": "Clean-up efforts begin at Marudhamalai hill in Coimbatore to remove years of waste after viral footage highlights dumping concerns.",
+   "image": "https://www.bing.com/th?id=ONUT.NqFkKV9LUS2WbwAQlCjzlQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T05:39:00+00:00",
+   "source": "The Hindu",
+   "goal": 12
+  },
+  {
+   "title": "Kenyan children learn to play chess on sets made using plastic waste",
+   "url": "https://www.africanews.com/2026/10/11/kenyan-children-learn-to-play-chess-on-sets-made-using-plastic-waste/",
+   "description": "Community project, Kijiji Solutions, has recycled about 200 kilograms of plastic to produce nearly 2,000 tournament quality sets.",
+   "image": "https://www.bing.com/th?id=ONUT.aZN3i10IfEInyVQZbhq5Fw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T04:43:00+00:00",
+   "source": "Africanews",
+   "goal": 12
+  },
   {
    "title": "Karnataka begins setting plastic recycling targets",
    "url": "https://www.deccanherald.com/india/karnataka/karnataka-begins-setting-plastic-recycling-targets-4177215",
    "description": "Karnataka sets strict targets for producers, importers, and brand owners under extended producer responsibility rules, penalising violations and non-compliance across state industries.",
    "image": "https://www.bing.com/th?id=ONUT.BYBLruq94J3zHmuzxNOhdA&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T01:39:00+00:00",
+   "publishedAt": "2026-10-10T13:14:00+00:00",
    "source": "Deccan Herald",
    "goal": 12
   },
   {
-   "title": "NASA wanted food for deep space - researchers came back with a way to turn plastic waste into something edible",
-   "url": "https://www.msn.com/en-us/news/other/nasa-wanted-food-for-deep-space-researchers-came-back-with-a-way-to-turn-plastic-waste-into-something-edible/vi-AA2dGfiA",
-   "description": "Researchers developed a process that uses genetically modified yeast to convert material derived from plastic bottles and corn waste into edible compounds, with 3D-printed vanilla cookies demonstrated ...",
-   "image": "https://www.bing.com/th?id=ONUT.OI-3NMdV_aY_l71aAbOtFA&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T01:35:00+00:00",
-   "source": "Riverside Homestead on MSN",
+   "title": "Moon dust could help astronauts turn plastic waste into useful tools",
+   "url": "https://www.earth.com/space/moon-dust-could-help-astronauts-turn-plastic-waste-into-useful-tools/",
+   "description": "Scientists combined simulated moon dust with recycled plastic to 3D-print tools and parts that could help future astronauts on the moon.",
+   "image": "https://www.earth.com/img/16x9/1920/media-2026/2026/10/10100403/Moon-dust-3D-printing2.jpg",
+   "publishedAt": "2026-10-10T07:05:00+00:00",
+   "source": "Earth.com",
    "goal": 12
   },
   {
-   "title": "Khadi and Village Industries: Weaving the Fabric of an Inclusive and Sustainable India",
-   "url": "https://orissadiary.com/khadi-and-village-industries-weaving-the-fabric-of-an-inclusive-and-sustainable-india/",
-   "description": "Khadi and Village Industries (KVI) have continued to play a significant role in promoting rural livelihoods, generating employment and strengthening the vision of an Atmanirbhar Bharat. Rooted in ...",
-   "image": "https://s0.wp.com/i/blank.jpg",
-   "publishedAt": "2026-10-10T00:50:00+00:00",
-   "source": "Odisha Diary",
-   "goal": 12
-  },
-  {
-   "title": "Don’t go the extra mile: is local food better for the environment?",
-   "url": "https://www.theguardian.com/australia-news/2026/oct/10/support-local-food-producers-environment",
-   "description": "Almost a third of global greenhouse gas emissions are connected to food production. Does where you buy your fruit and vegetables still matter?",
-   "image": "https://i.guim.co.uk/img/media/df413beba1ea5113610d197bafd2e6f03b60f920/453_0_5000_4002/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4832e3e72fec8080bad1f579a2fc3e52",
-   "publishedAt": "2026-10-09T16:01:00+00:00",
-   "source": "The Guardian",
-   "goal": 12
-  },
-  {
-   "title": "Foodservice Cateys 2026: Business and Industry Caterer of the Year – Bennett Hay",
-   "url": "https://www.thecaterer.com/news/foodservice-cateys-2026-business-and-industry-caterer-of-the-year-bennett-hay",
-   "description": "When it comes to procurement, the focus is determinedly chef-led, with chefs and managers having direct access to the suppliers, produce and products they need. As a result, more than 40% of Bennett ...",
-   "image": "https://www.bing.com/th?id=ONUT.7iEwte0626ynY5KX5aQLaw&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T15:00:00+00:00",
-   "source": "The Caterer",
-   "goal": 12
-  },
-  {
-   "title": "Foodservice Cateys 2026: Education Caterer of the Year – Olive Dining",
-   "url": "https://www.thecaterer.com/news/foodservice-cateys-2026-education-caterer-of-the-yea-olive-dining",
-   "description": "Judges were thoroughly impressed by this year’s Education Caterer of the Year, Olive Dining, describing it as a business that has delivered some superb commercial highlights as well as demonstrating a ...",
-   "image": "https://www.bing.com/th?id=ONUT.92Gr-ew_WUuBBv3566LI3w&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T15:00:00+00:00",
-   "source": "The Caterer",
-   "goal": 12
-  },
-  {
-   "title": "Foodservice Cateys 2026: Supplier Excellence Award – Nemi Teas",
-   "url": "https://www.thecaterer.com/news/foodservice-cateys-2026-supplier-excellence-award-nemi-teas",
-   "description": "As the foodservice industry increasingly shifts towards more sustainable and impactful practices, Nemi Teas has positioned itself as a trailblazer. Its commitment to quality, client relationships, ...",
-   "image": "https://dm1igrl0afsra.cloudfront.net/AcuCustom/Sitename/DAM/156/Nemi-Teas_Main.jpg",
-   "publishedAt": "2026-10-09T15:00:00+00:00",
-   "source": "The Caterer",
-   "goal": 12
-  },
-  {
-   "title": "10 Zero-Waste Skincare Recipes Using Kitchen Leftovers",
-   "url": "https://www.news18.com/photogallery/lifestyle/beauty/10-zero-waste-skincare-recipes-using-kitchen-leftovers-ws-l-10374655.html",
-   "description": "Transform kitchen scraps into nourishing, eco-friendly beauty treatments using these ten zero-waste DIY skincare recipes made entirely from everyday food waste.",
-   "image": "https://www.bing.com/th?id=ONUT.StEePZ_gBJ8mtks0ZLkKrQ&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T11:16:00+00:00",
-   "source": "News18",
-   "goal": 12
-  },
-  {
-   "title": "Ghana Plastic Recyclers call for dedicated industrial hub",
-   "url": "https://3news.com/news/ghana-plastic-recyclers-call-for-dedicated-industrial-hub",
-   "description": "The Ghana Plastic Recyclers Association has called on the government to establish a dedicated industrial plastic recycling hub to strengthen the operations of industry players, create jobs and help ...",
-   "image": "https://www.bing.com/th?id=ONUT.c-__VA0Qi4spnO9LCq5DFw&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T09:03:00+00:00",
-   "source": "3News",
-   "goal": 12
-  },
-  {
-   "title": "Role Of Circular Economy In Achieving Net Zero",
-   "url": "https://www.miragenews.com/role-of-circular-economy-in-achieving-net-zero-1757515/",
-   "description": "Live Speech - Asia Pacific Circular Economy Hotspot 2026 The Hon. Matt KeanChair - Climate Change AuthorityCheck against delivery.May I acknowledge ...",
-   "image": "https://www.bing.com/th?id=ONUT.kBOBXlwBGLVicEsyD8l0Ww&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T04:46:00+00:00",
-   "source": "Mirage News",
-   "goal": 12
-  },
-  {
-   "title": "National rules are reshaping Asia’s plastic footprint",
-   "url": "https://eastasiaforum.org/2026/10/09/national-rules-are-reshaping-asias-plastic-footprint/",
-   "description": "National rules and standards, not consensus-based global governance, are what is reshaping plastic supply chains in Asia.",
-   "image": "https://www.bing.com/th?id=ONUT.6UUcB77AbFFUBZXj6nCGGg&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T04:00:00+00:00",
-   "source": "East Asia Forum",
-   "goal": 12
-  },
-  {
-   "title": "Circular economy builds economic resilience in turbulent times",
-   "url": "https://www.fortuneindia.com/opinion/circular-economy-builds-economic-resilience-in-turbulent-times/163781",
-   "description": "In an increasingly unpredictable world, resilience has become as important as growth. Geopolitical tensions, resource constraints, supply chain disruptions, and climate change are reshaping the way ...",
-   "image": "https://www.bing.com/th?id=ONUT.oIMlAfvqmDQjxxkeUTDiYQ&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T02:39:00+00:00",
-   "source": "Fortune India",
+   "title": "Completely Regulate Fertilizers That Discharge Plastic Waste into the Ocean",
+   "url": "https://note.com/pathfinders01/n/n5aff3262224b?hl=en",
+   "description": "The other day, a topic I had absolutely no idea about appeared in an NHK report. It turns out that the plastic shells used in fertilizers are flowing into the ocean and turning into massive amounts of ...",
+   "image": "https://www.bing.com/th?id=ONUT.vefVi3cswQqZhiaG78e-cg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-09T23:08:00+00:00",
+   "source": "note",
    "goal": 12
   }
  ]

@@ -1,68 +1,212 @@
 {
- "updated": "2026-10-10T08:47:12+00:00",
+ "updated": "2026-10-12T10:51:45+00:00",
  "goal": 14,
  "articles": [
   {
-   "title": "Canada Proposes Endangered Listing for Porbeagle Shark After Audit Exposed 22-Year Bias",
-   "url": "https://www.techtimes.com/articles/328860/20261010/canada-proposes-endangered-listing-porbeagle-shark-after-audit-exposed-22-year-bias.htm",
-   "description": "Canada proposed Thursday adding the porbeagle shark and 10 other aquatic species to federal endangered protection, reversing more than 22 years of government delay that a 2022 Office of the Auditor Ge ...",
-   "image": "https://d.techtimes.com/en/full/476625/pressrelease-apr-2014-02-1.png",
-   "publishedAt": "2026-10-10T00:17:00+00:00",
-   "source": "Tech Times",
-   "goal": 14
-  },
-  {
-   "title": "ADEX Big Blue Legacy Returns to Singapore in April 2027 With Dugong Conservation Focus",
-   "url": "https://www.thescubanews.com/2026/10/10/adex-big-blue-legacy-singapore-2027/",
-   "description": "One of Asia’s established diving exhibitions will return to Singapore from 9 to 11 April 2027, with ADEX Big Blue Legacy bringing together international dive industry representatives, underwater ...",
-   "image": "https://www.bing.com/th?id=ONUT.WkmfO4avMJ9KeM2fwiDt6A&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-10T00:06:00+00:00",
-   "source": "thescubanews.com",
-   "goal": 14
-  },
-  {
-   "title": "Birmingham man spends 18 years building very own Sealife Centre in back garden - and it's free to visit",
-   "url": "https://www.birminghammail.co.uk/news/midlands-news/birmingham-man-spends-18-years-34727279",
-   "description": "Tee allows children to visit his fish for free in the hopes that they learn how to properly care for the animals ...",
-   "image": "https://www.bing.com/th?id=ONUT.Wp5dzRf8AzjTnjzuddRO1g&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T22:41:00+00:00",
-   "source": "Birmingham Live",
-   "goal": 14
-  },
-  {
-   "title": "There were people who caught 50-yen-per-kg fish with pride. ~Bringing Tokyo Bay gizzard shad to Nerima school lunches and family dining tables~",
-   "url": "https://note.com/pizzaiwasawa/n/nec58f2b35fc0?hl=en",
-   "description": "Tokyo Bay was this abundant.Why is it that this fish does not appear on our dining tables?I have lived in Tokyo and worked as a chef in Tokyo.I thought I knew a fair amount about Tokyo Bay as ...",
-   "image": "https://www.bing.com/th?id=ONUT.XNA8lHEgToEVj0J7oCghRw&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T22:11:00+00:00",
+   "title": "What is a Sea Trout? 580km from its home river, even near the coast",
+   "url": "https://note.com/nippon_hitode/n/n443eb0b01486?hl=en",
+   "description": "Standing at an estuary where you can hear the sound of the waves, feeling the cold wind as you look along the shore. When you imagine targeting trout in the sea, you tend to think of the river in ...",
+   "image": "https://assets.st-note.com/production/uploads/images/318570203/rectangle_large_type_2_9e2864658ca7a09f0dee34b88d697800.png?fit=bounds&quality=85&width=1280",
+   "publishedAt": "2026-10-12T03:04:00+00:00",
    "source": "note",
    "goal": 14
   },
   {
-   "title": "Nairobi Convention Marks 40 Years, Sets Ocean Governance Agenda",
-   "url": "https://www.miragenews.com/nairobi-convention-marks-40-years-sets-ocean-1757948/",
-   "description": "Dar es Salaam, 9 October 2026 - The Twelfth Conference of the Parties (COP12) to the Nairobi Convention concluded with 15 decisions aimed at ...",
-   "image": "https://cdn.unenvironment.org/2026-10/Manatee.jpg",
-   "publishedAt": "2026-10-09T20:40:00+00:00",
-   "source": "Mirage News",
+   "title": "Community action to protect Cambodia’s seas: Interview with commune leader Sorn Srenh",
+   "url": "https://www.msn.com/en-us/news/other/community-action-to-protect-cambodia-s-seas-interview-with-commune-leader-sorn-srenh/ar-AA2e3zmB",
+   "description": "In Cambodia’s Koh Sdach archipelago, where turquoise waters hide mounting environmental pressures from overfishing and plastic waste to climate change, one local leader has turned grassroots action ...",
+   "image": "https://www.bing.com/th?id=ONUT.eOBKQ02OptYa-RyVH4DiSw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:53:15+00:00",
+   "source": "Mongabay News on MSN",
    "goal": 14
   },
   {
-   "title": "Climate change drives new species combinations, prompting calls to rethink conservation goals",
-   "url": "https://phys.org/news/2026-10-climate-species-combinations-prompting-rethink.html",
-   "description": "The fact that ecosystems change is nothing new. What is new, however, is the speed and scale at which new species communities are emerging as a result of climate change. Processes that once unfolded ...",
-   "image": "https://www.bing.com/th?id=ONUT.5kEDguQ4x5qy-mA9E-Vt4w&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T12:40:00+00:00",
-   "source": "Phys.org",
+   "title": "Irish fishing sector seeks EU quota access to bluefin tuna",
+   "url": "https://www.rte.ie/news/2026/1012/1594936-bluefin-tuna-quotas/",
+   "description": "Inshore fishermen are seeking permission to commercially catch bluefin tuna in Irish waters, noting it would \"make a massive difference\" in coastal communities.",
+   "image": "https://www.bing.com/th?id=ONUT.2fKkqydoTUOiXYJsX97Tvg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T02:50:00+00:00",
+   "source": "RTÉ Ireland",
    "goal": 14
   },
   {
-   "title": "ASU ocean scientist links shifting seas to split hurricane season as Atlantic lull ends",
-   "url": "https://wjla.com/news/local/asu-ocean-scientist-shifting-seas-split-hurrican-season-atlantic-lull-ocean-atlantic-pacific-eric-hochberg-professor-arizona-state-university",
-   "description": "A rare split in hurricane activity this year has drawn attention to the ocean conditions that help fuel powerful storms, as the Atlantic emerges from a lull not ...",
-   "image": "https://wjla.com/resources/media2/16x9/6000/1320/0x313/90/5b45aab5-0431-4b3f-8246-8d2eaebe270a-AP26281616378286.jpg",
-   "publishedAt": "2026-10-09T09:32:00+00:00",
-   "source": "WJLA",
+   "title": "Since 2004, Bill Gates has sent millions of anti-malaria nets to Africa, but the donated gear has been devastating local waters for years",
+   "url": "https://timesofindia.indiatimes.com/technology/technology-news/since-2004-bill-gates-has-sent-millions-of-anti-malaria-nets-to-africa-but-the-donated-gear-is-devastating-local-waters/articleshow/134886254.cms",
+   "description": "Millions of insecticide-treated mosquito nets distributed across Africa to prevent malaria are being repurposed as fishing gear, raising concerns about declining fish populations, damage to aquatic ...",
+   "image": "https://www.bing.com/th?id=ONUT.pGroADvcv1y9KI2uuOdXBA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T01:36:00+00:00",
+   "source": "The Times of India",
+   "goal": 14
+  },
+  {
+   "title": "'Planet Zoo 2' essential guide: Release date, system requirements, and more",
+   "url": "https://www.msn.com/en-us/gaming/game-reviews-and-previews/planet-zoo-2-essential-guide-release-date-system-requirements-and-more/ar-AA2e377Y",
+   "description": "Every great zoo begins with a simple idea: bringing people closer to the wonders of the natural world. But transforming that idea into a thriving wildlife sanctuary takes more than beautiful habitats ...",
+   "image": "https://www.bing.com/th?id=ONUT.B3x0H2M9VJjkZcsKGdY8Gg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T00:25:17+00:00",
+   "source": "Player.One on MSN",
+   "goal": 14
+  },
+  {
+   "title": "Loved to death: How millions of tourists are destroying the world’s most famous landmarks, from crushed coral reefs to ancient monuments being climbed – and the ...",
+   "url": "https://www.dailymail.com/travel/article-16196047/ruined-tourist-attractions-overtourism-pyramids-great-barrier-reef.html",
+   "description": "From the Great Barrier Reef to Venice, Machu Picchu and the Pyramids of Giza, some of the world's most treasured destinations are paying the price for their popularity.",
+   "image": "https://www.bing.com/th?id=ONUT.AWdMtw3H00HejXTTNyCEWw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T00:17:00+00:00",
+   "source": "Daily Mail",
+   "goal": 14
+  },
+  {
+   "title": "# In Search of That Flavor, to Sri Lanka—The Story of a 6-Day Unplanned Solo Trip | Part 2: The First Day *I Was Supposed to Go to Colombo, but I Arrived in the Maldives*",
+   "url": "https://note.com/komatune/n/nbadfccd25c08?hl=en",
+   "description": "Departing from Narita in Business ClassOn August 25th, I parked my car at the P5 parking lot at Narita Airport and walked to Terminal 1. The business class check-in counter was empty, and everything, ...",
+   "image": "https://www.bing.com/th?id=ONUT.0mdMo7AE9AJvHX7XhzbpKg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-12T00:00:00+00:00",
+   "source": "note",
+   "goal": 14
+  },
+  {
+   "title": "Bluefin tuna are back in British waters after decades away",
+   "url": "https://www.firstpost.com/lifestyle/bluefin-tuna-are-back-in-british-waters-after-decades-away-14052083.html",
+   "description": "WWF’s Living Planet Report 2026 lists the giant fish among its conservation successes. The species’ record in UK seas stretches back almost a century.",
+   "image": "https://images.firstpost.com/uploads/2026/10/Untitled-design-2026-10-12T091401.505-2026-10-1ae6cdefa27332d164af6ce1b1b08713-1200x675.jpg?im=FitAndFill,width=1200,height=675",
+   "publishedAt": "2026-10-11T20:56:00+00:00",
+   "source": "Firstpost",
+   "goal": 14
+  },
+  {
+   "title": "Jared Goff tears up about death of wife of Lions radio announcer Dan Miller",
+   "url": "https://www.msn.com/en-us/news/other/jared-goff-tears-up-talking-about-death-of-lions-radio-announcers-wife/ar-AA2e1Mpo",
+   "description": "Detroit Lions QB Jared Goff teared up when talking about the death of Cindy Miller, the wife of Lions radio play-by-play announcer Dan Miller.",
+   "image": "https://www.bing.com/th?id=ONUT.rCBQ_dteatBCMf4t8VcEHw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T20:10:52+00:00",
+   "source": "Detroit Free Press on MSN",
+   "goal": 14
+  },
+  {
+   "title": "Commentary: It’s too late to restore the ocean; Now all we can do is triage",
+   "url": "https://www.timesleader.com/opinion/1762306/commentary-its-too-late-to-restore-the-ocean-now-all-we-can-do-is-triage",
+   "description": "I recently went diving off Kawaihae on Hawaii’s Big Island. The water was bathtub warm, about 85 degrees, with an impressive 80 feet of visibility which meant you could see how little of the reef ...",
+   "image": "https://www.bing.com/th?id=ONUT.CyjoLKQbcbcfwImMdqaHDA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T20:00:00+00:00",
+   "source": "The Times Leader",
+   "goal": 14
+  },
+  {
+   "title": "Winter Coats in 28°C Heat: Climate Change May Force Fashion Brands to Rethink Their Collections",
+   "url": "https://www.fashiontimes.co.uk/climate-change-fashion-brands-seasonal-collections-1765382",
+   "description": "Warmer autumns are disrupting fashion's traditional seasonal calendar, delaying winter clothing sales and increasing risks for retailers, workers, supply chains and the environment.",
+   "image": "https://www.bing.com/th?id=ONUT.vDVk2W5gAydg4yKzRXHD9w&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T18:49:00+00:00",
+   "source": "fashiontimes",
+   "goal": 14
+  },
+  {
+   "title": "How We Investigated the Hidden Costs of the World’s Farmed Seafood",
+   "url": "https://gijn.org/stories/outlaw-ocean-project-food-feed-investigation/",
+   "description": "Over the past five years, an international team of journalists at The Outlaw Ocean Project has examined the largely overlooked $313-billion food-for-feed aquaculture industry.",
+   "image": "https://www.bing.com/th?id=ONUT.O8A2j-8FF-sjs90tkJ6ung&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T17:00:00+00:00",
+   "source": "Global Investigative Journalism Network",
+   "goal": 14
+  },
+  {
+   "title": "2026 Fort Lauderdale International Boat Show: Superyachts With a Story to Tell",
+   "url": "https://megayachtnews.com/2026/10/2026-fort-lauderdale-international-boat-show/",
+   "description": "From owners’ priorities to unexpected engineering, many yachts at the 2026 Fort Lauderdale International Boat Show compel taking a closer look.",
+   "image": "https://www.bing.com/th?id=ONUT.kIrIu1SBwrh4vQawN-3QFw&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T17:00:00+00:00",
+   "source": "megayachtnews",
+   "goal": 14
+  },
+  {
+   "title": "China’s Qinghai Lake: A Blue Gem at 3,200 Metres",
+   "url": "https://www.uzdaily.uz/en/chinas-qinghai-lake-a-blue-gem-at-3200-metres/",
+   "description": "Qinghai Lake, China’s largest inland saltwater lake, lies on the Tibetan Plateau at 3,200 metres, supporting migratory birds, rare wildlife and a recovering ecosystem.",
+   "image": "https://www.bing.com/th?id=ONUT.IaVcmVrmpbxHGNeoCwbcjg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T15:33:00+00:00",
+   "source": "UzDaily.uz",
+   "goal": 14
+  },
+  {
+   "title": "World-famous destinations being destroyed by tourists - see list of what we're likely to lose next",
+   "url": "https://www.mirror.co.uk/news/world-news/great-barrier-reef-venice-tourism-37761466",
+   "description": "Dozens of historical sites around the globe are at risk of being closed off to the public amid over tourism, damage and littering that has sparked concern among conservationists ...",
+   "image": "https://www.bing.com/th?id=ONUT.BTvKMtnPVjFZ3wtsROhwag&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T14:20:00+00:00",
+   "source": "The Mirror",
+   "goal": 14
+  },
+  {
+   "title": "turtles: A light of hope for wildlife conservation",
+   "url": "https://dailycountrytodaybd.com/public/story/turtles:-a-light-of-hope-for-wildlife-conservation",
+   "description": "The size of various populations of observed wildlife has decreased by an average of 73 percent in the last 52 years. This information has been revealed in a Euro News report. Researchers have ...",
+   "image": "https://www.bing.com/th?id=ONUT.XPuy9N3sHtBVZFXISGDBYA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T14:10:00+00:00",
+   "source": "dailycountrytodaybd",
+   "goal": 14
+  },
+  {
+   "title": "In race for Congress, Keating and Macallister differ on immigration, Trump, cost of living",
+   "url": "https://newbedfordlight.org/in-race-for-congress-keating-and-macallister-differ-on-immigration-trump-cost-of-living/",
+   "description": "U.S. Rep. Bill Keating is running for a ninth term in Massachusetts’ 9th Congressional District. He faces a challenge from R. Tyler Macallister, a fisherman and business owner.",
+   "image": "https://www.bing.com/th?id=ONUT.YvFfe08Ehp_4TTZOVq9jvg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T14:10:00+00:00",
+   "source": "The New Bedford Light",
+   "goal": 14
+  },
+  {
+   "title": "Chinese Boats Catch 16 Times More Than Korean Boats Under Equal Quotas",
+   "url": "https://en.sedaily.com/politics/2026/10/12/chinese-boats-catch-16-times-more-than-korean-boats-under",
+   "description": "Chinese vessels landed 12,758 tons in Korea's EEZ through August, 16.3 times the 782 tons Korean boats caught in Chinese waters under identical quotas.",
+   "image": "https://www.bing.com/th?id=ONUT.0EQIv1eTOCvCiT10ptN5rg&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T14:08:00+00:00",
+   "source": "en.sedaily",
+   "goal": 14
+  },
+  {
+   "title": "Kenya Joins 9 Countries to Tackle Indian Ocean Pollution",
+   "url": "https://www.kenyans.co.ke/news/127786-kenya-joins-9-countries-tackle-indian-ocean-pollution",
+   "description": "The 15 resolutions aim to address key challenges facing the vast shared waters, which support marine and coastal ecosystems and provide livelihoods for millions of people living along the Indian Ocean ...",
+   "image": "https://www.bing.com/th?id=ONUT.g1Ww5zg2m-2-Q26jnjxb-Q&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T13:52:00+00:00",
+   "source": "Kenyans.co.ke",
+   "goal": 14
+  },
+  {
+   "title": "Porto to become global headquarters of The Ocean Race from 2028",
+   "url": "https://www.sportstourismnews.com/porto-to-become-global-headquarters-of-the-ocean-race-from-2028/",
+   "description": "Porto in Portugal is set to become the new global headquarters of The Ocean Race from 2028, with the Atlantic coastal city also hosting the start of three editions of the round-the-world sailing ...",
+   "image": "https://www.bing.com/th?id=ONUT.AuZ51Zlle4uMwZ3oWVYlTQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T05:29:00+00:00",
+   "source": "Sports Tourism News",
+   "goal": 14
+  },
+  {
+   "title": "Budget 2027: MSDA ready to partner MOTAC in strengthening marine tourism, conservation",
+   "url": "https://www.sarawaktribune.com/budget-2027-msda-ready-to-partner-motac-in-strengthening-marine-tourism-conservation/",
+   "description": "The Malaysia Scuba Diving Association (MSDA) is ready to serve as a strategic partner to the Ministry of Tourism, Arts and Culture (MOTAC) and ...",
+   "image": "https://www.bing.com/th?id=ONUT.XqVASXH5KeuAUn3y5fIKsQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T02:44:00+00:00",
+   "source": "sarawaktribune",
+   "goal": 14
+  },
+  {
+   "title": "It’s too late to restore the ocean",
+   "url": "https://www.gulftoday.ae/opinion/2026/10/11/its-too-late-to-restore-the-ocean",
+   "description": "I recently went diving off Kawaihae on Hawaii’s Big Island. The water was bathtub warm, about 85 degrees, with an impressive 80 feet of visibility which ...",
+   "image": "https://www.bing.com/th?id=ONUT._qxx4LG-yGpO8ti45Z0gEQ&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-11T02:18:00+00:00",
+   "source": "Gulf Today",
+   "goal": 14
+  },
+  {
+   "title": "[Blueprint for Planetary Intelligence] Vol. 187: Groundwater Ecosystem Monitoring Guided by the 'Cabbage Holes' of Kikai Island's Raised Coral Reefs",
+   "url": "https://note.com/leal_serval1810/n/nbe84ef5a2f9d?hl=en",
+   "description": "Groundwater Ecosystem Monitoring Guided by the 'Cabbage Holes' of Kikai Island's Raised Coral ReefsSummary of the previous episodeIn Uken Village's Yakiuchi Bay, we demonstrated a marine restoration t ...",
+   "image": "https://www.bing.com/th?id=ONUT.JGh4VywrwJOdWz1tFMsCSA&pid=News&w=560&h=340&c=14",
+   "publishedAt": "2026-10-10T04:05:00+00:00",
+   "source": "note",
    "goal": 14
   },
   {
@@ -72,42 +216,6 @@
    "image": "https://www.bing.com/th?id=ONUT.ZHaemb4WZKKJR6_j6CfyKQ&pid=News&w=560&h=340&c=14",
    "publishedAt": "2026-10-09T07:27:00+00:00",
    "source": "United Nations Regional Information Centre",
-   "goal": 14
-  },
-  {
-   "title": "ReefCloud Leads Regional Coral Reef Monitoring Push Across Southeast Asia",
-   "url": "https://ecomagazine.com/news/policy/reefcloud-leads-regional-coral-reef-monitoring-push-across-southeast-asia/",
-   "description": "A new four-year Regional Coral Reef Monitoring and Management Project, led by AIMS' ReefCloud platform, unites nearly 30 government, academic, and NGO participants from five Southeast Asian nations to ...",
-   "image": "https://www.bing.com/th?id=ONUT.buE1sWKNW7F4AFyGI8Qj-g&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T07:15:00+00:00",
-   "source": "ecomagazine",
-   "goal": 14
-  },
-  {
-   "title": "Why has India turned its back on its oceans, asks Rohini Nilekani",
-   "url": "https://www.hindustantimes.com/lifestyle/art-culture/why-has-india-turned-its-back-on-our-oceans-asks-rohini-nilekani-101791552405089.html",
-   "description": "These seas were once the epicentre of the maritime world. They remain crucial to our economy, and our well-being. As they face a polycrisis – climate change, biodiversity loss, rising sea levels – we ...",
-   "image": "https://www.bing.com/th?id=ONUT.qbB32Mfd828bhNLnVU-upA&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-09T06:26:00+00:00",
-   "source": "Hindustan Times",
-   "goal": 14
-  },
-  {
-   "title": "Healthy Reef Sounds Boost Coral, Fish Recovery",
-   "url": "https://www.miragenews.com/healthy-reef-sounds-boost-coral-fish-recovery-1756944/",
-   "description": "Coral reefs are renowned for their visual beauty, but for the marine life they support, their sounds may be just as enticing. Two new studies led by ...",
-   "image": "https://cdn1.miragenews.com/tmp_cache?cdn=images.unsplash.com%2Fphoto-1517245386807-bb43f82c33c4%3Fixlib%3Drb-4.0.3%26amp%3Bixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26amp%3Bauto%3Dformat%26amp%3Bfit%3Dcrop%26amp%3Bw%3D1170%26amp%3Bq%3D80",
-   "publishedAt": "2026-10-08T13:14:00+00:00",
-   "source": "Mirage News",
-   "goal": 14
-  },
-  {
-   "title": "Healthy Reef Sounds Can Boost Coral and Fish Recovery Efforts",
-   "url": "https://scripps.ucsd.edu/news/healthy-reef-sounds-can-boost-coral-and-fish-recovery-efforts",
-   "description": "Coral reefs are renowned for their visual beauty, but for the marine life they support, their sounds may be just as enticing. Two new studies led by UC San Diego’s Scripps Institution of Oceanography ...",
-   "image": "https://www.bing.com/th?id=ONUT.BXn3XjtMVSolS4aJDLsd9g&pid=News&w=560&h=340&c=14",
-   "publishedAt": "2026-10-08T08:00:00+00:00",
-   "source": "Scripps Institution of Oceanography",
    "goal": 14
   }
  ]

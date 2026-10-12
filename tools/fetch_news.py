@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
-PER_GOAL, HOME = 20, 20
+PER_GOAL, HOME = 40, 40
 WINDOW = "when:60d"
 
 # search terms that keep each feed on its own goal (quoted phrases; "SDG n" always included)
@@ -189,8 +189,8 @@ def main():
         done = lambda a: bool(a.get("image")) and len(a.get("description") or "") >= 40  # noqa: E731
         on, rest = [a for a in arts if a["_on"] and done(a)], [a for a in arts if not a["_on"] and done(a)]
         arts = on[:PER_GOAL]
-        if len(arts) < 12:
-            arts += rest[: 12 - len(arts)]
+        if len(arts) < 24:
+            arts += rest[: 24 - len(arts)]
         arts.sort(key=lambda a: a["publishedAt"], reverse=True)
         for a in arts:
             a.pop("_on", None)

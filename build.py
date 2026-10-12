@@ -240,7 +240,7 @@ def build_home():
 <h3 class="cx-h3">SDG dashboard and trends</h3><div class="cx-goals"></div>
 <div class="cx-legend"><span><b style="color:#db1a36">↓</b>Decreasing</span><span><b style="color:#e87c1e">→</b>Stagnating</span><span><b style="color:#ebc011">➚</b>Moderately improving</span><span><b style="color:#3aa746">↑</b>On track</span><span><b style="color:#939598">•</b>Unknown</span></div></div></section>
 
-<section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 20, "Live SDG News", "livenews")}</div></section>
+<section class="section news-band" id="news"><div class="container">{news_block("data/news.json", 40, "SDG News", "livenews", logo='<img class="news-logo sdg" src="assets/media/kF4OY4yJJConof15nyiHGYO9M.png" alt="Sustainable Development Goals">')}</div></section>
 
 <section class="section" id="quiz" style="background:#fff"><div class="container"><h2 class="h2" style="text-align:center;margin-bottom:32px">Create your world's to-do list</h2>
 <div class="quiz"><div class="bgL"></div><div class="bgR"></div><div class="qhead"><h4>Create Your World's To-Do List</h4><p class="qcount" style="margin:0;font-weight:600"></p></div><div class="stage"></div></div></div></section>
@@ -362,7 +362,7 @@ def build_goal(g):
 <section class="contribute" id="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div>{hs}</section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
-<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.", f'<img class="news-logo" src="../../assets/tiles/goal-{n:02d}.jpg" alt="Goal {n}">')}</div></section>"""
+<section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 40, "SDG News", "news", f"The latest stories about Goal {n}, {SHORT[n-1]}, from news sources around the world.", f'<img class="news-logo" src="../../assets/tiles/goal-{n:02d}.jpg" alt="Goal {n}">')}</div></section>"""
     p += footer(2) + fab() + scripts(2, '<script src="../../assets/vendor/react.min.js"></script><script src="../../assets/vendor/react-dom.min.js"></script><script type="module" src="../../assets/hero-mount.js"></script>')
     write(f"global_goals/goal-{n}/index.html", p)
 
