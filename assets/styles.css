@@ -949,7 +949,7 @@ html.ev-open{overflow:hidden}
 .wipe-in #wipe i,#wipe.instant i{transition:none!important}
 
 /* ---- live news: two light panels, text on the left and a masonry of photo tiles on the right ---- */
-.news-band{background:#e9eaec;padding:24px 0}
+.news-band{background:var(--navy);padding:24px 0}
 .news-band>.container{max-width:none;padding:0 24px}
 .news{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:12px;--g:12px}
 .news-left,.news-right{background:#f5f5f5;padding:24px;color:#080a07;min-width:0}
