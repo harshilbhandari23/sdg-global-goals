@@ -816,3 +816,8 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
   .hs-p>*:not(.hs-bg):not(.hs-scrim){z-index:2}
   .hs-p img{left:auto;right:calc(28px + 3 * 64px);top:22px;width:clamp(72px,7vw,104px);transform:translate3d(calc(var(--d,0) * -30px),0,0);filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
 }
+
+/* goals popup: white edge */
+.sdg-pop{background:#fff}
+.sdg-pop .pop-x{background:rgba(10,44,97,.1);color:var(--navy)}
+.sdg-pop .pop-x:hover{background:rgba(10,44,97,.2)}
