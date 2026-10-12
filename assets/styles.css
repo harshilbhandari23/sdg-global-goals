@@ -925,3 +925,12 @@ html.ev-open{overflow:hidden}
 .mx-list{margin-top:clamp(0px,1vw,12px)}
 .mx-big{padding-top:calc(var(--nh) * .22);height:calc(var(--nh) * 1.2)}
 .mx-row+.mx-row::before{top:calc(var(--nh) * .4)}
+
+/* header: goal tile on the right; numbers and divider bars share one height */
+.mx-head{align-items:flex-start}
+.mx-tile{flex:none;width:clamp(110px,19vw,268px);height:auto;aspect-ratio:1;object-fit:cover;display:block;margin-top:clamp(0px,.6vw,8px)}
+.mx-list{--fs:min(var(--nh),calc(100cqw / 2.62))}
+.mx-row{--fs:min(var(--nh),calc(100cqw / 2.62))}
+.mx-big{font-size:var(--fs);line-height:.86;height:calc(var(--fs) * .86);padding:0;align-items:center;margin-bottom:clamp(22px,3vw,44px)}
+.mx-row+.mx-row::before{top:0;height:calc(var(--fs) * .86)}
+@media(max-width:520px){.mx-tile{width:96px}}
