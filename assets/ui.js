@@ -285,6 +285,22 @@
     Array.prototype.forEach.call(st.children, function (c) { io.observe(c); });
   })();
 
+  /* ---- contribute cards: full-screen stack; the card underneath settles back (smaller, darker) as the next one covers it ---- */
+  (function () {
+    var st = document.querySelector(".todo-stack"); if (!st || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var cards = Array.prototype.slice.call(st.children), ticking = false;
+    var update = function () {
+      ticking = false; var vh = window.innerHeight;
+      cards.forEach(function (c, i) {
+        var n = cards[i + 1], p = 0;
+        if (n) p = Math.min(1, Math.max(0, (vh - n.getBoundingClientRect().top) / vh));
+        c.style.setProperty("--p", p.toFixed(3));
+      });
+    };
+    var req = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    window.addEventListener("scroll", req, { passive: true }); window.addEventListener("resize", req); update();
+  })();
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;

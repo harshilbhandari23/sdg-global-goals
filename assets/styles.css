@@ -765,3 +765,12 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
 .todo-stack.rv .todo.in>.td-n{transition-delay:.05s}.todo-stack.rv .todo.in>img{transition-delay:.15s}
 .todo-stack.rv .todo.in>.td-body{transition-delay:.25s}.todo-stack.rv .todo.in>.td-bar{transition-delay:.4s}
 @media(prefers-reduced-motion:reduce){#pre{display:none!important}}
+
+/* contribute: each card fills the screen */
+.todo-stack{background:var(--navy)}
+.todo-stack .todo{height:100vh;height:100svh;min-height:480px;transform-origin:50% 0;scale:calc(1 - var(--p,0) * .07);filter:brightness(calc(1 - var(--p,0) * .4));will-change:scale,filter}
+.todo-stack .todo .td-n{padding-top:96px}
+.todo-stack .todo .td-body{padding-bottom:40px}
+.todo-stack .todo img{width:min(340px,76%)}
+.todo-stack .todo .td-t{font-size:clamp(30px,5vw,72px)}
+@media(max-width:700px){.todo-stack .todo{height:100vh;height:100svh;min-height:520px}.todo-stack .todo .td-n{padding-top:84px}.todo-stack .todo img{width:96px}}
