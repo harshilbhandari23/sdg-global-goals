@@ -922,3 +922,6 @@ html.ev-open{overflow:hidden}
 @media(max-width:900px){.mx-list{--nh:clamp(100px,24vw,180px)}}
 @media(max-width:520px){.mx-list{--nh:clamp(110px,40vw,170px)}}
 .mx-big{height:calc(var(--nh) * 1.5);align-items:flex-start;padding-top:calc(var(--nh) * .5);margin-bottom:clamp(6px,1vw,14px)}
+.mx-list{margin-top:clamp(0px,1vw,12px)}
+.mx-big{padding-top:calc(var(--nh) * .22);height:calc(var(--nh) * 1.2)}
+.mx-row+.mx-row::before{top:calc(var(--nh) * .4)}
