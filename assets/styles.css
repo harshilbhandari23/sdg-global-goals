@@ -1024,3 +1024,10 @@ section.news#livenews .news-left{background:#fff}
 .hs-line{background:rgba(255,255,255,.3)}
 .hs-line b{background:#fff}
 .hs-hint{color:rgba(255,255,255,.8)}
+/* goal pages: title panel on the right, content right-aligned */
+section.news#news{grid-template-columns:minmax(0,7fr) minmax(0,2.5fr)}
+section.news#news .news-left{order:2;align-items:flex-end;text-align:right}
+section.news#news .news-left .news-top{align-self:stretch}
+section.news#news .news-left .news-sub{margin-left:auto}
+section.news#news .news-left .news-logo{align-self:flex-end}
+@media(max-width:899px){section.news#news{grid-template-columns:1fr}section.news#news .news-left{margin-left:auto}}
