@@ -915,3 +915,4 @@ html.ev-open{overflow:hidden}
 .mx-big{font-size:min(var(--nh),calc(100cqw / 3))}
 .mx-row+.mx-row::before{width:2px;height:calc(var(--nh) * .9);top:calc(var(--nh) * .45)}
 .mx-row+.mx-row::before{height:calc(var(--nh) * .45);top:calc(var(--nh) * .675)}
+.mx-row+.mx-row::before{width:clamp(5px,.6vw,8px)}
