@@ -1031,3 +1031,10 @@ section.news#news .news-left .news-top{align-self:stretch}
 section.news#news .news-left .news-sub{margin-left:auto}
 section.news#news .news-left .news-logo{align-self:flex-end}
 @media(max-width:899px){section.news#news{grid-template-columns:1fr}section.news#news .news-left{margin-left:auto}}
+/* goal numbers buttons: flat square, goal colour, uppercase, arrow in a darker square */
+.mx-btn{background:var(--goal,var(--navy));color:#fff;border-radius:0;padding:0 0 0 20px;gap:20px;height:48px;font:800 13px var(--font-head);letter-spacing:.06em;text-transform:uppercase;transition:filter .2s}
+.mx-btn:hover{background:var(--goal,var(--navy));filter:brightness(1.1)}
+.mx-btn i{width:48px;height:48px;margin:0;border:0;transform:none;background:rgba(8,10,7,.28);display:flex;align-items:center;justify-content:center;flex:none}
+.mx-btn i::before{content:"";width:9px;height:9px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);margin-left:-3px;transition:transform .25s ease}
+.mx-btn:hover i{transform:none}
+.mx-btn:hover i::before{transform:translateX(4px) rotate(45deg)}
