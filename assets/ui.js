@@ -367,6 +367,16 @@
     });
   })();
 
+  /* ---- "Take action": show a QR code for the UN partnerships page instead of leaving ---- */
+  document.querySelectorAll("a[data-qr]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (!window.SDG || !window.SDG.openQr) return;
+      e.preventDefault(); e.stopPropagation();
+      var sec = document.getElementById("numbers");
+      window.SDG.openQr({ url: a.href, title: a.dataset.qr, goal: sec ? +sec.dataset.goal : 0 });
+    });
+  });
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
