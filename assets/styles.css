@@ -1014,3 +1014,7 @@ section.news#news .news-arrows button:disabled{background:rgba(255,255,255,.22);
 .news-logo.sdg{width:auto;height:128px;object-fit:contain}
 section.news#livenews .news-left{background:#fff}
 .news-logo.sdg{align-self:flex-start;width:auto;margin-left:-16px}
+/* news title panel: logo, title, text and arrows sit at the bottom of the panel */
+.news .news-left .news-logo{margin-top:auto}
+.news .news-left .news-logo+h2{margin-top:16px!important}
+@media(max-width:899px){.news-left{min-height:480px}}
