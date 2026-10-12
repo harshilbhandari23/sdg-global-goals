@@ -916,3 +916,8 @@ html.ev-open{overflow:hidden}
 .mx-row+.mx-row::before{width:2px;height:calc(var(--nh) * .9);top:calc(var(--nh) * .45)}
 .mx-row+.mx-row::before{height:calc(var(--nh) * .45);top:calc(var(--nh) * .675)}
 .mx-row+.mx-row::before{width:clamp(5px,.6vw,8px)}
+.mx-list{--nh:clamp(90px,14vw,210px)}
+.mx-row{padding:0 clamp(10px,1.4vw,22px)}
+.mx-big{font-size:min(var(--nh),calc(100cqw / 2.62))}
+@media(max-width:900px){.mx-list{--nh:clamp(100px,24vw,180px)}}
+@media(max-width:520px){.mx-list{--nh:clamp(110px,40vw,170px)}}
