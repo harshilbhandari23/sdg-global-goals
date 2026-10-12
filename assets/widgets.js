@@ -37,7 +37,7 @@
     stage.appendChild(tiles); yw.appendChild(stage);
     var live = document.createElement("div"); live.className = "visually-hidden"; live.setAttribute("aria-live", "polite"); yw.appendChild(live);
 
-    function fit() { stage.style.transform = "scale(" + (yw.clientWidth / BASE) + ")"; }
+    function fit() { var s = yw.clientWidth / BASE; stage.style.transform = "scale(" + s + ")"; stage.style.left = (-43.2 * s) + "px"; }  /* the ring is centred on x=583 of the 1080 stage: pull the stage left so the ring sits in the middle of the section */
     function clamp(p) { return Math.max(0, Math.min(data.length - 1, p)); }
     var lastSel = -1;
     function render() {
