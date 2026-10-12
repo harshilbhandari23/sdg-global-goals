@@ -998,3 +998,8 @@ html.ev-open{overflow:hidden}
 @media(max-width:599px){.news-left{width:100%}}
 /* goal pages: no goal tag on news tiles (the whole page is already about one goal); kept on the home page */
 section.news#news .news-card .gt{display:none!important}
+/* goal pages: title panel in the goal's brand colour */
+section.news#news .news-left{background:var(--goal);color:#fff}
+section.news#news .news-left h2,section.news#news .news-left .news-sub{color:#fff}
+section.news#news .news-arrows button,section.news#news .news-arrows button+button{background:rgba(8,10,7,.28)}
+section.news#news .news-arrows button:disabled{background:rgba(255,255,255,.22);opacity:1}
