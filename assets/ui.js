@@ -327,6 +327,35 @@
     window.addEventListener("scroll", req, { passive: true }); window.addEventListener("resize", req); update();
   })();
 
+  /* ---- events popup: the UN's own list of events for this goal (data/events/goal-N.json, refreshed by GitHub Actions) ---- */
+  (function () {
+    var btn = document.querySelector("[data-events]"), sec = document.getElementById("numbers"); if (!btn || !sec) return;
+    var goal = sec.dataset.goal, modal = null, loaded = null;
+    var esc = function (s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var close = function () { if (modal) { modal.classList.remove("on"); document.documentElement.classList.remove("ev-open"); btn.focus(); } };
+    var draw = function (d) {
+      var list = (d && d.events || []).map(function (e) {
+        return '<a class="ev-item" href="' + esc(e.url) + '" target="_blank" rel="noopener"><span class="ev-date"><b>' + esc(e.day) + "</b><i>" + esc(e.month) + '</i></span><span class="ev-body"><strong>' + esc(e.title) + "</strong><small>" + esc(e.range) + (e.place ? " &middot; " + esc(e.place) : "") + '</small></span><span class="ev-go" aria-hidden="true"></span></a>';
+      }).join("");
+      modal.querySelector(".ev-list").innerHTML = list || '<p class="ev-empty">No upcoming events are listed for this goal right now.</p>';
+    };
+    var open = function (e) {
+      e.preventDefault();
+      if (!modal) {
+        modal = document.createElement("div"); modal.className = "ev-modal"; modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", "Events related to Goal " + goal);
+        modal.innerHTML = '<div class="ev-panel"><div class="ev-head"><div><span>Goal ' + goal + '</span><h3>Events related to this goal</h3></div><button class="ev-x" type="button" aria-label="Close">&times;</button></div><div class="ev-list"><p class="ev-empty">Loading&hellip;</p></div><div class="ev-foot"><a href="https://sdgs.un.org/goals/goal' + goal + '" target="_blank" rel="noopener">See this goal on sdgs.un.org</a><a href="https://sdgs.un.org/events" target="_blank" rel="noopener">See all events</a></div></div>';
+        document.body.appendChild(modal);
+        modal.addEventListener("click", function (ev) { if (ev.target === modal || ev.target.closest(".ev-x")) close(); });
+        document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") close(); });
+      }
+      modal.style.setProperty("--goal", getComputedStyle(sec).getPropertyValue("--goal") || "#009edb");
+      document.documentElement.classList.add("ev-open"); modal.classList.add("on");
+      if (!loaded) fetch((window.SITE_ROOT || "") + "data/events/goal-" + goal + ".json").then(function (r) { return r.json(); }).then(function (d) { loaded = d; draw(d); }).catch(function () { draw(null); });
+      modal.querySelector(".ev-x").focus();
+    };
+    btn.addEventListener("click", open);
+  })();
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;

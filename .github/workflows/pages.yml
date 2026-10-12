@@ -33,6 +33,10 @@ jobs:
         run: python3 tools/fetch_news.py
         continue-on-error: true
         timeout-minutes: 15
+      - name: Fetch the goal events from sdgs.un.org
+        run: python3 tools/fetch_events.py
+        continue-on-error: true
+        timeout-minutes: 5
       - name: Update the progress-by-year scores from SDSN
         run: python3 tools/fetch_yearwise.py
         continue-on-error: true

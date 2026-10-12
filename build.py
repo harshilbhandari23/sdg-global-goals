@@ -333,7 +333,7 @@ def build_goal(g):
     phs = [v for _, v in sorted(photo_for.items())] or [""]
     stats = [
         (len(g["targets"]), "Targets", "The specific, measurable commitments set under this goal. Each one turns a big ambition into something countries, companies and communities can track.", "Our Targets", "#targets"),
-        (319, "Events", "Gatherings, campaigns and meetings that bring people together around this goal, from local community days to global summits.", "Latest news", "#news"),
+        (319, "Events", "Gatherings, campaigns and meetings that bring people together around this goal, from local community days to global summits.", "Upcoming events", "#events"),
         (38, "Publications", "Reports, research and guides that explain the progress made so far and what still needs to change.", "Read the news", "#news"),
         (1927, "Actions", "Everyday steps people around the world have taken for this goal. Small actions add up when millions of people take them together.", "Take action", "#contribute"),
     ]
@@ -341,9 +341,9 @@ def build_goal(g):
     for k, (val, lab, txt, btn, href) in enumerate(stats):
         ph = phs[k % len(phs)]
         rows += (f'<div class="mx-row"><div class="mx-txt"><h3><span class="mx-n">{val}</span> {lab}</h3><p>{txt}</p>'
-                 f'<a class="mx-btn" href="{href}">{btn}<i aria-hidden="true"></i></a></div>'
+                 f'<a class="mx-btn" href="{href}"' + (' data-events="1"' if href == "#events" else "") + f'>{btn}<i aria-hidden="true"></i></a></div>'
                  f'<div class="mx-big" aria-label="{val} {lab}"' + (f' style="--ph:url(\'{esc(A(ph, 2))}\')"' if ph else "") + f'><span data-count="{val}">{val}</span></div></div>')
-    metrics_html = (f'<section class="metrics" id="numbers"><div class="mx-head"><h2 class="mx-title">Goal {n}<br>In Numbers</h2>'
+    metrics_html = (f'<section class="metrics" id="numbers" data-goal="{n}"><div class="mx-head"><h2 class="mx-title">Goal {n}<br>In Numbers</h2>'
                     f'<div class="mx-side"><p>A closer look at the targets, actions and stories that define the work toward this goal.</p><a class="mx-link" href="#targets">Explore the targets<i aria-hidden="true"></i></a></div></div>'
                     f'<div class="mx-list">{rows}</div></section>')
     p = head(f"Goal {n}: {g['title']}", 2, g["intro"][:150], link_css)

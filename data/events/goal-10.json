@@ -1,0 +1,30 @@
+{
+ "updated": "2026-10-12 09:08",
+ "goal": 10,
+ "events": [
+  {
+   "title": "2027 ECOSOC Partnership Forum",
+   "url": "https://sdgs.un.org/events/2027ECOSOCPartnershipForum",
+   "day": "02",
+   "month": "Jul 2027",
+   "range": "Fri 02 - Fri 02 Jul 2027",
+   "place": ""
+  },
+  {
+   "title": "Promoting Inclusive Adoption of Generative Artificial Intelligence among Micro-, Small and Medium-sized Enterprises in Nigeria for Accelerating Sustainable Development Goals",
+   "url": "https://sdgs.un.org/events/promoting-inclusive-adoption-generative-artificial-intelligence-among-micro-small-and-medium",
+   "day": "29",
+   "month": "Jun 2026",
+   "range": "Mon 29 - Thu 02 Jul 2026",
+   "place": ""
+  },
+  {
+   "title": "Enhancing Resilience of Micro-, Small and Medium-sized Enterprises for Accelerating SDGs in Ethiopia, with the support of generative Artificial Intelligence Tools",
+   "url": "https://sdgs.un.org/events/enhancing-resilience-micro-small-and-medium-sized-enterprises-accelerating-sdgs-ethiopia",
+   "day": "17",
+   "month": "Dec 2025",
+   "range": "Wed 17 - Fri 19 Dec 2025",
+   "place": ""
+  }
+ ]
+}
