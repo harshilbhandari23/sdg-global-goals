@@ -327,41 +327,44 @@
     window.addEventListener("scroll", req, { passive: true }); window.addEventListener("resize", req); update();
   })();
 
-  /* ---- events popup: the UN's own list of events for this goal (data/events/goal-N.json, refreshed by GitHub Actions) ---- */
+  /* ---- events / publications popups: the UN's own lists for this goal (data/events|publications/goal-N.json, refreshed by GitHub Actions); links open a QR code ---- */
   (function () {
-    var btn = document.querySelector("[data-events]"), sec = document.getElementById("numbers"); if (!btn || !sec) return;
-    var goal = sec.dataset.goal, modal = null, loaded = null;
+    var sec = document.getElementById("numbers"), btns = document.querySelectorAll("[data-popup]"); if (!sec || !btns.length) return;
+    var goal = sec.dataset.goal, modals = {}, cache = {};
     var esc = function (s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-    var close = function () { if (modal) { modal.classList.remove("on"); document.documentElement.classList.remove("ev-open"); btn.focus(); } };
-    var draw = function (d) {
-      var list = (d && d.events || []).map(function (e) {
-        return '<a class="ev-item" href="' + esc(e.url) + '" target="_blank" rel="noopener"><span class="ev-date"><b>' + esc(e.day) + "</b><i>" + esc(e.month) + '</i></span><span class="ev-body"><strong>' + esc(e.title) + "</strong><small>" + esc(e.range) + (e.place ? " &middot; " + esc(e.place) : "") + '</small></span><span class="ev-go" aria-hidden="true"></span></a>';
-      }).join("");
-      modal.querySelector(".ev-list").innerHTML = list || '<p class="ev-empty">No upcoming events are listed for this goal right now.</p>';
+    var CFG = {
+      events: { title: "Events related to this goal", all: ["See all events", "https://sdgs.un.org/events"], none: "No upcoming events are listed for this goal right now.",
+        row: function (e) { return '<a class="ev-item" href="' + esc(e.url) + '"><span class="ev-date"><b>' + esc(e.day) + "</b><i>" + esc(e.month) + '</i></span><span class="ev-body"><strong>' + esc(e.title) + "</strong><small>" + esc(e.range) + (e.place ? " &middot; " + esc(e.place) : "") + '</small></span><span class="ev-go" aria-hidden="true"></span></a>'; } },
+      publications: { title: "Publications related to this goal", all: ["See all publications", "https://sdgs.un.org/publications"], none: "No publications are listed for this goal right now.",
+        row: function (e) { return '<a class="ev-item" href="' + esc(e.url) + '">' + (e.image ? '<span class="ev-cover" style="background-image:url(\'' + esc(e.image) + '\')"></span>' : '<span class="ev-cover"></span>') + '<span class="ev-body"><strong>' + esc(e.title) + "</strong><small>Read the document</small></span>" + '<span class="ev-go" aria-hidden="true"></span></a>'; } }
     };
-    var open = function (e) {
-      e.preventDefault();
-      if (!modal) {
-        modal = document.createElement("div"); modal.className = "ev-modal"; modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", "Events related to Goal " + goal);
-        modal.innerHTML = '<div class="ev-panel"><div class="ev-head"><div><span>Goal ' + goal + '</span><h3>Events related to this goal</h3></div><button class="ev-x" type="button" aria-label="Close">&times;</button></div><div class="ev-list"><p class="ev-empty">Loading&hellip;</p></div><div class="ev-foot"><a href="https://sdgs.un.org/goals/goal' + goal + '" target="_blank" rel="noopener">See this goal on sdgs.un.org</a><a href="https://sdgs.un.org/events" target="_blank" rel="noopener">See all events</a></div></div>';
-        document.body.appendChild(modal);
-        modal.addEventListener("click", function (ev) {
-          if (ev.target === modal || ev.target.closest(".ev-x")) { close(); return; }
-          var a = ev.target.closest("a[href^='http']");   // links show a QR code instead of leaving the page
-          if (a && window.SDG && window.SDG.openQr) {
-            ev.preventDefault();
-            var t = a.querySelector("strong");
-            window.SDG.openQr({ url: a.href, title: t ? t.textContent : a.textContent.trim(), goal: +goal });
-          }
-        });
-        document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") close(); });
-      }
-      modal.style.setProperty("--goal", getComputedStyle(sec).getPropertyValue("--goal") || "#009edb");
-      document.documentElement.classList.add("ev-open"); modal.classList.add("on");
-      if (!loaded) fetch((window.SITE_ROOT || "") + "data/events/goal-" + goal + ".json").then(function (r) { return r.json(); }).then(function (d) { loaded = d; draw(d); }).catch(function () { draw(null); });
-      modal.querySelector(".ev-x").focus();
+    var closeAll = function () { Object.keys(modals).forEach(function (k) { modals[k].classList.remove("on"); }); document.documentElement.classList.remove("ev-open"); };
+    document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") closeAll(); });
+    var make = function (type) {
+      var c = CFG[type], m = document.createElement("div"); m.className = "ev-modal"; m.setAttribute("role", "dialog"); m.setAttribute("aria-modal", "true"); m.setAttribute("aria-label", c.title);
+      m.innerHTML = '<div class="ev-panel"><div class="ev-head"><div><span>Goal ' + goal + '</span><h3>' + c.title + '</h3></div><button class="ev-x" type="button" aria-label="Close">&times;</button></div><div class="ev-list"><p class="ev-empty">Loading&hellip;</p></div><div class="ev-foot"><a href="https://sdgs.un.org/goals/goal' + goal + '">See this goal on sdgs.un.org</a><a href="' + c.all[1] + '">' + c.all[0] + '</a></div></div>';
+      document.body.appendChild(m);
+      m.addEventListener("click", function (ev) {
+        if (ev.target === m || ev.target.closest(".ev-x")) { closeAll(); return; }
+        var a = ev.target.closest("a[href^='http']");   // links show a QR code instead of leaving the page
+        if (a && window.SDG && window.SDG.openQr) {
+          ev.preventDefault(); var t = a.querySelector("strong");
+          window.SDG.openQr({ url: a.href, title: t ? t.textContent : a.textContent.trim(), goal: +goal });
+        }
+      });
+      return m;
     };
-    btn.addEventListener("click", open);
+    btns.forEach(function (btn) {
+      var type = btn.dataset.popup; if (!CFG[type]) return;
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var m = modals[type] || (modals[type] = make(type));
+        m.style.setProperty("--goal", getComputedStyle(sec).getPropertyValue("--goal") || "#009edb");
+        document.documentElement.classList.add("ev-open"); m.classList.add("on");
+        if (!cache[type]) fetch((window.SITE_ROOT || "") + "data/" + type + "/goal-" + goal + ".json").then(function (r) { return r.json(); }).then(function (d) { cache[type] = d; m.querySelector(".ev-list").innerHTML = (d[type] || []).map(CFG[type].row).join("") || '<p class="ev-empty">' + CFG[type].none + "</p>"; }).catch(function () { m.querySelector(".ev-list").innerHTML = '<p class="ev-empty">' + CFG[type].none + "</p>"; });
+        m.querySelector(".ev-x").focus();
+      });
+    });
   })();
 
   /* ---- page transition: colour wipe from bottom to top ---- */

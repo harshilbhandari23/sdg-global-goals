@@ -887,3 +887,5 @@ html.ev-open{overflow:hidden}
 .ev-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 28px;border-top:1px solid rgba(10,44,97,.12)}
 .ev-foot a{font:800 13px var(--font-head);text-transform:uppercase;letter-spacing:.08em;color:var(--navy)}
 @media(max-width:560px){.ev-item{gap:14px}.ev-date{width:62px}.ev-list{padding:4px 18px}.ev-head,.ev-foot{padding-left:18px;padding-right:18px}}
+
+.ev-cover{flex:none;width:76px;height:96px;background:#e8edf5 center/cover no-repeat;border:1px solid rgba(10,44,97,.12)}
