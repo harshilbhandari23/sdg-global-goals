@@ -1012,3 +1012,4 @@ section.news#news .news-arrows button:disabled{background:rgba(255,255,255,.22);
 .news .news-card img{-webkit-user-drag:none;pointer-events:none}
 .news-logo{width:128px;height:128px}
 .news-logo.sdg{width:auto;height:128px;object-fit:contain}
+section.news#livenews .news-left{background:#fff}
