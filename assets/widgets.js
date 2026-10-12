@@ -120,6 +120,29 @@
     prev.addEventListener("click", function () { go(-1); }); next.addEventListener("click", function () { go(1); });
     var sx = null; view.addEventListener("touchstart", function (e) { sx = e.changedTouches[0].clientX; }, { passive: true });
     view.addEventListener("touchend", function (e) { if (sx == null) return; var dx = sx - e.changedTouches[0].clientX; if (dx > 40) go(1); else if (dx < -40) go(-1); sx = null; });
+    /* mouse / pen drag: the page follows the pointer, release past a threshold changes page (touch swipe is handled above) */
+    var drag = null, moved = false;
+    view.addEventListener("dragstart", function (e) { e.preventDefault(); });
+    view.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "touch" || e.button) return;
+      drag = { x: e.clientX, id: e.pointerId, w: view.clientWidth }; moved = false;
+    });
+    view.addEventListener("pointermove", function (e) {
+      if (!drag || e.pointerId !== drag.id) return;
+      var dx = e.clientX - drag.x;
+      if (!moved && Math.abs(dx) > 6) { moved = true; try { view.setPointerCapture(e.pointerId); } catch (_) {} track.style.transition = "none"; view.classList.add("dragging"); }
+      if (moved) { var edge = (idx === 0 && dx > 0) || (idx >= pages - 1 && dx < 0); track.style.transform = "translateX(calc(" + (-idx * 100) + "% + " + (edge ? dx / 3 : dx) + "px))"; }
+    });
+    function endDrag(e) {
+      if (!drag || e.pointerId !== drag.id) return;
+      var dx = e.clientX - drag.x, w = drag.w; drag = null;
+      if (!moved) return;
+      track.style.transition = ""; view.classList.remove("dragging");
+      if (Math.abs(dx) > Math.min(90, w * .15)) go(dx < 0 ? 1 : -1); else show();
+      setTimeout(function () { moved = false; }, 0);
+    }
+    view.addEventListener("pointerup", endDrag); view.addEventListener("pointercancel", endDrag);
+    view.addEventListener("click", function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
     function card(a, i) {
       var c1 = a.goal ? S.colors[a.goal - 1] : pal[i % 5];
       var pic = a.image || (a.goal ? (window.SITE_ROOT || "") + "assets/tiles/goal-" + String(a.goal).padStart(2, "0") + ".jpg" : "");  // no photo in the feed: show the official goal tile

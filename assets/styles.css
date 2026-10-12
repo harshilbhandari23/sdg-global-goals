@@ -1006,3 +1006,7 @@ section.news#news .news-arrows button:disabled{background:rgba(255,255,255,.22);
 /* goal pages: official goal tile above the news title */
 .news-logo{display:block;width:72px;height:72px;margin:28px 0 0;object-fit:cover}
 .news-logo+h2{margin-top:16px!important}
+/* news: drag to change page */
+.news .news-view{cursor:grab;user-select:none;-webkit-user-select:none}
+.news .news-view.dragging{cursor:grabbing}
+.news .news-card img{-webkit-user-drag:none;pointer-events:none}
