@@ -814,5 +814,5 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
   .hs-p .hs-bg{inset:-4%;transform:translate3d(calc(var(--d,0) * -70px),0,0) scale(1.06)}
   .hs-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,0) 55%),linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,0) 30%)}
   .hs-p>*:not(.hs-bg):not(.hs-scrim){z-index:2}
-  .hs-p img{left:auto;right:calc(28px + var(--rem,0) * 64px);top:22px;width:clamp(72px,7vw,104px);transform:translate3d(calc(var(--d,0) * -30px),0,0);filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+  .hs-p img{left:auto;right:calc(28px + 3 * 64px);top:22px;width:clamp(72px,7vw,104px);transform:translate3d(calc(var(--d,0) * -30px),0,0);filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
 }
