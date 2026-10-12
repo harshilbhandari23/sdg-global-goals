@@ -737,3 +737,31 @@ footer.site .copy{max-width:var(--max);margin:48px auto 0;opacity:.5;font:500 14
   .todo-stack .todo .td-body{align-self:end;padding:0 20px 20px}
   .todo-stack .todo .td-n{padding:22px 20px 0}
 }
+
+/* ---- intro / load animations ---- */
+#pre{display:none;position:fixed;inset:0;z-index:100000;background:var(--blue);color:#fff;align-items:center;justify-content:center;text-align:center;transition:transform .9s cubic-bezier(.76,0,.24,1)}
+html.intro #pre{display:flex}
+#pre.out{transform:translateY(-100%)}
+.pre-in{opacity:0;transform:translateY(14px);filter:blur(10px);transition:opacity .8s ease,transform .8s ease,filter .8s ease}
+#pre.in .pre-in{opacity:1;transform:none;filter:blur(0)}
+#pre.out .pre-in{opacity:0;transition-duration:.4s}
+.pre-logo{font:800 clamp(34px,7vw,76px)/.98 var(--font-head);text-transform:uppercase;letter-spacing:-.03em}
+.pre-tag{margin-top:22px;font:600 clamp(10px,1.2vw,13px) var(--font-head);text-transform:uppercase;letter-spacing:.38em;opacity:.85}
+html.intro,html.intro body{overflow:hidden}
+/* hero: held back until the intro lifts, then each line blurs in */
+html.hold .fh-title span,html.hold .fh-sub1,html.hold .fh-sub2,html.hold .fh-un{opacity:0}
+html.hold .fh .t{opacity:0}
+html.revealed .fh-title span{animation:blurIn 1s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--k,0) * .14s)}
+html.revealed .fh-title span:nth-child(2){--k:1}html.revealed .fh-title span:nth-child(3){--k:2}
+html.revealed .fh-sub1,html.revealed .fh-sub2,html.revealed .fh-un{animation:fadeBlur 1s ease both;animation-delay:.6s}
+html.revealed .fh-sub2{animation-delay:.75s}
+html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--d,0) * 1ms + .2s)}
+@keyframes blurIn{from{opacity:0;filter:blur(14px);transform:translateY(20px)}to{opacity:1;filter:blur(0);transform:none}}
+@keyframes fadeBlur{from{opacity:0;filter:blur(8px)}to{opacity:1;filter:blur(0)}}
+@keyframes tileIn{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:none}}
+/* contribute cards: staggered blur-in when a card arrives */
+.todo-stack.rv .todo>*{opacity:0;filter:blur(10px);transform:translateY(18px);transition:opacity .8s ease,filter .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.todo-stack.rv .todo.in>*{opacity:1;filter:blur(0);transform:none}
+.todo-stack.rv .todo.in>.td-n{transition-delay:.05s}.todo-stack.rv .todo.in>img{transition-delay:.15s}
+.todo-stack.rv .todo.in>.td-body{transition-delay:.25s}.todo-stack.rv .todo.in>.td-bar{transition-delay:.4s}
+@media(prefers-reduced-motion:reduce){#pre{display:none!important}}

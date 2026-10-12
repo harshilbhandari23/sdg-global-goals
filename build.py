@@ -212,6 +212,8 @@ def mosaic(seed, where, rows=2, cols=26):
 # ---------------------------------------------------------------- home
 def build_home():
     p = head("Sustainable Development Goals", 0, "Your lens into the 17 Sustainable Development Goals.")
+    p += ('<div id="pre" aria-hidden="true"><div class="pre-in"><div class="pre-logo">Sustainable<br>Development<br>Goals</div><div class="pre-tag">Your lens into global progression</div></div></div>'
+          '<script>(function(){var d=document.documentElement;try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("hold");if(!sessionStorage.sdgIntro){d.classList.add("intro");sessionStorage.sdgIntro="1"}}catch(e){}})()</script>')
     p += nav(0, "home")
     p += hero_html() + "\n\n"
     p += f"""<section class="wheel-section" id="explore"><div class="ws"><div class="ws-c">{wheel_tiles()}<h2 class="ws-title">TAP AND EXPLORE THE GOAL</h2><div class="wheel-wrap"><div class="wheel-links"></div></div>

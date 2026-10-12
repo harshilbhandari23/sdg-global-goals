@@ -263,6 +263,28 @@
     wrap.addEventListener("click", function (e) { if (moved > 5) { e.preventDefault(); e.stopPropagation(); } }, true);
   }
 
+
+  /* ---- load animation (after the reference site): colour screen with the title, it lifts away, then the hero text blurs in line by line ---- */
+  (function () {
+    var d = document.documentElement, pre = document.getElementById("pre");
+    var reveal = function () { d.classList.remove("hold", "intro"); d.classList.add("revealed"); if (pre) pre.style.display = "none"; };
+    if (!d.classList.contains("hold")) return;
+    if (document.querySelectorAll(".fh .t").length) Array.prototype.forEach.call(document.querySelectorAll(".fh .t"), function (t) { t.style.setProperty("--d", Math.round(Math.random() * 900)); });
+    if (d.classList.contains("intro") && pre) {
+      requestAnimationFrame(function () { pre.classList.add("in"); });
+      setTimeout(function () { pre.classList.add("out"); d.classList.add("revealed"); d.classList.remove("hold"); }, 1700);
+      setTimeout(function () { d.classList.remove("intro"); pre.style.display = "none"; }, 2600);
+    } else setTimeout(reveal, 350);
+  })();
+
+  /* ---- contribute cards: text blurs in line by line as each card slides in ---- */
+  (function () {
+    var st = document.querySelector(".todo-stack"); if (!st || !("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    st.classList.add("rv");
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { threshold: 0.3 });
+    Array.prototype.forEach.call(st.children, function (c) { io.observe(c); });
+  })();
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
