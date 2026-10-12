@@ -935,3 +935,9 @@ html.ev-open{overflow:hidden}
 .mx-row+.mx-row::before{top:0;height:calc(var(--fs) * .86)}
 @media(max-width:520px){.mx-tile{width:96px}}
 .mx-list{margin-top:clamp(36px,6vw,90px)}
+
+/* smoother wipe: slower, softer easing, curved leading edge that flattens as it reaches the top */
+#wipe i{transform:translate3d(0,calc(100% + 14vh),0);border-top-left-radius:50% 14vh;border-top-right-radius:50% 14vh;backface-visibility:hidden;
+  transition:transform .85s cubic-bezier(.77,0,.18,1),border-radius .85s cubic-bezier(.77,0,.18,1)}
+#wipe.go i{transform:translate3d(0,0,0);border-top-left-radius:0;border-top-right-radius:0}
+.wipe-in #wipe i{transform:none;border-radius:0;transition:none}

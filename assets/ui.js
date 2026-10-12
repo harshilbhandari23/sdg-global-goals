@@ -400,8 +400,11 @@
         col = m ? C[+m[1] - 1] : (getComputedStyle(document.documentElement).getPropertyValue("--goal").trim() || C[Math.floor(Math.random() * C.length)]);
       w.style.setProperty("--wipe", col);
       try { sessionStorage.setItem("sdgWipe", col); } catch (x) {}
+      try { var pf = document.createElement("link"); pf.rel = "prefetch"; pf.href = u.href; document.head.appendChild(pf); } catch (x) {}   // start loading the next page while the colour rises
+      var done = false, go = function () { if (done) return; done = true; location.href = u.href; };
+      var i = w.querySelector("i"); if (i) i.addEventListener("transitionend", function (ev) { if (ev.propertyName === "transform") go(); });
       w.classList.add("go");
-      setTimeout(function () { location.href = u.href; }, 680);
+      setTimeout(go, 1100);
     });
   })();
 })();
