@@ -301,6 +301,32 @@
     window.addEventListener("scroll", req, { passive: true }); window.addEventListener("resize", req); update();
   })();
 
+  /* ---- contribute (desktop): scroll-pinned slider, the next action slides in from the right over the current one ---- */
+  (function () {
+    var hs = document.querySelector(".hs"); if (!hs) return;
+    var panels = Array.prototype.slice.call(hs.querySelectorAll(".hs-p")), n = panels.length, cur = hs.querySelector(".hs-cur"), bar = hs.querySelector(".hs-line b"), ticking = false;
+    var STRIP = 64;
+    var update = function () {
+      ticking = false;
+      var W = hs.querySelector(".hs-right").clientWidth, r = hs.getBoundingClientRect(), total = hs.offsetHeight - window.innerHeight;
+      var sp = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0, t = sp * (n - 1);
+      panels.forEach(function (p, i) {
+        var d = i - t, x, dim = 0, px = 0;
+        if (d >= 1) x = W - STRIP * Math.max(0, 4 - d);
+        else if (d > 0) x = (W - STRIP * 3) * d;
+        else { x = d * W * 0.28; dim = Math.min(1, -d); }
+        if (i === 0 && d >= 1) x = W - STRIP * 3;
+        p.style.transform = "translate3d(" + x.toFixed(1) + "px,0,0)";
+        p.style.setProperty("--dim", dim.toFixed(3));
+        p.style.setProperty("--d", Math.max(-1, Math.min(1, d)).toFixed(3));
+      });
+      var idx = Math.min(n, Math.round(t) + 1); cur.textContent = (idx < 10 ? "0" : "") + idx;
+      bar.style.transform = "scaleX(" + (n > 1 ? t / (n - 1) : 1).toFixed(3) + ")";
+    };
+    var req = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    window.addEventListener("scroll", req, { passive: true }); window.addEventListener("resize", req); update();
+  })();
+
   /* ---- page transition: colour wipe from bottom to top ---- */
   (function () {
     var w = document.getElementById("wipe"); if (!w) return;
