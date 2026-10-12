@@ -326,16 +326,34 @@ def build_goal(g):
     hs = (f'<div class="hs" style="--n:{len(items)}"><div class="hs-pin"><div class="hs-left"><h2 class="h2">How can you contribute to this goal</h2>'
           f'<div class="hs-meta"><span class="hs-cur">01</span><i class="hs-line"><b></b></i><span>{len(items):02d}</span></div>'
           f'<p class="hs-hint">Keep scrolling to see each action</p></div><div class="hs-right">{hs_p}</div></div></div>')
+    try:
+        n_news = len(json.load(open(D("data", "news", f"goal-{n}.json"), encoding="utf8")).get("articles", []))
+    except Exception:
+        n_news = 0
+    phs = [v for _, v in sorted(photo_for.items())] or [""]
+    stats = [
+        (len(g["targets"]), "Targets", "The specific, measurable commitments set under this goal. Each one turns a big ambition into something countries, companies and communities can track.", "Our Targets", "#targets"),
+        (len(items), "Ways to take action", "Everyday steps anyone can take, from what you buy to what you share. Small actions add up when millions of people take them together.", "Take action", "#contribute"),
+        (n_news, "Live stories", "The latest reporting on this goal from newsrooms around the world, refreshed through the day so you can follow what is changing.", "Read the news", "#news"),
+    ]
+    rows = ""
+    for k, (val, lab, txt, btn, href) in enumerate(stats):
+        ph = phs[k % len(phs)]
+        rows += (f'<div class="mx-row"><div class="mx-txt"><h3><span class="mx-n">{val}</span> {lab}</h3><p>{txt}</p>'
+                 f'<a class="mx-btn" href="{href}">{btn}<i aria-hidden="true"></i></a></div>'
+                 f'<div class="mx-big" aria-label="{val} {lab}"' + (f' style="--ph:url(\'{esc(A(ph, 2))}\')"' if ph else "") + f'><span data-count="{val}">{val}</span></div></div>')
+    metrics_html = (f'<section class="metrics" id="numbers"><div class="mx-head"><h2 class="mx-title">Goal {n}<br>In Numbers</h2>'
+                    f'<div class="mx-side"><p>A closer look at the targets, actions and stories that define the work toward this goal.</p><a class="mx-link" href="#targets">Explore the targets<i aria-hidden="true"></i></a></div></div>'
+                    f'<div class="mx-list">{rows}</div></section>')
     p = head(f"Goal {n}: {g['title']}", 2, g["intro"][:150], link_css)
     p += nav(2, "goals").replace("<nav", f'<nav style="--goal:{c}"', 1)
     p += f"""<style>:root{{--goal:{esc(c)}}}</style>
 <header class="banner" style="--goal:{esc(c)}">{art}<div class="titles"><h1 class="h2">{esc(g['title'])}</h1><div class="h2 gn">Goal {n}</div></div></header>
 <section class="intro"><div class="container"><span class="pill" style="align-self:center"><span class="pill-20">ABOUT THE GOAL</span></span>
 <p class="scroll-text body-56" data-start="rgba(9,9,9,.56)" data-end="{esc(c)}">{esc(g['intro'])}</p></div></section>
-<section class="metrics"><div class="inner"><hr class="divider"><p class="body-32" style="max-width:1200px">We work best with people who have taste, opinions, and a clear sense of where they’re going. We’re here to shape that into a brand that feels polished without losing its edge.</p>
-<div class="row"><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v7M24 38v7M3 24h7M38 24h7"/></svg><div class="num" data-count="{len(g['targets'])}">0</div><div class="lab">Targets</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="36" height="33" rx="3"/><path d="M6 19h36M15 4v9M33 4v9"/><circle cx="16" cy="28" r="1.8" fill="currentColor"/><circle cx="24" cy="28" r="1.8" fill="currentColor"/><circle cx="32" cy="28" r="1.8" fill="currentColor"/><circle cx="16" cy="35" r="1.8" fill="currentColor"/><circle cx="24" cy="35" r="1.8" fill="currentColor"/></svg><div class="num" data-count="319">0</div><div class="lab">Events</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10c6-2 13-2 18 2 5-4 12-4 18-2v28c-6-2-13-2-18 2-5-4-12-4-18-2z"/><path d="M24 12v28"/></svg><div class="num" data-count="38">0</div><div class="lab">Publications</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 4 11 27h12l-2 17 16-24H25z"/></svg><div class="num" data-count="1927">0</div><div class="lab">Actions</div></div></div></div></section>
-<section class="targets"><h2 class="h2">The targets</h2><div class="t-grid">{targets}</div></section>
-<section class="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div>{hs}</section>
+{metrics_html}
+<section class="targets" id="targets"><h2 class="h2">The targets</h2><div class="t-grid">{targets}</div></section>
+<section class="contribute" id="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div>{hs}</section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
 <section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "Live SDG News", "news")}</div></section>"""

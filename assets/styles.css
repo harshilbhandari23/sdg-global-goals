@@ -833,3 +833,29 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
 }
 
 #wipe.instant i{transition:none!important}
+
+/* metrics: "In Numbers" layout - huge headline, then rows of text beside a giant photo-filled number */
+.metrics{display:block;min-height:0;padding:clamp(72px,9vw,140px) clamp(20px,3vw,40px) clamp(72px,8vw,120px);background:#fff}
+.mx-head{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;max-width:1360px;margin:0 auto}
+.mx-title{margin:0;font:800 clamp(52px,10vw,150px)/.9 var(--font-head);letter-spacing:-.05em;color:#000;text-transform:none}
+.mx-side{max-width:360px;padding-top:clamp(8px,2vw,28px)}
+.mx-side p{margin:0 0 28px;font:500 15px/1.6 var(--font-body);color:rgba(8,10,7,.62)}
+.mx-link,.mx-btn{display:inline-flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+.mx-link{font:500 clamp(18px,1.8vw,24px) var(--font-head);color:#000;letter-spacing:-.02em}
+.mx-link i,.mx-btn i{width:14px;height:14px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg);transition:transform .25s ease;margin-left:2px}
+.mx-link:hover i,.mx-btn:hover i{transform:translateX(5px) rotate(45deg)}
+.mx-list{max-width:1360px;margin:clamp(40px,8vw,120px) auto 0;display:flex;flex-direction:column;gap:clamp(56px,9vw,140px)}
+.mx-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:40px}
+.mx-txt h3{margin:0 0 20px;font:600 clamp(28px,3.4vw,46px)/1.05 var(--font-head);letter-spacing:-.03em;color:#000}
+.mx-txt p{margin:0 0 30px;max-width:460px;font:500 15px/1.65 var(--font-body);color:rgba(8,10,7,.66)}
+.mx-btn{background:#000;color:#fff;padding:14px 22px;border-radius:999px;font:500 16px var(--font-head)}
+.mx-btn:hover{background:var(--navy)}
+.mx-big{justify-self:end;font:800 clamp(150px,26vw,380px)/.82 var(--font-head);letter-spacing:-.07em;white-space:nowrap;
+  background-image:linear-gradient(color-mix(in srgb,var(--goal,#009edb) 38%,transparent),color-mix(in srgb,var(--goal,#009edb) 38%,transparent)),var(--ph,linear-gradient(var(--goal,#009edb),var(--goal,#009edb)));
+  background-size:cover;background-position:center;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding:.06em .02em}
+.mx-big span{display:inline-block}
+@media(max-width:800px){
+  .mx-head{flex-direction:column;gap:28px}
+  .mx-row{grid-template-columns:1fr;gap:20px}
+  .mx-big{justify-self:start;order:-1;font-size:clamp(130px,42vw,260px)}
+}
