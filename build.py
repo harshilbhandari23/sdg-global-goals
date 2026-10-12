@@ -97,7 +97,7 @@ def news_block(feed, limit=10, title="Live SDG News", ident="news"):
     return f"""<section class="news" id="{ident}" data-feed="{esc(feed)}" data-limit="{limit}" aria-label="{esc(title)}">
 <div class="news-left"><div class="news-top"><span>Live feed</span><span class="news-count"></span></div>
 <h2>{esc(title)}</h2>
-<p class="news-sub">The latest stories about the Global Goals from news sources around the world, refreshed automatically.</p>
+<p class="news-sub">The latest stories about the Global Goals from news sources around the world.</p>
 <div class="news-arrows" hidden><button class="prev" type="button" aria-label="Previous stories">←</button><button class="next" type="button" aria-label="Next stories">→</button></div></div>
 <div class="news-right"><div class="news-label">Stories</div>
 <p class="news-loading" style="margin:0">Loading live feed…</p><p class="news-msg" hidden></p>
