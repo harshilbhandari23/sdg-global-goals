@@ -1038,3 +1038,6 @@ section.news#news .news-left .news-logo{align-self:flex-end}
 .mx-btn i::before{content:"";width:9px;height:9px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);margin-left:-3px;transition:transform .25s ease}
 .mx-btn:hover i{transform:none}
 .mx-btn:hover i::before{transform:translateX(4px) rotate(45deg)}
+/* numbers buttons share one baseline: each column fills the row and its button sits at the bottom */
+.mx-txt{flex:1 1 auto}
+.mx-txt .mx-btn{margin-top:auto}
