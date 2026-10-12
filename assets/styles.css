@@ -921,3 +921,4 @@ html.ev-open{overflow:hidden}
 .mx-big{font-size:min(var(--nh),calc(100cqw / 2.62))}
 @media(max-width:900px){.mx-list{--nh:clamp(100px,24vw,180px)}}
 @media(max-width:520px){.mx-list{--nh:clamp(110px,40vw,170px)}}
+.mx-big{height:calc(var(--nh) * 1.5);align-items:flex-start;padding-top:calc(var(--nh) * .5);margin-bottom:clamp(6px,1vw,14px)}
