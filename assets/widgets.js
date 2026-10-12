@@ -108,7 +108,15 @@
       prev.disabled = idx === 0; next.disabled = idx >= pages - 1;
       if (count) count.textContent = String(idx + 1).padStart(2, "0") + " / " + String(pages).padStart(2, "0");
     }
-    function go(d) { idx += d; show(); }
+    function go(d) { idx += d; show(); rearm(); }
+    /* auto-advance every few seconds; loops back to the first page, pauses while hovered, touched or off-screen */
+    var timer = null, hover = false, seen = true, reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function tick() { if (hover || !seen || document.hidden || pages < 2) return; idx = idx >= pages - 1 ? 0 : idx + 1; show(); }
+    function rearm() { clearInterval(timer); if (!reduce) timer = setInterval(tick, 5000); }
+    box.addEventListener("mouseenter", function () { hover = true; }); box.addEventListener("mouseleave", function () { hover = false; });
+    box.addEventListener("focusin", function () { hover = true; }); box.addEventListener("focusout", function () { hover = false; });
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { seen = en[0].isIntersecting; }, { threshold: .2 }).observe(box);
+    rearm();
     prev.addEventListener("click", function () { go(-1); }); next.addEventListener("click", function () { go(1); });
     var sx = null; view.addEventListener("touchstart", function (e) { sx = e.changedTouches[0].clientX; }, { passive: true });
     view.addEventListener("touchend", function (e) { if (sx == null) return; var dx = sx - e.changedTouches[0].clientX; if (dx > 40) go(1); else if (dx < -40) go(-1); sx = null; });
