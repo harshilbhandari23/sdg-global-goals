@@ -284,9 +284,22 @@ def build_goal(g):
         f'<div class="t-card"><div class="n">{esc(t["n"])}</div><div class="ti pill-20">{esc(t["title"])}</div><div class="de pill-14">{esc(t["detail"])}</div>'
         + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "<span style=\"width:120px\"></span>") + "</div>"
         for t in g["targets"])
-    todos = "".join(
-        f'<div class="todo">' + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "") + f'<div class="cms" style="font-size:15px">{t["html"]}</div></div>'
-        for t in g["todo"] if re.sub(r"<[^>]+>", "", t["html"]).strip())
+    items = [t for t in g["todo"] if re.sub(r"<[^>]+>", "", t["html"]).strip()]
+
+    def split_todo(h):  # first sentence becomes the card title, the rest the description
+        m = re.search(r"<p[^>]*>(.*?)</p>", h, re.S)
+        inner = m.group(1) if m else h
+        k = re.match(r"(.+?[.!?])(?:\s+(.*))?$", inner.strip(), re.S)
+        title, rest = (k.group(1), k.group(2) or "") if k else (inner, "")
+        return re.sub(r"<[^>]+>", "", title).strip().rstrip("."), rest
+
+    todos = ""
+    for i, t in enumerate(items, 1):
+        title, rest = split_todo(t["html"])
+        todos += (f'<div class="todo" style="--i:{i - 1}"><span class="td-n">Action {i:02d}</span>'
+                  + (f'<img src="{esc(A(t["image"], 2))}" alt="" loading="lazy">' if t.get("image") else "")
+                  + f'<div class="td-body"><h3 class="td-t">{esc(title)}</h3>' + (f'<div class="cms"><p>{rest}</p></div>' if rest else "")
+                  + f'</div><div class="td-bar"><span>&rsaquo; Take action</span><span>{i:02d} / {len(items):02d}</span></div></div>')
     p = head(f"Goal {n}: {g['title']}", 2, g["intro"][:150], link_css)
     p += nav(2, "goals").replace("<nav", f'<nav style="--goal:{c}"', 1)
     p += f"""<style>:root{{--goal:{esc(c)}}}</style>
@@ -296,7 +309,7 @@ def build_goal(g):
 <section class="metrics"><div class="inner"><hr class="divider"><p class="body-32" style="max-width:1200px">We work best with people who have taste, opinions, and a clear sense of where they’re going. We’re here to shape that into a brand that feels polished without losing its edge.</p>
 <div class="row"><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v7M24 38v7M3 24h7M38 24h7"/></svg><div class="num" data-count="{len(g['targets'])}">0</div><div class="lab">Targets</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="36" height="33" rx="3"/><path d="M6 19h36M15 4v9M33 4v9"/><circle cx="16" cy="28" r="1.8" fill="currentColor"/><circle cx="24" cy="28" r="1.8" fill="currentColor"/><circle cx="32" cy="28" r="1.8" fill="currentColor"/><circle cx="16" cy="35" r="1.8" fill="currentColor"/><circle cx="24" cy="35" r="1.8" fill="currentColor"/></svg><div class="num" data-count="319">0</div><div class="lab">Events</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10c6-2 13-2 18 2 5-4 12-4 18-2v28c-6-2-13-2-18 2-5-4-12-4-18-2z"/><path d="M24 12v28"/></svg><div class="num" data-count="38">0</div><div class="lab">Publications</div></div><div class="metric"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 4 11 27h12l-2 17 16-24H25z"/></svg><div class="num" data-count="1927">0</div><div class="lab">Actions</div></div></div></div></section>
 <section class="targets"><h2 class="h2">The targets</h2><div class="t-grid">{targets}</div></section>
-<section class="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-wrap">{todos}</div></section>
+<section class="contribute"><h2 class="h2">How can you contribute to this goal</h2><hr class="divider"><div class="todo-stack">{todos}</div></section>
 <section class="related"><div class="container"><h2 class="h3">EXPLORE OTHER GOALS &gt;&gt;</h2><hr class="divider"><div class="grid">{''.join(goal_card(x, 2) for x in rel)}</div>
 </div></section>
 <section class="section news-band"><div class="container">{news_block(f"data/news/goal-{n}.json", 20, "Live SDG News", "news")}</div></section>"""
