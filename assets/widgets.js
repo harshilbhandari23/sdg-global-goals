@@ -93,6 +93,8 @@
     qrModal.querySelector(".qr-close").focus();
   }
 
+  S.openQr = openQr;   // reused by the events popup
+
   /* ===== live news carousel ===== */
   document.querySelectorAll(".news").forEach(function (box) {
     var limit = +(box.dataset.limit || 5), idx = 0, vis = 4, items = [];

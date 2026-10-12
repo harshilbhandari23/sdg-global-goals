@@ -861,7 +861,7 @@ html.revealed .fh .t{animation:tileIn .7s cubic-bezier(.2,.7,.2,1) backwards;ani
 }
 
 /* events popup */
-.ev-modal{position:fixed;inset:0;z-index:100001;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(10,44,97,.62)}
+.ev-modal{position:fixed;inset:0;z-index:99990;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(10,44,97,.62)}
 .ev-modal.on{display:flex}
 html.ev-open{overflow:hidden}
 .ev-panel{width:min(720px,100%);max-height:min(86vh,760px);display:flex;flex-direction:column;background:#fff;color:var(--navy);box-shadow:0 30px 80px rgba(0,0,0,.35);animation:evIn .35s cubic-bezier(.2,.8,.2,1)}

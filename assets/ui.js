@@ -345,7 +345,15 @@
         modal = document.createElement("div"); modal.className = "ev-modal"; modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", "Events related to Goal " + goal);
         modal.innerHTML = '<div class="ev-panel"><div class="ev-head"><div><span>Goal ' + goal + '</span><h3>Events related to this goal</h3></div><button class="ev-x" type="button" aria-label="Close">&times;</button></div><div class="ev-list"><p class="ev-empty">Loading&hellip;</p></div><div class="ev-foot"><a href="https://sdgs.un.org/goals/goal' + goal + '" target="_blank" rel="noopener">See this goal on sdgs.un.org</a><a href="https://sdgs.un.org/events" target="_blank" rel="noopener">See all events</a></div></div>';
         document.body.appendChild(modal);
-        modal.addEventListener("click", function (ev) { if (ev.target === modal || ev.target.closest(".ev-x")) close(); });
+        modal.addEventListener("click", function (ev) {
+          if (ev.target === modal || ev.target.closest(".ev-x")) { close(); return; }
+          var a = ev.target.closest("a[href^='http']");   // links show a QR code instead of leaving the page
+          if (a && window.SDG && window.SDG.openQr) {
+            ev.preventDefault();
+            var t = a.querySelector("strong");
+            window.SDG.openQr({ url: a.href, title: t ? t.textContent : a.textContent.trim(), goal: +goal });
+          }
+        });
         document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") close(); });
       }
       modal.style.setProperty("--goal", getComputedStyle(sec).getPropertyValue("--goal") || "#009edb");
