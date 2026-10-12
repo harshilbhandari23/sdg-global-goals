@@ -64,7 +64,7 @@ def head(title, depth, desc="", extra_css=""):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700;800&family=Host+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{r}assets/styles.css?v={BUILD}">{extra_css}
-<script>window.SITE_ROOT="{r}";try{{var w=sessionStorage.getItem("sdgWipe");if(w){{sessionStorage.removeItem("sdgWipe");document.documentElement.className+=" wipe-in";document.documentElement.style.setProperty("--wipe",w)}}}}catch(e){{}}</script></head><body><div id="wipe" aria-hidden="true"><i></i></div>"""
+<script>window.SITE_ROOT="{r}";try{{var w=sessionStorage.getItem("sdgWipe");if(w){{sessionStorage.removeItem("sdgWipe");document.documentElement.className+=" wipe-in";document.documentElement.style.setProperty("--wipe",w)}}}}catch(e){{}}</script></head><body><div id="wipe" aria-hidden="true"><i></i><i></i><i></i></div>"""
 
 
 def nav(depth, current=""):

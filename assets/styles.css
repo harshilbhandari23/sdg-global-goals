@@ -941,3 +941,9 @@ html.ev-open{overflow:hidden}
   transition:transform .85s cubic-bezier(.77,0,.18,1),border-radius .85s cubic-bezier(.77,0,.18,1)}
 #wipe.go i{transform:translate3d(0,0,0);border-top-left-radius:0;border-top-right-radius:0}
 .wipe-in #wipe i{transform:none;border-radius:0;transition:none}
+
+/* three layers: light, mid, then the full goal colour, each following the one before */
+#wipe i:nth-child(1){background:color-mix(in srgb,var(--wipe,#009edb) 38%,#fff)}
+#wipe i:nth-child(2){background:color-mix(in srgb,var(--wipe,#009edb) 68%,#fff);transition-delay:.1s,.1s}
+#wipe i:nth-child(3){background:var(--wipe,#009edb);transition-delay:.2s,.2s}
+.wipe-in #wipe i,#wipe.instant i{transition:none!important}

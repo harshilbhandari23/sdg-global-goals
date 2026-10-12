@@ -402,9 +402,10 @@
       try { sessionStorage.setItem("sdgWipe", col); } catch (x) {}
       try { var pf = document.createElement("link"); pf.rel = "prefetch"; pf.href = u.href; document.head.appendChild(pf); } catch (x) {}   // start loading the next page while the colour rises
       var done = false, go = function () { if (done) return; done = true; location.href = u.href; };
-      var i = w.querySelector("i"); if (i) i.addEventListener("transitionend", function (ev) { if (ev.propertyName === "transform") go(); });
+      var layers = w.querySelectorAll("i"), last = layers[layers.length - 1];   // three layers rise one after another; go when the last one has covered the screen
+      if (last) last.addEventListener("transitionend", function (ev) { if (ev.propertyName === "transform") go(); });
       w.classList.add("go");
-      setTimeout(go, 1100);
+      setTimeout(go, 1400);
     });
   })();
 })();
