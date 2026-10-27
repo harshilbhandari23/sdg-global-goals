@@ -47,3 +47,12 @@ Edit a file, then rebuild the pages:
 ## Notes
 * The quiz can post results to your own endpoint: add `data-webhook="https://…"` to the `.quiz` element in `build.py`.
 * Live data comes from `sdg-middleware.vercel.app` (ratings, news) and `unstats.un.org/SDGAPI`.
+
+
+## Kiosk visit tracking
+
+`assets/analytics.js` follows each kiosk visit anonymously. A visit starts at the first touch and ends after `idleSeconds` (default 75) without one; the kiosk then returns to the home page and the next touch starts a new visit with a fresh random id.
+
+Switch the tools on in `assets/analytics-config.js`: add a Microsoft Clarity project ID (session replays and touch heatmaps) and/or a PostHog project key (journeys and funnels). Leave a field empty to keep that tool off.
+
+Events recorded: `visit_start`, `page_view`, `goal_open` (with where it was opened from), `goals_button_open`, `year_wheel_touch`, `year_wheel_year`, `quiz_start`, `quiz_answer`, `quiz_complete`, `quiz_retake`, `popup_open` (events or publications), `qr_open` (news, event, publication or action), `map_goal` and `visit_end`. Add `?track=debug` to any address to see them in the browser console. Use `SDG.track("name", {props})` to add more. No personal data is collected; the footer shows a notice.

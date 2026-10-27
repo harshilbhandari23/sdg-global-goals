@@ -349,7 +349,7 @@
         var a = ev.target.closest("a[href^='http']");   // links show a QR code instead of leaving the page
         if (a && window.SDG && window.SDG.openQr) {
           ev.preventDefault(); var t = a.querySelector("strong");
-          window.SDG.openQr({ url: a.href, title: t ? t.textContent : a.textContent.trim(), goal: +goal });
+          window.SDG.openQr({ url: a.href, title: t ? t.textContent : a.textContent.trim(), goal: +goal, type: type === "publications" ? "publication" : "event" });
         }
       });
       return m;
@@ -361,6 +361,7 @@
         var m = modals[type] || (modals[type] = make(type));
         m.style.setProperty("--goal", getComputedStyle(sec).getPropertyValue("--goal") || "#009edb");
         document.documentElement.classList.add("ev-open"); m.classList.add("on");
+        if (window.SDG && window.SDG.track) window.SDG.track("popup_open", { type: type });
         if (!cache[type]) fetch((window.SITE_ROOT || "") + "data/" + type + "/goal-" + goal + ".json").then(function (r) { return r.json(); }).then(function (d) { cache[type] = d; m.querySelector(".ev-list").innerHTML = (d[type] || []).map(CFG[type].row).join("") || '<p class="ev-empty">' + CFG[type].none + "</p>"; }).catch(function () { m.querySelector(".ev-list").innerHTML = '<p class="ev-empty">' + CFG[type].none + "</p>"; });
         m.querySelector(".ev-x").focus();
       });
@@ -373,7 +374,7 @@
       if (!window.SDG || !window.SDG.openQr) return;
       e.preventDefault(); e.stopPropagation();
       var sec = document.getElementById("numbers");
-      window.SDG.openQr({ url: a.href, title: a.dataset.qr, goal: sec ? +sec.dataset.goal : 0 });
+      window.SDG.openQr({ url: a.href, title: a.dataset.qr, goal: sec ? +sec.dataset.goal : 0, type: "action" });
     });
   });
 

@@ -39,7 +39,7 @@
 
     function fit() { var s = yw.clientWidth / BASE; stage.style.transform = "scale(" + s + ")"; stage.style.left = (-43.2 * s) + "px"; }  /* the ring is centred on x=583 of the 1080 stage: pull the stage left so the ring sits in the middle of the section */
     function clamp(p) { return Math.max(0, Math.min(data.length - 1, p)); }
-    var lastSel = -1;
+    var lastSel = -1, lastTracked = null, yt = null;
     function render() {
       var sel = clamp(Math.round(pos));
       labels.forEach(function (e, i) {
@@ -52,6 +52,7 @@
         lastSel = sel;
         tileEls.forEach(function (t, i) { t.querySelector("u").textContent = data[sel].values[i] != null ? data[sel].values[i] + " %" : ""; });
         live.textContent = "Year " + data[sel].year;
+        if (lastTracked !== null && S.track) { clearTimeout(yt); yt = setTimeout(function () { S.track("year_wheel_year", { year: data[sel].year }); }, 600); } lastTracked = sel;
       }
     }
     var dragging = false, moved = false, last = 0;
@@ -90,6 +91,7 @@
     qrModal.querySelector(".qr-card").style.setProperty("--qc", gc || "#0a2c61");
     top.querySelector("b").textContent = a.goal || ""; top.querySelector("span").textContent = a.goal ? S.names[a.goal - 1] : "SDG News"; top.classList.toggle("nogoal", !a.goal);
     qrModal.hidden = false; document.documentElement.classList.add("qr-open");
+    if (S.track) { var h = ""; try { h = new URL(a.url).hostname; } catch (_) {} S.track("qr_open", { type: a.type || "link", title: String(a.title || "").slice(0, 80), qr_goal: a.goal || 0, host: h }); }
     qrModal.querySelector(".qr-close").focus();
   }
 
@@ -166,7 +168,7 @@
     /* tapping a card opens a QR code for that story (nothing navigates away from the kiosk) */
     track.addEventListener("click", function (e) {
       var card = e.target.closest && e.target.closest("a.news-card"); if (!card) return;
-      e.preventDefault(); openQr(items[+card.dataset.i]);
+      e.preventDefault(); var it = items[+card.dataset.i]; openQr(it && Object.assign({ type: "news" }, it));
     });
     /* stories come from data/news*.json, refreshed every few hours by tools/fetch_news.py (Google News search per goal) */
     function load() {
@@ -195,14 +197,15 @@
       card.addEventListener("pointermove", function (e) { if (sx == null) return; dx = e.clientX - sx; card.style.transform = "translateX(" + dx + "px) rotate(" + dx / 40 + "deg)"; (dx > 0 ? bgL : bgR).style.opacity = Math.min(1, Math.abs(dx) / 150); (dx > 0 ? bgR : bgL).style.opacity = 0; });
       card.addEventListener("pointerup", function () { if (sx == null) return; sx = null; if (dx > 180) pick(q[2]); else if (dx < -180) pick(q[4]); else { card.style.transform = ""; bgL.style.opacity = bgR.style.opacity = 0; } dx = 0; });
     }
-    function pick(g) { picks.push(g); qi++; render(); }
+    function pick(g) { if (S.track) { if (!picks.length) S.track("quiz_start"); S.track("quiz_answer", { q: qi + 1, goal_picked: g }); } picks.push(g); qi++; render(); }
     function done() {
       counter.textContent = ""; bgL.style.opacity = bgR.style.opacity = 0;
       var c = {}; picks.forEach(function (g) { c[g] = (c[g] || 0) + 1; });
       var top = Object.keys(c).sort(function (a, b) { return c[b] - c[a]; }).slice(0, 3).map(Number);
       body.innerHTML = '<div class="card" style="cursor:default;text-align:center"><h2 style="margin-bottom:10px">Your Top Goals</h2><p style="color:#666;margin:0 0 32px;max-width:600px">Based on your choices, you are most inclined toward these Sustainable Development Goals.</p><div class="results">' +
         top.map(function (g) { return '<a class="rt" href="' + S.goalPath(g) + '" style="background:' + S.colors[g - 1] + '"><b>' + g + "</b><span>" + S.names[g - 1].toUpperCase() + "</span></a>"; }).join("") + '</div><button class="retake">Retake Quiz</button></div>';
-      body.querySelector(".retake").onclick = function () { qi = 0; picks = []; render(); };
+      if (S.track) S.track("quiz_complete", { top_goals: top.join(",") });
+      body.querySelector(".retake").onclick = function () { if (S.track) S.track("quiz_retake"); qi = 0; picks = []; render(); };
       // Optional: send results to your own endpoint by setting data-webhook on the .quiz element.
       var hook = qz.dataset.webhook; if (hook) fetch(hook, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ timestamp: new Date().toISOString(), top_goals: top.map(function (g) { return S.names[g - 1]; }).join(" | "), raw_selections: picks.join(",") }) }).catch(function () {});
     }

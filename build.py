@@ -84,13 +84,13 @@ def footer(depth):
     r = "../" * depth
     return (f'<footer class="site"><div class="row"><div class="h3" style="color:#fff">Global Goals</div><div style="display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start">'
             f'<a href="{r}global_goals/">All goals</a><a href="{r}legal/privacy-policy/">Privacy policy</a><a href="{r}legal/terms-of-use/">Terms of use</a></div></div>'
-            f'<p class="copy">© Global Goals. Content for educational use.</p></footer>')
+            f'<p class="copy">© Global Goals. Content for educational use.</p><p class="copy track-note">This kiosk records anonymous touch and page-view activity to improve the experience. No personal information is collected. <a href="{r}legal/privacy-policy/">Privacy policy</a></p></footer>')
 
 
 def scripts(depth, extra="", wheel=True):
     r = "../" * depth
     wheel = f'<script src="{r}assets/wheel-data.js?v={BUILD}"></script>' if wheel else ""
-    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/vendor/qrcode.min.js"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
+    return (f'<script src="{r}assets/sdg-data.js?v={BUILD}"></script><script src="{r}assets/analytics-config.js?v={BUILD}"></script><script src="{r}assets/analytics.js?v={BUILD}"></script>{wheel}<script src="{r}assets/ui.js?v={BUILD}"></script><script src="{r}assets/vendor/qrcode.min.js"></script><script src="{r}assets/widgets.js?v={BUILD}"></script>{extra}</body></html>')
 
 
 def news_block(feed, limit=10, title="Live SDG News", ident="news", sub="The latest stories about the Global Goals from news sources around the world.", logo=""):

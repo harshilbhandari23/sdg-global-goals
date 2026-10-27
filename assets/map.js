@@ -117,6 +117,7 @@
   }
   function setGoal(n) {
     active = n; selected = null; hovered = null;
+    if (n && window.SDG && window.SDG.track) window.SDG.track("map_goal", { map_goal: n });
     if (!n) { status = "idle"; countryMap = new Map(); paint(); return; }
     var key = API + "|" + n;
     function apply(list) {
