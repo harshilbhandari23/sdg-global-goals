@@ -3,7 +3,7 @@
    - posthogKey:  project API key from https://posthog.com (journeys, funnels, event counts). Use the EU host if your project is in the EU.
    - idleSeconds: seconds without a touch before a visit ends and the kiosk goes back to the home page (0 = never reset). */
 window.SDG_ANALYTICS = {
-  clarityId: "",
+  clarityId: "z59b5y98i8",
   posthogKey: "",
   posthogHost: "https://us.i.posthog.com",
   idleSeconds: 75
