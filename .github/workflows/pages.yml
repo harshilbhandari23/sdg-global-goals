@@ -41,6 +41,10 @@ jobs:
         run: python3 tools/fetch_yearwise.py
         continue-on-error: true
         timeout-minutes: 10
+      - name: Update the map ratings from SDSN
+        run: python3 tools/fetch_map.py
+        continue-on-error: true
+        timeout-minutes: 10
       - name: Build pages from data/
         run: python3 build.py
       - name: Remove files that should not be published

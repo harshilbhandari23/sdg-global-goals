@@ -33,7 +33,7 @@ Edit a file, then rebuild the pages:
 * To change code or content by hand, edit the files in the repository (or locally, then `git push`).
 
 ## Automatic data
-* `tools/fetch_news.py` refreshes the live news; `tools/fetch_yearwise.py` refreshes the "Progress over the years" wheel from the
+* `tools/fetch_news.py` refreshes the live news; `tools/fetch_map.py` refreshes the "Progress across nations" map ratings (data/map/goal-N.json) from the newest SDSN report; `tools/fetch_yearwise.py` refreshes the "Progress over the years" wheel from the
   SDSN Sustainable Development Report (it finds the newest `database_<year>.xlsx` on dashboards.sdgindex.org, recomputes
   `data/yearwise.json`, and a new year shows up by itself). Both run every 3 hours in GitHub Actions; if a source is down the
   existing data is kept.

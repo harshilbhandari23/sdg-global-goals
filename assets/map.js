@@ -1,5 +1,6 @@
 /* World map kiosk: pick a goal, see every country coloured by its SDSN rating.
-   Areas without an SDSN rating fall back to the UN SDG API indicator for that goal. */
+   Areas without an SDSN rating fall back to the UN SDG API indicator for that goal.
+   Ratings come from data/map/goal-N.json (newest SDSN edition, auto-updated); the old API is only a fallback. */
 (function () {
   var root = document.querySelector(".kiosk");
   if (!root || !window.d3 || !window.topojson) return;
@@ -127,7 +128,8 @@
     }
     if (dataCache[key]) return apply(dataCache[key]);
     status = "loading"; paint();
-    fetchJSON(API + "?goal=" + n).then(function (d) {
+    /* newest SDSN report, refreshed by tools/fetch_map.py into data/map/; the old live API is only the fallback */
+    fetchJSON((window.SITE_ROOT || "") + "data/map/goal-" + n + ".json", 1).catch(function () { return fetchJSON(API + "?goal=" + n); }).then(function (d) {
       if (active !== n) return; var list = Array.isArray(d) ? d : (d.countries || d.data || d.rankings || d.results || []); dataCache[key] = list; apply(list);
     }).catch(function () { if (active !== n) return; status = "error"; paint(); });
   }
