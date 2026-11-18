@@ -7,9 +7,17 @@
   var COUNTRIES = ["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua & Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Côte d'Ivoire","Croatia","Cuba","Cyprus","Czech Republic","DR Congo","Denmark","Djibouti","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Samoa","San Marino","São Tomé & Príncipe","Saudi Arabia","Senegal","Serbia","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"];
   /* names in the world atlas that differ from the list above */
   var ATLAS = { "Antigua & Barbuda": "Antigua and Barb.", "Bosnia & Herzegovina": "Bosnia and Herz.", "Brunei Darussalam": "Brunei", "Central African Republic": "Central African Rep.", "Czech Republic": "Czechia", "DR Congo": "Dem. Rep. Congo", "Dominican Republic": "Dominican Rep.", "Equatorial Guinea": "Eq. Guinea", "Eswatini": "eSwatini", "Solomon Islands": "Solomon Is.", "South Sudan": "S. Sudan", "São Tomé & Príncipe": "São Tomé and Principe", "Trinidad & Tobago": "Trinidad and Tobago", "United States": "United States of America", "Marshall Islands": "Marshall Is.", "Timor-Leste": "Timor-Leste", "North Macedonia": "Macedonia" };
+  /* picker names that SDSN writes differently (the ratings file uses SDSN's names) */
+  var SDSN = { "Bahamas": "Bahamas, The", "Congo": "Congo, Rep.", "Côte d'Ivoire": "Cote d'Ivoire", "Czech Republic": "Czechia", "DR Congo": "Congo, Dem. Rep.", "Egypt": "Egypt, Arab Rep.", "Gambia": "Gambia, The", "Iran": "Iran, Islamic Rep.", "Kyrgyzstan": "Kyrgyz Republic", "Laos": "Lao PDR", "Micronesia": "Micronesia, Fed. Sts.", "North Korea": "Korea, Dem. Rep.", "South Korea": "Korea, Rep.", "Russia": "Russian Federation", "São Tomé & Príncipe": "Sao Tome and Principe", "Slovakia": "Slovak Republic", "Syria": "Syrian Arab Republic", "Turkey": "Türkiye", "Venezuela": "Venezuela, RB", "Yemen": "Yemen, Rep." };
+  if (COUNTRIES.indexOf("South Korea") < 0) COUNTRIES.push("South Korea");
+  COUNTRIES.sort(function (a, b) { return a.localeCompare(b); });
+  function key(s) { return String(s).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]/g, ""); }
+  /* newest SDSN report, refreshed by tools/fetch_map.py into data/country/countries.json; the old API is only the fallback */
+  var local = fetch((window.SITE_ROOT || "") + "data/country/countries.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) { var m = {}; d.countries.forEach(function (c) { m[key(c.country)] = c; }); return { total: d.total, map: m }; }).catch(function () { return null; });
   var TREND = { "↑": ["#3aa746", "On Track"], "↓": ["#db1a36", "Decreasing"], "→": ["#e87c1e", "Stagnating"], "➚": ["#ebc011", "Moderately Improving"], "?": ["#939598", "Unknown"] };
   var $ = function (s) { return root.querySelector(s); };
-  var nav = $(".cx-az"), drop = $(".cx-drop"), nameEl = $(".cx-name"), regionEl = $(".cx-region"), svg = $(".cx-map svg"), scoreEl = $(".cx-score"), rankEl = $(".cx-rank"), dash = $(".cx-goals");
+  var nav = $(".cx-az"), drop = $(".cx-drop"), nameEl = $(".cx-name"), regionEl = $(".cx-region"), svg = $(".cx-map svg"), scoreEl = $(".cx-score"), rankEl = $(".cx-rank"), totalEl = root.querySelector(".cx-rank + em"), dash = $(".cx-goals");
   var current = root.dataset.country || "Afghanistan", active = null, features = null, cache = {};
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
@@ -61,6 +69,7 @@
   function setNum(el, v) { el.textContent = v; el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop"); }
   function paint(d) {
     regionEl.textContent = d.region || "";
+    if (totalEl) totalEl.textContent = d.total ? "/ " + d.total : "";
     setNum(scoreEl, d.overallScore != null ? Number(d.overallScore).toFixed(1) : "—");
     setNum(rankEl, d.overallRank != null ? d.overallRank : "—");
     var byGoal = {}; (d.goalTrends || []).forEach(function (g) { byGoal[g.goal] = g.trend; });
@@ -72,7 +81,11 @@
   function show(name) {
     current = name; nameEl.textContent = name; regionEl.textContent = "Loading…"; drawMap();
     var tok = show.tok = (show.tok || 0) + 1;
-    (cache[name] ? Promise.resolve(cache[name]) : fetch(API + encodeURIComponent(name)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) { cache[name] = d; return d; }))
+    (cache[name] ? Promise.resolve(cache[name]) : local.then(function (L) {
+      var c = L && L.map[key(SDSN[name] || name)];
+      if (c) return { region: c.region, overallScore: c.score, overallRank: c.rank, total: L.total, goalTrends: c.trends.map(function (t, i) { return { goal: i + 1, trend: t }; }) };
+      return fetch(API + encodeURIComponent(name)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });   // not in the SDSN file (e.g. Palestine, Taiwan): old API
+    }).then(function (d) { cache[name] = d; return d; }))
       .then(function (d) { if (tok === show.tok) paint(d); })
       .catch(function () { if (tok !== show.tok) return; regionEl.textContent = "Data not available."; scoreEl.textContent = rankEl.textContent = "—"; });
   }

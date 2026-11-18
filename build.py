@@ -236,7 +236,7 @@ def build_home():
 <section class="cx-section" id="country">{mosaic(21, "top")}{mosaic(22, "bottom")}<h2 class="h2">See where your country stands</h2>
 <div class="cx" data-country="Afghanistan"><div class="cx-pick"><div class="cx-az" role="group" aria-label="Pick a country by first letter"></div><div class="cx-drop" role="listbox" hidden></div></div>
 <div class="cx-main"><div class="cx-left"><h3 class="cx-name">Afghanistan</h3><p class="cx-region">Loading…</p><div class="cx-map"><svg viewBox="0 0 700 500" preserveAspectRatio="xMidYMid meet" aria-label="Country outline"></svg></div></div>
-<div class="cx-stats"><div class="cx-stat navy"><b class="cx-score">—</b><span>Country score</span></div><div class="cx-stat blue"><b><i class="cx-rank">—</i><em>/ 167</em></b><span>Country rank</span></div></div></div>
+<div class="cx-stats"><div class="cx-stat navy"><b class="cx-score">—</b><span>Country score</span></div><div class="cx-stat blue"><b><i class="cx-rank">—</i><em></em></b><span>Country rank</span></div></div></div>
 <h3 class="cx-h3">SDG dashboard and trends</h3><div class="cx-goals"></div>
 <div class="cx-legend"><span><b style="color:#db1a36">↓</b>Decreasing</span><span><b style="color:#e87c1e">→</b>Stagnating</span><span><b style="color:#ebc011">➚</b>Moderately improving</span><span><b style="color:#3aa746">↑</b>On track</span><span><b style="color:#939598">•</b>Unknown</span></div></div></section>
 

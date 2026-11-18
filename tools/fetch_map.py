@@ -5,7 +5,8 @@ SDSN publishes one spreadsheet per edition on https://dashboards.sdgindex.org/do
 "SDR<year> Data" sheet has, for every country and goal, the goal score, the dashboard colour (green / yellow / orange / red) and the
 trend arrow. This script finds the newest edition, skips the download when the file has not changed (ETag / Last-Modified in
 data/map/meta.json), and writes data/map/goal-1.json ... goal-17.json in the same shape the map used to get from the old API
-(countries[], noData[], source). The map page reads these files first. If anything looks wrong the existing files are kept.
+(countries[], noData[], source) plus data/country/countries.json (score, rank, region and the 17 trend arrows per country, for the
+"See where your country stands" section). The pages read these files first. If anything looks wrong the existing files are kept.
 Standard library only; GitHub Actions runs it before building (.github/workflows/pages.yml).
 """
 import json, os, re, sys, tempfile
@@ -15,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import fetch_yearwise as fy  # noqa: E402  (shares the downloader and the spreadsheet reader)
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "map")
+CROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "country")
 LEVEL = {"green": "On Track", "yellow": "Challenges Remain", "orange": "Significant Challenges", "red": "Major Challenges"}
 TREND = {"↑": "Improving", "➚": "Moderately Improving", "→": "Stagnating", "↓": "Decreasing"}
 
@@ -62,6 +64,19 @@ def build(hdr, rows, edition):
             raise RuntimeError("goal %d: only %d countries with data" % (g, len(have)))
         out[g] = {"goal": g, "totalRanked": len(have), "totalNoData": len(nodata), "countries": have, "noData": nodata,
                   "source": "SDSN Sustainable Development Report %s" % edition}
+    # one record per country for the "See where your country stands" section
+    countries = []
+    for r in rows:
+        name, iso = r.get(idx["country"]), r.get(idx["Country Code ISO3"]) or ""
+        if not name or not re.match(r"[A-Z]{3}$", iso):
+            continue
+        sc, rk = num(r.get(score_i)), num(r.get(rank_i))
+        if sc is None or rk is None:
+            continue
+        countries.append({"country": name, "region": r.get(idx["Regions used for the SDR"]) or "", "score": round(sc, 1), "rank": int(rk),
+                          "trends": [(r.get(idx["Goal %d Trend" % g]) or "?") for g in range(1, 18)]})
+    countries.sort(key=lambda c: c["rank"])
+    out["countries"] = {"edition": edition, "total": len(countries), "countries": countries}
     return out
 
 
@@ -80,7 +95,7 @@ def main():
         url = "%s/static/downloads/database_%s.xlsx" % (fy.BASE, edition)
         h = fy.get(url, "HEAD", 60).headers
         sig = [edition, h.get("ETag"), h.get("Last-Modified"), h.get("Content-Length")]
-        if meta.get("signature") == sig and os.path.exists(os.path.join(ROOT, "goal-1.json")):
+        if meta.get("signature") == sig and os.path.exists(os.path.join(ROOT, "goal-1.json")) and os.path.exists(os.path.join(CROOT, "countries.json")):
             print("map: SDSN %s unchanged, nothing to do" % edition); return
         tmp = os.path.join(tempfile.mkdtemp(), "db.xlsx")
         with fy.get(url, timeout=300) as r, open(tmp, "wb") as f:
@@ -93,10 +108,13 @@ def main():
     except Exception as e:  # noqa: BLE001
         print("map: kept existing data (%s)" % e); return
     os.makedirs(ROOT, exist_ok=True)
+    cdata = out.pop("countries")
+    os.makedirs(CROOT, exist_ok=True)
+    json.dump(cdata, open(os.path.join(CROOT, "countries.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     for g, d in out.items():
         json.dump(d, open(os.path.join(ROOT, "goal-%d.json" % g), "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump({"signature": sig, "edition": edition, "source": url, "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d")}, open(meta_path, "w"), indent=1)
-    print("map: SDSN %s -> 17 goals, %d countries on goal 1" % (edition, out[1]["totalRanked"]))
+    print("map: SDSN %s -> 17 goals, %d countries on goal 1, %d ranked countries" % (edition, out[1]["totalRanked"], cdata["total"]))
 
 
 if __name__ == "__main__":
